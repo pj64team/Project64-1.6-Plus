@@ -1,0 +1,32 @@
+Project64 Team: (1998-2024)
+
+Zilmar (Tooie):  Founder. Core, Application programmer 1.0-1.4, (1.5), 1.6
+
+Jabo:	  		Video, Audio, Input plugin programmer 1.0-1.6+
+
+Witten:	  		Application, Core programmer for 1.5-1.6.1, Bug tracking,
+				testing, suggestions, end user support 1.0-1.6.+
+
+RadeonUser:	   	Application, Core programmer for 1.6.1, Bug tracking,
+				testing, suggestions, end user support 1.0-1.6.+
+		   
+Gent:	  	   	Application, database and web development, Bug tracking,
+                testing, suggestions & end usersupport. 1.0-1.6+
+
+Smiff:		   	Bug tracking, testing, suggestions 1.0-1.5 rdb and
+				end user support 1.0-1.6
+
+Azimer:	   		Application, Core programmer, Audio plugin 	
+				programmer for 1.4-1.6.+
+
+Icepir8:	   	Application, Core programmer, Video plugin
+				programmer for 1.6.+
+
+Contributors:   Hacktarux,  Nekokabu
+
+
+Greets to:		 
+
+bodie, Gorxon, Clements, Trotterwatch, Quvack, NES_player4life, Pixi
+and all our friends and users at emutalk for their help and support
+with Project64’s development over the years. We Thank You                                    
