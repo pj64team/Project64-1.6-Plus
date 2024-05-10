@@ -1346,49 +1346,51 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			break;
 #endif
 		case ID_HELP_CONTENTS:
-			{
-				char path_buffer[_MAX_PATH], drive[_MAX_DRIVE] ,dir[_MAX_DIR];
-				char fname[_MAX_FNAME],ext[_MAX_EXT], HelpFileName[_MAX_PATH];
+		{
+			char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR];
+			char fname[_MAX_FNAME], ext[_MAX_EXT], HelpFileName[_MAX_PATH];
 
-				GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
-				_splitpath(path_buffer, drive, dir, fname, ext);
-   				_makepath(HelpFileName, drive, dir, "Project64", "chm");
+			GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
+			_splitpath(path_buffer, drive, dir, fname, ext);
+			_makepath(HelpFileName, drive, dir, "Project64", "chm");
 
-				if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, 1) == NULL) {
-					ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
-				}
+			// The call causes a crash if 1 is there at the end, no idea why it's even there as it works fine without it.
+			if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, (DWORD)NULL) == NULL) {
+				ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
 			}
-			break;
-/*		case ID_HELPMNU_INDEX:
-			{
-				char path_buffer[_MAX_PATH], drive[_MAX_DRIVE] ,dir[_MAX_DIR];
-				char fname[_MAX_FNAME],ext[_MAX_EXT], HelpFileName[_MAX_PATH];
+		}
+		break;
+		/*		case ID_HELPMNU_INDEX:
+					{
+						char path_buffer[_MAX_PATH], drive[_MAX_DRIVE] ,dir[_MAX_DIR];
+						char fname[_MAX_FNAME],ext[_MAX_EXT], HelpFileName[_MAX_PATH];
 
-				GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
-				_splitpath( path_buffer, drive, dir, fname, ext );
-   				_makepath( HelpFileName, drive, dir, "Project64", "chm" );
+						GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
+						_splitpath( path_buffer, drive, dir, fname, ext );
+						_makepath( HelpFileName, drive, dir, "Project64", "chm" );
 
-				if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_INDEX, 0) == NULL) {
-					ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
-				}
-			}
-			break;*/
+						if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_INDEX, 0) == NULL) {
+							ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
+						}
+					}
+					break;*/
 		case ID_HELP_GAMEFAQ:
-			{
-				char path_buffer[_MAX_PATH], drive[_MAX_DRIVE] ,dir[_MAX_DIR];
-				char fname[_MAX_FNAME],ext[_MAX_EXT], HelpFileName[_MAX_PATH];
+		{
+			char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR];
+			char fname[_MAX_FNAME], ext[_MAX_EXT], HelpFileName[_MAX_PATH];
 
-				GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
-				_splitpath( path_buffer, drive, dir, fname, ext );
-   				_makepath( HelpFileName, drive, dir, "PJgameFAQ", "chm" );
+			GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
+			_splitpath(path_buffer, drive, dir, fname, ext);
+			_makepath(HelpFileName, drive, dir, "PJgameFAQ", "chm");
 
-				if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, 1) == NULL) {
-					ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
-				}
+			// Gent no longer indexes these files so the old value of 1 no longer points to something valid, using NULL instead
+			if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, (DWORD)NULL) == NULL) {
+				ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
 			}
-			break;
-		case ID_HELP_SUPPORTFORUM: ShellExecute(NULL, "open", "http://www.emutalk.net/forums/6-Project64", NULL, NULL, SW_SHOWMAXIMIZED); break;
-		case ID_HELP_HOMEPAGE: ShellExecute(NULL, "open", "http://project64.emulation64.com", NULL, NULL, SW_SHOWMAXIMIZED); break;
+		}
+		break;
+		case ID_HELP_SUPPORTFORUM: ShellExecute(NULL, "open", "https://www.emutalk.net/forums/6-Project64", NULL, NULL, SW_SHOWMAXIMIZED); break;
+		case ID_HELP_HOMEPAGE: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_ABOUT: AboutBox(); break;
 		case ID_HELP_ABOUTSETTINGFILES: AboutIniBox(); break;
 		default:
