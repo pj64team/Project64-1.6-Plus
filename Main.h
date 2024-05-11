@@ -46,11 +46,11 @@ extern "C" {
 #define AppName  "Project64 (Build 57)"
 #else
 //#define BETA_VERSION
-#define AppVer   "Project64 - Version 1.6 Plus"
+#define AppVer   "Project64 - Version 1.6 Plus (TLB Disabled)"
 #ifdef BETA_VERSION
-#define AppName  "Project64 Version 1.6 Plus"
+#define AppName  "Project64 Version 1.6 Plus (TLB Disabled)"
 #else
-#define AppName  "Project64 Version 1.6 Plus"
+#define AppName  "Project64 Version 1.6 Plus (TLB Disabled)"
 #endif
 #endif
 
@@ -71,7 +71,7 @@ extern "C" {
 #define Default_LimitFPS			TRUE
 #define Default_AlwaysOnTop			FALSE
 #define Default_BasicMode			FALSE 	// Enabled Advance Mode as default (Gent)
-#define Default_RememberCheats		FALSE
+#define Default_RememberCheats		FALSE	// Enabled Always remember cheats as default so user don't have to re-enable after every close (Gent)
 #define Default_RomsToRemember		10		// Enabled Max 10 Recent Roms as default (Gent)
 #define Default_RomsDirsToRemember	10		// Enabled Max 10 Recent Rom Dir as default (Gent)
 #define LinkBlocks
@@ -83,7 +83,7 @@ extern "C" {
 #define ID_LANG_SELECT			2000
 
 /************** Core *****************/
-#define CPU_Default					0        // Set CPU_Interpreter as default for better compatibility (Gent)
+#define CPU_Default					0		// Set Default_CPU to Interpreter For Rom Hack/Prototyes not in RDB     
 #define CPU_Interpreter				0
 #define CPU_Recompiler				1
 #define CPU_SyncCores				2
@@ -94,7 +94,7 @@ extern "C" {
 //#define CFB_READ
 
 /******* Self modifying code *********/
-#define ModCode_Default				7   // Set Check memory Advance as default for Rom Hacks & Prototypes not in RDB for better compatibility (Gent)
+#define ModCode_Default				7		// Set ModCode_Default to Check Memory Advance for Rom Hacks & Prototypes not in RDB   
 #define ModCode_None				0
 #define ModCode_Cache				1
 #define ModCode_ProtectedMemory		2

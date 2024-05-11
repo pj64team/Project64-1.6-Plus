@@ -318,6 +318,7 @@
 #define ID_HELP_SUPPORTFORUM            40164
 #define ID_HELP_HOMEPAGE                40165
 #define ID_SYSTEM_CHEATSEARCH           40166
+#define ID_HELP_UNINSTALL               40167  // Added Uninstall function to remove application settings & Delete Project64.cache
 
 // Next default values for new objects
 // 

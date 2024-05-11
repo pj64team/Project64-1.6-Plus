@@ -878,16 +878,18 @@ BEGIN
         END
     END
     POPUP "&Help"
-    BEGIN
-        MENUITEM "&User Manual...",             ID_HELP_CONTENTS
-        MENUITEM "&Game FAQ...",                ID_HELP_GAMEFAQ
-        MENUITEM SEPARATOR
-        MENUITEM "Support &Forum",              ID_HELP_SUPPORTFORUM
-        MENUITEM "&Homepage",                   ID_HELP_HOMEPAGE
-        MENUITEM SEPARATOR
-        MENUITEM "About &INI Files",            ID_HELP_ABOUTSETTINGFILES
-        MENUITEM "&About Project 64",           ID_HELP_ABOUT
-    END
+            BEGIN
+            MENUITEM "&User Manual...", ID_HELP_CONTENTS
+            MENUITEM "&Game FAQ...", ID_HELP_GAMEFAQ
+            MENUITEM SEPARATOR
+            MENUITEM "Support &Forum", ID_HELP_SUPPORTFORUM
+            MENUITEM "&Homepage", ID_HELP_HOMEPAGE
+            MENUITEM SEPARATOR
+            MENUITEM "&Uninstal Application Settings", ID_HELP_UNINSTALL
+            MENUITEM SEPARATOR
+            MENUITEM "About &INI Files", ID_HELP_ABOUTSETTINGFILES
+            MENUITEM "&About Project 64", ID_HELP_ABOUT
+   END
 END
 
 IDR_POPUP MENU

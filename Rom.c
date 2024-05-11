@@ -593,7 +593,7 @@ void LoadRomOptions ( void ) {
 	}
 	RdramSize = NewRamSize;
 	CPU_Type = SystemCPU_Type;
-	if (RomCPUType != CPU_Default) { CPU_Type = RomCPUType; }
+	if (RomCPUType != CPU_Interpreter) { CPU_Type = RomCPUType; }
 	CountPerOp = RomCF;
 	if (CountPerOp < 1)  { CountPerOp = Default_CountPerOp; }
 	if (CountPerOp > 6)  { CountPerOp = Default_CountPerOp; }
@@ -652,13 +652,13 @@ void ReadRomOptions (void) {
 	RomCF             = -1;
 	RomCPUType        = CPU_Default;
 	RomSelfMod        = ModCode_Default;
-	RomUseTlb         = TRUE;
+	RomUseTlb         = FALSE;				// Disabled the use of TLB as a temp fix to combat the Vunerability (Gent)
 	RomDelaySI        = FALSE;
 	RomAudioSignal    = FALSE;
 	RomSPHack         = FALSE;
 	RomUseCache       = TRUE;
 	RomUseLargeBuffer = FALSE;
-	RomUseLinking     = -1;
+	RomUseLinking     = 1;
 	RomDelayRDP       = FALSE;
 	RomDelayRSP       = FALSE;
 	RomEmulateAI      = FALSE;
@@ -671,15 +671,19 @@ void ReadRomOptions (void) {
 		IniFileName = GetIniFileName();
 		sprintf(Identifier,"%08X-%08X-C:%X",*(DWORD *)(&RomHeader[0x10]),*(DWORD *)(&RomHeader[0x14]),RomHeader[0x3D]);
 
+		// Enabled 8MB (Expansion) as default for Rom Hacks & Prototypes not in RDB  for better compatibility (Gent)
+
 		if (UseIni) { RomRamSize = _GetPrivateProfileInt(Identifier,"RDRAM Size",-1,IniFileName); }
 		if (RomRamSize == 4 || RomRamSize == 8) {
 			RomRamSize *= 0x100000;
 		} else {
-			RomRamSize = -1;
+			RomRamSize = 0x800000; 
 		}
 
+		// Set Default_CountPerOp to CF 1 to assist with TLB being disabled.
+
 		RomCF = _GetPrivateProfileInt(Identifier,"Counter Factor",-1,IniFileName);
-		if (RomCF > 6) { RomCF = -1; }
+		if (RomCF > 6) { RomCF = 1; }
 
 		_GetPrivateProfileString(Identifier,"Save Type","",String,sizeof(String),IniFileName);
 		if (strcmp(String,"4kbit Eeprom") == 0)       { RomSaveUsing = Eeprom_4K; }
@@ -688,12 +692,20 @@ void ReadRomOptions (void) {
 		else if (strcmp(String,"FlashRam") == 0)      { RomSaveUsing = FlashRam; }
 		else                                          { RomSaveUsing = Auto; }
 
+		// Set Default_CPU to Interpreter for Rom Hacks & Prototypes not in RDB for better compatibility.
+		// This gives more success rate for Rom Hacks & Prototypes to boot.
+		// It also allows for futher tweaking if needed  (Gent)
+
 		if (UseIni) {
 			_GetPrivateProfileString(Identifier,"CPU Type","",String,sizeof(String),IniFileName);
 			if (strcmp(String,"Interpreter") == 0)       { RomCPUType = CPU_Interpreter; }
 			else if (strcmp(String,"Recompiler") == 0)   { RomCPUType = CPU_Recompiler; }
 			else if (strcmp(String,"SyncCores") == 0)    { RomCPUType = CPU_SyncCores; }
-			else                                         { RomCPUType = CPU_Default; }
+			else                                         { RomCPUType = CPU_Interpreter; } 
+
+			// Set ModCode_Default to Check Memory Advance for Rom Hacks & Prototypes not in RDB for better compatibility (Gent)
+			// This gives more success rate for Rom Hacks & Prototypes to boot.
+			// It also allows for futher tweaking if needed  (Gent)
 
 			_GetPrivateProfileString(Identifier,"Self-modifying code Method","",String,sizeof(String),IniFileName);
 			if (strcmp(String,"None") == 0)                      { RomSelfMod = ModCode_None; }
@@ -703,7 +715,7 @@ void ReadRomOptions (void) {
 			else if (strcmp(String,"Check Memory & cache") == 0) { RomSelfMod = ModCode_CheckMemoryCache; }
 			else if (strcmp(String,"Check Memory Advance") == 0) { RomSelfMod = ModCode_CheckMemory2; }
 			else if (strcmp(String,"Change Memory") == 0)        { RomSelfMod = ModCode_ChangeMemory; }
-			else                                                 { RomSelfMod = ModCode_Default; }
+			else                                                 { RomSelfMod = ModCode_CheckMemory2; }
 		}
 		_GetPrivateProfileString(Identifier,"Use TLB","",String,sizeof(String),IniFileName);
 		if (strcmp(String,"No") == 0) { RomUseTlb = FALSE; }

@@ -96,6 +96,7 @@ LANG_STR DefaultString[] = {
 		{ MENU_ABOUT_PJ64,  "&About Project 64"  },
 		{ MENU_FORUM,       "Support &Forum"  },
 		{ MENU_HOMEPAGE,    "&Homepage"  },
+		{ MENU_UNINSTALL,   "&Uninstal Application Settings"  },
 
 //Pop up Menu
 	{ POPUP_PLAY,      "Play Game"  },
