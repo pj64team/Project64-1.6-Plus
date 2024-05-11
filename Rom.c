@@ -680,10 +680,10 @@ void ReadRomOptions (void) {
 			RomRamSize = 0x800000; 
 		}
 
-		// Set Default_CountPerOp to CF 1 to assist with TLB being disabled.
+		// Set Default_CountPerOp to CF 2 to assist with TLB being disabled.
 
 		RomCF = _GetPrivateProfileInt(Identifier,"Counter Factor",-1,IniFileName);
-		if (RomCF > 6) { RomCF = 1; }
+		if (RomCF > 6) { RomCF = 2; }
 
 		_GetPrivateProfileString(Identifier,"Save Type","",String,sizeof(String),IniFileName);
 		if (strcmp(String,"4kbit Eeprom") == 0)       { RomSaveUsing = Eeprom_4K; }
