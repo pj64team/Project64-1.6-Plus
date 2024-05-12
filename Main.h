@@ -46,11 +46,11 @@ extern "C" {
 #define AppName  "Project64 (Build 57)"
 #else
 //#define BETA_VERSION
-#define AppVer   "Project64 - Version 1.6 Plus (TLB Disabled)"
+#define AppVer   "Project64 - Version 1.6 Plus (Vunerbility Fix RC1)"
 #ifdef BETA_VERSION
-#define AppName  "Project64 Version 1.6 Plus (TLB Disabled)"
+#define AppName  "Project64 Version 1.6 Plus (Vunerbility Fix RC1)"
 #else
-#define AppName  "Project64 Version 1.6 Plus (TLB Disabled)"
+#define AppName  "Project64 Version 1.6 Plus (Vunerbility Fix RC1)"
 #endif
 #endif
 
@@ -83,7 +83,7 @@ extern "C" {
 #define ID_LANG_SELECT			2000
 
 /************** Core *****************/
-#define CPU_Default					0		// Set Default_CPU to Interpreter For Rom Hack/Prototyes not in RDB     
+#define CPU_Default					0		// Set Default_CPU to Interpreter For Rom Hack/Prototyes not in RDB & so users can see what is actually default.   
 #define CPU_Interpreter				0
 #define CPU_Recompiler				1
 #define CPU_SyncCores				2

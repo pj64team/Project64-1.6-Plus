@@ -652,7 +652,7 @@ void ReadRomOptions (void) {
 	RomCF             = -1;
 	RomCPUType        = CPU_Default;
 	RomSelfMod        = ModCode_Default;
-	RomUseTlb         = FALSE;				// Disabled the use of TLB as a temp fix to combat the Vunerability (Gent)
+	RomUseTlb         = TRUE;				
 	RomDelaySI        = FALSE;
 	RomAudioSignal    = FALSE;
 	RomSPHack         = FALSE;
@@ -680,7 +680,7 @@ void ReadRomOptions (void) {
 			RomRamSize = 0x800000; 
 		}
 
-		// Set Default_CountPerOp to CF 2 to assist with TLB being disabled.
+		// Set Default_CountPerOp to CF 2 so users can see what is actually default.
 
 		RomCF = _GetPrivateProfileInt(Identifier,"Counter Factor",-1,IniFileName);
 		if (RomCF > 6) { RomCF = 2; }
@@ -694,7 +694,7 @@ void ReadRomOptions (void) {
 
 		// Set Default_CPU to Interpreter for Rom Hacks & Prototypes not in RDB for better compatibility.
 		// This gives more success rate for Rom Hacks & Prototypes to boot.
-		// It also allows for futher tweaking if needed  (Gent)
+		// It also allows for futher tweaking if needed because users can see what is actually default.(Gent)
 
 		if (UseIni) {
 			_GetPrivateProfileString(Identifier,"CPU Type","",String,sizeof(String),IniFileName);

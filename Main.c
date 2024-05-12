@@ -2045,7 +2045,7 @@ void SetCurrentSaveState (HWND hWnd, int State) {
 	CheckMenuItem(hMenu, ID_CURRENTSAVE_19, MF_BYCOMMAND | MFS_UNCHECKED);
 	
 	CheckMenuItem(hMenu, State, MF_BYCOMMAND | MFS_CHECKED);
-	if (strlen(RomName) == 0) return;
+	if (strlen(RomName) == 0) { return; }
 
 	strcpy(CurrentSave,RomName);
 
