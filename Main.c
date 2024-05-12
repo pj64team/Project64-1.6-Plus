@@ -360,19 +360,30 @@ void FixMenuLang (HMENU hMenu) {
 #endif
 
 	//Save Slot
-	hSubMenu = GetSubMenu(hMenu,1);
-	hSubMenu = GetSubMenu(hSubMenu,11);
-	MenuSetText(hSubMenu, 0, GS(MENU_SLOT_DEFAULT), "~");
-	MenuSetText(hSubMenu, 2, GS(MENU_SLOT_1), "1");
-	MenuSetText(hSubMenu, 3, GS(MENU_SLOT_2), "2");
-	MenuSetText(hSubMenu, 4, GS(MENU_SLOT_3), "3");
-	MenuSetText(hSubMenu, 5, GS(MENU_SLOT_4), "4");
-	MenuSetText(hSubMenu, 6, GS(MENU_SLOT_5), "5");
-	MenuSetText(hSubMenu, 7, GS(MENU_SLOT_6), "6");
-	MenuSetText(hSubMenu, 8, GS(MENU_SLOT_7), "7");
-	MenuSetText(hSubMenu, 9, GS(MENU_SLOT_8), "8");
-	MenuSetText(hSubMenu, 10, GS(MENU_SLOT_9), "9");
-	MenuSetText(hSubMenu, 11, GS(MENU_SLOT_10), "0");
+	hSubMenu = GetSubMenu(hMenu, 1);
+	hSubMenu = GetSubMenu(hSubMenu, 19);
+	MenuSetText(hSubMenu, 0, GS(MENU_SLOT_DEFAULT), "0");
+	MenuSetText(hSubMenu, 1, GS(MENU_SLOT_1), "1");
+	MenuSetText(hSubMenu, 2, GS(MENU_SLOT_2), "2");
+	MenuSetText(hSubMenu, 3, GS(MENU_SLOT_3), "3");
+	MenuSetText(hSubMenu, 4, GS(MENU_SLOT_4), "4");
+	MenuSetText(hSubMenu, 5, GS(MENU_SLOT_5), "5");
+	MenuSetText(hSubMenu, 6, GS(MENU_SLOT_6), "6");
+	MenuSetText(hSubMenu, 7, GS(MENU_SLOT_7), "7");
+	MenuSetText(hSubMenu, 8, GS(MENU_SLOT_8), "8");
+	MenuSetText(hSubMenu, 9, GS(MENU_SLOT_9), "9");
+	MenuSetText(hSubMenu, 10, GS(MENU_SLOT_10), "Shift+0");
+	MenuSetText(hSubMenu, 11, GS(MENU_SLOT_11), "Shift+1");
+	MenuSetText(hSubMenu, 12, GS(MENU_SLOT_12), "Shift+2");
+	MenuSetText(hSubMenu, 13, GS(MENU_SLOT_13), "Shift+3");
+	MenuSetText(hSubMenu, 14, GS(MENU_SLOT_14), "Shift+4");
+	MenuSetText(hSubMenu, 15, GS(MENU_SLOT_15), "Shift+5");
+	MenuSetText(hSubMenu, 16, GS(MENU_SLOT_16), "Shift+6");
+	MenuSetText(hSubMenu, 17, GS(MENU_SLOT_17), "Shift+7");
+	MenuSetText(hSubMenu, 18, GS(MENU_SLOT_18), "Shift+8");
+	MenuSetText(hSubMenu, 19, GS(MENU_SLOT_19), "Shift+9");
+
+	//MenuSetText(hSubMenu, 11, GS(MENU_SLOT_10), "0");
 }
 
 char * GetExtIniFileName(void) {
@@ -837,18 +848,99 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 		case ID_HELP_GAMEFAQ: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_FAQ)); break;
 		case ID_HELP_ABOUTSETTINGFILES: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_ABOUT_INI)); break;
 		case ID_HELP_ABOUT: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_ABOUT_PJ64)); break;
-		case ID_CURRENTSAVE_DEFAULT: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_1: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_2: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_3: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_4: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_5: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_6: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_7: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_8: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_9: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
-		case ID_CURRENTSAVE_0: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SLOT)); break;
+		
+		case ID_CURRENTSAVE_DEFAULT:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_1:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_2:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_3:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_4:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_5:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_6:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_7:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_8:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_9:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+			// Added an extra 10 save state slots with 10-19 on Shift+0-9 (Gent)
+
+		case ID_CURRENTSAVE_10:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_11:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_12:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_13:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_14:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_15:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_16:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_17:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_18:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+		case ID_CURRENTSAVE_19:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;
+
+
+			// Removed this as we now have 0 to 9 - Gent
+
+		/*case ID_CURRENTSAVE_0:
+			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
+			break;*/
+
+
 		default:
+
 			if (LOWORD(wParam) >= ID_FILE_RECENT_FILE && LOWORD(wParam) <= (ID_FILE_RECENT_FILE + RomsToRemember)) {
 				SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_RECENT_ROM));
 			} else if (LOWORD(wParam) >= ID_FILE_RECENT_DIR && LOWORD(wParam) <= (ID_FILE_RECENT_DIR + RomDirsToRemember)) {
@@ -1038,18 +1130,96 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			if (BasicMode) { break; }
 			CheckedMenuItem(ID_SYSTEM_LIMITFPS,&LimitFPS,"Limit FPS");
 			break;
-		case ID_CURRENTSAVE_DEFAULT: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_0: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_1: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_2: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_3: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_4: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_5: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_6: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_7: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_8: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		case ID_CURRENTSAVE_9: SetCurrentSaveState(hWnd,LOWORD(wParam)); break;
-		/* Witten */
+	
+				case ID_CURRENTSAVE_DEFAULT:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+					// Removed this as we now have 0 to 9 - Gent
+
+				/*case ID_CURRENTSAVE_0:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;*/
+
+				case ID_CURRENTSAVE_1:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_2:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_3:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_4:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_5:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_6:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_7:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_8:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_9:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+					
+				// Added an extra 10 save state slots with 10-19 on Shift+0-9 (Gent)
+
+				case ID_CURRENTSAVE_10:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_11:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_12:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_13:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_14:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_15:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_16:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_17:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_18:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+
+				case ID_CURRENTSAVE_19:
+					SetCurrentSaveState(hWnd, LOWORD(wParam));
+					break;
+			
+			/* Witten */
 		case ID_SYSTEM_CHEATSEARCH: Show_CheatSearchDlg (hWnd); break;
 		/* Witten */
 		case ID_SYSTEM_GSBUTTON: ApplyGSButton(); break;
@@ -1828,36 +1998,143 @@ void SetCurrentSaveState (HWND hWnd, int State) {
 	HMENU hMenu;
 
 	hMenu = GetMenu(hWnd);
-	if (!CPURunning) { State = ID_CURRENTSAVE_DEFAULT; }
+	if (!CPURunning)
+		State = ID_CURRENTSAVE_DEFAULT;
 
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_DEFAULT, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_0, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_1, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_2, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_3, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_4, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_5, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_6, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_7, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_8, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, ID_CURRENTSAVE_9, MF_BYCOMMAND | MFS_UNCHECKED );
-	CheckMenuItem( hMenu, State, MF_BYCOMMAND | MFS_CHECKED );
-	if (strlen(RomName) == 0) { return; }
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_DEFAULT, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	// Removed this as we now have 0 to 9 - Gent
+	//CheckMenuItem(hMenu, ID_CURRENTSAVE_0, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_1, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_2, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_3, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_4, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_5, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_6, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_7, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_8, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_9, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_10, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_11, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_12, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_13, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_14, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_15, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_16, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_17, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_18, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, ID_CURRENTSAVE_19, MF_BYCOMMAND | MFS_UNCHECKED);
+	
+	CheckMenuItem(hMenu, State, MF_BYCOMMAND | MFS_CHECKED);
+	if (strlen(RomName) == 0) return;
 
 	strcpy(CurrentSave,RomName);
 
 	switch (State) {
-	case ID_CURRENTSAVE_DEFAULT: strcat(CurrentSave,".pj"); break;
-	case ID_CURRENTSAVE_0: strcat(CurrentSave,".pj0"); break;
-	case ID_CURRENTSAVE_1: strcat(CurrentSave,".pj1"); break;
-	case ID_CURRENTSAVE_2: strcat(CurrentSave,".pj2"); break;
-	case ID_CURRENTSAVE_3: strcat(CurrentSave,".pj3"); break;
-	case ID_CURRENTSAVE_4: strcat(CurrentSave,".pj4"); break;
-	case ID_CURRENTSAVE_5: strcat(CurrentSave,".pj5"); break;
-	case ID_CURRENTSAVE_6: strcat(CurrentSave,".pj6"); break;
-	case ID_CURRENTSAVE_7: strcat(CurrentSave,".pj7"); break;
-	case ID_CURRENTSAVE_8: strcat(CurrentSave,".pj8"); break;
-	case ID_CURRENTSAVE_9: strcat(CurrentSave,".pj9"); break;
+	case ID_CURRENTSAVE_DEFAULT:
+		strcat(CurrentSave, ".pj0");
+		break;
+
+		// Removed this as we now have 0 to 9 - Gent
+
+	/*case ID_CURRENTSAVE_0:
+		strcat(CurrentSave, ".pj0");
+		break;*/
+
+	case ID_CURRENTSAVE_1:
+		strcat(CurrentSave, ".pj1");
+		break;
+
+	case ID_CURRENTSAVE_2:
+		strcat(CurrentSave, ".pj2");
+		break;
+
+	case ID_CURRENTSAVE_3:
+		strcat(CurrentSave, ".pj3");
+		break;
+
+	case ID_CURRENTSAVE_4:
+		strcat(CurrentSave, ".pj4");
+		break;
+
+	case ID_CURRENTSAVE_5:
+		strcat(CurrentSave, ".pj5");
+		break;
+
+	case ID_CURRENTSAVE_6:
+		strcat(CurrentSave, ".pj6");
+		break;
+
+	case ID_CURRENTSAVE_7:
+		strcat(CurrentSave, ".pj7");
+		break;
+
+	case ID_CURRENTSAVE_8:
+		strcat(CurrentSave, ".pj8");
+		break;
+
+	case ID_CURRENTSAVE_9:
+		strcat(CurrentSave, ".pj9");
+		break;
+
+	case ID_CURRENTSAVE_10:
+		strcat(CurrentSave, ".pj10");
+		break;
+
+	case ID_CURRENTSAVE_11:
+		strcat(CurrentSave, ".pj11");
+		break;
+
+	case ID_CURRENTSAVE_12:
+		strcat(CurrentSave, ".pj12");
+		break;
+
+	case ID_CURRENTSAVE_13:
+		strcat(CurrentSave, ".pj13");
+		break;
+
+	case ID_CURRENTSAVE_14:
+		strcat(CurrentSave, ".pj14");
+		break;
+
+	case ID_CURRENTSAVE_15:
+		strcat(CurrentSave, ".pj15");
+		break;
+
+	case ID_CURRENTSAVE_16:
+		strcat(CurrentSave, ".pj16");
+		break;
+
+	case ID_CURRENTSAVE_17:
+		strcat(CurrentSave, ".pj17");
+		break;
+
+	case ID_CURRENTSAVE_18:
+		strcat(CurrentSave, ".pj18");
+		break;
+
+	case ID_CURRENTSAVE_19:
+		strcat(CurrentSave, ".pj19");
+		break;
 	}
 
 	sprintf(String,"%s: %s",GS(MSG_SAVE_SLOT),CurrentSave);
