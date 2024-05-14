@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.project64-legacy.com/data/uploads/PJ64Plus_Clear.png.png" alt="logo" width="433" />
+  <img src="https://www.project64-legacy.com/data/uploads/PJ64Plus_Clear.png" alt="logo" width="433" />
 </p>
 
 # Project64 1.6 Plus
