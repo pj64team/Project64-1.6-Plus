@@ -169,6 +169,10 @@ char * GS               ( int StringID );
 #define RB_FILENAME				300
 #define RB_INTERNALNAME			301
 #define RB_GOODNAME				302
+
+// This is to use the ROm File name in Browser raher than Nad Rom Message.
+
+#define RB_NAME					319
 #define RB_STATUS				303
 #define RB_ROMSIZE				304
 #define RB_NOTES_CORE			305

@@ -119,7 +119,7 @@ LANG_STR DefaultString[] = {
 //Rom Browser Fields
 	{ RB_FILENAME,     "File Name" },
 	{ RB_INTERNALNAME, "Internal Name" },
-	{ RB_GOODNAME,     "Good Name" },
+	{ RB_NAME,			"Name" },
 	{ RB_STATUS,       "Status" },
 	{ RB_ROMSIZE,      "Rom Size" },
 	{ RB_NOTES_CORE,   "Notes (Core)" },
@@ -141,7 +141,7 @@ LANG_STR DefaultString[] = {
 	{ SELECT_ROM_DIR,  "Select current Rom Directory" },
 
 //Messages
-	{ RB_NOT_GOOD_FILE,"Bad ROM? Use GoodN64 & check for updated INI" },
+	{ RB_NOT_GOOD_FILE,"Game not in database? Please add yourself or check for updated RDB" },
 
 /*********************************************************************************
 * Options                                                                        *
