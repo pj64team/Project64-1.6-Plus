@@ -776,6 +776,7 @@ BOOL ValidPluginVersion ( PLUGIN_INFO * PluginInfo ) {
 		break;
 	case PLUGIN_TYPE_CONTROLLER:
 		if (PluginInfo->Version == 0x0100) { return TRUE; }
+		if (PluginInfo->Version == 0x0101) { return TRUE; }		// This was missing for some reason but we do have initialization code
 		break;
 	}
 	return FALSE;
