@@ -26,9 +26,10 @@
 extern DWORD RomFileSize, RomRamSize, RomSaveUsing, RomCPUType, RomSelfMod, 
 	RomUseTlb, RomUseLinking, RomCF, RomUseLargeBuffer, RomUseCache,
 	RomDelaySI, RomSPHack, RomAudioSignal, RomDelayRDP, RomDelayRSP, RomEmulateAI;
-extern char CurrentFileName[MAX_PATH+1], RomName[MAX_PATH+1], RomHeader[0x1000];
+extern char CurrentFileName[MAX_PATH+1], RomName[MAX_PATH+1], RomHeader[0x1000], CurrentGameInfoID[250];
 extern char LastRoms[10][MAX_PATH+1], LastDirs[10][MAX_PATH+1];
 
+void GetRomIdentifier        (char* Identifier);
 void AddRecentFile           ( HWND hWnd, char * addition );
 void ChangeRomOptionMemSize  ( DWORD NewSize );
 void ChangeRomOptionSaveType ( enum SaveType type );

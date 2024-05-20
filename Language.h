@@ -55,6 +55,7 @@ char * GS               ( int StringID );
 	#define MENU_RECENT_ROM		107
 	#define MENU_RECENT_DIR		108
 	#define MENU_EXIT			109
+	#define MENU_GAME_INFO      110
 
 #define MENU_SYSTEM				120
 	#define MENU_RESET			121
@@ -122,6 +123,7 @@ char * GS               ( int StringID );
 #define POPUP_INFO				211
 #define POPUP_SETTINGS			212
 #define POPUP_CHEATS			213
+#define POPUP_GAMEINFO			214
 
 // Menu Descriptions
 #define MENUDES_OPEN			250
@@ -185,6 +187,7 @@ char * GS               ( int StringID );
 #define RB_GENRE				316
 #define RB_PLAYERS				317
 #define RB_FORCE_FEEDBACK		318
+#define RB_GAME_INFO_ID         319
 
 //Select Rom
 #define SELECT_ROM_DIR			320
@@ -426,4 +429,5 @@ char * GS               ( int StringID );
 #define MSG_DEL_TITLE           2042
 #define MSG_CHEAT_NAME_IN_USE   2043
 #define MSG_MAX_CHEATS          2044
+#define MSG_NO_GAME_INFORMATION 2045
 

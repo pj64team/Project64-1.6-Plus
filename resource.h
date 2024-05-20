@@ -288,16 +288,6 @@
 #define ID_CURRENTSAVE_7                40120
 #define ID_CURRENTSAVE_8                40121
 #define ID_CURRENTSAVE_9                40122
-#define ID_CURRENTSAVE_10               40203
-#define ID_CURRENTSAVE_11               40204
-#define ID_CURRENTSAVE_12               40205
-#define ID_CURRENTSAVE_13               40206
-#define ID_CURRENTSAVE_14               40207
-#define ID_CURRENTSAVE_15               40208
-#define ID_CURRENTSAVE_16               40209
-#define ID_CURRENTSAVE_17               40210
-#define ID_CURRENTSAVE_18               40211
-#define ID_CURRENTSAVE_19               40212
 #define ID_OPTIONS_FULLSCREEN           40123
 #define ID_DEBUGGER_SHOWDLISTALISTCOUNT 40124
 #define ID_OPTIONS_SETTINGS             40126
@@ -328,14 +318,26 @@
 #define ID_HELP_SUPPORTFORUM            40164
 #define ID_HELP_HOMEPAGE                40165
 #define ID_SYSTEM_CHEATSEARCH           40166
-#define ID_HELP_UNINSTALL               40167  // Added Uninstall function to remove application settings & Delete Project64.cache
+#define ID_HELP_UNINSTALL               40167
+#define ID_FILE_GAME_INFO               40168
+#define ID_POPUPMENU_GAMEINFORMATION    40169
+#define ID_CURRENTSAVE_10               40203
+#define ID_CURRENTSAVE_11               40204
+#define ID_CURRENTSAVE_12               40205
+#define ID_CURRENTSAVE_13               40206
+#define ID_CURRENTSAVE_14               40207
+#define ID_CURRENTSAVE_15               40208
+#define ID_CURRENTSAVE_16               40209
+#define ID_CURRENTSAVE_17               40210
+#define ID_CURRENTSAVE_18               40211
+#define ID_CURRENTSAVE_19               40212
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        179
-#define _APS_NEXT_COMMAND_VALUE         40167
+#define _APS_NEXT_COMMAND_VALUE         40170
 #define _APS_NEXT_CONTROL_VALUE         1249
 #define _APS_NEXT_SYMED_VALUE           101
 #endif

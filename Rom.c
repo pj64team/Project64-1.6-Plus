@@ -37,16 +37,20 @@
 #include "resource.h"
 #include "RomTools_Common.h"
 
-#define MenuLocOfUsedFiles	11
+#define MenuLocOfUsedFiles	12
 #define MenuLocOfUsedDirs	(MenuLocOfUsedFiles + 1)
 
 DWORD RomFileSize, RomRamSize, RomSaveUsing, RomCPUType, RomSelfMod,
 	RomUseTlb, RomUseLinking, RomCF, RomUseLargeBuffer, RomUseCache,
 	RomDelaySI, RomSPHack, RomAudioSignal, RomDelayRDP, RomDelayRSP, RomEmulateAI;
-char CurrentFileName[MAX_PATH+1] = {""}, RomName[MAX_PATH+1] = {""}, RomHeader[0x1000];
+char CurrentFileName[MAX_PATH+1] = {""}, RomName[MAX_PATH+1] = {""}, RomHeader[0x1000], CurrentGameInfoID[250];
 char LastRoms[10][MAX_PATH+1], LastDirs[10][MAX_PATH+1];
 
 BOOL IsValidRomImage ( BYTE Test[4] );
+
+void GetRomIdentifier(char* Identifier) {
+	sprintf(Identifier, "%08X-%08X-C:%X", *(DWORD*)(&RomHeader[0x10]), *(DWORD*)(&RomHeader[0x14]), RomHeader[0x3D]);
+}
 
 void AddRecentDir(HWND hWnd, char * addition) {
 	DWORD count;

@@ -47,6 +47,7 @@ LANG_STR DefaultString[] = {
 	{ MENU_FILE,     "&File"     },
 		{ MENU_OPEN,       "&Open Rom"               },
 		{ MENU_ROM_INFO,   "Rom &Info...."           },
+		{ MENU_GAME_INFO,  "&Game Info..."           },
 		{ MENU_START,      "Start Emulation"         },
 		{ MENU_END,        "&End Emulation"          },
 		{ MENU_CHOOSE_ROM, "Choose Rom Directory..." },
@@ -110,6 +111,7 @@ LANG_STR DefaultString[] = {
 //Pop up Menu
 	{ POPUP_PLAY,      "Play Game"  },
 	{ POPUP_INFO,      "Rom Information"  },
+	{ POPUP_GAMEINFO,  "Game Information"  },
 	{ POPUP_SETTINGS,  "Edit Game Settings"  },
 	{ POPUP_CHEATS,    "Edit Cheats"  },
 
@@ -136,6 +138,7 @@ LANG_STR DefaultString[] = {
 	{ RB_GENRE,        "Genre" },
 	{ RB_PLAYERS,      "Players" },
 	{ RB_FORCE_FEEDBACK,"Force Feedback" },
+	{ RB_GAME_INFO_ID, "Game Info ID"},
 
 //Select Rom
 	{ SELECT_ROM_DIR,  "Select current Rom Directory" },
@@ -377,6 +380,7 @@ LANG_STR DefaultString[] = {
 	{ MSG_DEL_TITLE,          "Delete Cheat"},
 	{ MSG_CHEAT_NAME_IN_USE,  "Cheat Name is already in use"},
 	{ MSG_MAX_CHEATS,         "You Have reached the Maxiumn amount of cheats for this rom"},
+	{ MSG_NO_GAME_INFORMATION,"No game information available" },
 
 };
 

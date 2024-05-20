@@ -59,6 +59,8 @@ typedef struct {
 	DWORD    CRC2;
 	int      CicChip;
 	char     ForceFeedback[15];
+	char	 GameInfoID[250];
+
 } ROM_INFO;
 
 typedef struct {
@@ -117,6 +119,7 @@ typedef struct {
 #define RB_Genre			16
 #define RB_Players			17
 #define RB_ForceFeedback	18
+#define RB_GameInfoID		19
 
 char * GetSortField          ( int Index );
 void LoadRomList             ( void );
@@ -162,6 +165,7 @@ ROMBROWSER_FIELDS RomBrowserFields[] =
 	"Genre",                  -1, RB_Genre,         100,RB_GENRE,
 	"Players",                -1, RB_Players,       100,RB_PLAYERS,
 	"Force Feedback",          4, RB_ForceFeedback, 100,RB_FORCE_FEEDBACK,
+	"Game Info ID",			  -1, RB_GameInfoID,    100,RB_GAME_INFO_ID,
 };
 
 HWND hRomList= NULL;
@@ -401,6 +405,9 @@ void FillRomExtensionInfo(ROM_INFO * pRomInfo) {
 	if (RomBrowserFields[RB_Genre].Pos >= 0)
 		GetString(Identifier, "Genre", "", pRomInfo->Genre, sizeof(pRomInfo->Genre), ExtIniFileName);
 
+	//if (RomBrowserFields[RB_GameInfoID].Pos >= 0)
+		GetString(Identifier, "GameInformation", "", pRomInfo->GameInfoID, sizeof(pRomInfo->GameInfoID), ExtIniFileName);
+
 	if (RomBrowserFields[RB_Players].Pos >= 0) {
 		char junk[10];
 		GetString(Identifier, "Players", "1", junk, sizeof(junk), ExtIniFileName);
@@ -633,6 +640,7 @@ int CALLBACK RomList_CompareItems2(LPARAM lParam1, LPARAM lParam2, LPARAM lParam
 		case RB_Players: result =  (int)pRomInfo1->Players - (int)pRomInfo2->Players; break;
 		case RB_ForceFeedback: result = (int)lstrcmpi(pRomInfo1->ForceFeedback, pRomInfo2->ForceFeedback); break;
 		case RB_Genre: result =  (int)lstrcmpi(pRomInfo1->Genre, pRomInfo2->Genre); break;
+		case RB_GameInfoID: result = (int)lstrcmpi(pRomInfo1->GameInfoID, pRomInfo2->GameInfoID); break;
 		default: result = 0; break;
 		}
 		if (result != 0) { return result; }
@@ -684,6 +692,7 @@ void RomList_GetDispInfo(LPNMHDR pnmh) {
 	case RB_Genre: strncpy(lpdi->item.pszText, pRomInfo->Genre, lpdi->item.cchTextMax); break;
 	case RB_Players: sprintf(lpdi->item.pszText,"%d",pRomInfo->Players); break;
 	case RB_ForceFeedback: strncpy(lpdi->item.pszText, pRomInfo->ForceFeedback, lpdi->item.cchTextMax); break;
+	case RB_GameInfoID: strncpy(lpdi->item.pszText, pRomInfo->GameInfoID, lpdi->item.cchTextMax); break;
 	default: strncpy(lpdi->item.pszText, " ", lpdi->item.cchTextMax);
 	}
 	if (strlen(lpdi->item.pszText) == 0) { strcpy(lpdi->item.pszText," "); }
@@ -710,6 +719,7 @@ void RomList_PopupMenu(LPNMHDR pnmh) {
 
 		if (!pRomInfo) { return; }
 		strcpy(CurrentRBFileName,pRomInfo->szFullFileName);
+		strcpy(CurrentGameInfoID, pRomInfo->GameInfoID);
 	} else {
 		strcpy(CurrentRBFileName,"");
 	}
@@ -719,12 +729,13 @@ void RomList_PopupMenu(LPNMHDR pnmh) {
 	MenuSetText(hPopupMenu, 2, GS(MENU_REFRESH), NULL);
 	MenuSetText(hPopupMenu, 3, GS(MENU_CHOOSE_ROM), NULL);
 	MenuSetText(hPopupMenu, 5, GS(POPUP_INFO), NULL);
-	MenuSetText(hPopupMenu, 7, GS(POPUP_SETTINGS), NULL);
-	MenuSetText(hPopupMenu, 8, GS(POPUP_CHEATS), NULL);
+	MenuSetText(hPopupMenu, 6, GS(POPUP_GAMEINFO), NULL);
+	MenuSetText(hPopupMenu, 8, GS(POPUP_SETTINGS), NULL);
+	MenuSetText(hPopupMenu, 9, GS(POPUP_CHEATS), NULL);
 
 	if (strlen(CurrentRBFileName) == 0) {
+		DeleteMenu(hPopupMenu,9,MF_BYPOSITION);
 		DeleteMenu(hPopupMenu,8,MF_BYPOSITION);
-		DeleteMenu(hPopupMenu,7,MF_BYPOSITION);
 		DeleteMenu(hPopupMenu,6,MF_BYPOSITION);
 		DeleteMenu(hPopupMenu,5,MF_BYPOSITION);
 		DeleteMenu(hPopupMenu,4,MF_BYPOSITION);
@@ -732,7 +743,7 @@ void RomList_PopupMenu(LPNMHDR pnmh) {
 		DeleteMenu(hPopupMenu,0,MF_BYPOSITION);
 	} else {
 		if (BasicMode && !RememberCheats) { DeleteMenu(hPopupMenu,8,MF_BYPOSITION); }
-		if (BasicMode) { DeleteMenu(hPopupMenu,7,MF_BYPOSITION); }
+		if (BasicMode) { DeleteMenu(hPopupMenu,8,MF_BYPOSITION); }
 		if (BasicMode && !RememberCheats) { DeleteMenu(hPopupMenu,6,MF_BYPOSITION); }
 	}
 	

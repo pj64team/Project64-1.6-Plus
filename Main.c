@@ -43,6 +43,7 @@
 #include "resource.h"
 #include "resource_cheat.h"
 #include "RomTools_Common.h"
+#include "Settings Api_2.h"
 
 LARGE_INTEGER Frequency, Frames[NoOfFrames], LastFrame;
 BOOL HaveDebugger, AutoLoadMapFile, ShowUnhandledMemory, ShowTLBMisses,
@@ -60,6 +61,8 @@ HINSTANCE hInst;
 
 void MenuSetText ( HMENU hMenu, int MenuPos, char * Title, char * ShotCut );
 void RomInfo     ( void );
+void GameInfoByRomID();
+void GameInfoByGameInfoID(char* GameInfoID);
 void SetupMenu   ( HWND hWnd );
 
 LRESULT CALLBACK AboutIniBoxProc ( HWND, UINT, WPARAM, LPARAM );
@@ -307,14 +310,15 @@ void FixMenuLang (HMENU hMenu) {
 	hSubMenu = GetSubMenu(hMenu,0);
 	MenuSetText(hSubMenu, 0, GS(MENU_OPEN), "Ctrl+O");
 	MenuSetText(hSubMenu, 1, GS(MENU_ROM_INFO), NULL);
-	MenuSetText(hSubMenu, 3, GS(MENU_START), "F11");
-	MenuSetText(hSubMenu, 4, GS(MENU_END), "F12");
-	MenuSetText(hSubMenu, 6, GS(MENU_LANGUAGE), NULL);
-	MenuSetText(hSubMenu, 8, GS(MENU_CHOOSE_ROM), NULL);
-	MenuSetText(hSubMenu, 9, GS(MENU_REFRESH), "F5");
-	MenuSetText(hSubMenu, 11, GS(MENU_RECENT_ROM), NULL);
-	MenuSetText(hSubMenu, 12, GS(MENU_RECENT_DIR), NULL);
-	MenuSetText(hSubMenu, 14, GS(MENU_EXIT), "Alt+F4");
+	MenuSetText(hSubMenu, 2, GS(MENU_GAME_INFO), NULL);
+	MenuSetText(hSubMenu, 4, GS(MENU_START), "F11");
+	MenuSetText(hSubMenu, 5, GS(MENU_END), "F12");
+	MenuSetText(hSubMenu, 7, GS(MENU_LANGUAGE), NULL);
+	MenuSetText(hSubMenu, 9, GS(MENU_CHOOSE_ROM), NULL);
+	MenuSetText(hSubMenu, 10, GS(MENU_REFRESH), "F5");
+	MenuSetText(hSubMenu, 12, GS(MENU_RECENT_ROM), NULL);
+	MenuSetText(hSubMenu, 14, GS(MENU_RECENT_DIR), NULL);
+	MenuSetText(hSubMenu, 15, GS(MENU_EXIT), "Alt+F4");
 
 	//System
 	hSubMenu = GetSubMenu(hMenu,1);
@@ -816,11 +820,13 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 	case WM_MENUSELECT:
 		switch (LOWORD(wParam)) {
 		case ID_PLAYGAME: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_PLAY_GAME)); break;
-		case ID_POPUPMENU_ROMINFORMATION: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_INFO)); break;
+		case ID_POPUPMENU_ROMINFORMATION: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_ROM_INFO)); break;
+		case ID_POPUPMENU_GAMEINFORMATION: SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_INFO)); break;
 		case ID_EDITSETTINGS: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_SETTINGS)); break;
 		case ID_EDITCHEATS: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_CHEATS)); break;
 		case ID_FILE_OPEN_ROM: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_OPEN)); break;
 		case ID_FILE_ROM_INFO: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_ROM_INFO)); break;
+		case ID_FILE_GAME_INFO: SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_INFO)); break;
 		case ID_FILE_STARTEMULATION: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_START)); break;
 		case ID_FILE_ENDEMULATION: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_END)); break;
 		case ID_FILE_ROMDIRECTORY: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_CHOOSE_ROM)); break;
@@ -1010,8 +1016,10 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
 			}
 			break;
+		case ID_POPUPMENU_GAMEINFORMATION: GameInfoByGameInfoID(CurrentGameInfoID); break;
 		case ID_FILE_OPEN_ROM: OpenN64Image(); break;
 		case ID_FILE_ROM_INFO: RomInfo(); break;
+		case ID_FILE_GAME_INFO: GameInfoByRomID(); break;
 		case ID_FILE_STARTEMULATION:
 			if (strlen(RomName) == 0) { break; }
 			HideRomBrowser();
@@ -1779,6 +1787,27 @@ LRESULT CALLBACK RomInfoProc (HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam
 	return TRUE;
 }
 
+void GameInfoByRomID() {
+	char Identifier[100];
+	char GameInfoID[250];
+
+	GetRomIdentifier(Identifier);
+	GetString(Identifier, "GameInformation", "", GameInfoID, sizeof(GameInfoID), GetExtIniFileName());
+	GameInfoByGameInfoID(GameInfoID);
+}
+
+void GameInfoByGameInfoID(char * GameInfoID) {
+	char String[300];
+
+	if (strcmp(GameInfoID, "") == 0) {
+		MessageBox(NULL, GS(MSG_NO_GAME_INFORMATION), GS(MSG_MSGBOX_TITLE), MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
+	}
+	else {
+		sprintf(String, "https://www.project64-legacy.com/index.php?id=%s", GameInfoID);
+		ShellExecute(NULL, "open", String, NULL, NULL, SW_SHOWNORMAL);
+	}
+}
+
 BOOL TestExtensionRegistered ( char * Extension ) {
 	char ShortAppName[] = { "PJ64" };
 	HKEY hKeyResults = 0;
@@ -1840,7 +1869,7 @@ void SetupMenu ( HWND hWnd ) {
 	hMenu = LoadMenu(hInst,MAKEINTRESOURCE(MAIN_MENU));
 
 	FixMenuLang(hMenu);
-	CreateLangList(GetSubMenu(hMenu,0),6, ID_LANG_SELECT);
+	CreateLangList(GetSubMenu(hMenu,0),7, ID_LANG_SELECT);
 
 	CreateRecentDirList(hMenu);
 	CreateRecentFileList(hMenu);
@@ -1937,6 +1966,7 @@ void SetupMenu ( HWND hWnd ) {
 
 	if (strlen(RomName) > 0) {
 		EnableMenuItem(hMenu,ID_FILE_ROM_INFO,MFS_ENABLED|MF_BYCOMMAND);
+		EnableMenuItem(hMenu, ID_FILE_GAME_INFO, MFS_ENABLED | MF_BYCOMMAND);
 		EnableMenuItem(hMenu,ID_FILE_STARTEMULATION,MFS_ENABLED|MF_BYCOMMAND);
 		EnableMenuItem(hMenu,ID_SYSTEM_GSBUTTON,MFS_ENABLED|MF_BYCOMMAND);						//added by Witten on 10/03/2002
 		if (HaveDebugger) {
@@ -1984,7 +2014,7 @@ void SetupMenu ( HWND hWnd ) {
 	if (!HaveDebugger) { DeleteMenu(hMenu,3,MF_BYPOSITION);  }
 	DeleteAdvanceMenuOptions(hMenu);
 	if ((BasicMode && CPURunning) || !RomListVisible()) {
-		DeleteMenu(GetSubMenu(hMenu,0),7,MF_BYPOSITION);  //Line
+		DeleteMenu(GetSubMenu(hMenu,0),8,MF_BYPOSITION);  //Line
 		DeleteMenu(hMenu,ID_FILE_ROMDIRECTORY,MF_BYCOMMAND);
 		DeleteMenu(hMenu,ID_FILE_REFRESHROMLIST,MF_BYCOMMAND);
 	}
