@@ -533,8 +533,11 @@ BOOL LoadRomHeader ( void ) {
 		CloseHandle( hFile );
 	}
 	ByteSwapRom(RomHeader,sizeof(RomHeader));
-	memcpy(&RomName[0],&RomHeader[0x20],20);
-	for( count = 0 ; count < 20; count += 4 ) {
+
+	// This replaces the Internal Name with File Name (Gent)
+
+	memcpy(&RomName, &FileName, 60);
+	/*for( count = 0 ; count < 20; count += 4 ) {
 		RomName[count] ^= RomName[count+3];
 		RomName[count + 3] ^= RomName[count];
 		RomName[count] ^= RomName[count+3];
@@ -550,7 +553,8 @@ BOOL LoadRomHeader ( void ) {
 			count = -1;
 		}
 	}
-	RomName[20] = '\0';
+	}*/
+	RomName[60] = '\0';
 	if (strlen(RomName) == 0) { strcpy(RomName,FileName); }
 	return FALSE;
 }
@@ -1034,7 +1038,7 @@ void OpenChosenFile ( void ) {
 	}
 	RomName[20] = '\0';
 	if (strlen(RomName) == 0) { strcpy(RomName,FileName); }
-	sprintf( WinTitle, "%s - %s", RomName, AppName);
+	sprintf(WinTitle, "%s - %s", RomName, AppName);
 
 	for( count = 0 ; count < (int)strlen(RomName); count ++ ) {
 		switch (RomName[count]) {
@@ -1123,7 +1127,10 @@ void SaveRomOptions (void) {
 
 	IniFileName = GetIniFileName();
 	sprintf(Identifier,"%08X-%08X-C:%X",*(DWORD *)(&RomHeader[0x10]),*(DWORD *)(&RomHeader[0x14]),RomHeader[0x3D]);
-	_WritePrivateProfileString(Identifier,"Internal Name",RomName,IniFileName);
+	
+	// This changes "Internal Name" to "Game Name" in the RDB where File Name is placed (Gent)
+
+	_WritePrivateProfileString(Identifier, "Game Name", RomName, IniFileName);
 
 	switch (RomRamSize) {
 	case 0x400000: strcpy(String,"4"); break;

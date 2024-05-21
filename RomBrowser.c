@@ -419,7 +419,10 @@ void FillRomExtensionInfo(ROM_INFO * pRomInfo) {
 
 	//Rom Settings
 	if (RomBrowserFields[RB_GameName].Pos >= 0)
-		GetString(Identifier, "Game Name", GS(RB_NOT_GOOD_FILE), pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName);
+
+		// This bypasses the Not in database message and displays Game Name in browser
+
+		Identifier, "Game Name", /*GS(RB_NOT_GOOD_FILE),*/ pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName;
 	
 	GetString(Identifier, "Status", Default_RomStatus, pRomInfo->Status, sizeof(pRomInfo->Status), IniFileName);
 
@@ -659,7 +662,11 @@ void RomList_GetDispInfo(LPNMHDR pnmh) {
 	switch(FieldType[lpdi->item.iSubItem]) {
 	case RB_FileName: strncpy(lpdi->item.pszText, pRomInfo->FileName, lpdi->item.cchTextMax); break;
 	case RB_InternalName: strncpy(lpdi->item.pszText, pRomInfo->InternalName, lpdi->item.cchTextMax); break;
-	case RB_GameName: strncpy(lpdi->item.pszText, pRomInfo->GameName, lpdi->item.cchTextMax); break;
+	
+		// This Sets Name to display File Name, but does not update when file name is changed,
+
+	case RB_GameName: strncpy(lpdi->item.pszText, pRomInfo->FileName, lpdi->item.cchTextMax); break;
+
 	case RB_CoreNotes: strncpy(lpdi->item.pszText, pRomInfo->CoreNotes, lpdi->item.cchTextMax); break;
 	case RB_PluginNotes: strncpy(lpdi->item.pszText, pRomInfo->PluginNotes, lpdi->item.cchTextMax); break;
 	case RB_Status: strncpy(lpdi->item.pszText, pRomInfo->Status, lpdi->item.cchTextMax); break;
