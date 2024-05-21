@@ -43,77 +43,99 @@ void FirstDMA (void) {
 	}
 }
 
-void PI_DMA_READ (void) {
-//	PI_STATUS_REG |= PI_STATUS_DMA_BUSY;
+void PI_DMA_READ(void) {
+	//	PI_STATUS_REG |= PI_STATUS_DMA_BUSY;
+	PI_DRAM_ADDR_REG &= 0x1FFFFFFF;
 
-	if ( PI_DRAM_ADDR_REG + PI_RD_LEN_REG + 1 > RdramSize) {
-#ifndef EXTERNAL_RELEASE
-		DisplayError("PI_DMA_READ not in Memory");
-#endif
+	PI_RD_LEN_REG = (PI_RD_LEN_REG & 1) ? PI_RD_LEN_REG : PI_RD_LEN_REG + 1;	// Fix for Ai Shogi 3
+	PI_CART_ADDR_REG &= ~1;	// Taz Express fix
+	PI_DRAM_ADDR_REG &= ~7;	// Tax Express fix
+
+	if (PI_DRAM_ADDR_REG + PI_RD_LEN_REG + 1 > RdramSize) {
+		/*if (ShowDebugMessages)
+			DisplayError("PI_DMA_READ not in Memory");
 		PI_STATUS_REG &= ~PI_STATUS_DMA_BUSY;
-		MI_INTR_REG |= MI_INTR_PI;
+		MI_INTR_REG |= MI_INTR_PI;*/
 		CheckInterrupts();
 		return;
 	}
 
-	if ( PI_CART_ADDR_REG >= 0x08000000 && PI_CART_ADDR_REG <= 0x08010000) {
-		if (SaveUsing == Auto) { SaveUsing = Sram; }
-		if (SaveUsing == Sram) {
+	// Trying to fix saves for Dezaemon 3D (J)
+	// There is likely a better way to do this
+	if ((PI_CART_ADDR_REG >= 0x08000000 && PI_CART_ADDR_REG <= 0x08010000) ||
+		(PI_CART_ADDR_REG >= 0x08040000 && PI_CART_ADDR_REG <= 0x08050000) ||
+		(PI_CART_ADDR_REG >= 0x08080000 && PI_CART_ADDR_REG <= 0x08090000))
+	{
+		switch (SaveUsing) {
+		case Auto:
+			SaveUsing = Sram;
+		case Sram:
 			DmaToSram(
-				N64MEM+PI_DRAM_ADDR_REG,
+				N64MEM + PI_DRAM_ADDR_REG,
 				PI_CART_ADDR_REG - 0x08000000,
 				PI_RD_LEN_REG + 1
 			);
 			PI_STATUS_REG &= ~PI_STATUS_DMA_BUSY;
 			MI_INTR_REG |= MI_INTR_PI;
 			CheckInterrupts();
-			return;
-		}
-		if (SaveUsing == FlashRam) {
+			break;
+		case FlashRam:
 			DmaToFlashram(
-				N64MEM+PI_DRAM_ADDR_REG,
+				N64MEM + PI_DRAM_ADDR_REG,
 				PI_CART_ADDR_REG - 0x08000000,
 				PI_WR_LEN_REG + 1
 			);
 			PI_STATUS_REG &= ~PI_STATUS_DMA_BUSY;
 			MI_INTR_REG |= MI_INTR_PI;
 			CheckInterrupts();
-			return;
+			break;
 		}
+		return;
 	}
+
 	if (SaveUsing == FlashRam) {
-#ifndef EXTERNAL_RELEASE
-		DisplayError("**** FLashRam DMA Read address %X *****",PI_CART_ADDR_REG);
-#endif
+		/*if (ShowDebugMessages)
+			DisplayError("**** FLashRam DMA Read address %X *****", PI_CART_ADDR_REG);
 		PI_STATUS_REG &= ~PI_STATUS_DMA_BUSY;
-		MI_INTR_REG |= MI_INTR_PI;
+		MI_INTR_REG |= MI_INTR_PI;*/
 		CheckInterrupts();
 		return;
 	}
-#ifndef EXTERNAL_RELEASE
-	DisplayError("PI_DMA_READ where are you dmaing to ?");
-#endif	
+	/*if (ShowDebugMessages)
+		DisplayError("PI_DMA_READ where are you dmaing to ?");
 	PI_STATUS_REG &= ~PI_STATUS_DMA_BUSY;
-	MI_INTR_REG |= MI_INTR_PI;
+	MI_INTR_REG |= MI_INTR_PI;*/
 	CheckInterrupts();
 	return;
-}
+	}
 
-void PI_DMA_WRITE (void) {
-	DWORD i;	
+void PI_DMA_WRITE(void) {
+	DWORD i;
+	PI_DRAM_ADDR_REG &= 0x1FFFFFFF;
+
+	if (PI_WR_LEN_REG != 2)
+		PI_WR_LEN_REG = ((PI_WR_LEN_REG & 1)) ? PI_WR_LEN_REG : PI_WR_LEN_REG + 1;	// Fix for Ai Shogi 3
+
+	PI_CART_ADDR_REG &= ~1;	// Taz Express fix
+	PI_DRAM_ADDR_REG &= ~7;	// Taz Express fix
 
 	PI_STATUS_REG |= PI_STATUS_DMA_BUSY;
-	if ( PI_DRAM_ADDR_REG + PI_WR_LEN_REG + 1 > RdramSize) {
-#ifndef EXTERNAL_RELEASE
-		DisplayError("PI_DMA_WRITE not in Memory");
-#endif	
+	if (PI_DRAM_ADDR_REG + PI_WR_LEN_REG + 1 > RdramSize) {
+		/*if (ShowDebugMessages)
+			DisplayError("PI_DMA_WRITE not in Memory");
 		PI_STATUS_REG &= ~PI_STATUS_DMA_BUSY;
-		MI_INTR_REG |= MI_INTR_PI;
+		MI_INTR_REG |= MI_INTR_PI;*/
 		CheckInterrupts();
 		return;
 	}
 
-	if ( PI_CART_ADDR_REG >= 0x08000000 && PI_CART_ADDR_REG <= 0x08010000) {
+	// Trying to fix saves for Dezaemon 3D (J)
+	// There is likely a better way to do this
+	if ((PI_CART_ADDR_REG >= 0x08000000 && PI_CART_ADDR_REG <= 0x08010000) ||
+		(PI_CART_ADDR_REG >= 0x08040000 && PI_CART_ADDR_REG <= 0x08050000) ||
+		(PI_CART_ADDR_REG >= 0x08080000 && PI_CART_ADDR_REG <= 0x08090000))
+	{
+
 		if (SaveUsing == Auto) { SaveUsing = Sram; }
 		if (SaveUsing == Sram) {
 			DmaFromSram(
