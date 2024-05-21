@@ -43,7 +43,7 @@ typedef struct {
 	char     Status[60];
 	char     FileName[200];
 	char     InternalName[22];
-	char     GoodName[200];
+	char     GameName[200];
 	char     CartID[3];
 	char     PluginNotes[250];
 	char     CoreNotes[250];
@@ -102,7 +102,7 @@ typedef struct {
 
 #define RB_FileName			0
 #define RB_InternalName		1
-#define RB_GoodName			2
+#define RB_GameName			2
 #define RB_Status			3
 #define RB_RomSize			4
 #define RB_CoreNotes		5
@@ -148,7 +148,7 @@ ROMBROWSER_FIELDS RomBrowserFields[] =
 {
 	"File Name",              -1, RB_FileName,      218,RB_FILENAME,
 	"Internal Name",          -1, RB_InternalName,  200,RB_INTERNALNAME,
-	"Good Name",               0, RB_GoodName,      218,RB_GOODNAME,
+	"Game Name",               0, RB_GameName,      218,RB_GAMENAME,
 	"Status",                  1, RB_Status,        92,RB_STATUS,
 	"Rom Size",               -1, RB_RomSize,       100,RB_ROMSIZE,
 	"Notes (Core)",            2, RB_CoreNotes,     120,RB_NOTES_CORE,
@@ -418,8 +418,8 @@ void FillRomExtensionInfo(ROM_INFO * pRomInfo) {
 		GetString(Identifier, "ForceFeedback", "unknown", pRomInfo->ForceFeedback, sizeof(pRomInfo->ForceFeedback), ExtIniFileName);
 
 	//Rom Settings
-	if (RomBrowserFields[RB_GoodName].Pos >= 0)
-		GetString(Identifier, "Good Name", GS(RB_NOT_GOOD_FILE), pRomInfo->GoodName, sizeof(pRomInfo->GoodName), IniFileName);
+	if (RomBrowserFields[RB_GameName].Pos >= 0)
+		GetString(Identifier, "Game Name", GS(RB_NOT_GOOD_FILE), pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName);
 	
 	GetString(Identifier, "Status", Default_RomStatus, pRomInfo->Status, sizeof(pRomInfo->Status), IniFileName);
 
@@ -618,7 +618,7 @@ int CALLBACK RomList_CompareItems2(LPARAM lParam1, LPARAM lParam2, LPARAM lParam
 		switch (SortFields->Key[count]) {
 		case RB_FileName: result = (int)lstrcmpi(pRomInfo1->FileName, pRomInfo2->FileName); break;
 		case RB_InternalName: result =  (int)lstrcmpi(pRomInfo1->InternalName, pRomInfo2->InternalName); break;
-		case RB_GoodName: result =  (int)lstrcmpi(pRomInfo1->GoodName, pRomInfo2->GoodName); break;
+		case RB_GameName: result =  (int)lstrcmpi(pRomInfo1->GameName, pRomInfo2->GameName); break;
 		case RB_Status: result =  (int)lstrcmpi(pRomInfo1->Status, pRomInfo2->Status); break;
 		case RB_RomSize: result =  (int)pRomInfo1->RomSize - (int)pRomInfo2->RomSize; break;
 		case RB_CoreNotes: result =  (int)lstrcmpi(pRomInfo1->CoreNotes, pRomInfo2->CoreNotes); break;
@@ -659,9 +659,9 @@ void RomList_GetDispInfo(LPNMHDR pnmh) {
 	switch(FieldType[lpdi->item.iSubItem]) {
 	case RB_FileName: strncpy(lpdi->item.pszText, pRomInfo->FileName, lpdi->item.cchTextMax); break;
 	case RB_InternalName: strncpy(lpdi->item.pszText, pRomInfo->InternalName, lpdi->item.cchTextMax); break;
-	case RB_GoodName: strncpy(lpdi->item.pszText, pRomInfo->GoodName, lpdi->item.cchTextMax); break;
+	case RB_GameName: strncpy(lpdi->item.pszText, pRomInfo->GameName, lpdi->item.cchTextMax); break;
 	case RB_CoreNotes: strncpy(lpdi->item.pszText, pRomInfo->CoreNotes, lpdi->item.cchTextMax); break;
-	case RB_PluginNotes: strncpy(lpdi->item.pszText, pRomInfo->PluginNotes, lpdi->item.cchTextMax); break;
+	case RB_PluginNotes: strncpy(lpdi->item.pszText, pRomInfo->PluginNotes, lpdi>item.cchTextMax); break;
 	case RB_Status: strncpy(lpdi->item.pszText, pRomInfo->Status, lpdi->item.cchTextMax); break;
 	case RB_RomSize: sprintf(lpdi->item.pszText,"%.1f MBit",(float)pRomInfo->RomSize/0x20000); break;
 	case RB_CartridgeID: strncpy(lpdi->item.pszText, pRomInfo->CartID, lpdi->item.cchTextMax); break;
