@@ -1038,7 +1038,10 @@ void OpenChosenFile ( void ) {
 	}
 	RomName[20] = '\0';
 	if (strlen(RomName) == 0) { strcpy(RomName,FileName); }
-	sprintf(WinTitle, "%s - %s", RomName, AppName);
+
+	// This replaces the use of ROM Internal Name with File name in the title bar (Gent)
+
+	sprintf(WinTitle, "%s - %s", FileName, AppName);
 
 	for( count = 0 ; count < (int)strlen(RomName); count ++ ) {
 		switch (RomName[count]) {
