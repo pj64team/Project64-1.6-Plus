@@ -53,6 +53,10 @@ LRESULT CALLBACK AboutBoxProc (HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lPara
 			int point2 = -MulDiv(14, GetDeviceCaps(hdc, LOGPIXELSY), 72);
 			ReleaseDC(NULL, hdc);
 
+			// This displays the build date and time in About dialog title bar (Gent)
+
+			SetWindowText(hDlg, "About Project64 1.6 Plus - " __DATE__ " " __TIME__);
+
 			SendMessage(hDlg, WM_SETICON, ICON_SMALL, (LPARAM)LoadIcon(hInst, "ICON"));
 
 			CoInitialize(NULL);
