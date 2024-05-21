@@ -23,9 +23,36 @@
  * should be forwarded to them so if they want them.
  *
  */
-extern BYTE PifRom[0x7C0], *PIF_Ram;
+#ifndef PIF_H
+#define PIF_H
 
-int  GetCicChipID ( char * RomData );
-int  LoadPifRom   ( int country );
-void PifRamWrite  ( void );
-void PifRamRead   ( void );
+extern BYTE PifRom[0x7C0], * PIF_Ram;
+typedef enum CIC_CHIP
+{
+	CIC_UNKNOWN,	// Default
+	CIC_NUS_6101,	// Also 7102
+	CIC_NUS_6102,	// Also 7101
+	CIC_NUS_6103,	// Also 7103
+	CIC_NUS_6104,	// Unused
+	CIC_NUS_6105,	// Also 7105
+	CIC_NUS_6106,	// Also 7106
+	CIC_NUS_5167,	// N64DD IPL
+	CIC_NUS_8303,	// N64DD IPL TOOL
+	CIC_NUS_DDUS,	// N64DD IPL US (alternative)
+	CIC_NUS_8401,	// Aleck64
+	CIC_NUS_XENO	// Xeno Crisis
+} CIC_CHIP;
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+	enum CIC_CHIP GetCicChipID(BYTE* RomData);
+#ifdef __cplusplus
+};
+#endif
+
+int  LoadPifRom(BYTE country);
+void PifRamWrite(void);
+void PifRamRead(void);
+
+#endif
