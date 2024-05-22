@@ -70,5 +70,5 @@ Also see the list of [community contributors](https://github.com/pj64team/Projec
 
 ## 🔗 Links
 - [Website](https://github.com/pj64team/Project64-1.6-Plus)
-- [Discord](https://discord.gg/ha7HWAFE8u)
+- [Discord](https://discord.gg/hDVYaM34Fp)
 
