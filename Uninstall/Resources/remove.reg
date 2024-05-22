@@ -1,7 +1,0 @@
-REGEDIT4
-;
-;simple Project64 uninstall script by Smiff - www.smiff.clara.net
-;
-[-HKEY_CURRENT_USER\SOFTWARE\N64 Emulation\Project64 Version 1.6 Plus]
-[-HKEY_CURRENT_USER\SOFTWARE\N64 Emulation\Project64 Version 1.6 Plus (TLB Disabled)]
-;
