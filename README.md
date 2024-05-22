@@ -52,7 +52,7 @@ Contributors are always welcome!
 
 - [@Project64-Legacy](https://github.com/pj64team/Project64-1.6-Plus)
 
-- Zilmar (Tooie) - Project Founder / Previous contributor 1.0-1.6
+- Zilmar (Tooie) - Project Founder / contributor
 - Jabo - Contributor
 - Smiff - Contributor
 - Witten - Contributor
