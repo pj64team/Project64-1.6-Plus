@@ -44,6 +44,7 @@
 #include "resource_cheat.h"
 #include "RomTools_Common.h"
 #include "Settings Api_2.h"
+#include "Registry.h"
 
 LARGE_INTEGER Frequency, Frames[NoOfFrames], LastFrame;
 BOOL HaveDebugger, AutoLoadMapFile, ShowUnhandledMemory, ShowTLBMisses,
@@ -64,6 +65,7 @@ void RomInfo     ( void );
 void GameInfoByRomID();
 void GameInfoByGameInfoID(char* GameInfoID);
 void SetupMenu   ( HWND hWnd );
+void UninstallApplication(void);
 
 LRESULT CALLBACK AboutIniBoxProc ( HWND, UINT, WPARAM, LPARAM );
 LRESULT CALLBACK Main_Proc       ( HWND, UINT, WPARAM, LPARAM );
@@ -1570,7 +1572,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 		break;
 		case ID_HELP_SUPPORTFORUM: ShellExecute(NULL, "open", "https://www.emutalk.net/forums/6-Project64", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_HOMEPAGE: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
-		case ID_HELP_UNINSTALL: ShellExecute(NULL, "open", "uninstall.bat", NULL, NULL, SW_SHOWDEFAULT); break;
+		case ID_HELP_UNINSTALL: UninstallApplication(); break;
 		case ID_HELP_ABOUT: AboutBox(); break;
 		case ID_HELP_ABOUTSETTINGFILES: AboutIniBox(); break;
 		default:
@@ -2170,6 +2172,31 @@ void SetCurrentSaveState (HWND hWnd, int State) {
 	sprintf(String,"%s: %s",GS(MSG_SAVE_SLOT),CurrentSave);
 	SendMessage( hStatusWnd, SB_SETTEXT, 0, (LPARAM)String );
 	CurrentSaveSlot = State;
+}
+
+void UninstallApplication(void) {
+	char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR];
+	char fname[_MAX_FNAME], ext[_MAX_EXT];
+	char FileName[_MAX_PATH];
+	char RegistryKey[300];
+	char ErrorMessage[300];
+
+	// Delete cache file
+	GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
+	_splitpath(path_buffer, drive, dir, fname, ext);
+	sprintf(FileName, "%s%s%s", drive, dir, CacheFileName);
+	if (remove(FileName) != 0) {
+		sprintf(ErrorMessage, "%s: %s", GS(MSG_DELETE_FILE_FAILED), FileName);
+		DisplayError(GS(MSG_DELETE_FILE_FAILED));
+	}
+
+	// Delete registry keys recursive
+	sprintf(RegistryKey, "Software\\N64 Emulation\\%s", AppName);
+	if (!RegDelnode(HKEY_CURRENT_USER, RegistryKey)) {
+		DisplayError(GS(MSG_DELETE_SETTINGS_FAILED));
+	}
+
+	MessageBox(NULL, GS(MSG_RESTART_APPLICATION), GS(MSG_MSGBOX_TITLE), MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
 }
 
 

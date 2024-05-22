@@ -222,6 +222,9 @@
     <ClCompile Include="MemDump.c">
       <Filter>Source Files\Debugger Source</Filter>
     </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Source Files\General Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BreakPoints.h">
@@ -393,6 +396,9 @@
       <Filter>Header Files\Plugin Header</Filter>
     </ClInclude>
     <ClInclude Include="MemDump.h">
+      <Filter>Header Files\General Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
       <Filter>Header Files\General Header</Filter>
     </ClInclude>
   </ItemGroup>

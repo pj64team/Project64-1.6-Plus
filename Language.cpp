@@ -106,7 +106,7 @@ LANG_STR DefaultString[] = {
 		{ MENU_ABOUT_PJ64,  "&About Project 64"  },
 		{ MENU_FORUM,       "Support &Forum"  },
 		{ MENU_HOMEPAGE,    "&Homepage"  },
-		{ MENU_UNINSTALL,   "&Uninstal Application Settings"  },
+		{ MENU_UNINSTALL,   "&Uninstall Application Settings"  },
 
 //Pop up Menu
 	{ POPUP_PLAY,      "Play Game"  },
@@ -381,6 +381,9 @@ LANG_STR DefaultString[] = {
 	{ MSG_CHEAT_NAME_IN_USE,  "Cheat Name is already in use"},
 	{ MSG_MAX_CHEATS,         "You Have reached the Maxiumn amount of cheats for this rom"},
 	{ MSG_NO_GAME_INFORMATION,"No game information available" },
+	{ MSG_RESTART_APPLICATION,"Settings have been changed. Please close or restart the application to continue." },
+	{ MSG_DELETE_SETTINGS_FAILED,"Failed to delete the application settings." },
+	{ MSG_DELETE_FILE_FAILED , "Failed to delete file"},
 
 };
 

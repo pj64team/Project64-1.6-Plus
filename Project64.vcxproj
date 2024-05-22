@@ -236,6 +236,7 @@
     <ClCompile Include="r4300i Memory.c" />
     <ClCompile Include="r4300i Registers.c" />
     <ClCompile Include="Real-Time Clock.c" />
+    <ClCompile Include="Registry.cpp" />
     <ClCompile Include="RomTools_Common.c" />
     <ClCompile Include="SectionBuffer.c" />
     <ClCompile Include="SectionIndexer.c" />
@@ -292,6 +293,7 @@
     <ClInclude Include="r4300i Memory.h" />
     <ClInclude Include="r4300i Registers.h" />
     <ClInclude Include="Real-Time Clock.h" />
+    <ClInclude Include="Registry.h" />
     <ClInclude Include="resource_cheat.h" />
     <ClInclude Include="resource_cheatsearch.h" />
     <ClInclude Include="RomTools_Common.h" />
