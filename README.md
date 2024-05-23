@@ -17,11 +17,11 @@ Project64 1.6 Plus is a free and open-source emulator for the Nintendo 64 and is
 
 - Advance Mode enabled by default (allowing to name a few)
 
-   File/Rom Information
-   System/Screenshot Capture
-   Optiuons/Configure RSP Plugin
-   Help/About INIFiles
-  File/Rom Information.    
+  - File/Rom Information
+  - System/Screenshot Capture
+  - Optiuons/Configure RSP Plugin
+  - Help/About INIFiles
+  - File/Rom Information.    
 
 - Save/load states (10 extra than original release)
 - Gamne Information in File & Rom Browser (Popup Menu)
