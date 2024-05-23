@@ -193,7 +193,7 @@ char * GS               ( int StringID );
 #define SELECT_ROM_DIR			320
 
 //Messages
-#define RB_NOT_GOOD_FILE		340
+#define RB_NOT_IN_RDB			340
 
 /*********************************************************************************
 * Options                                                                        *

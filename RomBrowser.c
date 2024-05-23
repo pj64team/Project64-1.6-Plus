@@ -418,8 +418,17 @@ void FillRomExtensionInfo(ROM_INFO * pRomInfo) {
 		GetString(Identifier, "ForceFeedback", "unknown", pRomInfo->ForceFeedback, sizeof(pRomInfo->ForceFeedback), ExtIniFileName);
 
 	//Rom Settings
+
 	if (RomBrowserFields[RB_GameName].Pos >= 0)
 		GetString(Identifier, "Game Name", GS(RB_NOT_GOOD_FILE), pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName);
+	if (RomBrowserFields[RB_GoodName].Pos >= 0)
+
+		// This displays the message "Not in database? Add yourself or check for RDB updated"
+		// in the ROM Browser if a ROM is not in the RDB (Game Database)
+		// What i would like to achieve is to display the file name until the gamne is added
+		// and then updated from that entry (Gent)
+
+	GetString(Identifier, "Game Name", GS(RB_NOT_IN_RDB), pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName);
 	
 	GetString(Identifier, "Status", Default_RomStatus, pRomInfo->Status, sizeof(pRomInfo->Status), IniFileName);
 
@@ -659,6 +668,11 @@ void RomList_GetDispInfo(LPNMHDR pnmh) {
 	switch(FieldType[lpdi->item.iSubItem]) {
 	case RB_FileName: strncpy(lpdi->item.pszText, pRomInfo->FileName, lpdi->item.cchTextMax); break;
 	case RB_InternalName: strncpy(lpdi->item.pszText, pRomInfo->InternalName, lpdi->item.cchTextMax); break;
+	
+		// TpRomInfo->GameName displays Game Name=Text there in the RDB,
+		// TpRomInfo->FileName displays File Name but then will not update what is written
+		// in Game Name=Text there in the RDB. 
+	
 	case RB_GameName: strncpy(lpdi->item.pszText, pRomInfo->GameName, lpdi->item.cchTextMax); break;
 	case RB_CoreNotes: strncpy(lpdi->item.pszText, pRomInfo->CoreNotes, lpdi->item.cchTextMax); break;
 	case RB_PluginNotes: strncpy(lpdi->item.pszText, pRomInfo->PluginNotes, lpdi->item.cchTextMax); break;

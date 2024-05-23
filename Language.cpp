@@ -144,7 +144,12 @@ LANG_STR DefaultString[] = {
 	{ SELECT_ROM_DIR,  "Select current Rom Directory" },
 
 //Messages
-	{ RB_NOT_GOOD_FILE,"Not in database? Add yourself or check for RDB updated" },
+
+// This has been changed from RB_NOT_GOOD_FILE with the message:
+// "Bad ROM? Use GoodN64 & check for updated INI"
+// because the Good Rom system is now defunct (Gent)
+
+	{ RB_NOT_IN_RDB,"Not in database? Add yourself or check for RDB updated" },
 
 /*********************************************************************************
 * Options                                                                        *
