@@ -64,7 +64,7 @@ Contributors are always welcome!
 
 ## Maintainers and contributors
 
-- [@Project64-Legacy](https://github.com/pj64team/Project64-1.6-Plus)
+- [@Project64-1.6-Plus](https://github.com/pj64team/Project64-1.6-Plus)
 
 - Zilmar (Tooie) - Project Founder / contributor
 - Jabo - Contributor
