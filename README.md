@@ -13,7 +13,7 @@ Project64 1.6 Plus is a free and open-source emulator for the Nintendo 64 and is
     tlb miss in write opcodes are now generating exceptions as expected. This solves a vulnerability that can allow roms
     to run arbitrary code in previous releases.  
 
-- Retain 1.6 original ROM Hack comnpatibility
+- Retain 1.6 original ROM Hack compatibility
 
 - Advance Mode enabled by default (allowing to name a few)
 
