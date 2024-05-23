@@ -71,7 +71,7 @@ extern "C" {
 #define Default_LimitFPS			TRUE
 #define Default_AlwaysOnTop			FALSE
 #define Default_BasicMode			FALSE 	// Enabled Advance Mode as default (Gent)
-#define Default_RememberCheats		FALSE	// Enabled Always remember cheats as default so user don't have to re-enable after every close (Gent)
+#define Default_RememberCheats		TRUE	// Enabled Always remember cheats as default so user don't have to re-enable after every close (Gent)
 #define Default_RomsToRemember		10		// Enabled Max 10 Recent Roms as default (Gent)
 #define Default_RomsDirsToRemember	10		// Enabled Max 10 Recent Rom Dir as default (Gent)
 #define LinkBlocks
