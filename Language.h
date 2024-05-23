@@ -90,8 +90,8 @@ char * GS               ( int StringID );
 	#define MENU_GAME_FAQ		182
 	#define MENU_ABOUT_INI		183
 	#define MENU_ABOUT_PJ64		184
-	#define MENU_FORUM			185
-	#define MENU_HOMEPAGE		186
+	#define MENU_DISCORD		185
+	#define MENU_GITHUB			186
 	#define MENU_UNINSTALL		187
 
 //Current Save Slot menu

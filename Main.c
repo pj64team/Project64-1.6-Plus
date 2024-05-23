@@ -358,8 +358,8 @@ void FixMenuLang (HMENU hMenu) {
 #else
 	MenuSetText(hSubMenu, 0, GS(MENU_USER_MAN), NULL);
 	MenuSetText(hSubMenu, 1, GS(MENU_GAME_FAQ), NULL);
-	MenuSetText(hSubMenu, 3, GS(MENU_FORUM), NULL);
-	MenuSetText(hSubMenu, 4, GS(MENU_HOMEPAGE), NULL);
+	MenuSetText(hSubMenu, 3, GS(MENU_DISCORD), NULL);
+	MenuSetText(hSubMenu, 4, GS(MENU_GITHUB), NULL);
 	MenuSetText(hSubMenu, 6, GS(MENU_UNINSTALL), NULL);
 	MenuSetText(hSubMenu, 8, GS(MENU_ABOUT_INI), NULL);
 	MenuSetText(hSubMenu, 9, GS(MENU_ABOUT_PJ64), NULL);
@@ -1570,8 +1570,8 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			}
 		}
 		break;
-		case ID_HELP_SUPPORTFORUM: ShellExecute(NULL, "open", "https://www.emutalk.net/forums/6-Project64", NULL, NULL, SW_SHOWMAXIMIZED); break;
-		case ID_HELP_HOMEPAGE: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
+		case ID_HELP_DISCORD: ShellExecute(NULL, "open", "https://discord.gg/hDVYaM34Fp", NULL, NULL, SW_SHOWMAXIMIZED); break;
+		case ID_HELP_GITHUB: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_UNINSTALL: UninstallApplication(); break;
 		case ID_HELP_ABOUT: AboutBox(); break;
 		case ID_HELP_ABOUTSETTINGFILES: AboutIniBox(); break;

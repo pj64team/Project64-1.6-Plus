@@ -315,8 +315,8 @@
 #define ID_POPUP_ADDNEWCHEAT            40161
 #define ID_POPUP_EDIT                   40162
 #define ID_POPUP_DELETE                 40163
-#define ID_HELP_SUPPORTFORUM            40164
-#define ID_HELP_HOMEPAGE                40165
+#define ID_HELP_DISCORD					40164
+#define ID_HELP_GITHUB					40165
 #define ID_SYSTEM_CHEATSEARCH           40166
 #define ID_HELP_UNINSTALL               40167
 #define ID_FILE_GAME_INFO               40168

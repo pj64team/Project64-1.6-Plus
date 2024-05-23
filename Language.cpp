@@ -104,8 +104,8 @@ LANG_STR DefaultString[] = {
 		{ MENU_GAME_FAQ,    "&Game FAQ..."       },
 		{ MENU_ABOUT_INI,   "About &INI Files"   },
 		{ MENU_ABOUT_PJ64,  "&About Project 64"  },
-		{ MENU_FORUM,       "Support &Forum"  },
-		{ MENU_HOMEPAGE,    "&Homepage"  },
+		{ MENU_DISCORD,       "&Discord"  },
+		{ MENU_GITHUB,    "&GitHub"  },
 		{ MENU_UNINSTALL,   "&Uninstall Application Settings"  },
 
 //Pop up Menu
