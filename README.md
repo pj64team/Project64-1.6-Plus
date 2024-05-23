@@ -24,6 +24,11 @@ Project64 1.6 Plus is a free and open-source emulator for the Nintendo 64 and is
 
 - Save/load states (10 extra than original release)
 - Game Information in File & Rom Browser (Popup Menu)
+- Always remember cheats as default so user don't have to re-enable after every close
+- Max 10 Recent Roms as default
+- Max 10 Recent Rom Dir as default
+- Rom Dir Recursion as default, this allows sub-directories to be included in rom browser
+- Display build date and time in About dialog title bar for easy build version recognition
 
 ## Screenshot
 
