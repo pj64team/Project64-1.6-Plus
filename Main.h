@@ -46,11 +46,11 @@ extern "C" {
 #define AppName  "Project64 (Build 57)"
 #else
 //#define BETA_VERSION
-#define AppVer   "Project64 - Version 1.6 Plus (TLB Disabled)"
+#define AppVer   "Project64 - Version 1.6 Plus"
 #ifdef BETA_VERSION
-#define AppName  "Project64 Version 1.6 Plus (TLB Disabled)"
+#define AppName  "Project64 Version 1.6 Plus"
 #else
-#define AppName  "Project64 Version 1.6 Plus (TLB Disabled)"
+#define AppName  "Project64 Version 1.6 Plus"
 #endif
 #endif
 
