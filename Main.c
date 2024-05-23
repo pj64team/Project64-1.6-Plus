@@ -52,7 +52,7 @@ BOOL HaveDebugger, AutoLoadMapFile, ShowUnhandledMemory, ShowTLBMisses,
 	AutoSleep, DisableRegCaching, UseIni, UseTlb, UseLinking, RomBrowser,
 	IgnoreMove, Rercursion, ShowPifRamErrors, LimitFPS, ShowCPUPer, AutoZip,
 	AutoFullScreen, SystemABL, AlwaysOnTop, BasicMode, DelaySI, RememberCheats, AudioSignal,
-	DelayRSP, DelayRDP, EmulateAI;
+	DelayRSP, DelayRDP, EmulateAI, ForceClose;
 DWORD CurrentFrame, CPU_Type, SystemCPU_Type, SelfModCheck, SystemSelfModCheck,
 	RomsToRemember, RomDirsToRemember;
 HWND hMainWindow, hHiddenWin, hStatusWnd, hCheatSearchDlg;
@@ -65,7 +65,7 @@ void RomInfo     ( void );
 void GameInfoByRomID();
 void GameInfoByGameInfoID(char* GameInfoID);
 void SetupMenu   ( HWND hWnd );
-void UninstallApplication(void);
+void UninstallApplication(HWND hWnd);
 
 LRESULT CALLBACK AboutIniBoxProc ( HWND, UINT, WPARAM, LPARAM );
 LRESULT CALLBACK Main_Proc       ( HWND, UINT, WPARAM, LPARAM );
@@ -1572,7 +1572,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 		break;
 		case ID_HELP_DISCORD: ShellExecute(NULL, "open", "https://discord.gg/hDVYaM34Fp", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_GITHUB: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
-		case ID_HELP_UNINSTALL: UninstallApplication(); break;
+		case ID_HELP_UNINSTALL: UninstallApplication(hWnd); break;
 		case ID_HELP_ABOUT: AboutBox(); break;
 		case ID_HELP_ABOUTSETTINGFILES: AboutIniBox(); break;
 		default:
@@ -1596,7 +1596,8 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 		}
 		break;
 	case WM_DESTROY:
-		SaveRomBrowserColoumnInfo();
+		if (!ForceClose)
+			SaveRomBrowserColoumnInfo();
 		PostQuitMessage(0);
 		break;
 	default:
@@ -2174,29 +2175,35 @@ void SetCurrentSaveState (HWND hWnd, int State) {
 	CurrentSaveSlot = State;
 }
 
-void UninstallApplication(void) {
+void UninstallApplication(HWND hWnd) {
 	char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR];
 	char fname[_MAX_FNAME], ext[_MAX_EXT];
 	char FileName[_MAX_PATH];
 	char RegistryKey[300];
 	char ErrorMessage[300];
 
-	// Delete cache file
-	GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
-	_splitpath(path_buffer, drive, dir, fname, ext);
-	sprintf(FileName, "%s%s%s", drive, dir, CacheFileName);
-	if (remove(FileName) != 0) {
-		sprintf(ErrorMessage, "%s: %s", GS(MSG_DELETE_FILE_FAILED), FileName);
-		DisplayError(GS(MSG_DELETE_FILE_FAILED));
+	if (MessageBox(NULL, GS(MSG_CONFIRMATION_UNINSTALL), AppName, MB_OKCANCEL | MB_ICONEXCLAMATION | MB_SETFOREGROUND) ==  IDOK) {
+		// Delete cache file
+		GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
+		_splitpath(path_buffer, drive, dir, fname, ext);
+		sprintf(FileName, "%s%s%s", drive, dir, CacheFileName);
+		if (remove(FileName) != 0) {
+			sprintf(ErrorMessage, "%s: %s", GS(MSG_DELETE_FILE_FAILED), FileName);
+			DisplayError(ErrorMessage);
+		}
+
+		// Delete registry keys recursive
+		sprintf(RegistryKey, "Software\\N64 Emulation\\%s", AppName);
+		if (!RegDelnode(HKEY_CURRENT_USER, RegistryKey)) {
+			DisplayError(GS(MSG_DELETE_SETTINGS_FAILED));
+		}
+
+		MessageBox(NULL, GS(MSG_RESTART_APPLICATION), AppName, MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
+
+		ForceClose = TRUE;
+		DestroyWindow(hWnd);
 	}
 
-	// Delete registry keys recursive
-	sprintf(RegistryKey, "Software\\N64 Emulation\\%s", AppName);
-	if (!RegDelnode(HKEY_CURRENT_USER, RegistryKey)) {
-		DisplayError(GS(MSG_DELETE_SETTINGS_FAILED));
-	}
-
-	MessageBox(NULL, GS(MSG_RESTART_APPLICATION), GS(MSG_MSGBOX_TITLE), MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
 }
 
 
@@ -2205,7 +2212,8 @@ void ShutdownApplication ( void ) {
 	if (TargetInfo != NULL) { VirtualFree(TargetInfo,0,MEM_RELEASE); }
 	FreeRomBrowser();
 	ShutdownPlugins();
-	SaveRecentFiles();
+	if (!ForceClose)
+		SaveRecentFiles();
 	Release_Memory();
 	ResetTimerList();
 #if (!defined(EXTERNAL_RELEASE))

@@ -109,21 +109,21 @@ char * GS               ( int StringID );
 // Added an extra 10 save state slots with 10-19 on Shift+0-9 (Gent)
 
 #define MENU_SLOT_10			200
-#define MENU_SLOT_11			2048
-#define MENU_SLOT_12			2049
-#define MENU_SLOT_13			2050
-#define MENU_SLOT_14			2051
-#define MENU_SLOT_15			2052
-#define MENU_SLOT_16			2053
-#define MENU_SLOT_17			2054
-#define MENU_SLOT_18			2055
-#define MENU_SLOT_19			2056
+#define MENU_SLOT_11			201
+#define MENU_SLOT_12			202
+#define MENU_SLOT_13			203
+#define MENU_SLOT_14			204
+#define MENU_SLOT_15			205
+#define MENU_SLOT_16			206
+#define MENU_SLOT_17			207
+#define MENU_SLOT_18			209
+#define MENU_SLOT_19			210
 //Pop up Menu
-#define POPUP_PLAY				210
-#define POPUP_INFO				211
-#define POPUP_SETTINGS			212
-#define POPUP_CHEATS			213
-#define POPUP_GAMEINFO			214
+#define POPUP_PLAY				220
+#define POPUP_INFO				221
+#define POPUP_SETTINGS			222
+#define POPUP_CHEATS			223
+#define POPUP_GAMEINFO			224
 
 // Menu Descriptions
 #define MENUDES_OPEN			250
@@ -430,7 +430,8 @@ char * GS               ( int StringID );
 #define MSG_CHEAT_NAME_IN_USE   2043
 #define MSG_MAX_CHEATS          2044
 #define MSG_NO_GAME_INFORMATION 2045
-#define MSG_RESTART_APPLICATION  2046
+#define MSG_RESTART_APPLICATION 2046
 #define MSG_DELETE_SETTINGS_FAILED 2047
-#define MSG_DELETE_FILE_FAILED 2048
+#define MSG_DELETE_FILE_FAILED  2048
+#define MSG_CONFIRMATION_UNINSTALL 2049
 
