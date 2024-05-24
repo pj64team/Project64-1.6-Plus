@@ -787,8 +787,10 @@ void RomList_SortList (void) {
 
 	for (count = 0; count < NoOfSortKeys; count ++) {
 		SortField = GetSortField(count);
-		if (_stricmp(SortField, "") == 0) {
+		if ((_stricmp(SortField, "") == 0) && (count==0)) {
 			index = DefaultSortField;
+			SetSortField(RomBrowserFields[index].Name, count);
+			SetSortAscending(TRUE, count);
 		}
 		else {
 			for (index = 0; index < NoOfFields; index++) {
