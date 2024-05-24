@@ -170,7 +170,10 @@ char * GS               ( int StringID );
 //Rom Browser Fields
 #define RB_FILENAME				300
 #define RB_INTERNALNAME			301
-#define RB_GOODNAME				302
+
+// This changes define RB_GOODNAME	 to RB_GAMENAME	
+
+#define RB_GAMENAME				302
 #define RB_STATUS				303
 #define RB_ROMSIZE				304
 #define RB_NOTES_CORE			305
@@ -193,7 +196,7 @@ char * GS               ( int StringID );
 #define SELECT_ROM_DIR			320
 
 //Messages
-#define RB_NOT_GOOD_FILE		340
+#define RB_NOT_IN_RDB		340
 
 /*********************************************************************************
 * Options                                                                        *
