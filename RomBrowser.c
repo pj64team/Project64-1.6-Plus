@@ -326,7 +326,10 @@ void LoadRomList (void) {
 	}
 	FreeRomBrowser();
 	ReadFile(hFile,&ItemList.ListCount,sizeof(ItemList.ListCount),&dwRead,NULL);
-	if(ItemList.ListCount == 0) return;
+	if (ItemList.ListCount == 0) {
+		CloseHandle(hFile);
+		return;
+	}
 	ItemList.List = (ROM_INFO *)malloc(ItemList.ListCount * sizeof(ROM_INFO));
 	ItemList.ListAlloc = ItemList.ListCount;
 	ReadFile(hFile,ItemList.List,sizeof(ROM_INFO) * ItemList.ListCount,&dwRead,NULL);
