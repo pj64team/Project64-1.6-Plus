@@ -1570,7 +1570,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			}
 		}
 		break;
-		case ID_HELP_DISCORD: ShellExecute(NULL, "open", "https://discord.gg/hDVYaM34Fp", NULL, NULL, SW_SHOWMAXIMIZED); break;
+		case ID_HELP_DISCORD: ShellExecute(NULL, "open", "https://discord.gg/TnFmnW6WQE", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_GITHUB: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_UNINSTALL: UninstallApplication(hWnd); break;
 		case ID_HELP_ABOUT: AboutBox(); break;
