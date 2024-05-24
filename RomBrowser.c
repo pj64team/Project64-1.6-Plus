@@ -171,6 +171,7 @@ ROMBROWSER_FIELDS RomBrowserFields[] =
 HWND hRomList= NULL;
 int NoOfFields = sizeof(RomBrowserFields) / sizeof(RomBrowserFields[0]),
  FieldType[(sizeof(RomBrowserFields) / sizeof(RomBrowserFields[0])) + 1];
+int DefaultSortField = 2;
 
 ITEM_LIST ItemList = {0,0,NULL};
 COLOR_CACHE ColorCache;
@@ -786,8 +787,13 @@ void RomList_SortList (void) {
 
 	for (count = 0; count < NoOfSortKeys; count ++) {
 		SortField = GetSortField(count);
-		for (index = 0; index < NoOfFields; index++) {
-			if (_stricmp(RomBrowserFields[index].Name,SortField) == 0) { break; }
+		if (_stricmp(SortField, "") == 0) {
+			index = DefaultSortField;
+		}
+		else {
+			for (index = 0; index < NoOfFields; index++) {
+				if (_stricmp(RomBrowserFields[index].Name, SortField) == 0) { break; }
+			}
 		}
 		SortFields.Key[count] = index;
 		SortFields.KeyAscend[count] = IsSortAscending(count);
