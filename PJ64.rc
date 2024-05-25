@@ -398,31 +398,36 @@ BEGIN
     PUSHBUTTON      "Down",IDC_DOWN,186,166,36,11
 END
 
-IDD_About_Ini DIALOG 0, 0, 185, 250
+IDD_About_Ini DIALOGEX 0, 0, 363, 185
 STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About INI Files"
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "ROM Database (.RDB)",IDC_RDB,5,46,175,59
-    LTEXT           "Author:",IDC_RDB_AUTHOR,12,57,166,8
-    LTEXT           "Version:",IDC_RDB_VERSION,12,67,166,8
-    LTEXT           "Date:",IDC_RDB_DATE,12,76,166,8
-    PUSHBUTTON      "visit home page",IDC_RDB_HOME,12,87,163,13
-    GROUPBOX        "Cheat Code file (.CHT)",IDC_CHT,6,107,175,59
-    LTEXT           "Author:",IDC_CHT_AUTHOR,13,118,166,8
-    LTEXT           "Version:",IDC_CHT_VERSION,13,128,166,8
-    LTEXT           "Date:",IDC_CHT_DATE,14,137,166,8
-    PUSHBUTTON      "visit home page",IDC_CHT_HOME,13,148,163,13
-    GROUPBOX        " Current Language ",IDC_LAN,5,3,175,42
-    LTEXT           "Author:",IDC_LAN_AUTHOR,13,14,166,8
-    LTEXT           "Version:",IDC_LAN_VERSION,13,24,166,8
-    LTEXT           "Date:",IDC_LAN_DATE,13,34,166,8
-    GROUPBOX        "Extended Rom Info (.RDX)",IDC_RDX,6,168,175,59
-    LTEXT           "Author:",IDC_RDX_AUTHOR,13,178,166,8
-    LTEXT           "Version:",IDC_RDX_VERSION,13,188,166,8
-    PUSHBUTTON      "visit home page",IDC_RDX_HOME,15,210,163,13
-    LTEXT           "Date:",IDC_RDX_DATE,13,198,166,8
-    PUSHBUTTON      "OK",IDOK,134,230,47,13
+GROUPBOX        "ROM Database (.RDB)", IDC_RDB, 5, 44, 175, 59
+LTEXT           "Author:", IDC_RDB_AUTHOR, 14, 55, 166, 8
+LTEXT           "Version:", IDC_RDB_VERSION, 14, 65, 166, 8
+LTEXT           "Date:", IDC_RDB_DATE, 14, 74, 166, 8
+PUSHBUTTON      "visit home page", IDC_RDB_HOME, 12, 85, 163, 13
+GROUPBOX        "Cheat Code file (.CHT)", IDC_CHT, 6, 105, 174, 59
+LTEXT           "Author:", IDC_CHT_AUTHOR, 13, 116, 166, 8
+LTEXT           "Version:", IDC_CHT_VERSION, 13, 126, 166, 8
+LTEXT           "Date:", IDC_CHT_DATE, 14, 135, 166, 8
+PUSHBUTTON      "visit home page", IDC_CHT_HOME, 13, 146, 163, 13
+LTEXT           "Author:", IDC_LAN_AUTHOR, 13, 11, 166, 8
+LTEXT           "Version:", IDC_LAN_VERSION, 13, 21, 166, 8
+LTEXT           "Date:", IDC_LAN_DATE, 13, 31, 166, 8
+PUSHBUTTON      "OK", IDOK, 308, 165, 47, 13
+GROUPBOX        "Extended Rom Info (.RDX)", IDC_RDX, 179, 105, 175, 59
+LTEXT           "Version:", IDC_RDX_VERSION, 186, 125, 166, 8
+PUSHBUTTON      "visit home page", IDC_RDX_HOME, 186, 147, 163, 13
+LTEXT           "Date:", IDC_RDX_DATE, 186, 135, 166, 8
+LTEXT           "Author:", IDC_RDX_AUTHOR, 186, 115, 166, 8
+GROUPBOX        "Jabo Ini Information (.INI)", IDC_JINI, 180, 44, 175, 59
+LTEXT           "Version:", IDC_JINI_VERSION, 188, 64, 166, 8
+PUSHBUTTON      "visit home page", IDC_JINI_HOME, 188, 85, 163, 13
+LTEXT           "Date:", IDC_JINI_DATE, 188, 74, 166, 8
+LTEXT           "Author:", IDC_JINI_AUTHOR, 188, 53, 166, 8
+GROUPBOX        " Current Language ", IDC_LAN, 7, 0, 348, 42
 END
 
 IDD_Settings_General DIALOG 0, 0, 231, 206

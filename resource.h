@@ -205,6 +205,12 @@
 #define IDC_CHEAT_CODES                 1178
 #define IDC_STATE                       1179
 #define IDC_CHEATSFRAME                 1188
+#define IDC_JINI                        1184
+#define IDC_JINI_VERSION                1185
+#define IDC_JINI_HOME                   1186
+#define IDC_JINI_DATE                   1187
+#define IDC_CHEATSFRAME                 1188
+#define IDC_JINI_AUTHOR                 1188
 #define IDC_ADDCHEATSFRAME              1189
 #define IDC_CORE_DEFAULTS               1190
 #define IDC_CHEAT_OPTIONS               1190

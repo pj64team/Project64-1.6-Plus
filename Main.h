@@ -61,6 +61,7 @@ extern "C" {
 #define CheatDevIniName				"Project64.chtdev"
 #define LangFileName				"Project64.lng"
 #define CacheFileName				"Project64.cache"
+#define JIniName					"Jabo.ini"
 #define Default_AdvancedBlockLink	TRUE
 #define Default_AutoStart			TRUE
 #define Default_AutoSleep			TRUE
@@ -153,6 +154,7 @@ void ChangeWinSize        ( HWND hWnd, long width, long height, HWND hStatusBar 
 void  DisplayFPS          ( void );
 char* GetExtIniFileName   ( void );
 char* GetIniFileName      ( void );
+char* GetJIniFileName     (void);
 char* GetLangFileName     ( void );
 char* GetNotesIniFileName ( void );
 int   GetStoredWinPos     ( char * WinName, DWORD * X, DWORD * Y );

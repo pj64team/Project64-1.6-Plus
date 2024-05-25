@@ -28,6 +28,7 @@ LANG_STR DefaultString[] = {
 	{ INI_CURRENT_RDB,     "ROM Database (.RDB)"     },
 	{ INI_CURRENT_CHT,     "Cheat Code file (.CHT)"  },
 	{ INI_CURRENT_RDX,     "Extended Rom Info (.RDX)"},
+	{ INI_CURRENT_JINI,    "Jabo Ini Info (.INI)" },
 	{ INI_TITLE,           "About INI Files"         },
 
 /*********************************************************************************
