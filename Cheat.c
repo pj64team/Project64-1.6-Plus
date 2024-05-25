@@ -1921,6 +1921,27 @@ void LoadPermCheats (void)
 	if (String) { free(String); }
 }
 
+void LoadJaboCheats(void)  // Jabo Video PermCheat Specific (Gent)
+{
+	LPSTR IniFileName;
+	char* String = NULL;
+	char Identifier[100];
+	int count;
+
+	IniFileName = GetJIniFileName();
+	sprintf(Identifier, "%08X-%08X-C:%X", *(DWORD*)(&RomHeader[0x10]), *(DWORD*)(&RomHeader[0x14]), RomHeader[0x3D]);
+
+	for (count = 0; count < MaxCheats; count++)
+	{
+		char CheatName[300];
+
+		sprintf(CheatName, "Cheat%d", count);
+		_GetPrivateProfileString2(Identifier, CheatName, "", &String, IniFileName);
+		if (strlen(String) == 0) { break; }
+		LoadCode(NULL, String);
+	}
+	if (String) { free(String); }
+}
 
 /********************************************************************************************
   LoadCheats
@@ -1960,6 +1981,28 @@ void LoadCheats (void) {
 		//}		
 		if (!CheatActive (CheatName)) { continue; }
 		ReadPos = strrchr(String,'"') + 2;
+		LoadCode(CheatName, ReadPos);
+	}
+
+	LoadJaboCheats();
+
+	for (count = 0; count < MaxCheats; count++) {
+		char* ReadPos;
+
+		sprintf(CheatName, "Cheat%d", count);
+		_GetPrivateProfileString2(Identifier, CheatName, "", &String, IniFileName);
+		if (strlen(String) == 0) { break; }
+		if (strchr(String, '"') == NULL) { continue; }
+		len = strrchr(String, '"') - strchr(String, '"') - 1;
+		if ((int)len < 1) { continue; }
+		memset(CheatName, 0, sizeof(CheatName));
+		strncpy(CheatName, strchr(String, '"') + 1, len);
+		if (strlen(CheatName) == 0) { continue; }
+		//if (strrchr(CheatName,'\\') != NULL) {
+		//	strcpy(CheatName,strrchr(CheatName,'\\') + 1);
+		//}		
+		if (!CheatActive(CheatName)) { continue; }
+		ReadPos = strrchr(String, '"') + 2;
 		LoadCode(CheatName, ReadPos);
 	}
 	if (String) { free(String); }

@@ -26,6 +26,7 @@ char * GS               ( int StringID );
 #define INI_CURRENT_RDB         10
 #define INI_CURRENT_CHT         11
 #define INI_CURRENT_RDX         12
+#define INI_CURRENT_JINI        13
 
 //About INI title
 #define INI_TITLE               20

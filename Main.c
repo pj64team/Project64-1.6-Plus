@@ -76,7 +76,7 @@ void AboutIniBox (void) {
 }
 
 LRESULT CALLBACK AboutIniBoxProc (HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam) {
-	static char RDBHomePage[300], CHTHomePage[300], RDXHomePage[300];
+	static char RDBHomePage[300], CHTHomePage[300], RDXHomePage[300], JINIHomePage[300];
 
 	switch (uMsg) {
 	case WM_INITDIALOG:
@@ -174,6 +174,31 @@ LRESULT CALLBACK AboutIniBoxProc (HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lP
 			if (strlen(RDXHomePage) == 0) {
 				EnableWindow(GetDlgItem(hDlg,IDC_RDX_HOME),FALSE);
 			}
+
+			//Jabo Ini Info
+			SetDlgItemText(hDlg, IDC_JINI, GS(INI_CURRENT_JINI));
+			IniFile = GetJIniFileName();
+			_GetPrivateProfileString("Meta", "Author", "", String, sizeof(String), IniFile);
+			if (strlen(String) == 0) {
+				EnableWindow(GetDlgItem(hDlg, IDC_JINI), FALSE);
+				EnableWindow(GetDlgItem(hDlg, IDC_JINI_AUTHOR), FALSE);
+				EnableWindow(GetDlgItem(hDlg, IDC_JINI_VERSION), FALSE);
+				EnableWindow(GetDlgItem(hDlg, IDC_JINI_DATE), FALSE);
+				EnableWindow(GetDlgItem(hDlg, IDC_JINI_HOME), FALSE);
+			}
+			sprintf(String2, "%s: %s", GS(INI_AUTHOR), String);
+			SetDlgItemText(hDlg, IDC_JINI_AUTHOR, String2);
+			_GetPrivateProfileString("Meta", "Version", "", String, sizeof(String), IniFile);
+			sprintf(String2, "%s: %s", GS(INI_VERSION), String);
+			SetDlgItemText(hDlg, IDC_JINI_VERSION, String2);
+			_GetPrivateProfileString("Meta", "Date", "", String, sizeof(String), IniFile);
+			sprintf(String2, "%s: %s", GS(INI_DATE), String);
+			SetDlgItemText(hDlg, IDC_JINI_DATE, String2);
+			_GetPrivateProfileString("Meta", "Homepage", "", JINIHomePage, sizeof(CHTHomePage), IniFile);
+			SetDlgItemText(hDlg, IDC_JINI_HOME, GS(INI_HOMEPAGE));
+			if (strlen(JINIHomePage) == 0) {
+				EnableWindow(GetDlgItem(hDlg, IDC_JINI_HOME), FALSE);
+			}
 		}
 		break;
 	case WM_COMMAND: {
@@ -182,6 +207,8 @@ LRESULT CALLBACK AboutIniBoxProc (HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lP
 			case IDC_RDB_HOME: sprintf(String, "https://%s", RDBHomePage); ShellExecute(NULL,"open",String,NULL,NULL,SW_SHOWNORMAL); break;
 			case IDC_CHT_HOME: sprintf(String, "https://%s", CHTHomePage); ShellExecute(NULL,"open",String,NULL,NULL,SW_SHOWNORMAL); break;
 			case IDC_RDX_HOME: sprintf(String, "https://%s", RDXHomePage); ShellExecute(NULL,"open",String,NULL,NULL,SW_SHOWNORMAL); break;
+			case IDC_JINI_HOME: sprintf(String, "https://%s", JINIHomePage); ShellExecute(NULL, "open", String, NULL, NULL, SW_SHOWNORMAL); break;
+
 			case IDOK:
 			case IDCANCEL:
 				EndDialog(hDlg,0);
@@ -400,6 +427,16 @@ char * GetExtIniFileName(void) {
 	GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
 	_splitpath( path_buffer, drive, dir, fname, ext );
 	sprintf(IniFileName,"%s%s%s",drive,dir,ExtIniName);
+	return IniFileName;
+}
+char* GetJIniFileName(void) {
+	char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR];
+	char fname[_MAX_FNAME], ext[_MAX_EXT];
+	static char IniFileName[_MAX_PATH];
+
+	GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
+	_splitpath(path_buffer, drive, dir, fname, ext);
+	sprintf(IniFileName, "%s%sConfig\\%s", drive, dir, JIniName);
 	return IniFileName;
 }
 
