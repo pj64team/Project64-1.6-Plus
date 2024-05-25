@@ -775,7 +775,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			if (!ManualPaused && (CPU_Paused || CPU_Action.Pause)) { PauseCpu(); break; }
 		}
 		if (!RomListVisible() || (RomListVisible() && !IsRomBrowserMaximized())) {
-			StoreCurrentWinPos( RomListVisible()?"Main.RomList":"Main", hWnd );
+			StoreCurrentWinPos("Main", hWnd );
 		}
 		break;
 	case WM_SIZE:
