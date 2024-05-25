@@ -1043,7 +1043,7 @@ BOOL CALLBACK RomSettingsProc (HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lPara
 			
 			if (strlen(RomName) == 0) { break; }
 			sprintf(Identifier,"%08X-%08X-C:%X",*(DWORD *)(&RomHeader[0x10]),*(DWORD *)(&RomHeader[0x14]),RomHeader[0x3D]);
-			_WritePrivateProfileString(Identifier,"Internal Name",RomName,NotesIniFileName);
+			_WritePrivateProfileString(Identifier, "Game Name", RomName, NotesIniFileName);
 			GetDlgItemText(hDlg,IDC_NOTES,String,sizeof(String));
 			_WritePrivateProfileString(Identifier,"Note",String,NotesIniFileName);
 
