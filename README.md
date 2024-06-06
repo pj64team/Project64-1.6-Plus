@@ -78,7 +78,6 @@ Contributors are always welcome!
 - Icepir8 - Contributor
 - Nekokabu - Contributor
 - Hacktarux - Contributor
-- Kimbjo - Contributor
 - parasyte - Contributor
 
 
