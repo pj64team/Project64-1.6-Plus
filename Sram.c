@@ -36,13 +36,28 @@ void CloseSram (void) {
 		hSramFile = NULL;
 	}
 }
-
-BOOL LoadSram (void) {
+  
+/*BOOL LoadSram (void) {
 	char File[255], Directory[255];
 	LPVOID lpMsgBuf;
 
 	GetAutoSaveDir(Directory);
-	sprintf(File,"%s%s.sra",Directory,RomName);
+	sprintf(File,"%s%s.sra",Directory,RomName);*/
+	
+	// This fixes the pop-up error message (Icepir8)
+  
+  BOOL LoadSram (void) {
+  int i = 0;
+  char File[255], Directory[255];
+  LPVOID lpMsgBuf;
+
+  GetAutoSaveDir(Directory);
+  sprintf(File,"%s%s.sra",Directory,RomName);
+  for(;File[i] != 0;i++)
+  {
+    if(File[i] == '*' || File[i]== ';') 
+      File[i] = '_';
+  }
 	
 	hSramFile = CreateFile(File,GENERIC_WRITE | GENERIC_READ, FILE_SHARE_READ,NULL,OPEN_ALWAYS,
 		FILE_ATTRIBUTE_NORMAL | FILE_FLAG_RANDOM_ACCESS, NULL);
