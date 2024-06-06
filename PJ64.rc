@@ -825,7 +825,8 @@ BEGIN
         END
         MENUITEM SEPARATOR
         MENUITEM "Cheats...\tCtrl+C",           ID_OPTIONS_CHEATS, GRAYED
-        MENUITEM "Cheat Search",                ID_SYSTEM_CHEATSEARCH, GRAYED
+       //Cheat search crashes on first scan so disabling for now (Gent)
+        //MENUITEM "Cheat Search",                ID_SYSTEM_CHEATSEARCH, GRAYED
         MENUITEM "GS Button\tF9",               ID_SYSTEM_GSBUTTON, GRAYED
     END
     POPUP "&Options"

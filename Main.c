@@ -1267,7 +1267,8 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 					break;
 			
 			/* Witten */
-		case ID_SYSTEM_CHEATSEARCH: Show_CheatSearchDlg (hWnd); break;
+		//Cheat search crashes on first scan so disabling for now (Gent)
+		//case ID_SYSTEM_CHEATSEARCH: Show_CheatSearchDlg (hWnd); break;
 		/* Witten */
 		case ID_SYSTEM_GSBUTTON: ApplyGSButton(); break;
 		case ID_OPTIONS_FULLSCREEN:
@@ -2030,7 +2031,8 @@ void SetupMenu ( HWND hWnd ) {
 	EnableMenuItem(hMenu,ID_CPU_PAUSE,State|MF_BYCOMMAND);
 	EnableMenuItem(hMenu,ID_OPTIONS_ALWAYSONTOP,State|MF_BYCOMMAND);
 	EnableMenuItem(hMenu,ID_OPTIONS_CHEATS,State|MF_BYCOMMAND);
-	EnableMenuItem(hMenu,ID_SYSTEM_CHEATSEARCH,State|MF_BYCOMMAND);
+	//Cheat search crashes on first scan so disabling for now (Gent)
+	//EnableMenuItem(hMenu,ID_SYSTEM_CHEATSEARCH,State|MF_BYCOMMAND);
 	if (CPURunning && CaptureScreen != NULL) {
 		EnableMenuItem(hMenu,ID_SYSTEM_GENERATEBITMAP,MFS_ENABLED|MF_BYCOMMAND);
 	} else {
