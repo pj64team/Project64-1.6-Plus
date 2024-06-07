@@ -1776,7 +1776,10 @@ char * GetCheatIniFileName(void) {
 
 	GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
 	_splitpath( path_buffer, drive, dir, fname, ext );
-	sprintf(IniFileName,"%s%s%s",drive,dir,CheatIniName);
+
+	// Moved CHT out of root and into the Config Folder (Gent)
+
+	sprintf(IniFileName,"%s%sConfig\\%s",drive,dir,CheatIniName);
 	return IniFileName;
 }
 

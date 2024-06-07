@@ -426,7 +426,10 @@ char * GetExtIniFileName(void) {
 
 	GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
 	_splitpath( path_buffer, drive, dir, fname, ext );
-	sprintf(IniFileName,"%s%s%s",drive,dir,ExtIniName);
+
+	// Moved RDX out of root and into the Config Folder (Gent)
+
+	sprintf(IniFileName,"%s%sConfig\\%s",drive,dir,ExtIniName);
 	return IniFileName;
 }
 char* GetJIniFileName(void) {
@@ -447,7 +450,10 @@ char * GetIniFileName(void) {
 
 	GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
 	_splitpath( path_buffer, drive, dir, fname, ext );
-	sprintf(IniFileName,"%s%s%s",drive,dir,IniName);
+
+	// Moved RDB out of root and into the Config Folder (Gent)
+
+	sprintf(IniFileName,"%s%sConfig\\%s",drive,dir,IniName);
 	return IniFileName;
 }
 
@@ -469,7 +475,10 @@ char * GetNotesIniFileName(void) {
 
 	GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
 	_splitpath( path_buffer, drive, dir, fname, ext );
-	sprintf(IniFileName,"%s%s%s",drive,dir,NotesIniName);
+
+	// Moved RDN out of root and into the Config Folder (Gent)
+
+	sprintf(IniFileName,"%s%sConfig\\%s",drive,dir,NotesIniName);
 	return IniFileName;
 }
 
