@@ -17,7 +17,7 @@
 // Note that Project64 1.6 Plus automatically prefixes "http://"
 
 Author=PJ64/LegacyTeam
-Date=7th June 2024 Version: 2
+Date=8th June 2024 Version: 1
 Homepage=github.com/pj64team/Project64-1.6-Plus
 Version=1.0
 
@@ -35,13 +35,11 @@ Version=1.0
 [9C961069-F5EA488D-C:4A]
 Name=64 Oozumou (J)
 Cheat0="Player 1 Health",8110CF68 ????
-Cheat0_N=Health Note
-Cheat0_O=Health
+Cheat0_N=If you select the Low option, It will give your opponent an easy win over over you
+Cheat0_O=$0000 Max,$4220 Low
 Cheat1="Player 2 Health",8110CF6C ????
-Cheat1_N=Health Note
-Cheat1_O=Health
-Health=$0000 Max,$4220 Low
-Health Note=If you select the Low option, It will give your opponent an easy win over over you
+Cheat1_N=If you select the Low option, It will give your opponent an easy win over over youuyi
+Cheat1_O=$0000 Max,$4220 Low
 
 //----
 
@@ -204,7 +202,7 @@ Cheat14="Level Select",89389C90 ????,89389C92 0000
 Cheat14_N=You must use this code on a saved game, because the intro to the first level will mess up the game. Now select the saved game, and hold down the GS button until the level loads. Some of the boss stages will not let you fight the boss unless you re-enter the area. Also, with the part of stage modifier, the second code modifies the part of the level that you are in, and 0000 is the level's start.
 Cheat14_O=$0000 Forest of Silence,$0002 Castle Wall,$0003 Villa,$0004 Inside Villa,$0006 Garden Maze,$0007 Tunnel,$0008 Underground Waterway,$0009 Castle Center,$0010 Tower of Execution,$0011 - Tower of Sorcery,$0012 - Tower of Science,$0013 - Duel Tower,$0014 - Fight With Death/Actrise,$0015 - Castle Keep,$0016 - Intro (Glitch),$0017 - Clock Tower,$0018 - Final Dracula,$001A - Fight With Maze Boss,$001B - Room of Clocks
 Cheat15="Switch From",80389C3D 00??
-Cheat15_N=$00 Carrie to Reindhart,$01 Reindhart to Carrie Note
+Cheat15_N=This Switch From Cheat lets you switch characters on a saved game For example, if you are Reindhart and you want to be Carrie in the middle of your game save it and then enable this Cheat and press F1. when you start your saved game back up you'll be Carrie instead of Reindhart.
 Cheat15_O=$00 Carrie to Reindhart,$01 Reindhart to Carrie
 
 //----
@@ -458,7 +456,7 @@ Cheat10_N=With Infinite Energy On Avoid Picking up the ! Or ? Stop Energy Honey 
 Cheat11="Infinite\Energy\T-Rex Baby",80115329 0063,8011593F 000A,80115940 000A
 Cheat11_N=With Infinite Energy On Avoid Picking up the ! Or ? Stop Energy Honey Combs or you will be stuck.
 Cheat12="Play As",D0080845 0020,801211FC 00??
-Cheat12_N=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy Note
+Cheat12_N=To use this cheat, put the cheat on, then press L as you walk through a door to become that chosen character
 Cheat12_O=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy
 Cheat13="Instant Warp Options",D1080844 0000,811217F0 ????,801217F3 0001
 Cheat13_N=To use this cheat, put the cheat on, then walk through a door to arrive at that chosen destination
@@ -549,10 +547,10 @@ Cheat15_N=Anytime, anywhere, press Z and B at the same time. You'll get the stan
 Cheat16="Quick Chest Access",D10DBE8C 0005,810E4EA8 8007,D10DBE8C 0005,810E4EAA 0814
 Cheat16_N=With this code, all you have to do to access the chest, is hold L and Press Start.
 Cheat17="[Saves Always 0]",800E50D1 0000
-Cheat17_N=No matter how many saves you do ithis makes the game think you Have\not saved.
+Cheat17_N=No matter how many saves you do, this makes the game think you Have\not saved.
 Cheat18="[Resident Evil 2 Mode]",810DD66E 00??
 Cheat18_N=Note: With this enabled the game will become Bio Hazard 2, the Japanese version of Resident Evil 2! This means all text (except the text in files) is in Japanese, and all cinemas have Japanese subtitles. Note that the title screen will still say Resident Evil 2 Do not use at the same time as Play Extra Mission
-Cheat18_O=Biohazard 2 Mode=$40 On,$00 Off
+Cheat18_O=$40 On,$00 Off
 Cheat19="Have All Guns In  Chest",50000E04 0100,810E5474 05FF
 Cheat20="Have All Main Items In Chest",810E54AC 17FF,810E54B0 1EFF,810E54B4 1FFF,810E54B8 23FF,50000404 0100,810E54BC 25FF,810E54CC 2AFF,810E54D0 2BFF,50000304 0100,810E54D4 2EFF,50000F04 0100,810E54E0 32FF,810E551C 43FF,50000504 0100,810E5520 47FF,50000404 0100,810E5534 53FF,50000C04 0100,810E5544 58FF
 Cheat20_N=If you want items that are not listed in the Chest, then just use the Have Item On Slot Select code to have what you desire.
@@ -937,7 +935,7 @@ Cheat2="Infinite\99 Lives",810EB4C0 0005
 Cheat3="Have\[All Keys]",810EB150 0101,800EB152 0001
 Cheat4="Have\Max Bonus",810EB4BA 270F
 Cheat5="Level Select",8110FE32 00??
-Cheat5_O=[BuckBumble]Level Select
+Cheat5_O=$01 Mission 1 Shock Strike,$02 Mission 2 Radar Run,$03 Mission 3 Return Fire,$04 Mission 4 The Sonar Tower,$05 Mission 5 Big Blips,$06 Mission 6 Short Fuse,$07 Mission 7 Outpost,$08 Mission 8 Sewer,$09 Mission 9 Clean Up,$0A Mission 10 Scramble Pylon,$0B Mission 11 Herding Research,$0C Mission 12 The Extractor,$0D Mission 13 Nuke Tower,$0E Mission 14 Mucus Storage,$0F Mission 15 Depot Attack,$10 Boss Mission Destroy Carrier Level,$11 Mission 16 Sterilization,$12 Mission 17 Scorpion Killer,$13 Mission 18 Core Nuke,$14 Mission 19 Gate Keeper,$15 Queen Mission
 Cheat6="Have\[High Score]",810EB13E FFFF
 Cheat7="Level Select Menu",8110D1EA BF60
 
@@ -991,13 +989,13 @@ Cheat3="Always Win Race Heats",802133B6 0001,80377B60 0001,8021455F 0001,8038142
 [26CD0F54-53EBEFE0-C:4A]
 Name=Choro Q 64 II - Hacha Mecha Grand Prix Race (J)
 Cheat0="Sound Select\Music Mod",8014A558 00??
-Cheat0_O=Off-High
+Cheat0_O=$00 Off,$0A Medium,$10 High
 Cheat1="Sound Select\SFX Mod",8014A559 00??
-Cheat1_O=Off-High
+Cheat1_O=$00 Off,$0A Medium,$10 High
 Cheat2="Sound Select\Sound Mod",8014A55A 00??
 Cheat2_O=$00 Stereo,$01 Mono
 Cheat3="Always First With 1 Lap to Race",800F7A31 0003
-Cheat4="Infinite\Blue Pointa",801F92A7 0009
+Cheat4="Infinite\Blue Points",801F92A7 0009
 Cheat5="Infinite\Red Weapons Use",801F92A5 0009
 Cheat6="Have\Max Gear Box Upgrades",80165C00 00FF,80165C01 00FF,80165C02 007F
 Cheat7="Have\Max Car Upgrade",80165BF8 00FF,80165BF9 00FF,80165BFA 00FF,80165BFB 005F
@@ -1011,24 +1009,22 @@ Cheat13="Have\Max Roof Upgrades",81165C2A FFFF
 Cheat14="Have\Max Weapons Upgrades",81165C32 FFFF,80165C33 00FF
 Cheat15="Weapon Select",801F92A1 00??
 Cheat15_O=$00 Nothing,$01 Turbo Boost,$02 Invincible,$03 Red Spinning Fish?,$04 Wind Attack,$05 Smoke Bomb,$06 Tyre Buster Tacks,$07 Iron Beam Drop,$08 Cannon,$09 Freeze Bombs,$0A Lightening Cloud Attack,$0B Crafy Mine,$0C Rocket Launcher (Hangs?),$0D Hypno Spinning Birds,$0E 100 Ton Weight,$0F Bolt Launcher,$10 Blue Lazer Cloud
-Off-High=$00 Off,$0A Medium,$10 High
 
 //----
 
 [8ACE6683-3FBA426E-C:4A]
 Name=Chou Kuukan Nighter Pro Yakyuu King (J)
-Amount=$00 None,$01 One,$02 Two,$03 Three
+
 Cheat0="Score is\Player 1",80379192 00??
-Cheat0_O=Score
+Cheat0_O=$00 No Points,$63 99 Points
 Cheat1="Strikes amount is",8037919C 00??
-Cheat1_O=Amount
+Cheat1_O=$00 None,$01 One,$02 Two,$03 Three
 Cheat2="Ball amount is",8037919D 00??
-Cheat2_O=Amount
+Cheat2_O=$00 None,$01 One,$02 Two,$03 Three
 Cheat3="Out amount is",8037919E 00??
-Cheat3_O=Amount
+Cheat3_O=$00 None,$01 One,$02 Two,$03 Three
 Cheat4="Score is\Player 2",80379193 00??
-Cheat4_O=Score
-Score=$00 No Points,$63 99 Points
+Cheat4_O=$00 No Points,$63 99 Points
 
 //----
 
@@ -1857,7 +1853,7 @@ Cheat2_O=$00 No Points,$0A 10 Points,$14 20 Points,$28 40 Points,$3C 60 Points,$
 Cheat3="Options\Traveling",80141FA7 00??
 Cheat3_O=$00 2,$01 4,$02 6,$03 No
 Cheat4="Options\Goal Tending",80141FA8 00??
-Cheat4_O=[NBAInTheZone98]Opt0-3
+Cheat4_O=$00 2,$01 4,$02 6,$03 No
 Cheat5="No Shot Clock",8113E42E FFFF
 Cheat6="Create A Player\Max Field Goal",8013D5A8 0063
 Cheat7="Create A Player\Max 3 Point",8013D5A9 0063
@@ -1879,7 +1875,7 @@ Cheat18_O=$00 Yes,$01 No
 Cheat19="Options\Replay",8013AE78 00??
 Cheat19_O=$00 Yes,$01 No
 Cheat20="Options\Player Display",8013AE79 00??
-Cheat20_O=[NBAInTheZone98]Display
+Cheat20_O=$00 Name,$01 Number,$02 None
 Cheat21="Options\Camera View",8013AE7A 00??
 Cheat21_O=$00 1,$01 2,$02 3,$03 4,$04 5,$05 6,$06 7,$07 8,$08 9,$09 10
 Cheat22="Options\Out Of Bounds",80141FA0 00??
@@ -2058,7 +2054,7 @@ Cheat2="Infinite\Ammo",8120CF8A 0080,8120CF92 0010,8120CF9A 0708,8120CFA2 0018,8
 Cheat3="Have All\Normal Items",8120D720 FFFF,8120D722 FFFF,8120D724 FFFF,8120D726 FFFF
 Cheat4="Have All\Special Items",8120D71C FFFF,8120D71E FFFF
 Cheat5="Have All\Special Weapons",8120D710 FFFF
-Cheat5_N=Cheat43_O=These are Equipped With Roll
+Cheat5_N=These are Equipped With Roll
 Cheat6="Freeze Timer at 00:00",811C44C4 0000,811C44C6 0000
 Cheat7="Rapid Fire",8020CF83 0002
 Cheat8="Equipped Buster Parts\Slot 01",8020CED0 00??
@@ -2566,9 +2562,9 @@ Cheat6_O=$00 Off,$01 On
 Cheat7="Pit Stops\Single Race Mode",800C4F11 00??
 Cheat7_O=$00 Off,$01 On
 Cheat8="Weather\Championship",800C4F33 00??
-Cheat8_O=Weather
+Cheat8_O=$00 Dry,$01 Wet,$03 Night
 Cheat9="Weather\Single Race Mode",800C4F31 00??
-Cheat9_O=Weather
+Cheat9_O=$00 Dry,$01 Wet,$03 Night
 Cheat10="Track Direction\Championship",800C4EF3 00??
 Cheat10_O=$00 Normal,$01 Reverse
 Cheat11="Max Points",800C4F53 00FF
@@ -2577,7 +2573,6 @@ Cheat12="Access All Bonus Cars",80250E5F 0001,80250E63 0001
 Cheat13="Track Direction Unlocked (All Levels)",800B9AC1 0003
 Cheat14="Car Select",800C50B1 00??
 Cheat14_O=$00 Car 1,$01 Car 2,$02 Car 3,$03 Car 4,$04 Car 5,$05 Car 6,$06 Car 7,$07 Car 8,$08 Car 9,$09 Car 10,$0A Car 11,$0B Car 12,$0C Car 13,$0D Car 14,$0E Car 15,$0F Car 16,$10 Car 17,$11 Car 18
-Weather=$00 Dry,$01 Wet,$03 Night
 
 //----
 
@@ -3703,7 +3698,7 @@ Cheat7_O=$28 Moon's Tear,$29 Land Title Deed,$2A Swap Title Deed,$2B Mountain Ti
 Cheat8="Event Item\Modifier 3",801ED8A1 00??
 Cheat8_O=$28 Moon's Tear,$29 Land Title Deed,$2A Swap Title Deed,$2B Mountain Title Deed,$2C Ocean Title Deed,$2D Room Key,$2E Special Delivery To Mama,$2F Letter To Kafei,$30 Pendant Of Memories
 Cheat9="Have Item Modifier",801ED8A0 00??
-Cheat9_O=[ZeldaMM]$05 Japanese Flute?,$0B Japanese Item?,$10 Great Fairy's Sword,$11 Japanese Hookshot?,$31 Japanese Scroll?,$4A Japanese Bow?
+Cheat9_O=$05 Japanese Flute?,$0B Japanese Item?,$10 Great Fairy's Sword,$11 Japanese Hookshot?,$31 Japanese Scroll?,$4A Japanese Bow?
 Cheat10="Have Bottle\Modifier 1",801ED8A2 00??
 Cheat10_O=$12 Empty Bottle,$13 Red Potion,$14 Green Potion,$15 Blue Potion,$16 Fairy,$17 Deku Princess,$18 Milk,$19 Milk (1/2),$1A Fish,$1B Bug,$1C Blue Fire,$1D Poe,$1E Big Poe,$1F Spring Water,$20 Hot Spring Water,$21 Zora Egg,$22 Gold Dust,$23 Magical Mushroom,$24 Sea Horse,$25 Chateau Romani,$26 Japanese Bottle?,$27 Empty Japanese Bottle?
 Cheat11="Have Bottle\Modifier 2",801ED8A3 00??
@@ -3968,10 +3963,10 @@ Cheat9="In-Game Cheats\Big Head Mode",81067232 0001
 Cheat10="In-Game Cheats\Fat-Skinny Mode",8106723E 0001
 Cheat11="In-Game Cheats\Paperman Mode",8106723A 0001
 Cheat12="Play As\Player 1",8012CD73 00??
-Cheat12_N=$00 Angels,$01 Orioles,$02 Boston Red Sox,$03 Chicago White Sox,$04 Indians,$05 Detroit Tigers,$06 Royals,$07 Twins,$08 New York YAnkees,$09 Oakland Athletics,$0A Seattle Mariners,$0B Devil Rays,$0C Texas Rangers,$0D Toronto Blue Jays,$0E Diamondbacks,$0F Braves,$10 Chicago Cubs,$11 Cincinnati Reds,$12 Colorado Rockies,$13 Marlins,$14 Astros,$15 Dodgers,$16 Milwaukee Brewers,$17 Expos,$18 Mets,$19 Phillies,$1A Pittsburg Pirates,$1B St. Louis Cardinals,$1C Padres,$1D San Francisco Giants,$1E Al All Stars,$1F NL All Stars,$20 Free Agent (Glitches) Note
+Cheat12_N=Exhibition Mode Only
 Cheat12_O=$00 Angels,$01 Orioles,$02 Boston Red Sox,$03 Chicago White Sox,$04 Indians,$05 Detroit Tigers,$06 Royals,$07 Twins,$08 New York YAnkees,$09 Oakland Athletics,$0A Seattle Mariners,$0B Devil Rays,$0C Texas Rangers,$0D Toronto Blue Jays,$0E Diamondbacks,$0F Braves,$10 Chicago Cubs,$11 Cincinnati Reds,$12 Colorado Rockies,$13 Marlins,$14 Astros,$15 Dodgers,$16 Milwaukee Brewers,$17 Expos,$18 Mets,$19 Phillies,$1A Pittsburg Pirates,$1B St. Louis Cardinals,$1C Padres,$1D San Francisco Giants,$1E Al All Stars,$1F NL All Stars,$20 Free Agent (Glitches)
 Cheat13="Play As\Player 2",8012CD71 00??
-Cheat13_N=$00 Angels,$01 Orioles,$02 Boston Red Sox,$03 Chicago White Sox,$04 Indians,$05 Detroit Tigers,$06 Royals,$07 Twins,$08 New York YAnkees,$09 Oakland Athletics,$0A Seattle Mariners,$0B Devil Rays,$0C Texas Rangers,$0D Toronto Blue Jays,$0E Diamondbacks,$0F Braves,$10 Chicago Cubs,$11 Cincinnati Reds,$12 Colorado Rockies,$13 Marlins,$14 Astros,$15 Dodgers,$16 Milwaukee Brewers,$17 Expos,$18 Mets,$19 Phillies,$1A Pittsburg Pirates,$1B St. Louis Cardinals,$1C Padres,$1D San Francisco Giants,$1E Al All Stars,$1F NL All Stars,$20 Free Agent (Glitches) Note
+Cheat13_N=Exhibition Mode Only
 Cheat13_O=$00 Angels,$01 Orioles,$02 Boston Red Sox,$03 Chicago White Sox,$04 Indians,$05 Detroit Tigers,$06 Royals,$07 Twins,$08 New York YAnkees,$09 Oakland Athletics,$0A Seattle Mariners,$0B Devil Rays,$0C Texas Rangers,$0D Toronto Blue Jays,$0E Diamondbacks,$0F Braves,$10 Chicago Cubs,$11 Cincinnati Reds,$12 Colorado Rockies,$13 Marlins,$14 Astros,$15 Dodgers,$16 Milwaukee Brewers,$17 Expos,$18 Mets,$19 Phillies,$1A Pittsburg Pirates,$1B St. Louis Cardinals,$1C Padres,$1D San Francisco Giants,$1E Al All Stars,$1F NL All Stars,$20 Free Agent (Glitches)
 
 //----
@@ -3998,13 +3993,12 @@ Cheat0_O=$00 Lt. James Marshall "Woodstock",$01 Lt. John Lawless "Hardcore",$02 
 Cheat1="Helicopter Modifier",800B2534 00??
 Cheat1_O=$01 Huey,$02 Chinook (Hidden),$03 Super Stallion (Hidden),$04 Apache (Hidden)
 Cheat2="Always Play Level Modifier",800B254C 00??
-Cheat2_O=Level
+Cheat2_O=$00 Mission 1-Plastic Pandemonium,$01 Mission 2-Going Car-razy,$02 Mission 3-The Train That Could,$03 Mission 4-Tan Terror-Tory,$04 Mission 5-Bug Bath,$05 Mission 6-Uninvited Guests,$06 Mission 7-Ants In The Pants,$07 Mission 8-Saucer Attack,$08 Mission 9-The Heat is On,$09 Mission 10-The Melting Pot,$0A Mission 11-River Rapids Riot,$0B Mission 12-Nighttime Teddy,$0C Mission 13-Demolition Time,$0D Mission 14-Pick Up The Pieces,$0E Mission 15-Have\An Ice Day,$0F Mission 16-Plastro's Revenge,$10 Mission 17-Bug Hunt: Chew Chew Bug-B-Q,$11 Mission 18-Bug Hunt: Crispy Critters,$12 Mission 19-Flag-Nab-It: Fort Frenzy,$13 Mission 20-Flag-Nab-it: Freezer Burn,$14 Mission 21-Food Fight: Picnic Panic,$15 Mission 22-Food Fight: Cherry Surprise,$16 Mission 23-Rescue: Don't Feed The Crabs,$17 Mission 24-Rescue: Tide Pool Terror
 Cheat3="Start On Play Level Modifier",D00B254C 0000,800B254C 00??
-Cheat3_O=Level
+Cheat3_O=$00 Mission 1-Plastic Pandemonium,$01 Mission 2-Going Car-razy,$02 Mission 3-The Train That Could,$03 Mission 4-Tan Terror-Tory,$04 Mission 5-Bug Bath,$05 Mission 6-Uninvited Guests,$06 Mission 7-Ants In The Pants,$07 Mission 8-Saucer Attack,$08 Mission 9-The Heat is On,$09 Mission 10-The Melting Pot,$0A Mission 11-River Rapids Riot,$0B Mission 12-Nighttime Teddy,$0C Mission 13-Demolition Time,$0D Mission 14-Pick Up The Pieces,$0E Mission 15-Have\An Ice Day,$0F Mission 16-Plastro's Revenge,$10 Mission 17-Bug Hunt: Chew Chew Bug-B-Q,$11 Mission 18-Bug Hunt: Crispy Critters,$12 Mission 19-Flag-Nab-It: Fort Frenzy,$13 Mission 20-Flag-Nab-it: Freezer Burn,$14 Mission 21-Food Fight: Picnic Panic,$15 Mission 22-Food Fight: Cherry Surprise,$16 Mission 23-Rescue: Don't Feed The Crabs,$17 Mission 24-Rescue: Tide Pool Terror
 Cheat4="Unlock All Planes",810B252A 0105
 Cheat5="Infinite Health",81062444 0C00,81062446 0015,81000054 3C03,81000056 0002,81000058 03E0,8100005A 0008,8100005C AFC3,8100005E 005C
 Cheat6="Infinite Ammo",81049630 2400
-Level=$00 Mission 1-Plastic Pandemonium,$01 Mission 2-Going Car-razy,$02 Mission 3-The Train That Could,$03 Mission 4-Tan Terror-Tory,$04 Mission 5-Bug Bath,$05 Mission 6-Uninvited Guests,$06 Mission 7-Ants In The Pants,$07 Mission 8-Saucer Attack,$08 Mission 9-The Heat is On,$09 Mission 10-The Melting Pot,$0A Mission 11-River Rapids Riot,$0B Mission 12-Nighttime Teddy,$0C Mission 13-Demolition Time,$0D Mission 14-Pick Up The Pieces,$0E Mission 15-Have\An Ice Day,$0F Mission 16-Plastro's Revenge,$10 Mission 17-Bug Hunt: Chew Chew Bug-B-Q,$11 Mission 18-Bug Hunt: Crispy Critters,$12 Mission 19-Flag-Nab-It: Fort Frenzy,$13 Mission 20-Flag-Nab-it: Freezer Burn,$14 Mission 21-Food Fight: Picnic Panic,$15 Mission 22-Food Fight: Cherry Surprise,$16 Mission 23-Rescue: Don't Feed The Crabs,$17 Mission 24-Rescue: Tide Pool Terror
 
 //----
 
@@ -4180,7 +4174,7 @@ Cheat14_N=Press Top D-pad,Do not use with either Have All Moves,Or Have Dragon K
 Cheat15="Have\Dragon Kazooie",D1081084 0800,8112C770 8029,D1081084 0800,8112C772 0000,81290078 FFFF,8129007A FFFF
 Cheat15_N=Press Top D-pad,Do not use with Have All Modes Or Have All Moves & Dragon Kazooie
 Cheat16="Play As",D0081085 0020,8012704C 00??
-Cheat16_N=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy Note
+Cheat16_N=To use this cheat, put the cheat on, then press L as you walk through a door to become that chosen character
 Cheat16_O=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy
 Cheat17="Instant Warp Options",D0081084 0000,81127640 ????,80127643 0001
 Cheat17_N=To use this cheat, put the cheat on, then walk through a door to arrive at that chosen destination
@@ -4224,7 +4218,6 @@ Cheat6_O=$00 Standard,$01 Offensive,$02 Defensive,$03 Nimble
 
 [6AA4DDE7-E3E2F4E7-C:45]
 Name=BattleTanx (U)
-Body=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 Cheat0="Have\Storm Ravens Gang",80135773 0001
 Cheat1="Run Story",80135770 0001
 Cheat2="Start With All Weapons",80135765 0001
@@ -4289,22 +4282,21 @@ Cheat60="Multiplayer\Balltlelord Mode\Player 1\Infinite Secondary Weapons In Bat
 Cheat61="Multiplayer\Balltlelord Mode\Player 2\Infinite Secondary Weapons In Battlelord",802D9F31 00FF,802D9F33 00FF,802D9F35 00FF,802D9F37 00FF,802D9F39 00FF,802D9F3D 00FF,802D9F3F 00FF,802D9F41 00FF,802D9F43 00FF,802D9F45 00FF,802D9F47 00FF,802D9F49 00FF
 Cheat62="In Campaign 3 Enemy Tanks May Join You",802D9AAC 0000,802DB3D4 0000,802DCCFC 0000
 Cheat63="Multiplayer\Player 1\Main Weapon",802D85EB 00??
-Cheat63_O=Weapon
+Cheat63_O=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
 Cheat64="Multiplayer\Player 2\Main Weapon",802D9F13 00??
-Cheat64_O=Weapon
+Cheat64_O=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
 Cheat65="Multiplayer\Player 1\Secondary Weapon",802D85F7 00??
-Cheat65_O=Weapon
+Cheat65_O=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
 Cheat66="Multiplayer\Player 2\Secondary Weapon",802D9F1F 00??
-Cheat66_O=Weapon
+Cheat66_O=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
 Cheat67="Multiplayer\Player 1\Tank Body Modifier",802D819B 00??
-Cheat67_O=Body
+Cheat67_O=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 Cheat68="Multiplayer\Player 2\Tank Body Modifier",802D9AC3 00??
-Cheat68_O=Body
+Cheat68_O=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 Cheat69="Multiplayer\Player 1\Goalith Tank On Tracks Body Modifier",802D86A3 00??
-Cheat69_O=Body
+Cheat69_O=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 Cheat70="Multiplayer\Player 2\Goalith Tank On Tracks Body Modifier",802D9FCB 00??
-Cheat70_O=Body
-Weapon=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
+Cheat70_O=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 
 //----
 
@@ -4593,7 +4585,7 @@ Cheat2="Infinite\99 Lives",810E9650 0005
 Cheat3="Have\[All Keys]",810E92E0 0101,800E92E2 0001
 Cheat4="Have\Max Bonus",810E964A 270F
 Cheat5="Level Select",810FFF92 00??
-Cheat5_O=[BuckBumble]Level Select
+Cheat5_O=$01 Mission 1 Shock Strike,$02 Mission 2 Radar Run,$03 Mission 3 Return Fire,$04 Mission 4 The Sonar Tower,$05 Mission 5 Big Blips,$06 Mission 6 Short Fuse,$07 Mission 7 Outpost,$08 Mission 8 Sewer,$09 Mission 9 Clean Up,$0A Mission 10 Scramble Pylon,$0B Mission 11 Herding Research,$0C Mission 12 The Extractor,$0D Mission 13 Nuke Tower,$0E Mission 14 Mucus Storage,$0F Mission 15 Depot Attack,$10 Boss Mission Destroy Carrier Level,$11 Mission 16 Sterilization,$12 Mission 17 Scorpion Killer,$13 Mission 18 Core Nuke,$14 Mission 19 Gate Keeper,$15 Queen Mission
 Cheat6="Have\[High Score]",810E92CE FFFF
 Cheat7="Level Select Menu",810FE5AA D320
 
@@ -4697,7 +4689,7 @@ Cheat14="Level Select",89389C90 ????,89389C92 0000
 Cheat14_N=You must use this code on a saved game, because the intro to the first level will mess up the game. Now select the saved game, and hold down the GS button until the level loads. Some of the boss stages will not let you fight the boss unless you re-enter the area. Also, with the part of stage modifier, the second code modifies the part of the level that you are in, and 0000 is the level's start.
 Cheat14_O=$0000 Forest of Silence,$0002 Castle Wall,$0003 Villa,$0004 Inside Villa,$0006 Garden Maze,$0007 Tunnel,$0008 Underground Waterway,$0009 Castle Center,$0010 Tower of Execution,$0011 - Tower of Sorcery,$0012 - Tower of Science,$0013 - Duel Tower,$0014 - Fight With Death/Actrise,$0015 - Castle Keep,$0016 - Intro (Glitch),$0017 - Clock Tower,$0018 - Final Dracula,$001A - Fight With Maze Boss,$001B - Room of Clocks
 Cheat15="Switch From",80389C3D 00??
-Cheat15_N=$00 Carrie to Reindhart,$01 Reindhart to Carrie Note
+Cheat15_N=This Switch From Cheat lets you switch characters on a saved game For example, if you are Reindhart and you want to be Carrie in the middle of your game save it and then enable this Cheat and press F1. when you start your saved game back up you'll be Carrie instead of Reindhart.
 Cheat15_O=$00 Carrie to Reindhart,$01 Reindhart to Carrie
 
 //----
@@ -4724,7 +4716,7 @@ Cheat14="Level Select",89389C90 ????,89389C92 0000
 Cheat14_N=You must use this code on a saved game, because the intro to the first level will mess up the game. Now select the saved game, and hold down the GS button until the level loads. Some of the boss stages will not let you fight the boss unless you re-enter the area. Also, with the part of stage modifier, the second code modifies the part of the level that you are in, and 0000 is the level's start.
 Cheat14_O=$0000 Forest of Silence,$0002 Castle Wall,$0003 Villa,$0004 Inside Villa,$0006 Garden Maze,$0007 Tunnel,$0008 Underground Waterway,$0009 Castle Center,$0010 Tower of Execution,$0011 - Tower of Sorcery,$0012 - Tower of Science,$0013 - Duel Tower,$0014 - Fight With Death/Actrise,$0015 - Castle Keep,$0016 - Intro (Glitch),$0017 - Clock Tower,$0018 - Final Dracula,$001A - Fight With Maze Boss,$001B - Room of Clocks
 Cheat15="Switch From",80389C3D 00??
-Cheat15_N=$00 Carrie to Reindhart,$01 Reindhart to Carrie Note
+Cheat15_N=This Switch From Cheat lets you switch characters on a saved game For example, if you are Reindhart and you want to be Carrie in the middle of your game save it and then enable this Cheat and press F1. when you start your saved game back up you'll be Carrie instead of Reindhart.
 Cheat15_O=$00 Carrie to Reindhart,$01 Reindhart to Carrie
 
 //----
@@ -4751,7 +4743,7 @@ Cheat14="Level Select",89389C90 ????,89389C92 0000
 Cheat14_N=You must use this code on a saved game, because the intro to the first level will mess up the game. Now select the saved game, and hold down the GS button until the level loads. Some of the boss stages will not let you fight the boss unless you re-enter the area. Also, with the part of stage modifier, the second code modifies the part of the level that you are in, and 0000 is the level's start.
 Cheat14_O=$0000 Forest of Silence,$0002 Castle Wall,$0003 Villa,$0004 Inside Villa,$0006 Garden Maze,$0007 Tunnel,$0008 Underground Waterway,$0009 Castle Center,$0010 Tower of Execution,$0011 - Tower of Sorcery,$0012 - Tower of Science,$0013 - Duel Tower,$0014 - Fight With Death/Actrise,$0015 - Castle Keep,$0016 - Intro (Glitch),$0017 - Clock Tower,$0018 - Final Dracula,$001A - Fight With Maze Boss,$001B - Room of Clocks
 Cheat15="Switch From",80389C3D 00??
-Cheat15_N=$00 Carrie to Reindhart,$01 Reindhart to Carrie Note
+Cheat15_N=This Switch From Cheat lets you switch characters on a saved game For example, if you are Reindhart and you want to be Carrie in the middle of your game save it and then enable this Cheat and press F1. when you start your saved game back up you'll be Carrie instead of Reindhart.
 Cheat15_O=$00 Carrie to Reindhart,$01 Reindhart to Carrie
 
 //----
@@ -5533,25 +5525,24 @@ Cheat17="Player 2\Lights & Sirens For Police Car & School Bus",81150906 0001,811
 
 [DFE61153-D76118E6-C:45]
 Name=Cruis'n World (U)
-CarTrans=$00 Serpent (Auto),$01 Serpent (Manual),$02 Kamikaze (Auto),$03 Kamikaze (Manual),$04 ATV (Auto,$05 ATV (Manual),$06 Scarab (Auto),$07 Scarab (Manual),$08 Stallion P6 (Auto),$09 Stallion P6 (Manual),$0A Banzai GTV (Auto),$0B Banzai GTV (Manual),$0C Zombie (Auto),$0D Zombie (Manual),$0E Orca (Auto),$0F Orca (manual),$10 El Nino (Auto),$11 El Nino (Manual),$12 Rhino 4x4 (Auto),$13 Rhino 4x4 (Manual),$14 Sardine Extreme (Auto),$15 Sardine Extreme (Manual),$16 Road King (Auto),$17 Road King (Manual),$18 Grass Hopper (Auto),$19 Grass Hopper (Manual),$1A Bulldog (Auto),$1B Bulldog (Manual),$1C Enforcer (Auto),$1D Enforcer (Manual),$1E NY Taxi (Auto),$1F NY Taxi (Manual),$20 School Bus (Auto),$21 School Bus (Manual),$22 Exec (Auto),$23 Exec (Manual),$24 Conductor (Auto),$25 Conductor (Manual),$26 Speed Demon (Auto),$27 Speed Demon (Manual),$28 Tommy (Auto),$29 Tommy (Manual),$2A Rocket (Auto),$2B Rocket (Manual),$2C The Surgeon (Auto),$2D The Surgeon (Manual),$2E Monsta (Auto),$2F Monsta (Manual),$30 Howler (Auto),$31 Howler (Manual)
 Cheat0="Have All\Car Upgrades",803BEE42 0005
 Cheat1="Have All\Cars",813BEE78 1FFF
 Cheat2="Time Counts Down Faster",813D0D3E 0000
 Cheat3="Dancing Girl Always On",803BEE73 0001,803C21CF 0054
 Cheat4="Player 1\Always Place 1st",803CE023 0001
 Cheat5="Player 1\Car/Transmission Modifier",803BEE40 00??
-Cheat5_O=CarTrans
+Cheat5_O=$00 Serpent (Auto),$01 Serpent (Manual),$02 Kamikaze (Auto),$03 Kamikaze (Manual),$04 ATV (Auto,$05 ATV (Manual),$06 Scarab (Auto),$07 Scarab (Manual),$08 Stallion P6 (Auto),$09 Stallion P6 (Manual),$0A Banzai GTV (Auto),$0B Banzai GTV (Manual),$0C Zombie (Auto),$0D Zombie (Manual),$0E Orca (Auto),$0F Orca (manual),$10 El Nino (Auto),$11 El Nino (Manual),$12 Rhino 4x4 (Auto),$13 Rhino 4x4 (Manual),$14 Sardine Extreme (Auto),$15 Sardine Extreme (Manual),$16 Road King (Auto),$17 Road King (Manual),$18 Grass Hopper (Auto),$19 Grass Hopper (Manual),$1A Bulldog (Auto),$1B Bulldog (Manual),$1C Enforcer (Auto),$1D Enforcer (Manual),$1E NY Taxi (Auto),$1F NY Taxi (Manual),$20 School Bus (Auto),$21 School Bus (Manual),$22 Exec (Auto),$23 Exec (Manual),$24 Conductor (Auto),$25 Conductor (Manual),$26 Speed Demon (Auto),$27 Speed Demon (Manual),$28 Tommy (Auto),$29 Tommy (Manual),$2A Rocket (Auto),$2B Rocket (Manual),$2C The Surgeon (Auto),$2D The Surgeon (Manual),$2E Monsta (Auto),$2F Monsta (Manual),$30 Howler (Auto),$31 Howler (Manual)
 Cheat6="Player 1\Stop Elapsed Time",813C7678 3C80
 Cheat7="Player 2\Always Place 1st",803CE4FB 0001
 Cheat8="Player 2\Car/Transmission Modifier",803BEE48 00??
-Cheat8_O=CarTrans
+Cheat8_O=$00 Serpent (Auto),$01 Serpent (Manual),$02 Kamikaze (Auto),$03 Kamikaze (Manual),$04 ATV (Auto,$05 ATV (Manual),$06 Scarab (Auto),$07 Scarab (Manual),$08 Stallion P6 (Auto),$09 Stallion P6 (Manual),$0A Banzai GTV (Auto),$0B Banzai GTV (Manual),$0C Zombie (Auto),$0D Zombie (Manual),$0E Orca (Auto),$0F Orca (manual),$10 El Nino (Auto),$11 El Nino (Manual),$12 Rhino 4x4 (Auto),$13 Rhino 4x4 (Manual),$14 Sardine Extreme (Auto),$15 Sardine Extreme (Manual),$16 Road King (Auto),$17 Road King (Manual),$18 Grass Hopper (Auto),$19 Grass Hopper (Manual),$1A Bulldog (Auto),$1B Bulldog (Manual),$1C Enforcer (Auto),$1D Enforcer (Manual),$1E NY Taxi (Auto),$1F NY Taxi (Manual),$20 School Bus (Auto),$21 School Bus (Manual),$22 Exec (Auto),$23 Exec (Manual),$24 Conductor (Auto),$25 Conductor (Manual),$26 Speed Demon (Auto),$27 Speed Demon (Manual),$28 Tommy (Auto),$29 Tommy (Manual),$2A Rocket (Auto),$2B Rocket (Manual),$2C The Surgeon (Auto),$2D The Surgeon (Manual),$2E Monsta (Auto),$2F Monsta (Manual),$30 Howler (Auto),$31 Howler (Manual)
 Cheat9="Player 2\Stop Elapsed Time",813C78B4 3C80
 Cheat10="Player 3\Always Place 1st",803CDB4B 0001
 Cheat11="Player 3\Car/Transmission Modifier",803BEE50 00??
-Cheat11_O=CarTrans
+Cheat11_O=$00 Serpent (Auto),$01 Serpent (Manual),$02 Kamikaze (Auto),$03 Kamikaze (Manual),$04 ATV (Auto,$05 ATV (Manual),$06 Scarab (Auto),$07 Scarab (Manual),$08 Stallion P6 (Auto),$09 Stallion P6 (Manual),$0A Banzai GTV (Auto),$0B Banzai GTV (Manual),$0C Zombie (Auto),$0D Zombie (Manual),$0E Orca (Auto),$0F Orca (manual),$10 El Nino (Auto),$11 El Nino (Manual),$12 Rhino 4x4 (Auto),$13 Rhino 4x4 (Manual),$14 Sardine Extreme (Auto),$15 Sardine Extreme (Manual),$16 Road King (Auto),$17 Road King (Manual),$18 Grass Hopper (Auto),$19 Grass Hopper (Manual),$1A Bulldog (Auto),$1B Bulldog (Manual),$1C Enforcer (Auto),$1D Enforcer (Manual),$1E NY Taxi (Auto),$1F NY Taxi (Manual),$20 School Bus (Auto),$21 School Bus (Manual),$22 Exec (Auto),$23 Exec (Manual),$24 Conductor (Auto),$25 Conductor (Manual),$26 Speed Demon (Auto),$27 Speed Demon (Manual),$28 Tommy (Auto),$29 Tommy (Manual),$2A Rocket (Auto),$2B Rocket (Manual),$2C The Surgeon (Auto),$2D The Surgeon (Manual),$2E Monsta (Auto),$2F Monsta (Manual),$30 Howler (Auto),$31 Howler (Manual)
 Cheat12="Player 4\Always Place 1st",803CD673 0001
 Cheat13="Player 4\Car/Transmission Modifier",803BEE58 00??
-Cheat13_O=CarTrans
+Cheat13_O=$00 Serpent (Auto),$01 Serpent (Manual),$02 Kamikaze (Auto),$03 Kamikaze (Manual),$04 ATV (Auto,$05 ATV (Manual),$06 Scarab (Auto),$07 Scarab (Manual),$08 Stallion P6 (Auto),$09 Stallion P6 (Manual),$0A Banzai GTV (Auto),$0B Banzai GTV (Manual),$0C Zombie (Auto),$0D Zombie (Manual),$0E Orca (Auto),$0F Orca (manual),$10 El Nino (Auto),$11 El Nino (Manual),$12 Rhino 4x4 (Auto),$13 Rhino 4x4 (Manual),$14 Sardine Extreme (Auto),$15 Sardine Extreme (Manual),$16 Road King (Auto),$17 Road King (Manual),$18 Grass Hopper (Auto),$19 Grass Hopper (Manual),$1A Bulldog (Auto),$1B Bulldog (Manual),$1C Enforcer (Auto),$1D Enforcer (Manual),$1E NY Taxi (Auto),$1F NY Taxi (Manual),$20 School Bus (Auto),$21 School Bus (Manual),$22 Exec (Auto),$23 Exec (Manual),$24 Conductor (Auto),$25 Conductor (Manual),$26 Speed Demon (Auto),$27 Speed Demon (Manual),$28 Tommy (Auto),$29 Tommy (Manual),$2A Rocket (Auto),$2B Rocket (Manual),$2C The Surgeon (Auto),$2D The Surgeon (Manual),$2E Monsta (Auto),$2F Monsta (Manual),$30 Howler (Auto),$31 Howler (Manual)
 Cheat14="Championship Mode\Max Total Points",813BFBFA FFFF
 Cheat15="Championship Mode\Max Points Per Race",813BFBFE FFFF
 Cheat16="Championship Mode\Max Points To Next Level",813BFBFC FFFF
@@ -6654,7 +6645,7 @@ Cheat0="Infinite\Health",8029018F 0028
 Cheat1="Infinite\Lives",80290193 000A
 Cheat2="1000 Garibs",80290187 0064
 Cheat3="Infinite\Activate Cheat\Modifier 1",81297BEC ????
-Cheat3_N=$0080 Level Select,$0100 Open Portals,$0200 Open Levels,$0380 All Of The Above Note
+Cheat3_N=Once enabled Press D-Pad Up on the Main Menu. The Hand will then be bottom left hand side. Click A to Enter and Select your choice.
 Cheat3_O=$0080 Level Select,$0100 Open Portals,$0200 Open Levels,$0380 All Of The Above
 Cheat4="Infinite\Activate Cheat\Modifier 2",81297BEE ????
 Cheat4_O=$0002 Call Ball (Press L),$0008 Infinite Lives,$0040 Infinite Energy,$0200 Big Ball,$024A All Of The Above
@@ -7337,7 +7328,6 @@ Cheat10="Max Score",8112398A FC9A
 
 [0894909C-DAD4D82D-C:45]
 Name=Knockout Kings 2000 (U)
-Character Mod=$00 Ali,$01 Frazier,$02 Holmes,$03 Holyfield,$04 Lewis,$05 Tua,$06 Spinks,$07 Butterbean,$08 De La Hoya,$09 Leonard,$0A Hagler,$0B Duran,$0C Whitaker,$0D Quartey,$0E Carr,$0F Vargas,$10 Reid,$11 Moskey,$12 Pryor,$13 Argnello,$14 O'Grady,$15 Mayweather,$16 Manfredy,$17 Kelley,$18 Romero,$19 Random,$1A Created Boxer,$1B Creater Boxer,$1C Dempsey,$1D K. Orr,$1E IUppa,$1F S. Sandoval,$20 S. Broadhurst,$21 Pole,$22 Hasson,$23 Alameda,$24 Wahlberg,$25 Scott,$26 Hopra,$27 Eckhardt,$28 Parker,$29 Ruiz,$2A F. Sandoval,$2B Ang,$2C Bristov,$2D Botti,$2E S. Orr,$2F Zarifes,$30 Giolito,$31 Garrett,$32 Barclay,$33 Wynne,$34 Lupidi,$35 W. Aguitar,$36 Di Ricco,$37 Philippine,$38 M. Broadhurst,$39 Weaver,$3A Lajoie,$3B Greenberg,$3C Quinn,$3D Perone,$3E Tool,$3F Bunch,$40 St. Aubyn,$41 Wells,$42 Dexter,$43 Hsu,$44 Bazzel,$45 Thompson,$46 Eklund,$47 Tallarico,$48 de Leon,$49 Coallier
 Cheat0="Player 1\Infinite\Health",8106B974 42C8,8106B976 0000
 Cheat1="Player 2\Infinite\Health",8106BA7C 42C8,8106BA7E 0000
 Cheat2="Player 1\No Health",8106B974 0000,8106B976 0000
@@ -7353,9 +7343,9 @@ Cheat11="Player 1\Power Punch After 1st Punch",8006B983 0064
 Cheat12="Player 2\Power Punch After 1st Punch",8006BA8B 0064
 Cheat13="Stop Timer",81067546 001C
 Cheat14="Player 1\Character Modifier",800EC6F3 00??
-Cheat14_O=Character Mod
+Cheat14_O=$00 Ali,$01 Frazier,$02 Holmes,$03 Holyfield,$04 Lewis,$05 Tua,$06 Spinks,$07 Butterbean,$08 De La Hoya,$09 Leonard,$0A Hagler,$0B Duran,$0C Whitaker,$0D Quartey,$0E Carr,$0F Vargas,$10 Reid,$11 Moskey,$12 Pryor,$13 Argnello,$14 O'Grady,$15 Mayweather,$16 Manfredy,$17 Kelley,$18 Romero,$19 Random,$1A Created Boxer,$1B Creater Boxer,$1C Dempsey,$1D K. Orr,$1E IUppa,$1F S. Sandoval,$20 S. Broadhurst,$21 Pole,$22 Hasson,$23 Alameda,$24 Wahlberg,$25 Scott,$26 Hopra,$27 Eckhardt,$28 Parker,$29 Ruiz,$2A F. Sandoval,$2B Ang,$2C Bristov,$2D Botti,$2E S. Orr,$2F Zarifes,$30 Giolito,$31 Garrett,$32 Barclay,$33 Wynne,$34 Lupidi,$35 W. Aguitar,$36 Di Ricco,$37 Philippine,$38 M. Broadhurst,$39 Weaver,$3A Lajoie,$3B Greenberg,$3C Quinn,$3D Perone,$3E Tool,$3F Bunch,$40 St. Aubyn,$41 Wells,$42 Dexter,$43 Hsu,$44 Bazzel,$45 Thompson,$46 Eklund,$47 Tallarico,$48 de Leon,$49 Coallier
 Cheat15="Player 2\Character Modifier",800EC6F7 00??
-Cheat15_O=Character Mod
+Cheat15_O=$00 Ali,$01 Frazier,$02 Holmes,$03 Holyfield,$04 Lewis,$05 Tua,$06 Spinks,$07 Butterbean,$08 De La Hoya,$09 Leonard,$0A Hagler,$0B Duran,$0C Whitaker,$0D Quartey,$0E Carr,$0F Vargas,$10 Reid,$11 Moskey,$12 Pryor,$13 Argnello,$14 O'Grady,$15 Mayweather,$16 Manfredy,$17 Kelley,$18 Romero,$19 Random,$1A Created Boxer,$1B Creater Boxer,$1C Dempsey,$1D K. Orr,$1E IUppa,$1F S. Sandoval,$20 S. Broadhurst,$21 Pole,$22 Hasson,$23 Alameda,$24 Wahlberg,$25 Scott,$26 Hopra,$27 Eckhardt,$28 Parker,$29 Ruiz,$2A F. Sandoval,$2B Ang,$2C Bristov,$2D Botti,$2E S. Orr,$2F Zarifes,$30 Giolito,$31 Garrett,$32 Barclay,$33 Wynne,$34 Lupidi,$35 W. Aguitar,$36 Di Ricco,$37 Philippine,$38 M. Broadhurst,$39 Weaver,$3A Lajoie,$3B Greenberg,$3C Quinn,$3D Perone,$3E Tool,$3F Bunch,$40 St. Aubyn,$41 Wells,$42 Dexter,$43 Hsu,$44 Bazzel,$45 Thompson,$46 Eklund,$47 Tallarico,$48 de Leon,$49 Coallier
 Cheat16="Ring Modifier",800EC703 00??
 Cheat16_O=$00 Great Western Forum,$01 Caesars Palace,$02 Ecko Sports Arena,$03 International Arena,$04 Local 440,$05 The Colosseum,$06 Roppongi Palace,$07 Wembley Arena,$08 Knockout Kings Arena
 
@@ -8255,7 +8245,7 @@ Cheat2_O=$00 No Points,$0A 10 Points,$14 20 Points,$28 40 Points,$3C 60 Points,$
 Cheat3="Options\Traveling",80144997 00??
 Cheat3_O=$00 2,$01 4,$02 6,$03 No
 Cheat4="Options\Goal Tending",80144998 00??
-Cheat4_O=[NBAInTheZone98]Opt0-3
+Cheat4_O=$00 2,$01 4,$02 6,$03 No
 Cheat5="No Shot Clock",81140E1E FFFF
 Cheat6="Create A Player\Max Field Goal",8013FF98 0063
 Cheat7="Create A Player\Max 3 Point",8013FF99 0063
@@ -8277,7 +8267,7 @@ Cheat18_O=$00 Yes,$01 No
 Cheat19="Options\Replay",8013D868 00??
 Cheat19_O=$00 Yes,$01 No
 Cheat20="Options\Player Display",8013D869 00??
-Cheat20_O=[NBAInTheZone98]Display
+Cheat20_O=$00 Name,$01 Number,$02 None
 Cheat21="Options\Camera View",8013D86A 00??
 Cheat21_O=$00 1,$01 2,$02 3,$03 4,$04 5,$05 6,$06 7,$07 8,$08 9,$09 10
 Cheat22="Options\Out Of Bounds",80144990 00??
@@ -9237,13 +9227,13 @@ Cheat24="Infinite\Lives\Curtis",811541B4 0063
 [0304C48E-AC4001B8-C:45]
 Name=Rat Attack (U)
 Cheat0="Play As/Player 1",801514F3 00??
-Cheat0_O=[RatAttack]Play As
+Cheat0_O=$00 Hai Jinx,$01 Sparky,$02 Manx,$03 Muffy Dupont,$04 Bob Cat,$05 Smokey,$06 Atomicat,$07 Pearl
 Cheat1="Play As/Player 2",80151503 00??
-Cheat1_O=[RatAttack]Play As
+Cheat1_O=$00 Hai Jinx,$01 Sparky,$02 Manx,$03 Muffy Dupont,$04 Bob Cat,$05 Smokey,$06 Atomicat,$07 Pearl
 Cheat2="Play As/Player 3",80151513 00??
-Cheat2_O=[RatAttack]Play As
+Cheat2_O=$00 Hai Jinx,$01 Sparky,$02 Manx,$03 Muffy Dupont,$04 Bob Cat,$05 Smokey,$06 Atomicat,$07 Pearl
 Cheat3="Play As/Player 4",80151523 00??
-Cheat3_O=[RatAttack]Play As
+Cheat3_O=$00 Hai Jinx,$01 Sparky,$02 Manx,$03 Muffy Dupont,$04 Bob Cat,$05 Smokey,$06 Atomicat,$07 Pearl
 Cheat4="Max Score",81158440 05F5,81158442 E0FF
 Cheat5="Unlock All\Levels and Stages",50000810 0000,8000A665 00FF
 Cheat6="Unlock All\Difficulties",80007CB7 00FF,80007CB8 FFFF
@@ -9328,17 +9318,17 @@ Cheat10="Have All Characters",5000125C 0000,810EC938 0000,5000125C 0000,810EC93A
 [E9219533-13FBAFBD-C:45]
 Name=Ready 2 Rumble Boxing: Round 2 (U)
 Cheat0="Player 1\Health",810FF6B6 00??
-Cheat0_O=Health
+Cheat0_O=$64 Infinite,$00 No Health
 Cheat1="Player 1\Stamina",810FF6BA 00??
-Cheat1_O=Stamina
+Cheat1_O=$64 Infinite,$00 No Stamina
 Cheat2="Player 1\RUMBLE",810FF6C2 00??
-Cheat2_O=Rumble
+Cheat2_O=$90 Max,$00 Never Rumble
 Cheat3="Player 2\Health",81100316 00??
-Cheat3_O=Health
+Cheat3_O=$64 Infinite,$00 No Health
 Cheat4="Player 2\Stamina",8110031A 00??
-Cheat4_O=Stamina
+Cheat4_O=$64 Infinite,$00 No Stamina
 Cheat5="Player 2\RUMBLE",81100322 00??
-Cheat5_O=Rumble
+Cheat5_O=$90 Max,$00 Never Rumble
 Cheat6="Infinite Time",810FE352 0E10
 Cheat7="Championship Mode\Top Rank",810F81BA 000A
 Cheat8="Championship Mode\Max Money",810F81C8 7FFF,810F81CA FFFF
@@ -9350,9 +9340,6 @@ Cheat13="Championship Mode\Max Dexterity",810F81D8 447A,810F81DA 0000
 Cheat14="Championship Mode\Max Experience",810F81DC 447A,810F81DE 0000
 Cheat15="Enable Extra Characters",80101E6F 0003,80101E73 0003,80101E77 0003,80101E7B 0003,80101E7F 0003,80101E83 0003,80101E87 0003
 Cheat16="Win 1 Fight to Complete Arcade Mode",80101F0B 000B
-Health=$64 Infinite,$00 No Health
-Rumble=$90 Max,$00 Never Rumble
-Stamina=$64 Infinite,$00 No Stamina
 
 //----
 
@@ -9405,7 +9392,7 @@ Cheat17="[Saves Always 0]",810E8B50 0000
 Cheat17_N=No matter how many saves you do ithis makes the game think you Have\not saved.
 Cheat18="[Biohazard 2 Mode]",D10E10EE 00??,810E10EE 0000
 Cheat18_N=Note: With this enabled the game will become Bio Hazard 2, the Japanese version of Resident Evil 2! This means all text (except the text in files) is in Japanese, and all cinemas have Japanese subtitles. Note that the title screen will still say Resident Evil 2 Do not use at the same time as Play Extra Mission
-Cheat18_O=Biohazard 2 Mode=$40 On,$00 Off
+Cheat18_O=$40 On,$00 Off
 Cheat19="Have\All Guns In  Chest",50000E04 0100,810E8EF4 05FF
 Cheat20="Have\All Main Items In Chest",810E8F2C 17FF,810E8F30 1EFF,810E8F34 1FFF,810E8F38 23FF,50000404 0100,810E8F3C 25FF,810E8F4C 2AFF,810E8F50 2BFF,50000304 0100,810E8F54 2EFF,50000F04 0100,810E8F60 32FF,810E8F9C 43FF,50000504 0100,810E8FA0 47FF,50000404 0100,810E8FB4 53FF,50000C04 0100,810E8FC4 58FF
 Cheat20_N=If you want items that are not listed in the Chest, then just use the Have Item On Slot Select code to have what you desire.
@@ -9452,16 +9439,16 @@ Cheat13_N=This will give you the item of your choice and will be infinite on tha
 Cheat13_O=$00 Nothing,$01 Knife Hunk,$02 Handgun Hunk,$03 Handgun Different Ada,$04 Custom Handgun Hunk,$05 Magnum Hunk,$06 Custom Magnum Hunk,$07 Shotgun Hunk,$08 Custom Shotgun Hunk,$09 Grenade Launcher Claire,$0A Grenade Launcher (Flame Rounds) Claire,$0B Grenade Launcher (Acid Rounds) Claire,$0C Bowgun Claire,$0D Colt S.A.A. Claire,$0E Spark Shot Claire,$0F Sub Machine Gun Leon,$10 Flamethrower Leon,$11 Rocket Launcher Claire,$12 Gatling Gun Claire,$13 Machine Gun ???,$14 Handgun Bullets,$15 Shotgun Shells,$16 Magnum Bullets,$17 Fuel,$18 Grenade Rounds,$19 Flame Rounds,$1A Acid Rounds,$1B Machine Gun Bullets,$1C S. Shot Bullets,$1D Bow Gun Bolts,$1E Ink Ribbon,$1F Small Key,$20 Hand Gun Parts,$21 Magnum Parts,$22 Shotgun Parts,$23 First Aid Spray,$24 Chemical FR-W09,$25 Chemical AC-W24,$26 Green Herb,$27 Red Herb,$28 Blue Herb,$29 Mixed Herb (Green),$2A Mixed Herb (Red&Green),$2B Mixed Herb (Blue&Green),$2C Mixed Herb (?),$2D Mixed Herb (?),$2E Mixed Herb (?),$2F Lighter,$30 Lock Pick,$31 Picture,$32 Valve Handle,$33 Red Jewel,$34 Red Card Key,$35 Blue Card Key,$36 Serpent Stone,$37 Jaguar Stone,$38 Blue Stone,$39 Blue Stone (?),$3A Eagle Stone,$3B Bishop Plug,$3C Rook Plug,$3D Knight Plug,$3E King Plug,$3F W. Box Key,$40 Detonator,$41 Plastic Bomb,$42 Bomb&Detonator,$43 Crank,$44 Film,$45 Film (?),$46 Film (?),$47 Unicorn Medal,$48 Eagle Medal,$49 Wolf Medal,$4A G. Cogwheel,$4B Manhole Opener,$4C Main Fuse,$4D Fuse Case,$4E Vaccine,$4F Vaccine Cart.,$50 Film,$51 Base Vaccine,$52 G-Virus,$53 Special Key,$54 Joint S Plug,$55 Joint N Plug,$56 Cord,$57 Film,$58 Cabin Key,$59 Precinct Key (blue),$5A Precinct Key (red),$5B Precinct Key (?),$5C Precinct Key (green),$5D C. Panel Key (red),$5E C. Panel Key (yellow),$5F P. Room Key,$60 MO Disk,$61 Lab Card Key,$62 Master Key,$63 Platform Key,$64 No Item,$65 No Item,$66 No Item,$67 No Item,$68 Chris's Diary,$69 Mail to Chris,$6A Memo to Leon,$6B Police Memorandum,$6C Operation Report 1,$6D Mail to the Chief,$6E Mail to the Chief (?),$6F Secretary's Diary A,$70 Secretary's Diar
 Cheat14="Have\Item On Slot Select\Slot 10",800E8EEC 00??,800E8EED 00FF
 Cheat14_N=This will give you the item of your choice and will be infinite on that chosen slot
-Cheat14_O=[ResEvil2]Item On 
+Cheat14_O=$00 Nothing,$01 Knife Hunk,$02 Handgun Hunk,$03 Handgun Different Ada,$04 Custom Handgun Hunk,$05 Magnum Hunk,$06 Custom Magnum Hunk,$07 Shotgun Hunk,$08 Custom Shotgun Hunk,$09 Grenade Launcher Claire,$0A Grenade Launcher (Flame Rounds) Claire,$0B Grenade Launcher (Acid Rounds) Claire,$0C Bowgun Claire,$0D Colt S.A.A. Claire,$0E Spark Shot Claire,$0F Sub Machine Gun Leon,$10 Flamethrower Leon,$11 Rocket Launcher Claire,$12 Gatling Gun Claire,$13 Machine Gun ???,$14 Handgun Bullets,$15 Shotgun Shells,$16 Magnum Bullets,$17 Fuel,$18 Grenade Rounds,$19 Flame Rounds,$1A Acid Rounds,$1B Machine Gun Bullets,$1C S. Shot Bullets,$1D Bow Gun Bolts,$1E Ink Ribbon,$1F Small Key,$20 Hand Gun Parts,$21 Magnum Parts,$22 Shotgun Parts,$23 First Aid Spray,$24 Chemical FR-W09,$25 Chemical AC-W24,$26 Green Herb,$27 Red Herb,$28 Blue Herb,$29 Mixed Herb (Green),$2A Mixed Herb (Red&Green),$2B Mixed Herb (Blue&Green),$2C Mixed Herb (?),$2D Mixed Herb (?),$2E Mixed Herb (?),$2F Lighter,$30 Lock Pick,$31 Picture,$32 Valve Handle,$33 Red Jewel,$34 Red Card Key,$35 Blue Card Key,$36 Serpent Stone,$37 Jaguar Stone,$38 Blue Stone,$39 Blue Stone (?),$3A Eagle Stone,$3B Bishop Plug,$3C Rook Plug,$3D Knight Plug,$3E King Plug,$3F W. Box Key,$40 Detonator,$41 Plastic Bomb,$42 Bomb&Detonator,$43 Crank,$44 Film,$45 Film (?),$46 Film (?),$47 Unicorn Medal,$48 Eagle Medal,$49 Wolf Medal,$4A G. Cogwheel,$4B Manhole Opener,$4C Main Fuse,$4D Fuse Case,$4E Vaccine,$4F Vaccine Cart.,$50 Film,$51 Base Vaccine,$52 G-Virus,$53 Special Key,$54 Joint S Plug,$55 Joint N Plug,$56 Cord,$57 Film,$58 Cabin Key,$59 Precinct Key (blue),$5A Precinct Key (red),$5B Precinct Key (?),$5C Precinct Key (green),$5D C. Panel Key (red),$5E C. Panel Key (yellow),$5F P. Room Key,$60 MO Disk,$61 Lab Card Key,$62 Master Key,$63 Platform Key,$64 No Item,$65 No Item,$66 No Item,$67 No Item,$68 Chris's Diary,$69 Mail to Chris,$6A Memo to Leon,$6B Police Memorandum,$6C Operation Report 1,$6D Mail to the Chief,$6E Mail to the Chief (?),$6F Secretary's Diary A,$70 Secretary's Diar 
 Cheat15="Quick Save Access",D1014FA4 6000,810E8928 8007,D1014FA4 6000,810E892A 4110
 Cheat15_N=Anytime, anywhere, press Z and B at the same time. You'll get the standard typewriter text: It's an old typewriter. You can save your progress with this. Note that you must, of course, have an ink ribbon to save. 2) Choose "Yes" and you'll be able to save normally. Instead of the location name, your save file will say "Scenario 1st" or "Scenario 2nd." 3) When you load your save file, you'll have to skip through the intro, but when the game loads up you'll be exactly where you saved!
 Cheat16="Quick Chest Access",D1014FA4 1020,8012BFA8 0001
 Cheat16_N=With this code, all you have to do to access the chest, is hold L and Press Start.
 Cheat17="[Saves Always 0]",810E8B50 0000
-Cheat17_N=No matter how many saves you do ithis makes the game think you Have\not saved.
+Cheat17_N=No matter how many saves you do, this makes the game think you Have\not saved.
 Cheat18="[Biohazard 2 Mode]",D10E10EE 00??,810E10EE 0000
 Cheat18_N=Note: With this enabled the game will become Bio Hazard 2, the Japanese version of Resident Evil 2! This means all text (except the text in files) is in Japanese, and all cinemas have Japanese subtitles. Note that the title screen will still say Resident Evil 2 Do not use at the same time as Play Extra Mission
-Cheat18_O=Biohazard 2 Mode=$40 On,$00 Off
+Cheat18_O=$40 On,$00 Off
 Cheat19="Have\All Guns In  Chest",50000E04 0100,810E8EF4 05FF
 Cheat20="Have\All Main Items In Chest",810E8F2C 17FF,810E8F30 1EFF,810E8F34 1FFF,810E8F38 23FF,50000404 0100,810E8F3C 25FF,810E8F4C 2AFF,810E8F50 2BFF,50000304 0100,810E8F54 2EFF,50000F04 0100,810E8F60 32FF,810E8F9C 43FF,50000504 0100,810E8FA0 47FF,50000404 0100,810E8FB4 53FF,50000C04 0100,810E8FC4 58FF
 Cheat20_N=If you want items that are not listed in the Chest, then just use the Have Item On Slot Select code to have what you desire.
@@ -9725,11 +9712,11 @@ Cheat59="Misc\Have\All Cars In Pipe",810C1DCE FFFF
 Cheat60="Press GS Activate Cheat Menu",880C2132 0001
 Cheat61="Misc\Your Car Is Invisible",801127A1 0001
 Cheat62="Misc\Laps to Race",8010C0E3 00??
-Cheat62_O=Laps
+Cheat62_O=$01 1 Lap,$02 2 Laps,$03 3 Laps,$04 4 Laps,$05 5 Laps,$06 6 Laps,$07 7 Laps,$08 8 Laps,$09 9 Laps
 Cheat63="Misc\Drones In Race",800D5761 00??
-Cheat63_O=Drones
+Cheat63_O=$01 1 Drone,$02 2 Drones,$03 3 Drones,$04 4 Drones,$05 5 Drones,$06 6 Drones,$07 7 Drones
 Cheat64="Misc\Difficulty Mod",8010C211 00??
-Cheat64_O=Difficulty
+Cheat64_O=$00 Very Easy,$01 Easy,$02 Medium,$03 Hard,$04 Very Hard,$05 Extremely Hard
 Cheat65="Unlock All Cheats",50000E02 0000,810C20E8 0101
 Cheat66="Have\All Keys Found\Las Vegas Normal",810C1DBC FFFF
 Cheat67="Have\All Keys Found\New York-Downtown\Normal",810C1DBE FFFF
@@ -10128,14 +10115,13 @@ Cheat6="Start with 9999 Monster Score ",812FD20E 270F
 [C00CA948-8E60D34B-C:45]
 Name=South Park - Chef's Luv Shack (U)
 Cheat0="Max Or No Score\Player 1",81104772 ????
-Cheat0_O=Score
+Cheat0_O=$FFFF Max Score,$0000 No Score
 Cheat1="Max Or No Score\Player 2",81104776 ????
-Cheat1_O=Score
+Cheat1_O=$FFFF Max Score,$0000 No Score
 Cheat2="Max Or No Score\Player 3",8110477A ????
-Cheat2_O=Score
+Cheat2_O=$FFFF Max Score,$0000 No Score
 Cheat3="Max Or No Score\Player 4",8110477E ????
-Cheat3_O=Score
-Score=$FFFF Max Score,$0000 No Score
+Cheat3_O=$FFFF Max Score,$0000 No Score
 
 //----
 
@@ -10574,7 +10560,7 @@ Cheat20_O=$01 Intro,$04 Big Boo's Haunt,$05 Cool Cool Mountain,$06 Mushroom Cast
 //----
 
 [AD788469-B0FBA7D9-C:45]
-Name=Super Mario 64 - Star Road (U) (Hack)
+Name=Super Mario 64 - Star Road. (U) (v1.0) - (17 July 2023)
 Cheat0="Press GS For 255 Coins",8919F178 00FF
 Cheat0_N=Press GS Once on a Level To Get that amount of Coins
 Cheat1="Have\Level Select",A032D58C 00??
@@ -11144,7 +11130,7 @@ Cheat41_N=This modifies the equipment you are carrying.If you Use Black Gauntlet
 Cheat41_O=$02 Silver Scale,$04 Golden Scale,$06 Giants Knife (Broken),$40 Bullet Bag (Holds 30),$80 Bullet Bag (Holds 40),$C0 Bullet Bag (Holds 50),$47 Kid Wallet (Holds 99),$57 Adult Wallet (Holds 200),$67 Giant Wallet (Holds 500)
 Cheat42="Equipment Modifier 2",8011EDE3 00??
 Cheat42_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
-Cheat42_O=[ZeldaCosmic]Equipt2
+Cheat42_O=$08 Bomb Bag (Holds 20),$10 Bomb Bag (Holds 30),$18 Bomb Bag (Holds 40),$20 Goron's Bracelet,$28 Silver Gauntlets,$30 Golden Gauntlets,$35 Black Gauntlets,
 Cheat43="Press L\To Levitate Main Character",D01E2055 0020,811F4630 40CB
 Cheat43_N=Press L To Levitate & Let go to land
 Cheat44="Max\Double Defense Power",8011EE0F 0014
@@ -11999,8 +11985,8 @@ Cheat43="Equipment Modifier 1",8011A832 00??
 Cheat43_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
 Cheat43_O=$02 Silver Scale,$04 Golden Scale,$06 Giants Knife (Broken),$40 Bullet Bag (Holds 30),$80 Bullet Bag (Holds 40),$C0 Bullet Bag (Holds 50),$47 Kid Wallet (Holds 99),$57 Adult Wallet (Holds 200),$67 Giant Wallet (Holds 500)
 Cheat44="Equipment Modifier 2",8011A833 00??
-Cheat44_N=$08 Bomb Bag (Holds 20),$10 Bomb Bag (Holds 30),$18 Bomb Bag (Holds 40),$20 Goron's Bracelet,$28 Silver Gauntlets,$30 Golden Gauntlets,$35 Black Gauntlets,
-Cheat44_O=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
+Cheat44_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
+Cheat44_O=$08 Bomb Bag (Holds 20),$10 Bomb Bag (Holds 30),$18 Bomb Bag (Holds 40),$20 Goron's Bracelet,$28 Silver Gauntlets,$30 Golden Gauntlets,$35 Black Gauntlets,
 Cheat45="Press L\For Instant Step Hoover Boots",D01C8675 0020,811DAC50 40CB,D01C8675 0000,811DB472 000D,8011A800 00??
 Cheat45_N=Take off from Anywhere & to go higher just press L Once, this will lift you higher while walking.to come back Down Keep R pressed.Once you have enabled the code press Start & then start again.
 Cheat45_O$31 Kokiri Tunic & Hover Boots,$32 Goron Tunic & Hover Boots,$33 Zora Tunic & Hover Boots,$34 Black Tunic & Hover Boots,$35 White Tunic & Hover Boots,$36 Yellow Tunic & Hover Boots
@@ -13172,17 +13158,16 @@ Cheat1="Always Your Turn\Player 2",802EF798 0001
 Cheat2="Ball\Always In Hand",802EF79C 0002
 Cheat3="Max Ratings\Player 1",81062C6A FFFF
 Cheat4="Max Ratings\Player 2",81062CEE ????
-Cheat4_O=Wins
+Cheat4_O=$0000 Zero Points,$FFFF Max Points
 Cheat5="Wins Options\Player 1",812EF780 ????
-Cheat5_O=Wins
+Cheat5_O=$0000 Zero Points,$FFFF Max Points
 Cheat6="Wins Options\Player 2",812EF782 ????
-Cheat6_O=Wins
+Cheat6_O=$0000 Zero Points,$FFFF Max Points
 Cheat7="Foul Score Options\Player 1",812EF784 ????
-Cheat7_O=Wins
+Cheat7_O=$0000 Zero Points,$FFFF Max Points
 Cheat8="Foul Score Options\Player 2",812EF786 ????
-Cheat8_O=Wins
+Cheat8_O=$0000 Zero Points,$FFFF Max Points
 Cheat9="Aiming Sites Always Available",812F0922 0004
-Wins=$0000 Zero Points,$FFFF Max Points
 
 //----
 
@@ -14044,10 +14029,10 @@ Cheat9="In-Game Cheats\Big Head Mode",810671EA 0001
 Cheat10="In-Game Cheats\Fat-Skinny Mode",810671F6 0001
 Cheat11="In-Game Cheats\Paperman Mode",810671F2 0001
 Cheat12="Play As\Player 1",8012CD73 00??
-Cheat12_N=$00 Angels,$01 Orioles,$02 Boston Red Sox,$03 Chicago White Sox,$04 Indians,$05 Detroit Tigers,$06 Royals,$07 Twins,$08 New York YAnkees,$09 Oakland Athletics,$0A Seattle Mariners,$0B Devil Rays,$0C Texas Rangers,$0D Toronto Blue Jays,$0E Diamondbacks,$0F Braves,$10 Chicago Cubs,$11 Cincinnati Reds,$12 Colorado Rockies,$13 Marlins,$14 Astros,$15 Dodgers,$16 Milwaukee Brewers,$17 Expos,$18 Mets,$19 Phillies,$1A Pittsburg Pirates,$1B St. Louis Cardinals,$1C Padres,$1D San Francisco Giants,$1E Al All Stars,$1F NL All Stars,$20 Free Agent (Glitches) Note
+Cheat12_N=Exhibition Mode Only
 Cheat12_O=$00 Angels,$01 Orioles,$02 Boston Red Sox,$03 Chicago White Sox,$04 Indians,$05 Detroit Tigers,$06 Royals,$07 Twins,$08 New York YAnkees,$09 Oakland Athletics,$0A Seattle Mariners,$0B Devil Rays,$0C Texas Rangers,$0D Toronto Blue Jays,$0E Diamondbacks,$0F Braves,$10 Chicago Cubs,$11 Cincinnati Reds,$12 Colorado Rockies,$13 Marlins,$14 Astros,$15 Dodgers,$16 Milwaukee Brewers,$17 Expos,$18 Mets,$19 Phillies,$1A Pittsburg Pirates,$1B St. Louis Cardinals,$1C Padres,$1D San Francisco Giants,$1E Al All Stars,$1F NL All Stars,$20 Free Agent (Glitches)
 Cheat13="Play As\Player 2",8012CD71 00??
-Cheat13_N=$00 Angels,$01 Orioles,$02 Boston Red Sox,$03 Chicago White Sox,$04 Indians,$05 Detroit Tigers,$06 Royals,$07 Twins,$08 New York YAnkees,$09 Oakland Athletics,$0A Seattle Mariners,$0B Devil Rays,$0C Texas Rangers,$0D Toronto Blue Jays,$0E Diamondbacks,$0F Braves,$10 Chicago Cubs,$11 Cincinnati Reds,$12 Colorado Rockies,$13 Marlins,$14 Astros,$15 Dodgers,$16 Milwaukee Brewers,$17 Expos,$18 Mets,$19 Phillies,$1A Pittsburg Pirates,$1B St. Louis Cardinals,$1C Padres,$1D San Francisco Giants,$1E Al All Stars,$1F NL All Stars,$20 Free Agent (Glitches) Note
+Cheat13_N=Exhibition Mode Only
 Cheat13_O=$00 Angels,$01 Orioles,$02 Boston Red Sox,$03 Chicago White Sox,$04 Indians,$05 Detroit Tigers,$06 Royals,$07 Twins,$08 New York YAnkees,$09 Oakland Athletics,$0A Seattle Mariners,$0B Devil Rays,$0C Texas Rangers,$0D Toronto Blue Jays,$0E Diamondbacks,$0F Braves,$10 Chicago Cubs,$11 Cincinnati Reds,$12 Colorado Rockies,$13 Marlins,$14 Astros,$15 Dodgers,$16 Milwaukee Brewers,$17 Expos,$18 Mets,$19 Phillies,$1A Pittsburg Pirates,$1B St. Louis Cardinals,$1C Padres,$1D San Francisco Giants,$1E Al All Stars,$1F NL All Stars,$20 Free Agent (Glitches)
 
 //----
@@ -14123,13 +14108,12 @@ Cheat0_O=$00 Lt. James Marshall "Woodstock",$01 Lt. John Lawless "Hardcore",$02 
 Cheat1="Helicopter Modifier",800B2534 00??
 Cheat1_O=$01 Huey,$02 Chinook (Hidden),$03 Super Stallion (Hidden),$04 Apache (Hidden)
 Cheat2="Always Play Level Modifier",800B254C 00??
-Cheat2_O=Level
+Cheat2_O=$00 Mission 1-Plastic Pandemonium,$01 Mission 2-Going Car-razy,$02 Mission 3-The Train That Could,$03 Mission 4-Tan Terror-Tory,$04 Mission 5-Bug Bath,$05 Mission 6-Uninvited Guests,$06 Mission 7-Ants In The Pants,$07 Mission 8-Saucer Attack,$08 Mission 9-The Heat is On,$09 Mission 10-The Melting Pot,$0A Mission 11-River Rapids Riot,$0B Mission 12-Nighttime Teddy,$0C Mission 13-Demolition Time,$0D Mission 14-Pick Up The Pieces,$0E Mission 15-Have\An Ice Day,$0F Mission 16-Plastro's Revenge,$10 Mission 17-Bug Hunt: Chew Chew Bug-B-Q,$11 Mission 18-Bug Hunt: Crispy Critters,$12 Mission 19-Flag-Nab-It: Fort Frenzy,$13 Mission 20-Flag-Nab-it: Freezer Burn,$14 Mission 21-Food Fight: Picnic Panic,$15 Mission 22-Food Fight: Cherry Surprise,$16 Mission 23-Rescue: Don't Feed The Crabs,$17 Mission 24-Rescue: Tide Pool Terror
 Cheat3="Start On Play Level Modifier",D00B254C 0000,800B254C 00??
-Cheat3_O=Level
+Cheat3_O=$00 Mission 1-Plastic Pandemonium,$01 Mission 2-Going Car-razy,$02 Mission 3-The Train That Could,$03 Mission 4-Tan Terror-Tory,$04 Mission 5-Bug Bath,$05 Mission 6-Uninvited Guests,$06 Mission 7-Ants In The Pants,$07 Mission 8-Saucer Attack,$08 Mission 9-The Heat is On,$09 Mission 10-The Melting Pot,$0A Mission 11-River Rapids Riot,$0B Mission 12-Nighttime Teddy,$0C Mission 13-Demolition Time,$0D Mission 14-Pick Up The Pieces,$0E Mission 15-Have\An Ice Day,$0F Mission 16-Plastro's Revenge,$10 Mission 17-Bug Hunt: Chew Chew Bug-B-Q,$11 Mission 18-Bug Hunt: Crispy Critters,$12 Mission 19-Flag-Nab-It: Fort Frenzy,$13 Mission 20-Flag-Nab-it: Freezer Burn,$14 Mission 21-Food Fight: Picnic Panic,$15 Mission 22-Food Fight: Cherry Surprise,$16 Mission 23-Rescue: Don't Feed The Crabs,$17 Mission 24-Rescue: Tide Pool Terror
 Cheat4="Unlock All Planes",810B252A 0105
 Cheat5="Infinite Health",81062444 0C00,81062446 0015,81000054 3C03,81000056 0002,81000058 03E0,8100005A 0008,8100005C AFC3,8100005E 005C
 Cheat6="Infinite Ammo",81049630 2400
-Level=$00 Mission 1-Plastic Pandemonium,$01 Mission 2-Going Car-razy,$02 Mission 3-The Train That Could,$03 Mission 4-Tan Terror-Tory,$04 Mission 5-Bug Bath,$05 Mission 6-Uninvited Guests,$06 Mission 7-Ants In The Pants,$07 Mission 8-Saucer Attack,$08 Mission 9-The Heat is On,$09 Mission 10-The Melting Pot,$0A Mission 11-River Rapids Riot,$0B Mission 12-Nighttime Teddy,$0C Mission 13-Demolition Time,$0D Mission 14-Pick Up The Pieces,$0E Mission 15-Have\An Ice Day,$0F Mission 16-Plastro's Revenge,$10 Mission 17-Bug Hunt: Chew Chew Bug-B-Q,$11 Mission 18-Bug Hunt: Crispy Critters,$12 Mission 19-Flag-Nab-It: Fort Frenzy,$13 Mission 20-Flag-Nab-it: Freezer Burn,$14 Mission 21-Food Fight: Picnic Panic,$15 Mission 22-Food Fight: Cherry Surprise,$16 Mission 23-Rescue: Don't Feed The Crabs,$17 Mission 24-Rescue: Tide Pool Terror
 
 //----
 
@@ -14267,7 +14251,7 @@ Cheat10="Infinite\Energy\T-Rex Baby",801201B9 0063,801207CF 000A,801207D0 000A
 Cheat10_N=With Infinite Energy On Avoid Picking up the ! Or ? Stop Energy Honey Combs or you will be stuck.
 Cheat11="Infinite\Air",8112FFD2 42C8
 Cheat12="Play As",D008B494 0020,8012BFAC 00??
-Cheat12_N=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy Note
+Cheat12_N=To use this cheat, put the cheat on, then press L as you walk through a door to become that chosen character
 Cheat12_O=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy
 Cheat13="Instant Warp Options",D008B494 0000,8112C5A0 ????,8012C5A3 0001
 Cheat13_N=To use this cheat, put the cheat on, then walk through a door to arrive at that chosen destination
@@ -14320,7 +14304,7 @@ Cheat14_N=Press Top D-pad,Do not use with either Have All Moves,Or Have Dragon K
 Cheat15="Have\Dragon Kazooie",D1081084 0800,8112C770 8029,D1081084 0800,8112C772 0000,81290078 FFFF,8129007A FFFF
 Cheat15_N=Press Top D-pad,Do not use with Have All Modes Or Have All Moves & Dragon Kazooie
 Cheat16="Play As",D0081085 0020,8012704C 00??
-Cheat16_N=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy Note
+Cheat16_N=To use this cheat, put the cheat on, then press L as you walk through a door to become that chosen character
 Cheat16_O=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy
 Cheat17="Instant Warp Options",D0081084 0000,81127640 ????,80127643 0001
 Cheat17_N=To use this cheat, put the cheat on, then walk through a door to arrive at that chosen destination
@@ -14386,7 +14370,6 @@ Cheat6_O=$00 Standard,$01 Offensive,$02 Defensive,$03 Nimble
 
 [3D62A533-61DDC111-C:50]
 Name=BattleTanx (E)
-Body=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 Cheat0="Have\Storm Ravens Gang",80135773 0001
 Cheat1="Run Story",80135770 0001
 Cheat2="Start With All Weapons",80135765 0001
@@ -14451,22 +14434,21 @@ Cheat60="Multiplayer\Balltlelord Mode\Player 1\Infinite Secondary Weapons In Bat
 Cheat61="Multiplayer\Balltlelord Mode\Player 2\Infinite Secondary Weapons In Battlelord",802D9F31 00FF,802D9F33 00FF,802D9F35 00FF,802D9F37 00FF,802D9F39 00FF,802D9F3D 00FF,802D9F3F 00FF,802D9F41 00FF,802D9F43 00FF,802D9F45 00FF,802D9F47 00FF,802D9F49 00FF
 Cheat62="In Campaign 3 Enemy Tanks May Join You",802D9AAC 0000,802DB3D4 0000,802DCCFC 0000
 Cheat63="Multiplayer\Player 1\Main Weapon",802D85EB 00??
-Cheat63_O=Weapon
+Cheat63_O=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
 Cheat64="Multiplayer\Player 2\Main Weapon",802D9F13 00??
-Cheat64_O=Weapon
+Cheat64_O=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
 Cheat65="Multiplayer\Player 1\Secondary Weapon",802D85F7 00??
-Cheat65_O=Weapon
+Cheat65_O=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
 Cheat66="Multiplayer\Player 2\Secondary Weapon",802D9F1F 00??
-Cheat66_O=Weapon
+Cheat66_O=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
 Cheat67="Multiplayer\Player 1\Tank Body Modifier",802D819B 00??
-Cheat67_O=Body
+Cheat67_O=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 Cheat68="Multiplayer\Player 2\Tank Body Modifier",802D9AC3 00??
-Cheat68_O=Body
+Cheat68_O=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 Cheat69="Multiplayer\Player 1\Goalith Tank On Tracks Body Modifier",802D86A3 00??
-Cheat69_O=Body
+Cheat69_O=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 Cheat70="Multiplayer\Player 2\Goalith Tank On Tracks Body Modifier",802D9FCB 00??
-Cheat70_O=Body
-Weapon=$00 Nothing,$01 Normal Tank Shells,$02 Motor Tank Shells,$03 Big Tank Shells,$04 Rockets,$05 Laser,$06 Nuke,$07 Gernades,$08 ?,$09 ?,$0A Nuclear Lasers,$0B Remote Rockets,$0C Mines,$0D Gun Buddies,$0E Smoke Screen,$0F Cloaking,$10 Health
+Cheat70_O=$00 Normal Tank,$01 Motor Tank,$02 Big Tank
 
 //----
 
@@ -14700,7 +14682,7 @@ Cheat2="Infinite\99 Lives",810EC2D2 03E7
 Cheat3="Have\[All Keys]",810EBF60 0001,800EBF61 0001,810EBF62 0001
 Cheat4="Have\Max Bonus",810EC2CA 270F
 Cheat5="Level Select",81103D82 00??
-Cheat5_O=[BuckBumble]Level Select
+Cheat5_O=$01 Mission 1 Shock Strike,$02 Mission 2 Radar Run,$03 Mission 3 Return Fire,$04 Mission 4 The Sonar Tower,$05 Mission 5 Big Blips,$06 Mission 6 Short Fuse,$07 Mission 7 Outpost,$08 Mission 8 Sewer,$09 Mission 9 Clean Up,$0A Mission 10 Scramble Pylon,$0B Mission 11 Herding Research,$0C Mission 12 The Extractor,$0D Mission 13 Nuke Tower,$0E Mission 14 Mucus Storage,$0F Mission 15 Depot Attack,$10 Boss Mission Destroy Carrier Level,$11 Mission 16 Sterilization,$12 Mission 17 Scorpion Killer,$13 Mission 18 Core Nuke,$14 Mission 19 Gate Keeper,$15 Queen Mission
 Cheat6="Have\[High Score]",810EBF4E FFFF
 Cheat7="Level Select Menu",811022CA 0EF0
 
@@ -14764,7 +14746,7 @@ Cheat14="Level Select",89389C94 ????,89389C91 0000
 Cheat14_N=You must use this code on a saved game, because the intro to the first level will mess up the game. Now select the saved game, and hold down the GS button until the level loads. Some of the boss stages will not let you fight the boss unless you re-enter the area. Also, with the part of stage modifier, the second code modifies the part of the level that you are in, and 0000 is the level's start.
 Cheat14_O=$0000 Forest of Silence,$0002 Castle Wall,$0003 Villa,$0004 Inside Villa,$0006 Garden Maze,$0007 Tunnel,$0008 Underground Waterway,$0009 Castle Center,$0010 Tower of Execution,$0011 - Tower of Sorcery,$0012 - Tower of Science,$0013 - Duel Tower,$0014 - Fight With Death/Actrise,$0015 - Castle Keep,$0016 - Intro (Glitch),$0017 - Clock Tower,$0018 - Final Dracula,$001A - Fight With Maze Boss,$001B - Room of Clocks
 Cheat15="Switch From",80389C41 00??
-Cheat15_N=$00 Carrie to Reindhart,$01 Reindhart to Carrie Note
+Cheat15_N=This Switch From Cheat lets you switch characters on a saved game For example, if you are Reindhart and you want to be Carrie in the middle of your game save it and then enable this Cheat and press F1. when you start your saved game back up you'll be Carrie instead of Reindhart.
 Cheat15_O=$00 Carrie to Reindhart,$01 Reindhart to Carrie
 
 //----
@@ -16109,7 +16091,7 @@ Cheat0="Infinite\Health",8029129F 0003
 Cheat1="Infinite\99 Lives",8029129B 0063
 Cheat2="1000 Garibs",80291297 0064
 Cheat3="Infinite\Activate Cheat\Modifier 1",81298CFC ????
-Cheat3_N=$0080 Level Select,$0100 Open Portals,$0200 Open Levels,$0380 All Of The Above Note
+Cheat3_N=Once enabled Press D-Pad Up on the Main Menu. The Hand will then be bottom left hand side. Click A to Enter and Select your choice.
 Cheat3_O=$0080 Level Select,$0100 Open Portals,$0200 Open Levels,$0380 All Of The Above
 Cheat4="Infinite\Activate Cheat\Modifier 2",81298CFE ????
 Cheat4_O=$0002 Call Ball (Press L),$0008 Infinite Lives,$0040 Infinite Energy,$0200 Big Ball,$024A All Of The Above
@@ -16140,7 +16122,7 @@ Cheat0="Infinite\Health",8029129F 0003
 Cheat1="Infinite\99 Lives",8029129B 0063
 Cheat2="1000 Garibs",80291297 0064
 Cheat3="Infinite\Activate Cheat\Modifier 1",81298CFC ????
-Cheat3_N=$0080 Level Select,$0100 Open Portals,$0200 Open Levels,$0380 All Of The Above Note
+Cheat3_N=Once enabled Press D-Pad Up on the Main Menu. The Hand will then be bottom left hand side. Click A to Enter and Select your choice.
 Cheat3_O=$0080 Level Select,$0100 Open Portals,$0200 Open Levels,$0380 All Of The Above
 Cheat4="Infinite\Activate Cheat\Modifier 2",81298CFE ????
 Cheat4_O=$0002 Call Ball (Press L),$0008 Infinite Lives,$0040 Infinite Energy,$0200 Big Ball,$024A All Of The Above
@@ -17306,12 +17288,11 @@ Cheat1_O=$0000 0 Points,$270F 9999 Points
 [EB70F502-2726143A-C:50]
 Name=NFL Blitz 2001 (E) [NTSC-Convert]
 Cheat0="Fire Team\Player 1",800EC0CB 00??
-Cheat0_O=Fire Team
+Cheat0_O=$01 Always On,$00 Never On
 Cheat1="Fire Team\Player 2",800EC0CF 00??
-Cheat1_O=Fire Team
+Cheat1_O=$01 Always On,$00 Never On
 Cheat2="Infinite Turbo\Player 1",810EC12C 42C8,810EC12E 0000
 Cheat3="Infinite Turbo\Player 2",81DEC164 42C8,81DEC166 0000
-Fire Team=$01 Always On,$00 Never On
 
 //----
 
@@ -17717,33 +17698,13 @@ Cheat20="Have All\Weapons and Infinite Max Ammo\Level 19",50000904 0000,8024A28B
 [20FD0BF1-F5CF1D87-C:50]
 Name=Rat Attack (E) (M6)
 Cheat0="Play As/Player 1",80150DD3 00??
-Cheat0_O=[RatAttack]Play As
+Cheat0_O=$00 Hai Jinx,$01 Sparky,$02 Manx,$03 Muffy Dupont,$04 Bob Cat,$05 Smokey,$06 Atomicat,$07 Pearl
 Cheat1="Play As/Player 2",80150DE3 00??
-Cheat1_O=[RatAttack]Play As
+Cheat1_O=$00 Hai Jinx,$01 Sparky,$02 Manx,$03 Muffy Dupont,$04 Bob Cat,$05 Smokey,$06 Atomicat,$07 Pearl
 Cheat2="Play As/Player 3",80150DF3 00??
-Cheat2_O=[RatAttack]Play As
+Cheat2_O=$00 Hai Jinx,$01 Sparky,$02 Manx,$03 Muffy Dupont,$04 Bob Cat,$05 Smokey,$06 Atomicat,$07 Pearl
 Cheat3="Play As/Player 4",80150E03 00??
-Cheat3_O=[RatAttack]Play As
-Cheat4="Max Score",81157D20 05F5,81157D22 E0FF
-Cheat5="Unlock All\Levels and Stages",50000810 0000,8000A655 00FF
-Cheat6="Unlock All\Difficulties",80007CA7 00FF,81007CA8 FFFF
-Cheat7="Infinite\Health\Player 1",80139153 0000
-Cheat8="Infinite\Lives\Player 1",80139173 0012
-Cheat9="Infinite\Health\Player 2",80139157 0000
-Cheat10="Infinite\Lives\Player 2",80139177 0012
-
-//----
-
-[85670AB4-3834BE8A-C:50]
-Name=Rat Attack (E) (M6) [f1] (NTSC)
-Cheat0="Play As/Player 1",80150DD3 00??
-Cheat0_O=[RatAttack]Play As
-Cheat1="Play As/Player 2",80150DE3 00??
-Cheat1_O=[RatAttack]Play As
-Cheat2="Play As/Player 3",80150DF3 00??
-Cheat2_O=[RatAttack]Play As
-Cheat3="Play As/Player 4",80150E03 00??
-Cheat3_O=[RatAttack]Play As
+Cheat3_O=$00 Hai Jinx,$01 Sparky,$02 Manx,$03 Muffy Dupont,$04 Bob Cat,$05 Smokey,$06 Atomicat,$07 Pearl
 Cheat4="Max Score",81157D20 05F5,81157D22 E0FF
 Cheat5="Unlock All\Levels and Stages",50000810 0000,8000A655 00FF
 Cheat6="Unlock All\Difficulties",80007CA7 00FF,81007CA8 FFFF
@@ -17756,21 +17717,6 @@ Cheat10="Infinite\Lives\Player 2",80139177 0012
 
 [67D21868-C5424061-C:50]
 Name=Rakuga Kids (E)
-Cheat0="Infinite Energy\Player 1",800ACB89 00??
-Cheat0_O=$00 None,$40 Max
-Cheat1="Infinite Energy\Player 2",800ACC79 00??
-Cheat1_O=$00 None,$40 Max
-Cheat2="Super Attacks\Player 1",800ACB8D 00??
-Cheat2_O=$00 None,$03 3
-Cheat3="Super Attacks\Player 2",800ACC7D 00??
-Cheat3_O=$00 None,$03 3
-Cheat4="Infinite Match Time",800ABC33 0000
-Cheat5="Unlock Extras",800ACD55 00FF,800ACD57 00FF
-
-//----
-
-[49020C8E-A000B949-C:50]
-Name=Rakuga Kids (E) [f1] (NTSC)
 Cheat0="Infinite Energy\Player 1",800ACB89 00??
 Cheat0_O=$00 None,$40 Max
 Cheat1="Infinite Energy\Player 2",800ACC79 00??
@@ -17868,17 +17814,17 @@ Cheat10="Have All Characters",5000125C 0000,810EB858 0000,5000125C 0000,810EB85A
 [6CEC9F32-2630EF82-C:50]
 Name=Ready 2 Rumble Boxing - Round 2 (E) [NTSC-Convert]
 Cheat0="Player 1\Health",810FF6B6 00??
-Cheat0_O=Health
+Cheat0_O=$64 Infinite,$00 No Health
 Cheat1="Player 1\Stamina",810FF6BA 00??
-Cheat1_O=Stamina
+Cheat1_O=$64 Infinite,$00 No Stamina
 Cheat2="Player 1\RUMBLE",810FF6C2 00??
-Cheat2_O=Rumble
+Cheat2_O=$90 Max,$00 Never Rumble
 Cheat3="Player 2\Health",81100316 00??
-Cheat3_O=Health
+Cheat3_O=$64 Infinite,$00 No Health
 Cheat4="Player 2\Stamina",8110031A 00??
-Cheat4_O=Stamina
+Cheat4_O=$64 Infinite,$00 No Stamina
 Cheat5="Player 2\RUMBLE",81100322 00??
-Cheat5_O=Rumble
+Cheat5_O=$90 Max,$00 Never Rumble
 Cheat6="Infinite Time",810FE352 0E10
 Cheat7="Championship Mode\Top Rank",810F81BA 000A
 Cheat8="Championship Mode\Max Money",810F81C8 7FFF,810F81CA FFFF
@@ -17890,9 +17836,6 @@ Cheat13="Championship Mode\Max Dexterity",810F81D8 447A,810F81DA 0000
 Cheat14="Championship Mode\Max Experience",810F81DC 447A,810F81DE 0000
 Cheat15="Enable Extra Characters",80101E6F 0003,80101E73 0003,80101E77 0003,80101E7B 0003,80101E7F 0003,80101E83 0003,80101E87 0003
 Cheat16="Win 1 Fight to Complete Arcade Mode",80101F0B 000B
-Health=$64 Infinite,$00 No Health
-Rumble=$90 Max,$00 Never Rumble
-Stamina=$64 Infinite,$00 No Stamina
 
 //----
 
@@ -17906,7 +17849,7 @@ Cheat3_N=This allows you to select what character you wish to play as. Just slec
 Cheat3_O=$0080 Leon Original,$0180 Claire Original,$0280 Leon Original,$0380 Claire Original,$0480 Leon Wounded,$0580 Claire without jacket,$0680 Leon Wounded,$0780 Claire without jacket,$0880 Leon as Stars,$0980 Claire as Biker,$0A80 Leon as Biker,$0B80 Claires body Leons outfit,$0C80 Hunk (can crash the game),$0D80 To Fu,$0E80 Ada (can crash the game),$0F80 Cheryl
 Cheat4="Play Extra Mission",810DDBEE 00??
 Cheat4_N=This allows you to select what extra mission you wish to play. Just slect on load and carry on as normal at the menu and when in game you will be the character of your choice Do not use at the same time as [Resident Evil 2 Mode]
-Cheat4_O=Extra Mission=$48 The 4th Survivor,$49 To-Fu
+Cheat4_O=$48 The 4th Survivor,$49 To-Fu
 Cheat5="Have\Item On Slot Select\Slot 01",800E59C8 00??,800E59C9 00FF
 Cheat5_N=This will give you the item of your choice and will be infinite on that chosen slot
 Cheat5_O=$00 Nothing,$01 Knife Hunk,$02 Handgun Hunk,$03 Handgun Different Ada,$04 Custom Handgun Hunk,$05 Magnum Hunk,$06 Custom Magnum Hunk,$07 Shotgun Hunk,$08 Custom Shotgun Hunk,$09 Grenade Launcher Claire,$0A Grenade Launcher (Flame Rounds) Claire,$0B Grenade Launcher (Acid Rounds) Claire,$0C Bowgun Claire,$0D Colt S.A.A. Claire,$0E Spark Shot Claire,$0F Sub Machine Gun Leon,$10 Flamethrower Leon,$11 Rocket Launcher Claire,$12 Gatling Gun Claire,$13 Machine Gun ???,$14 Handgun Bullets,$15 Shotgun Shells,$16 Magnum Bullets,$17 Fuel,$18 Grenade Rounds,$19 Flame Rounds,$1A Acid Rounds,$1B Machine Gun Bullets,$1C S. Shot Bullets,$1D Bow Gun Bolts,$1E Ink Ribbon,$1F Small Key,$20 Hand Gun Parts,$21 Magnum Parts,$22 Shotgun Parts,$23 First Aid Spray,$24 Chemical FR-W09,$25 Chemical AC-W24,$26 Green Herb,$27 Red Herb,$28 Blue Herb,$29 Mixed Herb (Green),$2A Mixed Herb (Red&Green),$2B Mixed Herb (Blue&Green),$2C Mixed Herb (?),$2D Mixed Herb (?),$2E Mixed Herb (?),$2F Lighter,$30 Lock Pick,$31 Picture,$32 Valve Handle,$33 Red Jewel,$34 Red Card Key,$35 Blue Card Key,$36 Serpent Stone,$37 Jaguar Stone,$38 Blue Stone,$39 Blue Stone (?),$3A Eagle Stone,$3B Bishop Plug,$3C Rook Plug,$3D Knight Plug,$3E King Plug,$3F W. Box Key,$40 Detonator,$41 Plastic Bomb,$42 Bomb&Detonator,$43 Crank,$44 Film,$45 Film (?),$46 Film (?),$47 Unicorn Medal,$48 Eagle Medal,$49 Wolf Medal,$4A G. Cogwheel,$4B Manhole Opener,$4C Main Fuse,$4D Fuse Case,$4E Vaccine,$4F Vaccine Cart.,$50 Film,$51 Base Vaccine,$52 G-Virus,$53 Special Key,$54 Joint S Plug,$55 Joint N Plug,$56 Cord,$57 Film,$58 Cabin Key,$59 Precinct Key (blue),$5A Precinct Key (red),$5B Precinct Key (?),$5C Precinct Key (green),$5D C. Panel Key (red),$5E C. Panel Key (yellow),$5F P. Room Key,$60 MO Disk,$61 Lab Card Key,$62 Master Key,$63 Platform Key,$64 No Item,$65 No Item,$66 No Item,$67 No Item,$68 Chris's Diary,$69 Mail to Chris,$6A Memo to Leon,$6B Police Memorandum,$6C Operation Report 1,$6D Mail to the Chief,$6E Mail to the Chief (?),$6F Secretary's Diary A,$70 Secretary's Diar
@@ -18474,14 +18417,14 @@ Cheat6="Start with 9999 Monster Score ",812FD20E 270F
 [C00CA948-8E60D34B-C:50]
 Name=South Park - Chef's Luv Shack (E)
 Cheat0="Max Or No Score\Player 1",81104772 ????
-Cheat0_O=Score
+Cheat0_O=$FFFF Max Score,$0000 No Score
 Cheat1="Max Or No Score\Player 2",81104776 ????
-Cheat1_O=Score
+Cheat1_O=$FFFF Max Score,$0000 No Score
 Cheat2="Max Or No Score\Player 3",8110477A ????
-Cheat2_O=Score
+Cheat2_O=$FFFF Max Score,$0000 No Score
 Cheat3="Max Or No Score\Player 4",8110477E ????
-Cheat3_O=Score
-Score=$FFFF Max Score,$0000 No Score
+Cheat3_O=$FFFF Max Score,$0000 No Score
+
 
 //----
 
@@ -19260,8 +19203,8 @@ Cheat43="Equipment Modifier 1",80118472 00??
 Cheat43_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
 Cheat43_O=$02 Silver Scale,$04 Golden Scale,$06 Giants Knife (Broken),$40 Bullet Bag (Holds 30),$80 Bullet Bag (Holds 40),$C0 Bullet Bag (Holds 50),$47 Kid Wallet (Holds 99),$57 Adult Wallet (Holds 200),$67 Giant Wallet (Holds 500)
 Cheat44="Equipment Modifier 2",80118473 00??
-Cheat44_N=$08 Bomb Bag (Holds 20),$10 Bomb Bag (Holds 30),$18 Bomb Bag (Holds 40),$20 Goron's Bracelet,$28 Silver Gauntlets,$30 Golden Gauntlets,$35 Black Gauntlets,
-Cheat44_O=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
+Cheat44_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
+Cheat44_O=$08 Bomb Bag (Holds 20),$10 Bomb Bag (Holds 30),$18 Bomb Bag (Holds 40),$20 Goron's Bracelet,$28 Silver Gauntlets,$30 Golden Gauntlets,$35 Black Gauntlets,
 Cheat45="Press L\For Instant Step Hoover Boots",D01C64F5 0020,811D8AE0 40CB,D01C64F5 0000,811D92F2 000D,80118440 00??
 Cheat45_N=Take off from Anywhere & to go higher just press L Once, this will lift you higher while walking.to come back Down Keep R pressed.Once you have enabled the code press Start & then start again.
 Cheat45_O=$31 Kokiri Tunic & Hover Boots,$32 Goron Tunic & Hover Boots,$33 Zora Tunic & Hover Boots,$34 Black Tunic & Hover Boots,$35 White Tunic & Hover Boots,$36 Yellow Tunic & Hover Boots
@@ -19374,8 +19317,8 @@ Cheat43="Equipment Modifier 1",80118472 00??
 Cheat43_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
 Cheat43_O=$02 Silver Scale,$04 Golden Scale,$06 Giants Knife (Broken),$40 Bullet Bag (Holds 30),$80 Bullet Bag (Holds 40),$C0 Bullet Bag (Holds 50),$47 Kid Wallet (Holds 99),$57 Adult Wallet (Holds 200),$67 Giant Wallet (Holds 500)
 Cheat44="Equipment Modifier 2",80118473 00??
-Cheat44_N=$08 Bomb Bag (Holds 20),$10 Bomb Bag (Holds 30),$18 Bomb Bag (Holds 40),$20 Goron's Bracelet,$28 Silver Gauntlets,$30 Golden Gauntlets,$35 Black Gauntlets,
-Cheat44_O=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
+Cheat44_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
+Cheat44_O=$08 Bomb Bag (Holds 20),$10 Bomb Bag (Holds 30),$18 Bomb Bag (Holds 40),$20 Goron's Bracelet,$28 Silver Gauntlets,$30 Golden Gauntlets,$35 Black Gauntlets,
 Cheat45="Press L\For Instant Step Hoover Boots",D01C64F5 0020,811D8AE0 40CB,D01C64F5 0000,811D92F2 000D,80118440 00??
 Cheat45_N=Take off from Anywhere & to go higher just press L Once, this will lift you higher while walking.to come back Down Keep R pressed.Once you have enabled the code press Start & then start again.
 Cheat45_O=$31 Kokiri Tunic & Hover Boots,$32 Goron Tunic & Hover Boots,$33 Zora Tunic & Hover Boots,$34 Black Tunic & Hover Boots,$35 White Tunic & Hover Boots,$36 Yellow Tunic & Hover Boots
@@ -20554,7 +20497,7 @@ Cheat12="Instant Warp Options",D008B284 0000,8012C390 ????,8012C393 0001
 Cheat12_N=To use this cheat, put the cheat on, then walk through a door to arrive at that chosen destination
 Cheat12_O=$00AD Spiral Mountain - Grunty's Old Lair,$00AE Spiral Mountain - Behind The Waterfall,$00AF Spiral Mountain - Top Of Castle,$0173 Spiral Mountain - Banjo's house,$0142 Jinjo Village - Jinjo Village,$0144 Jinjo Village - King Jingalings throne room,$0143 Jinjo Village - Bottles house,$0145 Jinjo Village - Green Jinjo's House,$0146 Jinjo Village - Black Jinjo's House,$0147 Jinjo Village - Yellow Jinjo's House,$0148 Jinjo Village - Blue Jinjo's House,$014A Jinjo Village - Brown Jinjo's House,$014B Jinjo Village - Orange Jinjo's House,$014C Jinjo Village - Purple Jinjo's House,$014D Jinjo Village - Red Jinjo's House,$014E Jinjo Village - White Jinjo's House,$00B6 Mayahem Temple - Humba's Wigwam,$00B7 Mayahem Temple - Mumbo's skull,$00B8 Mayahem Temple - The Temple,$00B9 Mayahem Temple - Prison Compound,$00BC Mayahem Temple - Code chamber,$00C4 Mayahem Temple - Jade Snake Grove,$00C5 Mayahem Temple - Treasure Chamber,$00C6 Mayahem Temple - Kickball Arena,$0177 Mayahem Temple - Targitzan's Slighty Sacred Temple,$0178 Mayahem Temple - Inside Targitzans Temple,$0179 Mayahem Temple - Targitzan Temple Lobby,$017A Mayahem Temple - Targitzan's Temple Boss,$017F Mayahem Temple - Mayan Kickball Arena,$0166 Mayahem Temple - Multi,$0167 Still,$00C8 Mayahem Temple - Kickball Arena,$00C9 Mayahem Temple - Kickball Arena,$00C7 Mine,$00CA Glitter Gulch Mine - Fuel depot,$00CB Glitter Gulch Mine - Crushing shed,$00CC Glitter Gulch Mine - Flooded caves,$00CD Glitter Gulch Mine - Water storage,$00CE Glitter Gulch Mine - Waterfall cavern,$00CF Glitter Gulch Mine - Power hut basement,$00D0 Glitter Gulch Mine - Chuffy's cab,$00D1 Glitter Gulch Mine - Inside chuffy's boiler boss,$00D2 Glitter Gulch Mine - Gloomy caverns,$00D3 Glitter Gulch Mine - Generator caverns,$00D4 Glitter Gulch Mine - Power hut,$00D5 Glitter Gulch Mine - Wumba's wigwam,$00D7 Glitter Gulch Mine - Train station,$00D8 Glitter Gulch Mine - Prospectors hut,$00D9 Glitter Gulch Mine - Mumbo's hut,$00DA Glitter Gulch Mine - Toxic gas cave,$00DB Glitter Gulch Mine - Canary 
 Cheat13="Play As",D108B284 0000,8012BD9C 00??
-Cheat13_N=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy Note
+Cheat13_N=To use this cheat, put the cheat on, then press L as you walk through a door to become that chosen character
 Cheat13_O=$01 Banjo and Kazooie,$02 Snowball,$06 Bee,$07 Washing machine,$08 Stony,$0A Banjo,$0B Kazooie,$0C Submarine,$0D Mumbo,$0E Golden Goliath,$0F Detonator,$10 Truck,$12 T-rex baby,$13 T-rex daddy
 Cheat14="Beta Bottles Revenge Mode",80130172 0001,8008B4D1 0002
 Cheat14_N=Bottles Revenge is a Beta mode from Banjo Tooie that the RWP team recently uncovered after an extraordinary amount of effort. Bottles the Spirit transforms into Bottles the Devil and posses enemies nearby and allows a second player hooked up to Pad 2 to play as that Posses character to try to foil Banjos Plans. As player one goes about its business, player two uses every enemy nearby to try to nab Banjo and take away some life. This mode is incredible, and you can control almost every enemy in the game: slot machines, flying creatures, uggers, zubbas...and this is just the beginning. (Congrats Rare Witch Project)
@@ -22015,9 +21958,9 @@ Cheat6="Have All Levels Completed",80200B6A 0019,80200B6B 0019,80200B6C 0015,802
 [E7CB2C43-93841F10-C:45]
 Name=Choro Q 64 II - Hacha Mecha Grand Prix Race (J) [T-Eng]
 Cheat0="Sound Select\Music Mod",8014A558 00??
-Cheat0_O=Off-High
+Cheat0_O=$00 Off,$0A Medium,$10 High
 Cheat1="Sound Select\SFX Mod",8014A559 00??
-Cheat1_O=Off-High
+Cheat1_O=$00 Off,$0A Medium,$10 High
 Cheat2="Sound Select\Sound Mod",8014A55A 00??
 Cheat2_O=$00 Stereo,$01 Mono
 Cheat3="[Always First With 1 Lap to Race]",800F7A31 0003
@@ -22035,7 +21978,6 @@ Cheat13="Have\Max Roof Upgrades",81165C2A FFFF
 Cheat14="Have\Max Weapons Upgrades",81165C32 FFFF,80165C33 00FF
 Cheat15="[Weapon Select]",801F92A1 00??
 Cheat15_O=$00 Nothing,$01 Turbo Boost,$02 Invincible,$03 Red Spinning Fish?,$04 Wind Attack,$05 Smoke Bomb,$06 Tyre Buster Tacks,$07 Iron Beam Drop,$08 Cannon,$09 Freeze Bombs,$0A Lightening Cloud Attack,$0B Crafy Mine,$0C Rocket Launcher (Hangs?),$0D Hypno Spinning Birds,$0E 100 Ton Weight,$0F Bolt Launcher,$10 Blue Lazer Cloud
-Off-High=$00 Off,$0A Medium,$10 High
 
 //----
 
@@ -22476,15 +22418,14 @@ Cheat6_N=The Clip will count down but you will never run out of Ammo.
 
 [ABA51D09-C668BAD9-C:58]
 Name=40 Winks (E) (M3) (Prototype)
-Boss Note=Disable when on Boss Modes as it can cause hanging!
 Cheat0="Infinite\99 Moons",801D2A81 0063
 Cheat1="Infinite\50 Health ZZZ's",811D2A84 0032
 Cheat2="Infinite\40 Cogs",811D2A82 0028
-Cheat2_N=Boss Note
+Cheat2_N=Disable when on Boss Modes as it can cause hanging!
 Cheat3="Infinite\99 Lives",801D2A87 0063
-Cheat3_N=Boss Note
+Cheat3_N=Disable when on Boss Modes as it can cause hanging!
 Cheat4="Infinite\99 Tokens",801D2A8D 0063
-Cheat4_N=Boss Note
+Cheat4_N=Disable when on Boss Modes as it can cause hanging!
 Cheat5="Infinite\Max Air",811D2AA0 07C6,811DA2F6 07C1
 Cheat6="Have\All Dreamkeys Collected",50000802 0000,81207D70 FFFF
 Cheat7="Setting Options\Langauge Select",801D21AC 00??
@@ -22492,9 +22433,9 @@ Cheat7_O=$00 English,$01 Spanish,$02 Italian
 Cheat8="Setting Options\Difficulty Select",801D534F 00??
 Cheat8_O=$00 Easy,$01 Medium,$02 Hard
 Cheat9="Setting Options\SFX Volume Select",801D5350 00??
-Cheat9_O=Setting
+Cheat9_O=$00 Off,$05 Normal,$07 Max
 Cheat10="Setting Options\Music Volume Select",801D5351 00??
-Cheat10_O=Setting
+Cheat10_O=$00 Off,$05 Normal,$07 Max
 Cheat11="Setting Options\Rumble Pak Strength Select",801D5353 00??
 Cheat11_O=$00 Off (Normal),$05 Middle,$07 Max
 Cheat12="Setting Options\GFX Quality Select",801D5354 00??
@@ -22507,7 +22448,6 @@ Cheat15="Have\All 40 Winks Collected",50000602 0000,81207D60 FFFF
 Cheat15_N=Combined with Have All Levels Completed cheat will open the door for Have All 40 Winks
 Cheat16="Have All Levels Completed",50000202 0000,81207D6C FFFF
 Cheat17="Enable Cheat Menu",801D5355 0001
-Setting=$00 Off,$05 Normal,$07 Max
 
 //----
 
@@ -22694,7 +22634,7 @@ Cheat3="Start with  254L Fuel",800AFB23 00FF
 
 //----
 
-[4471C13E-CE7F44A9-C:00]
+[4471C13E-CE7F44A9-C:0]
 Name=Freak Boy (Prototype)
 Cheat0="Press L to Levitate",D008EBA5 0020,80255F65 00CC 
 Cheat1="Press B Button to Re-Live",D008EBA4 0040,8025637F 0000
@@ -23360,19 +23300,17 @@ Cheat2="Have All\Objectives Complete",80036FD3 0001
 Cheat3="Have All\64 Characters In Multi Player",8002B197 0040
 Cheat3_N=Enables all Characters selectable to play as in Multi-Player
 Cheat4="[Everything Unlocked]\Save File 1",50002902 0000,810699EE ????
-Cheat4_N=Unlock Note
-Cheat4_O=Unlock
+Cheat4_N=This Unlocks All Levels and Cheat Menu 
+Cheat4_O=$0000 Clear Save Slot,$FFFF Unlocked
 Cheat5="[Everything Unlocked]\Save File 2",50002902 0000,8106992E ????
-Cheat5_N=Unlock Note
-Cheat5_O=Unlock
+Cheat5_N=This Unlocks All Levels and Cheat Menu 
+Cheat5_O=$0000 Clear Save Slot,$FFFF Unlocked
 Cheat6="[Everything Unlocked]\Save File 3",50002902 0000,81069A4E ????
-Cheat6_N=Unlock Note
-Cheat6_O=Unlock
+Cheat6_N=This Unlocks All Levels and Cheat Menu 
+Cheat6_O=$0000 Clear Save Slot,$FFFF Unlocked
 Cheat7="[Everything Unlocked]\Save File 4",50002902 0000,8106998E ????
-Cheat7_N=Unlock Note
-Cheat7_O=Unlock
-Unlock=$0000 Clear Save Slot,$FFFF Unlocked
-Unlock Note=This Unlocks All Levels and Cheat Menu 
+Cheat7_N=This Unlocks All Levels and Cheat Menu 
+Cheat7_O=$0000 Clear Save Slot,$FFFF Unlocked
 
 //----
 
@@ -23419,26 +23357,25 @@ Cheat6_O=$01 Intro,$04 Big Boo's Haunt,$05 Cool Cool Mountain,$06 Mushroom Castl
 Cheat7="Have\Debug Mode",A032D598 00??
 Cheat7_O=$00 Off,$01 On
 Cheat8="[Slot A Codes]\Have All\120 Stars",80207723 0001,8020770B 00C7,50001101 0000,8020770C 00FF
-Cheat8_N=Slot Note
+Cheat8_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat9="[Slot A Codes]\Have All\Key doors unlocked (and mote empty)",8020770A 007E
 Cheat10="[Slot A Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,80207725 0064
 Cheat11="[Slot B Codes]\Have All\120 Stars",80207793 0001,8020777B 00C7,50001101 0000,8020777C 00FF
-Cheat11_N=Slot Note
+Cheat11_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat12="[Slot B Codes]\Have All\Key doors unlocked (and mote empty)",8020777A 007E
 Cheat13="[Slot B Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,80207795 0064
 Cheat14="[Slot C Codes]\Have All\120 Stars",80207803 0001,802077EB 00C7,50001101 0000,802077EC 00FF
-Cheat14_N=Slot Note
+Cheat14_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat15="[Slot C Codes]\Have All\Key doors unlocked (and mote empty)",802077EA 007E
 Cheat16="[Slot C Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,80207805 0064
 Cheat18="[Slot D Codes]\Have All\120 Stars",80207873 0001,8020785B 00C7,50001101 0000,8020785C 00FF
-Cheat18_N=Slot Note
+Cheat18_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat19="[Slot D Codes]\Have All\Key doors unlocked (and mote empty)",8020785A 007E
 Cheat20="[Slot D Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,80207875 0064
 Cheat21="Press L To Levitate Mario",D033AFA1 0020,8133B1BC 4220,D033B1BD 0020,8133B17C 0300,D033B1BD 0020,8133B17E 0880
 Cheat21_N=Press L to levitate & Let go to land
 Cheat22="Press L To Levitate Luigi",D033AFFF 0020,813FF14C 4220,D03FF14D 0020,813FF10C 0300,D03FF14D 0020,813FF10E 0880
 Cheat22_N=Press L to levitate & Let go to land
-Slot Note=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 
 //----
 
@@ -23511,7 +23448,6 @@ Cheat16="Have Everything Unlocked",803831AD 00FF,813831AE FFFF,803831B0 00FF,813
 
 [2F2952A7-8153D0A5-C:45]
 Name=The Legend of Zelda - Missing Link (Hack)
-Bottle=$14 Empty Bottle,$15 Deku Nut Milk,$16 Green Potion,$17 Red Potion,$18 Bottled Fairy,$19 Fish,$1A Deku Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Deku Milk (Half),$20 Poe
 Cheat0="Infinite\Rupees",8115FA2C 0001
 Cheat0_N=This cheat allows you to Have\the max Rupees to the Wallet you currently Hold
 Cheat1="Have\All Equipment",8015E6FD 0021
@@ -23530,9 +23466,9 @@ Cheat11="Have\Deku Stick",8015E6DD 0000
 Cheat12="Have\Deku Nut",8015E6DE 0001
 Cheat13="Have\Bombchu",8015E6DC 0009
 Cheat14="Have\Bottle 1 Modifier",8015E6E1 00??
-Cheat14_O=Bottle
+Cheat14_O=$14 Empty Bottle,$15 Deku Nut Milk,$16 Green Potion,$17 Red Potion,$18 Bottled Fairy,$19 Fish,$1A Deku Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Deku Milk (Half),$20 Poe
 Cheat15="Have\Bottle 2 Modifier",8015E6E2 00??
-Cheat15_O=Bottle
+Cheat15_O=$14 Empty Bottle,$15 Deku Nut Milk,$16 Green Potion,$17 Red Potion,$18 Bottled Fairy,$19 Fish,$1A Deku Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Deku Milk (Half),$20 Poe
 Cheat16="Have\Bunny Hood",8015E6E4 0027
 Cheat17="Have\Wallet Size",8015E702 00??
 Cheat17_N=This also gives you the Soul Charged Sword
@@ -23549,7 +23485,6 @@ Cheat22="Infinite\Big Key,Small Keys,Compass,& Map",8015E708 0007,8015E709 0007,
 
 [8CDD7051-8FE39E38-C:45]
 Name=The Legend of Zelda - Missing Link (Hack)
-Bottle=$14 Empty Bottle,$15 Deku Nut Milk,$16 Green Potion,$17 Red Potion,$18 Bottled Fairy,$19 Fish,$1A Deku Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Deku Milk (Half),$20 Poe
 Cheat0="Infinite\Rupees",8115FA2C 0001
 Cheat0_N=This cheat allows you to Have\the max Rupees to the Wallet you currently Hold
 Cheat1="Have\All Equipment",8015E6FD 0021
@@ -23568,9 +23503,9 @@ Cheat11="Have\Deku Stick",8015E6DD 0000
 Cheat12="Have\Deku Nut",8015E6DE 0001
 Cheat13="Have\Bombchu",8015E6DC 0009
 Cheat14="Have\Bottle 1 Modifier",8015E6E1 00??
-Cheat14_O=Bottle
+Cheat14_O=$14 Empty Bottle,$15 Deku Nut Milk,$16 Green Potion,$17 Red Potion,$18 Bottled Fairy,$19 Fish,$1A Deku Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Deku Milk (Half),$20 Poe
 Cheat15="Have\Bottle 2 Modifier",8015E6E2 00??
-Cheat15_O=Bottle
+Cheat15_O=$14 Empty Bottle,$15 Deku Nut Milk,$16 Green Potion,$17 Red Potion,$18 Bottled Fairy,$19 Fish,$1A Deku Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Deku Milk (Half),$20 Poe
 Cheat16="Have\Bunny Hood",8015E6E4 0027
 Cheat17="Have\Wallet Size",8015E702 00??
 Cheat17_N=This also gives you the Soul Charged Sword
@@ -25921,11 +25856,9 @@ Name=Virtual Pool 64 (Gateway)
 Cheat0="Always Your Turn",802EC6C8 00??
 Cheat0_O=$00 Player 1,$01 Player 2
 Cheat1="Games Won\Player 1",802EC6B1 00??
-Cheat1_O=Wins
+Cheat1_O=$0000 Zero Points,$FFFF Max Points
 Cheat2="Games Won\Player 2",802EC6B3 00??
-Cheat2_O=Wins2
-Wins=$0000 Zero Points,$FFFF Max Points
-Wins2=$00 Zero Points,$FF Max Points
+Cheat2_O=$00 Zero Points,$FF Max Points
 
 //----
 
@@ -26705,8 +26638,7 @@ Cheat18="[Slot D Codes]\Have All\Key doors unlocked (and mote empty)",8020785A 0
 Cheat19="[Slot D Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,80207875 0064
 Cheat20="Level Select",D033AFA1 0020,8132DDF8 00??
 Cheat20_N=Select a Level. Jump Into a Painting. Press A at the Stars Collected Screen. As Stats are fading hold L, and you'll jump to the level you've selected.
-Cheat20_O=Level Select
-Level Select=$01 Intro,$04 Big Amimers Haunt,$05 Cool Cool Mountain,$06 Mushroom Castle,$07 Hazy Maze Cave,$08 Shifting Sand Land,$09 Da-Bomb Battlefield,$0A Snowmans Land,$0B Wet Dry World,$0C Jolly Jabo Bay,$0D Tiny Huge World,$0E Tick tock Clock,$0F Rainbow Ride,$10 Mushroom Castle Field,$11 Boozer In The Dark World,$12 Vanish Cap Under The Moat,$13 Boozer In The Fire Sea,$14 The Secret Aquarium,$15 Boozer In The Sky,$16 Lethal Lava Land,$17 Dire Dire Docks,$18 Slougis Fortress,$19 The End,$1A Castle Courtyard,$1B The Princess Secret Slide,$1C Cavern Of The Metal Cap,$1D Tower Of The Wing Cap,$1E Boozer In The Dark World Boss,$1F Wing Mario Over The Rainbow,$21 Boozer In The Fire Sea Boss,$22 Boozer In The Sky Boss,$24 Tall Tall Mountain
+Cheat20_O=$01 Intro,$04 Big Amimers Haunt,$05 Cool Cool Mountain,$06 Mushroom Castle,$07 Hazy Maze Cave,$08 Shifting Sand Land,$09 Da-Bomb Battlefield,$0A Snowmans Land,$0B Wet Dry World,$0C Jolly Jabo Bay,$0D Tiny Huge World,$0E Tick tock Clock,$0F Rainbow Ride,$10 Mushroom Castle Field,$11 Boozer In The Dark World,$12 Vanish Cap Under The Moat,$13 Boozer In The Fire Sea,$14 The Secret Aquarium,$15 Boozer In The Sky,$16 Lethal Lava Land,$17 Dire Dire Docks,$18 Slougis Fortress,$19 The End,$1A Castle Courtyard,$1B The Princess Secret Slide,$1C Cavern Of The Metal Cap,$1D Tower Of The Wing Cap,$1E Boozer In The Dark World Boss,$1F Wing Mario Over The Rainbow,$21 Boozer In The Fire Sea Boss,$22 Boozer In The Sky Boss,$24 Tall Tall Mountain
 
 //----
 
@@ -27053,75 +26985,63 @@ Cheat24="Infinite\Star Power",8110D900 0707
 
 [E81D3F66-B4190056-C:45]
 Name=TOTSUGEKI 64 (U) (SM64 Hack)
-Cap Note=Here you can Choose Options for May with Her Cap on
 Cheat0="Press GS For 255 Coins",891D1F34 00FF
-Cheat0_N=Coins Note
+Cheat0_N=Press GS Once on a Level To Get that amount of Coins
 Cheat1="Monsters Don't Hurt May",A01D1EB3 0001
 Cheat2="Infinite Energy & Breath",801D1F3A 0008
 Cheat3="May's Cap Options",801D1E93 00??
-Cheat3_N=Cap Note
-Cheat3_O=Mays Cap
+Cheat3_N=Here you can Choose Options for May with Her Cap on
+Cheat3_O=$10 Normal,$12 Invisible May,$15 Metal May,$16 Invisible Metal May,$19 Flying May
 Cheat4="[Slot A Codes]\Have All\120 Stars",8004CDC3 0001,8004CDAB 00C7,50001101 0000,8004CDAC 00FF
-Cheat4_N=Slot Note
+Cheat4_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat5="[Slot A Codes]\Have All\Key doors unlocked (and mote empty)",8004CDAA 007E
 Cheat6="[Slot A Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,8004CDC5 0064
 Cheat7="[Slot B Codes]\Have All\120 Stars",8004CE33 0001,8004CE1B 00C7,50001101 0000,8004CE1C 00FF
-Cheat7_N=Slot Note
+Cheat7_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat8="[Slot B Codes]\Have All\Key doors unlocked (and mote empty)",8004CE1A 007E
 Cheat9="[Slot B Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,8004CE35 0064
 Cheat10="[Slot C Codes]\Have All\120 Stars",8004CEA3 0001,8004CE8B 00C7,50001101 0000,8004CE8C 00FF
-Cheat10_N=Slot Note
+Cheat10_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat11="[Slot C Codes]\Have All\Key doors unlocked (and mote empty)",8004CE8A 007E
 Cheat12="[Slot C Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,8004CEA5 0064
 Cheat13="[Slot D Codes]\Have All\120 Stars",8004CF13 0001,8004CEFB 00C7,50001101 0000,8004CEFC 00FF
-Cheat13_N=Slot Note
+Cheat13_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat14="[Slot D Codes]\Have All\Key doors unlocked (and mote empty)",8004CEFA 007E
 Cheat15="[Slot D Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,8004CF85 0064
 Cheat16="Level Select",D01D0B51 0010,A019F86D 00??
-Cheat16_N=[Level Note
-Cheat16_O=Level Select
+Cheat16_N=Select a Level. Jump Into a Painting. Press A at the Stars Collected Screen. As Stats are fading hold R, and you'll jump to the level you've selected.
+Cheat16_O=$01 Intro,$04 Big Boo's Haunt,$05 Cool Cool Mountain,$06 Mushroom Castle,$07 Hazy Maze Cave,$08 Shifting Sand Land,$09 Bob omb Battlefield,$0A Snowman's Land,$0B Wet Dry World,$0C Jolly Roger Bay,$0D Tiny Huge World,$0E Tick tock Clock,$0F Rainbow Ride,$10 Mushroom Castle Field,$11 Bowser In The Dark World,$12 Vanish Cap Under The Moat,$13 Bowser In The Fire Sea,$14 The Secret Aquarium,$15 Bowser In The Sky,$16 Lethal Lava Land,$17 Dire Dire Docks,$18 Whomp's Fortress,$19 The End,$1A Castle Courtyard,$1B The Princess's Secret Slide,$1C Cavern Of The Metal Cap,$1D Tower Of The Wing Cap,$1E Bowser In The Dark World Boss,$1F Wing Mario Over The Rainbow,$21 Bowser In The Fire Sea Boss,$22 Bowser In The Sky Boss,$24 Tall Tall Mountain
 Cheat17="Press L To Levitate",D01D0B51 0020,811D1ED8 4220,D01D0B51 0020,811D1E98 0300,D01D0B51 0020,811D1E9A 0880
 Cheat17_N=Press L to levitate & Let go to land
-Coins Note=Press GS Once on a Level To Get that amount of Coins
-Level Note=Select a Level. Jump Into a Painting. Press A at the Stars Collected Screen. As Stats are fading hold R, and you'll jump to the level you've selected.
-Level Select=$01 Intro,$04 Big Boo's Haunt,$05 Cool Cool Mountain,$06 Mushroom Castle,$07 Hazy Maze Cave,$08 Shifting Sand Land,$09 Bob omb Battlefield,$0A Snowman's Land,$0B Wet Dry World,$0C Jolly Roger Bay,$0D Tiny Huge World,$0E Tick tock Clock,$0F Rainbow Ride,$10 Mushroom Castle Field,$11 Bowser In The Dark World,$12 Vanish Cap Under The Moat,$13 Bowser In The Fire Sea,$14 The Secret Aquarium,$15 Bowser In The Sky,$16 Lethal Lava Land,$17 Dire Dire Docks,$18 Whomp's Fortress,$19 The End,$1A Castle Courtyard,$1B The Princess's Secret Slide,$1C Cavern Of The Metal Cap,$1D Tower Of The Wing Cap,$1E Bowser In The Dark World Boss,$1F Wing Mario Over The Rainbow,$21 Bowser In The Fire Sea Boss,$22 Bowser In The Sky Boss,$24 Tall Tall Mountain
-Levitate Note=Press L to levitate & Let go to land
-Mays Cap=$10 Normal,$12 Invisible May,$15 Metal May,$16 Invisible Metal May,$19 Flying May
-Slot Note=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 
 //----
 
 [52BDEE64-E3A1D4C4-C:45]
 Name=Marios Mafia Misadventure (U)
-Cap Note=Here you can Choose Options for Mario with his Cap on
 Cheat0="Press GS For 255 Coins",891FE878 00FF
-Cheat0_N=Coins Note
+Cheat0_N=Press GS Once on a Level To Get that amount of Coins
 Cheat1="Press L To Levitate",D01FCAD5 0020,811FE81C 4220,D01FCAD5 0020,811FE7DC 0300,D01FCAD5 0020,811FE7DE 0880
-Cheat1_N=Levitate Note
+Cheat1_N=Press L to levitate & Let go to land
 Cheat2="Infinite Energy & Breath",801FE87E 0008
 Cheat3="Marios Cap Options",801FE7D7 00??
-Cheat3_N=Cap Note
-Cheat3_O=Marios Cap
+Cheat3_N=Here you can Choose Options for Mario with his Cap on
+Cheat3_O=$10 Normal,$12 Invisible Mario,$15 Metal Mario,$16 Invisible Metal Mario,$19 Flying Mario
 Cheat4="[Slot A Codes]\Have All\120 Stars",8004CDC3 0001,8004CDAB 00C7,50001101 0000,8004CDAC 00FF
-Cheat4_N=Slot Note
+Cheat4_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat5="[Slot A Codes]\Have All\Key doors unlocked (and mote empty)",8004CDAA 007E
 Cheat6="[Slot A Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,8004CDC5 0064
 Cheat7="[Slot B Codes]\Have All\120 Stars",8004CE33 0001,8004CE1B 00C7,50001101 0000,8004CE1C 00FF
-Cheat7_N=Slot Note
+Cheat7_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat8="[Slot B Codes]\Have All\Key doors unlocked (and mote empty)",8004CE1A 007E
 Cheat9="[Slot B Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,8004CE35 0064
 Cheat10="[Slot C Codes]\Have All\120 Stars",8004CEA3 0001,8004CE8B 00C7,50001101 0000,8004CE8C 00FF
-Cheat10_N=Slot Note
+Cheat10_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat11="[Slot C Codes]\Have All\Key doors unlocked (and mote empty)",8004CE8A 007E
 Cheat12="[Slot C Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,8004CEA5 0064
 Cheat13="[Slot D Codes]\Have All\120 Stars",8004CF13 0001,8004CEFB 00C7,50001101 0000,8004CEFC 00FF
-Cheat13_N=Slot Note
+Cheat13_N=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 Cheat14="[Slot D Codes]\Have All\Key doors unlocked (and mote empty)",8004CEFA 007E
 Cheat15="[Slot D Codes]\Have All\Max 100 Coin Records For All Levels",50000F01 0000,8004CF85 0064
-Coins Note=Press GS Once on a Level To Get that amount of Coins
-Levitate Note=Press L to levitate & Let go to land
-Marios Cap=$10 Normal,$12 Invisible Mario,$15 Metal Mario,$16 Invisible Metal Mario,$19 Flying Mario
-Slot Note=Once the Code is activated, you will see it as a new option in the chosen Save Slot.This will have the Cannon open already to get upto Yoshi on the Roof. but make sure to save the game after collecting Red Coins and turn this code off before saving. you will now have it all saved to mempak
 
 [904626B3-4A2E48D5-C:45]
 Name=Return To Yoshi's Island 64 (U) Demo (Hack)
@@ -27129,7 +27049,7 @@ Cheat0="Press GS For 255 Coins",8921F9E8 00FF
 Cheat0_N=Press GS Once on a Level To Get that amount of Coins
 Cheat1="Infinite Energy & Breath",8021F9EE 0008
 Cheat2="Mario's Cap On Options",8021F947 00??
-Cheat2_N=[SuperMario]Cap Note
+Cheat2_N=Here you can Choose Options for Mario with his Cap on
 Cheat2_O=$09 No Hat,$10 Normal,$12 Invisible Mario,$15 Metal Mario,$16 Invisible Metal Mario,$19 Flying Mario
 Cheat3="Press L To Levitate",D021F771 0020,8121F98C 4220,D021F98D 0020,8121F94C 0300,D021F98D 0020,8121F94E 0880
 Cheat3_N=Press L to levitate & Let go to land
