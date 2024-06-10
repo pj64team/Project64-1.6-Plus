@@ -438,7 +438,7 @@ void FillRomExtensionInfo(ROM_INFO * pRomInfo) {
 		// and then updated from that entry (Gent)
 
 		GetString(Identifier, "Game Name", GS(RB_NOT_IN_RDB), pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName);
-	
+
 	GetString(Identifier, "Status", Default_RomStatus, pRomInfo->Status, sizeof(pRomInfo->Status), IniFileName);
 
 	if (RomBrowserFields[RB_CoreNotes].Pos >= 0)
@@ -703,12 +703,15 @@ void RomList_GetDispInfo(LPNMHDR pnmh) {
 		break; }
 	case RB_Crc1: sprintf(lpdi->item.pszText,"0x%08X",pRomInfo->CRC1); break;
 	case RB_Crc2: sprintf(lpdi->item.pszText,"0x%08X",pRomInfo->CRC2); break;
-	case RB_CICChip: 
+
+		// Disabled Unknown CIC Chip on CicChip 0 Message (Gent)
+	/*case RB_CICChip: 
 		if (pRomInfo->CicChip < 0) { 
-			sprintf(lpdi->item.pszText,"Unknown CIC Chip"); 
+			sprintf(lpdi->item.pszText, "Unknown CIC Chip");
 		} else {
 			sprintf(lpdi->item.pszText,"CIC-NUS-610%d",pRomInfo->CicChip); 
-		}
+		}*/
+
 		break;
 	case RB_UserNotes: strncpy(lpdi->item.pszText, pRomInfo->UserNotes, lpdi->item.cchTextMax); break;
 	case RB_Developer: strncpy(lpdi->item.pszText, pRomInfo->Developer, lpdi->item.cchTextMax); break;
