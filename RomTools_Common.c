@@ -18,6 +18,7 @@ void CountryCodeToString (char string[], BYTE Country, int length) {
 	case 'P': strncpy(string, "Europe", length); break;
 	case 'S': strncpy(string, "Spain", length); break;
 	case 'U': strncpy(string, "Australia", length); break;
+	case 'W': strncpy(string, "Taiwan", length); break;
 	case 'X': strncpy(string, "PAL", length); break;
 	case 'Y': strncpy(string, "PAL", length); break;
 	case ' ': strncpy(string, "None (PD by NAN)", length); break;
@@ -43,6 +44,7 @@ void CountryCodeToShortString(char string[], BYTE Country, int length) {
 	case 'P': strncpy(string, "(E)", length); break;
 	case 'S': strncpy(string, "(S)", length); break;
 	case 'U': strncpy(string, "(A)", length); break;
+	case 'W': strncpy(string, "(TW)", length); break;
 	case 'X': strncpy(string, "(PAL)", length); break;
 	case 'Y': strncpy(string, "(PAL)", length); break;
 	case ' ': strncpy(string, "(PD by NAN)", length); break;
@@ -72,8 +74,9 @@ int RomRegion (BYTE Country) {
 		case 0x41:	// NTSC (Only 1080 JU?)
 		case 0x42:	// Brazil
 		case 0x43:	// China
+		case 0x57:	// Taiwan
 		case 0x45:	// USA
-		case 0x47:    // Gateway (NTSC)
+		case 0x47:  // Gateway (NTSC)
 		case 0x4A:	// Japan
 		case 0x20:	// (PD)
 		case 0x0:	// (PD)
