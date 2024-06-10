@@ -437,7 +437,12 @@ void FillRomExtensionInfo(ROM_INFO * pRomInfo) {
 		// What i would like to achieve is to display the file name until the game is added
 		// and then updated from that entry (Gent)
 
-		GetString(Identifier, "Game Name", GS(RB_NOT_IN_RDB), pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName);
+		//GetString(Identifier, "Game Name", GS(RB_NOT_IN_RDB), pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName);
+
+		// This allows the browser to display filename until the Game Name= is populated.
+		// Once Game Name= is poulated (Game Added to databse) the browser uses that. (Gent / Witten)
+
+		GetString(Identifier, "Game Name", pRomInfo->FileName, pRomInfo->GameName, sizeof(pRomInfo->GameName), IniFileName);
 
 	GetString(Identifier, "Status", Default_RomStatus, pRomInfo->Status, sizeof(pRomInfo->Status), IniFileName);
 
