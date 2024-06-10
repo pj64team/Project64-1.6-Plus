@@ -15,7 +15,7 @@
 // Note that Project64 1.6 Plus automatically prefixes "http://"
 
 Author=PJ64/LegacyTeam
-Date=7th June 2024 Version: 1
+Date=10th June 2024 Version: 1
 Homepage=github.com/pj64team/Project64-1.6-Plus
 Version=1.0
 
@@ -289,7 +289,7 @@ Recompiler only.Seltext=FFFFFF
 //
 
 [3B941695-F90A5EEB-C:50]
-Game Name=007 - The World is Not Enough 
+Game Name=007 - The World is Not Enough (E) (M3)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
@@ -332,8 +332,171 @@ Delay RDP=No
 Delay RSP=No
 Emulate AI=Yes
 
+[7BD65F9E-76B6A083-C:45]
+Game Name=007 - The World Is Not Enough (USA) (v2) (Beta)
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Use TLB=Yes
+Linking=Off
+Reg Cache=Yes
+Use Large Buffer=No
+Status=Prototype
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=Yes
+Cheat0=800811D8 0005 // Cheat fixes the password required at boot
+Cheat1=D0081150 0002,A0130AE2 0000 // Disables all missions on Start Screen
+Status=Prototype
+
+[7BD65F86-27DD800E-C:45]
+Game Name=007 - The World Is Not Enough (U) (Prototype - 2020 release)
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Use TLB=Yes
+Linking=Off
+Reg Cache=Yes
+Use Large Buffer=No
+Status=Prototype
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=Yes
+Cheat0=D0081150 0002,A0130AE2 0000 // Disables all missions on Start Screen
+Status=Prototype
+
+[309ACF96-B3DAD623-C:50]
+Game Name=007 - The World Is Not Enough (E) (Prototype - 2020 release) [f1]
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Use TLB=Yes
+Linking=Off
+Reg Cache=Yes
+Use Large Buffer=No
+Status=Compatible
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=Yes
+Cheat0=D0081150 0002,A0130AE2 0000 // Disables all missions on Start Screen
+Status=Prototype
+
+[309ACF96-B3DAD623-C:55]
+Game Name=007 - The World Is Not Enough (A) (Prototype - 2020 release) [f1]
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Use TLB=Yes
+Linking=Off
+Reg Cache=Yes
+Use Large Buffer=No
+Status=Compatible
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=Yes
+Cheat0=D0081150 0002,A0130AE2 0000 // Disables all missions on Start Screen
+Status=Prototype
+
+[A92E0966-341C3912-C:45]
+Game Name=007 - The World is Not Enough (U) (Prototype)
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Use TLB=Yes
+Linking=Off
+Reg Cache=Yes
+Use Large Buffer=No
+Status=Prototype
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=Yes
+Cheat0=D00AF0B0 0002,A011E15A 0000 // Disables all missions on Start Screen
+Status=Prototype
+
+[F903C6A6-9B585E72-C:50]
+Game Name=007 - The World is Not Enough (E) (Prototype)
+Status=Prototype
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Use TLB=Yes
+Linking=Off
+Reg Cache=Yes
+Use Large Buffer=No
+Status=Compatible
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=Yes
+Cheat0=D00AF0B0 0002,A011E15A 0000 // Disables all missions on Start Screen
+Status=Prototype
+
+[F903C6A6-9B585E72-C:55]
+Game Name=007 - The World is Not Enough (A) (Prototype)
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Use TLB=Yes
+Linking=Off
+Reg Cache=Yes
+Use Large Buffer=No
+Status=Compatible
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=Yes
+Cheat0=D00AF0B0 0002,A011E15A 0000 // Disables all missions on Start Screen
+Status=Prototype
+
 [58FD3F25-D92EAA8D-C:50]
-Game Name=1080 Snowboarding 
+Game Name=1080 Snowboarding (E) (M4)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
@@ -355,6 +518,10 @@ Resolution Height=-1
 Culling=1
 Emulate Clear=1
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [1FBAF161-2C1C54F1-C:41]
 Game Name=1080 Snowboarding (JU) (M2)
@@ -425,7 +592,6 @@ Audio Signal=No
 
 [36F22FBF-318912F2-C:4A]
 Game Name=64 Hanafuda - Tenshi no Yakusoku (J)
-
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -439,7 +605,6 @@ Status=Compatible
 
 [9C961069-F5EA488D-C:4A]
 Game Name=64 Oozumou (J)
-
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
@@ -495,14 +660,14 @@ Plugin Note=
 //
 
 [8F12C096-45DC17E1-C:50]
-Game Name=A Bug's Life 
+Game Name=A Bug's Life (E)
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -512,6 +677,10 @@ Plugin Note=
 Clear Frame=0
 Resolution Width=-1
 Resolution Height=-1
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [2B38AEC0-6350B810-C:46]
 Game Name=A Bug's Life (F)
@@ -591,19 +760,24 @@ Plugin Note=
 Audio Signal=No
 
 [62F6BE95-F102D6D6-C:50]
-Game Name=AeroFighters Assault 
+Game Name=AeroFighters Assault (E) (M3)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
 Core Note=high system requirement
 Delay SI=No
 SP Hack=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [1B598BF1-ECA29B45-C:45]
 Game Name=AeroFighters Assault (U)
@@ -622,19 +796,24 @@ Delay SI=No
 SP Hack=No
 
 [D83045C8-F29D3A36-C:50]
-Game Name=AeroGauge 
+Game Name=AeroGauge (E) (M3)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
 Delay SI=No
 SP Hack=No
 Clear Frame=0
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [B00903C9-3916C146-C:4A]
 Game Name=AeroGauge (J) (V1.0) (Kiosk Demo)
@@ -678,7 +857,7 @@ Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Delay SI=No
@@ -687,9 +866,12 @@ Status=Compatible
 Core Note=
 Plugin Note=
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [8CC182A6-C2D0CAB0-C:4A]
-Game Name=AI¼®³·Þ3
+Game Name=AI Shougi 3 (J)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -710,7 +892,7 @@ SP Hack=No
 Use Large Buffer=No
 
 [2DC4FFCC-C8FF5A21-C:50]
-Game Name=Aidyn Chronicles - The First Mage 
+Game Name=Aidyn Chronicles - The First Mage (E)
 RDRAM Size=8
 Counter Factor=2
 Save Type=First Save Type
@@ -734,7 +916,7 @@ Culling=1
 Emulate Clear=0
 
 [E6A95A4F-BAD2EA23-C:45]
-Game Name=Aidyn Chronicles - The First Mage (U)
+Game Name=Aidyn Chronicles - The First Mage (U) (V1.0)
 RDRAM Size=8
 Counter Factor=2
 Save Type=First Save Type
@@ -758,14 +940,14 @@ Culling=1
 Emulate Clear=0
 
 [112051D2-68BEF8AC-C:45]
-Game Name=Aidyn Chronicles - The First Mage (U)
+Game Name=Aidyn Chronicles - The First Mage (USA) (Rev A)
 RDRAM Size=8
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Change Memory
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -780,21 +962,29 @@ Resolution Width=-1
 Resolution Height=-1
 Culling=1
 Emulate Clear=0
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [27C425D0-8C2D99C1-C:50]
-Game Name=Airboarder 64 
+Game Name=Airboarder 64 (E)
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Change Memory
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
 Delay SI=No
 SP Hack=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [6C45B60C-DCE50E30-C:4A]
 Game Name=Airboarder 64 (J)
@@ -872,14 +1062,14 @@ Delay RSP=No
 Emulate AI=No
 
 [DFD784AD-AE426603-C:50]
-Game Name=All Star Tennis '99 
+Game Name=Yannick Noah All Star Tennis '99 (E)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -887,6 +1077,10 @@ Plugin Note=
 Delay SI=No
 SP Hack=No
 Core Note=
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [E185E291-4E50766D-C:45]
 Game Name=All Star Tennis '99 (U)
@@ -896,7 +1090,7 @@ Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -904,16 +1098,20 @@ Plugin Note=
 Delay SI=No
 SP Hack=No
 Core Note=
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [A19F8089-77884B51-C:50]
-Game Name=All-Star Baseball 2000 
+Game Name=All-Star Baseball 2000 (E)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory Advance
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=Yes
 Status=Use 3rd party video
@@ -925,6 +1123,9 @@ Audio Signal=No
 Clear Frame=0
 Resolution Width=-1
 Resolution Height=-1
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [5E547A4D-90E60795-C:45]
 Game Name=All-Star Baseball 2000 (U)
@@ -967,13 +1168,13 @@ Resolution Height=-1
 Audio Signal=Yes
 
 [D9EDD54D-6BB8E274-C:50]
-Game Name=All-Star Baseball '99 
+Game Name=All-Star Baseball '99 (E)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory Advance
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -985,6 +1186,10 @@ Audio Signal=No
 Clear Frame=0
 Resolution Width=-1
 Resolution Height=-1
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [C43E23A7-40B1681A-C:45]
 Game Name=All-Star Baseball '99 (U)
@@ -1005,14 +1210,14 @@ Core Note=
 Audio Signal=No
 
 [3CC77150-21CDB987-C:50]
-Game Name=Armorines - Project S.W.A.R.M. 
+Game Name=Armorines - Project S.W.A.R.M. (E)
 RDRAM Size=8
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -1028,6 +1233,9 @@ Emulate Clear=0
 Audio Signal=No
 Core Note=
 Plugin Note=[audio] (See Gamefaq)
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [C0F6DB17-80E0D532-C:44]
 Game Name=Armorines - Project S.W.A.R.M. (G)
@@ -1088,19 +1296,23 @@ Core Note=
 Plugin Note=[video] errors:menus, missile on level2+?
 
 [B210DF19-98B58D1A-C:50]
-Game Name=Army Men - Sarge's Heroes 
+Game Name=Army Men - Sarge's Heroes (E) (M3)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
 Delay SI=No
 SP Hack=No
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [862C0657-8DFD896D-C:45]
 Game Name=Army Men - Sarge's Heroes (U)
@@ -1152,14 +1364,14 @@ Core Note=high system requirement
 Audio Signal=No
 
 [FC7797BF-4A95E83C-C:50]
-Game Name=Automobili Lamborghini 
+Game Name=Automobili Lamborghini (E)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -1167,6 +1379,10 @@ Delay SI=No
 SP Hack=No
 Core Note=
 Plugin Note=
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [41B25DC4-1B726786-C:45]
 Game Name=Automobili Lamborghini (U)
@@ -1340,13 +1556,13 @@ Core Note=(see GameFAQ)
 Audio Signal=No
 
 [733FCCB1-444892F9-C:50]
-Game Name=Banjo-Kazooie 
+Game Name=Banjo-Kazooie (E) (M3)
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory Advance
 Use TLB=No
 Counter Factor=2
 Save Type=First Save Type
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -1365,16 +1581,17 @@ Audio Signal=No
 Delay RDP=No
 Delay RSP=No
 Emulate AI=No
+RDRAM Size=8
 
 [A4BF9306-BF0CDFD1-C:45]
-Game Name=Banjo-Kazooie (U)
+Game Name=Banjo-Kazooie (U) (V1.0)
 RDRAM Size=4
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory Advance
 Use TLB=No
 Counter Factor=2
 Save Type=First Save Type
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -1390,16 +1607,19 @@ Resolution Height=-1
 Culling=1
 Emulate Clear=0
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [CD7559AC-B26CF5AE-C:45]
-Game Name=Banjo-Kazooie (U)
+Game Name=Banjo-Kazooie (U) (V1.1)
 RDRAM Size=4
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory Advance
 Use TLB=No
 Counter Factor=2
 Save Type=First Save Type
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -1414,6 +1634,10 @@ Resolution Width=-1
 Resolution Height=-1
 Culling=1
 Emulate Clear=0
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [155B7CDF-F0DA7325-C:55]
 Game Name=Banjo-Tooie (A)
@@ -1432,9 +1656,12 @@ Delay SI=No
 SP Hack=No
 Core Note=(see GameFAQ)
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [C9176D39-EA4779D1-C:50]
-Game Name=Banjo-Tooie 
+Game Name=Banjo-Tooie (E) (M4)
 Counter Factor=2
 Save Type=16kbit Eeprom
 CPU Type=Recompiler
@@ -1456,6 +1683,10 @@ Resolution Height=-1
 Culling=1
 Emulate Clear=0
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [C2E9AA9A-475D70AA-C:45]
 Game Name=Banjo-Tooie (U)
@@ -1481,15 +1712,18 @@ Resolution Height=-1
 Culling=1
 Emulate Clear=0
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [B088FBB4-441E4B1D-C:50]
-Game Name=Bass Hunter 64 
+Game Name=Bass Hunter 64 (E)
 Counter Factor=1
 Save Type=First Save Type
 CPU Type=Recompiler
-Self-modifying code Method=Default
+Self-modifying code Method=Check Memory Advance
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -1501,16 +1735,20 @@ Audio Signal=No
 Clear Frame=0
 Resolution Width=-1
 Resolution Height=-1
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [D76333AC-0CB6219D-C:4A]
-Game Name=Bass Rush - ECOGEAR PowerWorm Championship (J)
+Game Name=Bass Rush - ECOGEAR PowerWorm Championship (J) [o1]
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Change Memory
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -1521,6 +1759,9 @@ Delay SI=No
 Audio Signal=No
 SP Hack=No
 Core Note=
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [BCFACCAA-B814D8EF-C:45]
 Game Name=Bassmasters 2000 (U)
@@ -1548,13 +1789,13 @@ Core Note=
 Plugin Note=[video] (Use 3rd party plugin [audio] (See Gamefaq)
 
 [259F7F84-7C9EED26-C:50]
-Game Name=Batman of the Future - Return of the Joker 
+Game Name=Batman of the Future - Return of the Joker (E) (M3)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 ////Resolution Height=-1
@@ -1562,6 +1803,10 @@ Status=Compatible
 Delay SI=No
 Audio Signal=No
 SP Hack=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [204489C1-1286CF2B-C:45]
 Game Name=Batman Beyond - Return of the Joker (U)
@@ -1577,17 +1822,24 @@ Use Large Buffer=No
 Status=Compatible
 
 [0CAD17E6-71A5B797-C:50]
-Game Name=BattleTanx - Global Assault 
+Game Name=BattleTanx - Global Assault (E) (M3)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 //Resolution Height=-1
 Status=Compatible
+RDRAM Size=8
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
 
 [75A4E247-6008963D-C:45]
 Game Name=BattleTanx - Global Assault (U)
@@ -1660,13 +1912,13 @@ Delay RSP=No
 Emulate AI=Yes
 
 [A1B64A61-D014940B-C:50]
-Game Name=Beetle Adventure Racing! 
+Game Name=Beetle Adventure Racing! (E) (M3)
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory Advance
 Use TLB=Yes
 Counter Factor=2
 Save Type=First Save Type
-Linking=Global
+Linking=Off
 Reg Cache=No
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -1678,6 +1930,7 @@ Audio Signal=Yes
 Delay RDP=No
 Delay RSP=No
 Emulate AI=Yes
+RDRAM Size=8
 
 [EDF419A8-BF1904CC-C:45]
 Game Name=Beetle Adventure Racing! (U) (M3)
@@ -1726,13 +1979,13 @@ Core Note=
 Plugin Note=[video] errors:menus (Use 3rd party plugin (See Gamefaq)
 
 [AB7C101D-EC58C8B0-C:50]
-Game Name=Bio F.R.E.A.K.S. 
+Game Name=Bio F.R.E.A.K.S. (E)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -1748,6 +2001,10 @@ Resolution Height=-1
 Culling=1
 Emulate Clear=0
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [08123595-0510F1DE-C:45]
 Game Name=Bio F.R.E.A.K.S. (U)
@@ -1797,13 +2054,13 @@ Delay RSP=No
 Emulate AI=No
 
 [7C64E6DB-55B924DB-C:50]
-Game Name=Blast Corps 
+Game Name=Blast Corps (E) (M2)
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
 Counter Factor=2
 Save Type=First Save Type
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -1812,16 +2069,20 @@ Plugin Note=[video] errors:various (Use 3rd party plugin (See Gamefaq)
 Delay SI=No
 SP Hack=No
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [7C647C25-D9D901E6-C:45]
-Game Name=Blast Corps (U)
+Game Name=Blast Corps (U) (V1.0)
 RDRAM Size=4
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
 Counter Factor=2
 Save Type=First Save Type
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -1830,16 +2091,19 @@ Delay SI=No
 SP Hack=No
 Core Note=
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [7C647E65-1948D305-C:45]
-Game Name=Blast Corps (U)
+Game Name=Blast Corps (U) (V1.1)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -1848,17 +2112,19 @@ Delay SI=No
 SP Hack=No
 Core Note=
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [65234451-EBD3346F-C:4A]
 Game Name=Blast Dozer (J)
-
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -1867,21 +2133,29 @@ Delay SI=No
 SP Hack=No
 Core Note=
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [D571C883-822D3FCF-C:50]
-Game Name=Blues Brothers 2000 
+Game Name=Blues Brothers 2000 (E) (M6)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 //Resolution Height=-1
 Status=Compatible
 Delay SI=No
 SP Hack=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [7CD08B12-1153FF89-C:45]
 Game Name=Blues Brothers 2000 (U)
@@ -1891,21 +2165,25 @@ Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
 Delay SI=No
 SP Hack=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [0B58B8CD-B7B291D2-C:50]
-Game Name=Body Harvest 
+Game Name=Body Harvest (E) (M3)
 Counter Factor=1
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Delay SI=Yes
@@ -1922,6 +2200,10 @@ Culling=0
 Emulate Clear=0
 Audio Signal=No
 Cheat0=8104DCD2 0808 //Clipping fix
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [5326696F-FE9A99C3-C:45]
 Game Name=Body Harvest (U)
@@ -2009,14 +2291,14 @@ Core Note=
 Audio Signal=No
 
 [5A160336-BC7B37B0-C:50]
-Game Name=Bomberman 64 
+Game Name=Bomberman 64 (E)
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Change Memory
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -2095,14 +2377,14 @@ Audio Signal=No
 SP Hack=No
 
 [D85C4E29-88E276AF-C:50]
-Game Name=Bomberman Hero 
+Game Name=Bomberman Hero (E)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory Advance
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 //Resolution Height=-1
@@ -2117,6 +2399,9 @@ Emulate Clear=0
 Delay SI=No
 Audio Signal=No
 SP Hack=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [4446FDD6-E3788208-C:45]
 Game Name=Bomberman Hero (U)
@@ -2188,7 +2473,7 @@ Emulate Clear=0
 Audio Signal=No
 
 [D5B2339C-CABCCAED-C:50]
-Game Name=Buck Bumble 
+Game Name=Buck Bumble (E) (M5)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
@@ -2196,12 +2481,17 @@ Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
 Reg Cache=No
 Use Large Buffer=No
-Linking=Global
+Linking=Off
 Plugin Note=
 Status=Compatible
 Delay SI=No
 SP Hack=No
 Core Note=
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [D7C762B6-F83D9642-C:4A]
 Game Name=Buck Bumble (J)
@@ -2239,13 +2529,13 @@ Core Note=
 Audio Signal=No
 
 [CEDCDE1E-513A0502-C:50]
-Game Name=Bust-A-Move 2 - Arcade Edition 
+Game Name=Bust-A-Move 2 - Arcade Edition (E)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -2254,6 +2544,10 @@ Delay SI=No
 SP Hack=No
 Plugin Note=
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [8A86F073-CD45E54B-C:45]
 Game Name=Bust-A-Move 2 - Arcade Edition (U)
@@ -2316,7 +2610,7 @@ Resolution Height=-1
 //
 
 [CA2A7444-71DAB71C-C:50]
-Game Name=California Speed 
+Game Name=California Speed (E) (Prototype)
 Counter Factor=1
 Save Type=First Save Type
 CPU Type=Recompiler
@@ -2327,9 +2621,13 @@ Delay SI=No
 Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
-Linking=Global
+Linking=Off
 Status=Compatible
 Plugin Note=
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [AC16400E-CF5D071A-C:45]
 Game Name=California Speed (U)
@@ -2405,13 +2703,13 @@ Plugin Note=
 Audio Signal=No
 
 [A2C54BE7-6719CBB2-C:50]
-Game Name=Castlevania - Legacy of Darkness 
+Game Name=Castlevania - Legacy of Darkness (E) (M3)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Change Memory
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -2425,6 +2723,10 @@ Primary Frame Buffer=1
 Culling=1
 Emulate Clear=0
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [1CC06338-87388926-C:45]
 Game Name=Castlevania - Legacy of Darkness (U)
@@ -2452,14 +2754,14 @@ Resolution Width=-1
 Resolution Height=-1
 
 [F35D5335-B7667CB7-C:45]
-Game Name=Castlevania (U)
+Game Name=Castlevania (U) (V1.1)
 RDRAM Size=8
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Change Memory
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -2475,9 +2777,12 @@ Emulate Clear=0
 Audio Signal=No
 Resolution Width=-1
 Resolution Height=-1
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [64F1B7CA-71A23755-C:50]
-Game Name=Castlevania 
+Game Name=Castlevania (E) (M3)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
@@ -2493,9 +2798,13 @@ SP Hack=No
 Core Note=
 Clear Frame=0
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [F35D5F95-8AFE3D69-C:45]
-Game Name=Castlevania (U)
+Game Name=Castlevania (U) (V1.0)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -2516,9 +2825,12 @@ Primary Frame Buffer=1
 Culling=1
 Emulate Clear=0
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [4BCDFF47-AAA3AF8F-C:45]
-Game Name=Castlevania (U)
+Game Name=Castlevania (U) (V1.2)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -2541,15 +2853,18 @@ Emulate Clear=0
 Audio Signal=No
 Resolution Width=-1
 Resolution Height=-1
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [DCCF2134-9DD63578-C:50]
-Game Name=Centre Court Tennis 
+Game Name=Centre Court Tennis (E)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -2560,9 +2875,16 @@ Resolution Width=-1
 Resolution Height=240
 Culling=1
 Emulate Clear=0
+RDRAM Size=8
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
 
 [B9AF8CC6-DEC9F19F-C:50]
-Game Name=Chameleon Twist 
+Game Name=Chameleon Twist (E)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -2573,6 +2895,14 @@ Reg Cache=Yes
 Status=Compatible
 Plugin Note=[Non Default DInput Fix]
 Cheat0=800EA263 0000 //[Non Default DInput Fix (E)]
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
 
 [A4F2F521-F0EB168E-C:4A]
 Game Name=Chameleon Twist (J)
@@ -2591,7 +2921,7 @@ Delay SI=No
 SP Hack=No
 
 [6420535A-50028062-C:45]
-Game Name=Chameleon Twist (U)
+Game Name=Chameleon Twist (U) (V1.0)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -2602,6 +2932,14 @@ Reg Cache=Yes
 Status=Compatible
 Plugin Note=[Non Default DInput Fix]
 Cheat0=800EA073 0000 //[Non Default DInput Fix (U)
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
 
 [D81963C7-4271A3AA-C:45]
 Game Name=Chameleon Twist (U) (V1.1)
@@ -2617,13 +2955,13 @@ Plugin Note=[Non Default DInput Fix]
 Cheat0=800EA073 0000 //[Non Default DInput Fix (U)]
 
 [07A69D01-9A7D41A1-C:50]
-Game Name=Chameleon Twist 2 
+Game Name=Chameleon Twist 2 (E)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory Advance
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Clear Frame=1
@@ -2636,6 +2974,11 @@ Culling=1
 Emulate Clear=0
 Resolution Width=-1
 Resolution Height=-1
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [0549765A-93B9D042-C:4A]
 Game Name=Chameleon Twist 2 (J)
@@ -2673,18 +3016,23 @@ Plugin Note=
 Culling=1
 
 [FB3C48D0-8D28F69F-C:50]
-Game Name=Charlie Blast's Territory 
+Game Name=Charlie Blast's Territory (E)
 Counter Factor=1
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
 Delay SI=No
 SP Hack=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [1E0E96E8-4E28826B-C:45]
 Game Name=Charlie Blast's Territory (U)
@@ -2700,14 +3048,14 @@ Use Large Buffer=No
 Status=Compatible
 
 [2E359339-3FA5EDA6-C:50]
-Game Name=Chopper Attack 
+Game Name=Chopper Attack (E)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Compatible
@@ -2719,6 +3067,9 @@ Resolution Height=240
 Audio Signal=No
 Core Note=
 Plugin Note=[video] (see GameFAQ)
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [214CAD94-BE1A3B24-C:45]
 Game Name=Chopper Attack (U)
@@ -2910,14 +3261,14 @@ Resolution Height=-1
 Audio Signal=No
 
 [2B6FA7C0-09A71225-C:45]
-Game Name=Clay Fighter 63 1-3 (U)
+Game Name=Clay Fighter 63 1-3 (Beta)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -2929,6 +3280,9 @@ Clear Frame=2
 Resolution Width=-1
 Resolution Height=-1
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [AE5B9465-C54D6576-C:50]
 Game Name=Command & Conquer (E) (M2)
@@ -3051,6 +3405,9 @@ Emulate Clear=1
 Resolution Width=-1
 Resolution Height=-1
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [46A3F7AF-0F7591D0-C:45]
 Game Name=Cruis'n Exotica (U)
@@ -3090,14 +3447,14 @@ Plugin Note=[video] slow in places
 Audio Signal=No
 
 [FF2F2FB4-D161149A-C:45]
-Game Name=Cruis'n USA (U)
+Game Name=Cruis'n USA (U) (V1.0)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Delay SI=Yes
@@ -3111,16 +3468,19 @@ Primary Frame Buffer=0
 Culling=1
 Emulate Clear=0
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [5306CF45-CBC49250-C:45]
-Game Name=Cruis'n USA (U)
+Game Name=Cruis'n USA (U) (V1.1)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Delay SI=Yes
@@ -3129,16 +3489,19 @@ Core Note=
 SP Hack=No
 Plugin Note=[video] slow in places
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [B3402554-7340C004-C:45]
-Game Name=Cruis'n USA (U)
+Game Name=Cruis'n USA (U) (V1.2)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Delay SI=Yes
@@ -3147,6 +3510,9 @@ Core Note=
 SP Hack=No
 Plugin Note=[video] slow in places
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [83F3931E-CB72223D-C:50]
 Game Name=Cruis'n World (E) (V1.0)
@@ -3501,7 +3867,7 @@ Cheat0=8104327C 1400 // Boot Fix but gives mempak error
 
 
 [FD73F775-9724755A-C:50]
-Game Name=Diddy Kong Racing (E) (M3)
+Game Name=Diddy Kong Racing (E) (M3) (V1.0)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -3519,9 +3885,12 @@ SP Hack=No
 Core Note=
 Plugin Note=
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [596E145B-F7D9879F-C:50]
-Game Name=Diddy Kong Racing (E) (M3)
+Game Name=Diddy Kong Racing (E) (M3) (V1.1)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -3540,6 +3909,9 @@ Core Note=
 Plugin Note=
 Audio Signal=No
 Clear Frame=0
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [7435C9BB-39763CF4-C:4A]
 Game Name=Diddy Kong Racing (J)
@@ -3582,7 +3954,7 @@ Plugin Note=
 Audio Signal=No
 
 [53D440E7-7519B011-C:45]
-Game Name=Diddy Kong Racing (U) (M2)
+Game Name=Diddy Kong Racing (U) (M2) (V1.0)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -3600,9 +3972,12 @@ SP Hack=No
 Core Note=
 Plugin Note=
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [E402430D-D2FCFC9D-C:45]
-Game Name=Diddy Kong Racing (U) (M2)
+Game Name=Diddy Kong Racing (U) (M2) (V1.1)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -3620,16 +3995,19 @@ SP Hack=No
 Core Note=
 Plugin Note=
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [C16C421B-A21580F7-C:45]
-Game Name=Disney's Donald Duck - Goin' Quackers (U) (M4)
+Game Name=Disney's Donald Duck - Goin' Quackers (U)
 RDRAM Size=8
 Counter Factor=3
 Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Cache
 Use TLB=No
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 //Geometry Pipeline=Internal
@@ -3867,15 +4245,19 @@ Self-modifying code Method=Cache
 Reg Cache=Yes
 Use TLB=Yes
 Use Large Buffer=No
-Linking=Global
+Linking=Off
 Status=Compatible
 Plugin Note=[video] (see GameFAQ)
 Delay SI=No
 SP Hack=No
 Core Note=
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [A83E101A-E937B69D-C:45]
-Game Name=Doom 64 (U)
+Game Name=Doom 64 (U) (V1.0)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -3884,7 +4266,7 @@ Self-modifying code Method=Cache
 Reg Cache=Yes
 Use TLB=Yes
 Use Large Buffer=No
-Linking=Global
+Linking=Off
 Status=Compatible
 Plugin Note=[video] (see GameFAQ)
 Delay SI=No
@@ -3895,9 +4277,13 @@ Self Texture=0
 Primary Frame Buffer=0
 Culling=1
 Emulate Clear=0
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [423E96F4-CE88F05B-C:45]
-Game Name=Doom 64 (U)
+Game Name=Doom 64 (U) (V1.1)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -3906,7 +4292,7 @@ Self-modifying code Method=Cache
 Reg Cache=Yes
 Use TLB=Yes
 Use Large Buffer=No
-Linking=Global
+Linking=Off
 Status=Compatible
 Plugin Note=[video] (see GameFAQ)
 Delay SI=No
@@ -3917,6 +4303,10 @@ Self Texture=0
 Primary Frame Buffer=0
 Culling=1
 Emulate Clear=0
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
 
 [BFF7B1C2-AEBF148E-C:4A]
 Game Name=Doraemon - Nobita to 3tsu no Seireiseki (J)
@@ -3996,7 +4386,7 @@ Core Note=
 Plugin Note=[video] errors:pause menu
 Clear Frame=0
 Audio Signal=No
-//Cheat0=810D141C 0280 //Subscreen Delay Fix
+Cheat0=810D141C 0280 //Subscreen Delay Fix
 
 [769D4D13-DA233FFE-C:45]
 Game Name=Dr. Mario 64 (U)
@@ -4084,7 +4474,7 @@ Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
-Linking=Global
+Linking=Off
 Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
@@ -10487,7 +10877,6 @@ Resolution Height=-1
 
 [0375CF67-56A93FAA-C:4A]
 Game Name=Ogre Battle 64 - Person of Lordly Caliber (J) (V1.1)
-
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -10779,7 +11168,7 @@ Resolution Width=-1
 Resolution Height=-1
 
 [DDF460CC-3CA634C0-C:45]
-Game Name=Perfect Dark (U)
+Game Name=Perfect Dark (U) (V1.0)
 RDRAM Size=8
 Counter Factor=2
 Save Type=16kbit Eeprom
@@ -10807,7 +11196,7 @@ Delay RSP=No
 Emulate AI=No
 
 [41F2B98F-B458B466-C:45]
-Game Name=Perfect Dark (U)
+Game Name=Perfect Dark (U) (V1.1)
 RDRAM Size=8
 Counter Factor=2
 Save Type=16kbit Eeprom
@@ -10827,6 +11216,9 @@ Resolution Width=-1
 Resolution Height=-1
 Culling=1
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [EE08C602-6BC2D5A6-C:50]
 Game Name=PGA European Tour (E) (M5)
@@ -14648,7 +15040,7 @@ Resolution Width=-1
 Resolution Height=-1
 Culling=1
 Emulate Clear=1
-//Cheat0=801D860B 0002 //Subscreen Delay Fix
+Cheat0=801D860B 0002 //Subscreen Delay Fix
 Audio Signal=No
 
 [B2055FBD-0BAB4E0C-C:50]
@@ -14674,7 +15066,7 @@ Resolution Width=-1
 Resolution Height=-1
 Culling=1
 Emulate Clear=1
-//Cheat0=801D864B 0002 //Subscreen Delay Fix
+Cheat0=801D864B 0002 //Subscreen Delay Fix
 Audio Signal=No
 
 [EC7011B7-7616D72B-C:45]
@@ -22180,7 +22572,6 @@ Plugin Note=
 
 [2F33EFCA-6CA95A9C-C:00]
 Game Name=Funnel Cube (PD)
-
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -22476,7 +22867,6 @@ Plugin Note=
 
 [10637557-03E93693-C:45]
 Game Name=Cliffi's Little Intro by Cliffi (POM '99) (PD) [b1]
-¯
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -22599,6 +22989,7 @@ Linking=Global
 Status=Use 3rd party video
 Core Note=
 Plugin Note=
+
 
 //
 //-------------------------  Beta/Alpha/Proto/Unreleased  --------------------------
@@ -23072,7 +23463,6 @@ Plugin Note=
 
 [19F55D46-73A27B34-C:45]
 Game Name=Mortal Kombat Trilogy (U) (V1.1)
-
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -23223,7 +23613,6 @@ Emulate Clear=0
 
 [0ADAECA7-B17F9795-C:45]
 Game Name=Ogre Battle 64 - Person of Lordly Caliber (U) (V1.1)
-
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -23307,7 +23696,7 @@ Emulate Clear=1
 Audio Signal=No
 
 [40DFEDA0-3AA09CB2-C:50]
-Game Name=Dragon Sword 
+Game Name=Dragon Sword 64 (E) (Prototype)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -23319,31 +23708,33 @@ Delay SI=No
 Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
-Linking=Global
-Status=Compatible
+Linking=Off
+Status=Prototype
 Core Note=[Game Fix Nekokabu] still other issues [See GameFAQ]
 Plugin Note=
 Resolution Width=320
 Resolution Height=240
 Cheat0=8106137C 2400 //Game Fix
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [53CCAD28-AEA6EDA2-C:45]
-Game Name=F1 Racing Championship (B)
-
-RDRAM Size=8
+Game Name=F1RacingChampionship
+RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
-Self-modifying code Method=Protected Memory
+Self-modifying code Method=Change Memory
 Use TLB=Yes
-Linking=Global
-Reg Cache=No
+Linking=Off
+Reg Cache=Yes
 Use Large Buffer=No
 Status=Unsupported
 Plugin Note=[video] errors:resolution issues
 Delay SI=No
 SP Hack=No
-Core Note=Unstable crashing
+Core Note=Does not respond
 Clear Frame=0
 Self Texture=0
 Primary Frame Buffer=0
@@ -23355,7 +23746,7 @@ Audio Signal=No
 Delay RDP=No
 Delay RSP=No
 Emulate AI=No
-//Cheat0=810DE334 2400
+Cheat0=81055734 2400,810DE334 2400
 
 [93A625B9-2D6022E6-C:42]
 Game Name=Shadow Man (B)
@@ -23537,7 +23928,7 @@ Status=Needs video plugin
 Core Note=?
 Plugin Note=[video] unsupported
 Audio Signal=No
-                                                            
+  
 [7A65FDEC-50296300-C:45]
 Game Name=GoldenEye 007 (BRAZIL)
 RDRAM Size=4
@@ -23719,12 +24110,12 @@ Delay RSP=No
 Emulate AI=No
 
 [8F0CC36D-C738259E-C:45]
-Game Name=Animal Crossing (T-Eng) [!]
-RDRAM Size=Default
+Game Name=Doubutsu no Mori (J) [T+Eng90%]
+RDRAM Size=8
 Counter Factor=Default
 Save Type=First Save Type
 CPU Type=Recompiler
-Self-modifying code Method=Default
+Self-modifying code Method=Check Memory Advance
 Reg Cache=Yes
 Use TLB=Yes
 Delay SI=No
@@ -23734,13 +24125,13 @@ Emulate AI=No
 Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
-Linking=Global
+Linking=Off
 Status=Compatible
 Core Note=
 Plugin Note=
 
 [E3FF09DF-CAE4B0ED-C:45]
-Game Name=Banjo-Tooie (U) [Crack + Save Fix
+Game Name=Banjo-Tooie (U) [f1] (Flashcart)
 RDRAM Size=8
 Counter Factor=1
 Save Type=First Save Type
@@ -23755,14 +24146,13 @@ Emulate AI=No
 Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
-Linking=Global
+Linking=Off
 Status=Unsupported
 Core Note=Unhandled 4300i OpCode
 Plugin Note=
 
 [BADDF714-A1FF1B80-C:45]
 Game Name=Bomberman - Arcade Edition (J) (T-Eng)
-
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -23806,7 +24196,7 @@ Resolution Width=-1
 Resolution Height=-1
 
 [726537C2-9D6F813B-C:5A]
-Game Name=Densha de Go! 64 (J) [English Translation]
+Game Name=Densha de Go! 64 (J) [T-Eng]
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
@@ -23821,7 +24211,7 @@ Emulate AI=No
 Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
-Linking=Global
+Linking=Off
 Status=Unsupported
 Core Note=Unknown Country / Cic Chip
 Plugin Note=[Video] Needs plugin?
@@ -23854,7 +24244,7 @@ Delay RSP=No
 Emulate AI=No
 
 [4F48B0FD-8E7173F4-C:45]
-Game Name=Sin and Punishment - Successor of the Earth (U) [!]
+Game Name=Sin and Punishment - Successor of the Earth (U)
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
@@ -24073,7 +24463,6 @@ Plugin Note=
 
 [0160E9E5-29A4CB68-C:45]
 Game Name=Last Legion UX (J) [English Translation]
-
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -24122,7 +24511,7 @@ Audio Signal=No
 //Cheat1=D109A7F4 0320,8109A7F4 0000,D109A7F6 F809,8109A7F6 0000 //End Credits Fix
 
 [09EC2303-502E3646-C:50]
-Game Name=Legend of Zelda, The - Majora's Mask 
+Game Name=Legend of Zelda, The - Majora's Mask (E) [T-Bra] (V1.1)
 Counter Factor=2
 Save Type=First Save Type
 CPU Type=Recompiler
@@ -24144,6 +24533,10 @@ Resolution Height=-1
 Culling=1
 Emulate Clear=1
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [254E6038-B4CF2485-C:45]
 Game Name=Legend of Zelda, The - Ocarina of Time - Master Quest (U) [Fix]
@@ -24209,7 +24602,7 @@ Linking=Global
 Core Note=
 
 [A3F6876A-DB943BD5-C:4A]
-Game Name=Magical Tetris Challenge Arcade [Aleck64
+Game Name=Magical Tetris Challenge Arcade [Aleck64]
 RDRAM Size=8
 Counter Factor=1
 Save Type=First Save Type
@@ -24228,7 +24621,7 @@ Linking=Global
 Status=Unsupported
 Core Note=In a Permanant Loop
 Plugin Note=
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                 
 [559A0FD3-897F777C-C:45]
 Game Name=Beetle Adventure Racing! (U) (M3) [t1]
 RDRAM Size=4
@@ -24285,28 +24678,6 @@ Delay RDP=No
 Delay RSP=No
 Emulate AI=Yes
 
-[CF138879-2A6144CB-C:4A]
-Game Name=Densha de Go! 64 (J) [f1] (PAL)
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Check Memory & cache
-Use TLB=Yes
-Linking=Off
-Reg Cache=Yes
-Use Large Buffer=No
-Status=Compatible
-Core Note=
-Delay SI=No
-SP Hack=No
-Plugin Note=
-Audio Signal=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=Yes
-//Cheat0=81046576 0000 //game fix
-
 [094D7111-AB226B88-C:45]
 Game Name=Conker's Bad Fur Day (U) (Demo)
 RDRAM Size=4
@@ -24336,7 +24707,7 @@ Delay RSP=No
 Emulate AI=No
 
 [A08D0F77-6F82E38C-C:45]
-Game Name=Conker's Bad Fur Day (U) (Demo) (V_ECTS_Decrypted)
+Game Name=Conker's Bad Fur Day ECTS Demo unused title screen
 RDRAM Size=4
 Counter Factor=2
 Save Type=16kbit Eeprom
@@ -24384,6 +24755,19 @@ Status=Compatible
 Core Note=
 Plugin Note=
 
+[4471C13E-CE7F44A9-C:00]
+Game Name=Freak Boy (Prototype)
+RDRAM Size=4
+Counter Factor=1
+Save Type=First Save Type
+CPU Type=Interpreter
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=Yes
+Status=Prototype
+Core Note=Set Adavance Tab/CPU Cpre Style Intereter 
+Plugin Note=
+
 [254CC736-6F5C721B-C:00]
 Game Name=Glover (Prototype)
 RDRAM Size=4
@@ -24403,7 +24787,7 @@ Core Note=
 Plugin Note=[video] AV;use v1.5.2 plugin
          
 [F9864452-890A5EA3-C:50]
-Game Name=Perfect Dark 
+Game Name=Perfect Dark (E) (Debug Version)
 Counter Factor=2
 Save Type=16kbit Eeprom
 CPU Type=Recompiler
@@ -24412,13 +24796,17 @@ Reg Cache=Yes
 Use TLB=Yes
 Use Large Buffer=Yes
 Linking=Off
-Status=Compatible
+Status=Prototype
 Core Note=high system requirement
 Plugin Note=[video] errors:various (see GameFAQ)
 Delay SI=No
 SP Hack=No
 Clear Frame=2
 Audio Signal=No
+RDRAM Size=8
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [944FAFC4-B288266A-C:00]
 Game Name=Superman (U) (M2) (Prototype)
@@ -24568,7 +24956,6 @@ Plugin Note=
 
 [A04237B9-68F62C72-C:00]
 Game Name=Wildwaters (Unreleased)
-
 Status=Bad ROM?
 RDRAM Size=8
 Counter Factor=1
@@ -24588,12 +24975,128 @@ Linking=Global
 Core Note=constant freezing/hanging
 Plugin Note=
 
+[5D40ED2C-10D6ABCF-C:00]
+Game Name=Viewpoint2064-Prototype
+CPU Type=Recompiler
+Status=ProtoType
+
+//
+//-------------------- Demo, Debug & Hacks ---------------
+//
+
+[7D1FA66C-075977A2-C:AA]
+Game Name=Conker's Bad Fur Day (U) (Debug Version)
+CPU Type=Recompiler
+Core Note=unknown country, failed to open mempak
+Counter Factor=2
+Save Type=16kbit Eeprom
+Self-modifying code Method=Protected Memory
+Status=Unsupported
+Use Large Buff=Yes
+
+[1A0C63D7-DBA9687A-C:45]
+Game Name=Mario Kart 64 (Amped Up) (U) (v2.97A)
+CPU Type=Recompiler
+Counter Factor=2
+Self-modifying code Method=Cache
+Status=Compatible
+
+[95D4F8A0-E73576B2-C:45]
+Game Name=Mario Kart 64 (HootingTime) (U) (v1.3a)
+CPU Type=Recompiler
+Counter Factor=2
+Self-modifying code Method=Cache
+Status=Compatible
+
+[7928FE93-135A30CB-C:45]
+Game Name=Dragon Ball Kart 64 [Beta]
+CPU Type=Recompiler
+Counter Factor=2
+Self-modifying code Method=Cache
+Status=Compatible
+
+[14625F34-7B910715-C:45]
+Game Name=Konami Krazy Racers 64 [v1]  (U)
+CPU Type=Recompiler
+Counter Factor=2
+Self-modifying code Method=Cache
+Status=Compatible
+
+[56978EF3-B917CB83-C:45]
+Game Name=GoldenEye X (Hack)
+CPU Type=Recompiler
+Core Note=high system requirement
+Counter Factor=1
+Save Type=16kbit Eeprom
+Self-modifying code Method=Change Memory
+Status=Hack
+Use Large Buffer=Yes
+
+[70065A02-0CA063AB-C:45]
+Game Name=Goldeneye 007 - Mario Characters (Hack) v1 StupidMarioBros1F
+CPU Type=Recompiler
+Core Note=high system requirement
+Counter Factor=1
+Self-modifying code Method=Change Memory
+Status=Hack
+Use Large Buffer=Yes
+RDRAM Size=8
+Save Type=First Save Type
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Linking=Off
+Plugin Note=
+
+[B2242748-FFBD61DA-C:45]
+Game Name=Goldfinger 64 v1.0
+CPU Type=Recompiler
+Core Note=high system requirement
+Counter Factor=1
+Self-modifying code Method=Change Memory
+Status=Hack
+Use Large Buffer=Yes
+
+[2F2952A7-8153D0A5-C:45]
+Game Name=Legend of Zelda - The Missing Link (Hack)
+CPU Type=Recompiler
+Counter Factor=1
+Self-modifying code Method=Change Memory
+Status=Hack
+
+[8CDD7051-8FE39E38-C:45]
+Game Name=Legend of Zelda - The Missing Link (Hack)
+CPU Type=Recompiler
+Counter Factor=1
+Self-modifying code Method=Change Memory
+Status=Hack
+
+[3EC36C75-F03048F1-C:F9]
+Game Name=Perfect Dark (U) (Debug Version)
+CPU Type=Recompiler
+Core Note=failed to open Eeprom error
+Counter Factor=1
+Save Type=16kbit Eeprom
+Self-modifying code Method=Protected Memory
+Status=Unsupported
+
+[2CE75AEF-E16825BC-C:45]
+Game Name=Perfect Dark DBGNTSC (U)
+CPU Type=Recompiler
+Core Note=high system requirement
+Save Type=16kbit Eeprom
+Self-modifying code Method=Protected Memory
+Status=Compatible
+
 [6F46DA42-D971A312-C:45]
 Game Name=Ronaldinho Soccer 64 (B) [p1]
-
 RDRAM Size=4
 Counter Factor=1
-Save Type=First Save Type
 CPU Type=Recompiler
 Self-modifying code Method=Check Memory & cache
 Use TLB=Yes
@@ -24602,13 +25105,142 @@ Reg Cache=Yes
 Use Large Buffer=No
 Status=Use 3rd party video
 Plugin Note=[video] Jabo errors (Use 3rd party plugin (See Gamefaq)
-Delay SI=No
-SP Hack=No
-Core Note=
-Clear Frame=0
-Resolution Width=-1
-Resolution Height=-1
-Audio Signal=No
+
+
+[FD9D9D6E-BEF24EE7-C:45]
+Game Name=SM64 Multiplayer (U)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[9EFA01FB-F06E8E90-C:45]
+Game Name=Smash Remix (U)
+CPU Type=Recompiler
+Self-modifying code Method=Change Memory
+Status=Compatible
+
+[EA5E3409-6F8B09C2-C:45]
+Game Name=SMASH REMIX (U) 1.5.0
+CPU Type=Recompiler
+Self-modifying code Method=Change Memory
+Status=Compatible
+
+[EBDCEEF7-E9B171B5-C:45]
+Game Name=Spiderman_Smash_Remix_Beta v0.6
+CPU Type=Recompiler
+Self-modifying code Method=Change Memory
+Status=Compatible
+
+[FB315F95-7786CBFB-C:45]
+Game Name=Star Wars - Shadows of the Empire (USA) (Beta)
+CPU Type=Recompiler
+Status=Compatible
+
+[90794A49-041DCE20-C:45]
+Game Name=Super Mario Odyssey 64 V4 (Hack)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[FACADCD2-C22E9DD0-C:45]
+Game Name=Super Mario 64 - Junuary Project (U) [V3.4.14] (Hack)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[FF95988A-548A491D-C:45]
+Game Name=Super Mario 64 - Kirby Edition (v1.1) (U)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[824C5A80-43245C7E-C:45]
+Game Name=Super Mario 64 - Sonic Edition (v4.1) (U)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Use GLideN64 Video
+
+[BB315072-27EBD8AA-C:45]
+Game Name=SUPER ICE 64 (U)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[0ED61ED8-87F81B02-C:45]
+Game Name=SM64 Multiplayer 1.0 (U) (Hack)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[7BFD81D7-1AD5F4B9-C:4A]
+Game Name=SM64 - Reduced Lag (J) (Hack) v1
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[041ACAB1-C239679B-C:45]
+Game Name=SM64 - Reduced Lag (U) (Hack) v1
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[3114B9B3-05DCE9CA-C:4A]
+Game Name=SM64 - Shindou Improvement (Hack) v1
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[7301E2C3-BE9383E5-C:45]
+Game Name=SM and the Marvel Adventure (Hack)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[80AA9870-0BEF5B37-C:45]
+Game Name=SUPER LUIGI 64 (U) v2.0 (Hack)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[D0EEB49E-22A3C5CC-C:45]
+Game Name=SM64 Twisted Adventures (U) 1.0 (Hack)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[5AE2B156-C43A321A-C:45]
+Game Name=SM64 Twisted Adventures (U) 2.0 (Hack)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[2DBBF3CF-C685C65F-C:45]
+Game Name=SM64 Star Road (U) (Hack)
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[EC0E7243-9814B50A-C:45]
+Game Name=SUPER MARIO 64 (U) - Smoke Fix (Hack) v2
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Status=Hack
+
+[953CA496-99AF8FAE-C:45]
+Game Name=The Legend Of Banjo Kazooie - The Jiggies Of Time (Hack)
+CPU Type=Recompiler
+Status=Hack
+
+[65825A56-CC1B70D0-C:45]
+Game Name=The Legend of Zelda - Ocarina of Time (USA) OOT Redux Romhack
+CPU Type=Recompiler
+Status=Hack
+
+[F3FA4EC4-A3369766-C:45]
+Game Name=The Legend of Zelda - Ocarina of Time (USA) Master Quest Redux Romhack
+CPU Type=Recompiler
+Status=Hack
+
 
 //
 //-------------------- 64DD ---------------
@@ -24634,28 +25266,6 @@ Plugin Note=
 Delay RDP=No
 Delay RSP=No
 Emulate AI=No
-
-[00000000-00000000-C:4A]
-Game Name=N64DD IPLROM (J)
-RDRAM Size=8
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Protected Memory
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Works/No N64DD
-Core Note=canot load N64DD games
-Plugin Note=
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Emulate AI=No                                                                                                     
 
 [F1297BC9-42CDAE9D-C:39]
 Game Name=MUSHROOM &NU15:5
@@ -24907,7 +25517,7 @@ Linking=Global
 Status=Unsupported
 Core Note=64DD Unsupported
 Plugin Note=
-                        
+
 [E7BDA0BE-ADA09CAC-C:4A]
 Game Name=Kyojin no Doshin (J) (Demo) (N64DD)
 RDRAM Size=8
@@ -25081,7 +25691,6 @@ Plugin Note=
 
   
 [6BF4B693-AF915B5B-C:47]
-
 Game Name=1080 Snowboarding (Gateway)
 RDRAM Size=4
 Counter Factor=2
@@ -25187,7 +25796,7 @@ Core Note=
 Audio Signal=No
    
 [9A9961EA-FB3B8A7E-C:47]
-Game Name=GAUNTLET LEGENDS
+Game Name=Gauntlet Legends (Gateway)
 RDRAM Size=8
 Counter Factor=1
 Save Type=First Save Type
@@ -25212,7 +25821,7 @@ Resolution Width=-1
 Resolution Height=-1
    
 [33BB9900-84E15BF5-C:47]
-Game Name=Hydro Thunder
+Game Name=Hydro Thunder (Gateway)
 RDRAM Size=8
 Counter Factor=2
 Save Type=First Save Type
@@ -25236,7 +25845,7 @@ Delay RSP=No
 Emulate AI=Yes
    
 [E628AABE-AB1B7AAB-C:47]
-Game Name=Kirby64
+Game Name=Kirby64 (Gateway)
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -25347,7 +25956,7 @@ Resolution Height=-1
 Culling=1
 Emulate Clear=0
 Audio Signal=No
-                                    
+            
 [57A7E245-A24922F9-C:47]
 Game Name=Midway's Greatest Arcade Hits (Gateway)
 RDRAM Size=4
@@ -25748,214 +26357,126 @@ Resolution Height=240
 Audio Signal=No
 
 
-
-
-
 //------ iQue Manuals ---------
 
 [72B5A4EB-7381C174-C:0]
 Game Name=Mario Yisheng (China) (v2) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [FFA32687-660E0DE3-C:0]
 Game Name=Mario Yisheng (China) (v4) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [A94B1D6C-48D92E4F-C:0]
 Game Name=Yueye Motuo (China) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [F66AEAD7-2B5C7E9D-C:0]
 Game Name=F-Zero X - Weilai Saiche (China) (v2) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [5910C368-1FEB2056-C:0]
 Game Name=F-Zero X - Weilai Saiche (China) (v4) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [FD66AA0D-7AEBFFCC-C:0]
 Game Name=Mario Kadingche (China) (v2) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [C8655259-82D5C847-C:0]
 Game Name=Mario Kadingche (China) (v6) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [5280E46E-A0B06370-C:0]
 Game Name=Zhi Pian Mario (China) (v2) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [87876AA3-2CF9681C-C:0]
 Game Name=Zhi Pian Mario (China) (v4) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [077FBAAC-6FDC3205-C:0]
 Game Name=Zui yu Fa - Diqiu de Jicheng Zhe (China) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [F2DA40A0-E88BE2EA-C:0]
 Game Name=Xingji Huohu (China) (v4) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [FA092E43-16A5F906-C:0]
 Game Name=Shen You Mario (China) (v6) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [9C7455C0-0748EE8F-C:0]
 Game Name=Rentiantang Mingxing - Daluan Dou (China) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [78417E0A-6C219B6A-C:0]
 Game Name=Zelda Chuanshuo Shiguang Zhi Di (China) (v2) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [DAB6C90B-84DDD48C-C:0]
 Game Name=Zelda Chuanshuo Shiguang Zhi Di (China) (v4) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [D4EE015F-054BC598-C:0]
 Game Name=Shuishang Motuo (China) (v2) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [A593B580-A964D77D-C:0]
 Game Name=Shuishang Motuo (China) (v4) (iQue) (Manual)
-CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [49E37D1F-B73DE5A8-C:0]
 Game Name=Yaoxi Gushi (China) (v2) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [38E2B1A2-7A02B129-C:0]
 Game Name=Yaoxi Gushi (China) (v4) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=2
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
 
 [8142EE17-9CC64A31-C:0]
 Game Name=Yaoxi Gushi (China) (v6) (iQue) (Manual)
 CPU Type=Recompiler
-Counter Factor=Default
-ExpansionPak
-Linking=On
-Save Type=First Save Type
 Self-modifying code Method=Check Memory Advance
 Status=Compatible
-
-//
-//-------- Any entries below this point are for ROMs you have added via the GUI [EOF] --------
-//
 
 //
 //-------------------- iQue ---------------
@@ -26004,7 +26525,6 @@ Status=Unsupported
 Core Note=Bad ROM?
 Plugin Note=
 
-         
 [B6BBEE96-61A68F52-C:43]
 Game Name=Custom Robo (CHN) [SaveFix]
 RDRAM Size=8
@@ -26024,16 +26544,16 @@ Use Large Buffer=No
 Linking=Off
 Status=Compatible
 Core Note=
-Plugin Note=
-                      
-[00000000-00000000-C:0]
-Game Name=Mario Kart 64 (CHN)
+Plugin Note=   
+           
+[A94DA89B-30EDCFE9-C:43]
+Game Name=Dr Mario (CHN) [SaveFix]
 RDRAM Size=8
 Counter Factor=2
 Save Type=First Save Type
-CPU Type=Recompiler
+CPU Type=Interpreter
 Self-modifying code Method=Check Memory Advance
-Reg Cache=Yes
+Reg Cache=No
 Use TLB=No
 Delay SI=No
 Delay RDP=No
@@ -26043,37 +26563,16 @@ Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
 Linking=Off
-Status=Shared CRC
+Status=Interpreter only
 Core Note=
 Plugin Note=
-           
-[A94DA89B-30EDCFE9-C:43]
-Game Name=Dr Mario (CHN) [SaveFix]
-RDRAM Size=8
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Check Memory Advance
-Reg Cache=No
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Off
-Status=Unsupported
-Core Note=Works in Legacy?
-Plugin Note=
-                                                     
+
 [EF62A343-11E41E37-C:0]
 Game Name=Dr. Mario 64 (CHN)
 RDRAM Size=8
 Counter Factor=1
 Save Type=First Save Type
-CPU Type=Recompiler
+CPU Type=Interpreter
 Self-modifying code Method=Check Memory Advance
 Reg Cache=No
 Use TLB=No
@@ -26106,7 +26605,7 @@ Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
 Linking=Off
-Status=Unsupported
+Status=Compatible
 Core Note=
 Plugin Note=
    
@@ -26129,11 +26628,11 @@ Core Note=
 Audio Signal=No
 
 [0A69DC75-D134FF02-C:43]
-Game Name=Mario Kart 64 (CHN) [SaveFix] (iQue)
+Game Name=Mario Kart 64 (CHN) [SaveFix]
 RDRAM Size=8
 Counter Factor=2
 Save Type=First Save Type
-CPU Type=Recompiler
+CPU Type=Interpreter
 Self-modifying code Method=Cache
 Reg Cache=No
 Use TLB=No
@@ -26145,7 +26644,7 @@ Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
 Linking=Off
-Status=Compatible
+Status=Interpreter only
 Core Note=
 Plugin Note=
 
@@ -26191,7 +26690,6 @@ Status=Compatible
 Core Note=
 Plugin Note=
 
-
 [7331A7C7-B5C2937C-C:43]
 Game Name=Sin and Punishment (CHN) [SaveFix]
 RDRAM Size=4
@@ -26213,8 +26711,217 @@ Status=Compatible
 Core Note=
 Plugin Note=
 
-
-
+[AAA7D336-0428D610-C:0]
+Game Name=Super Mario 64 - Shindou (iQue) [4ksavefix]
+RDRAM Size=4
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Compatible
+Core Note=
+Plugin Note=
+             
+[76F623A0-4BF72D22-C:43]
+Game Name=ÈŽÌ¬ÌƒÃ·Ð‡Â´ó‚’¶Â·
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Interpreter
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Interpreter only
+Core Note=
+Plugin Note=
+                    
+[6F4DF892-D3FFBD5B-C:43]
+Game Name=The Legend of Zelda - Majora's Mask (CHN) (iQue)
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Compatible
+Core Note=
+Plugin Note=
+         
+[B1E1E07B-051269DD-C:0]
+Game Name=The Legend of Zelda Ocarina of Time (CHN)
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=iQue-No-Save
+Core Note=
+Plugin Note=
+   
+[059B1E1C-EBE44F04-C:43]
+Game Name=The Legend of Zelda Ocarina of Time (CHN) [Gent Savefix]
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Compatible
+Core Note=
+Plugin Note=
+   
+[AE775EA4-B5712EE9-C:43]
+Game Name=The Legend of Zelda Ocarina of Time (CHN) [Zonkitty Savefix]
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Compatible
+Core Note=
+Plugin Note=
+      
+[3D81FB3E-BD843E34-C:0]
+Game Name=The Legend of Zelda Ocarina of Time (TWN)
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Interpreter
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Interpreter only
+Core Note=
+Plugin Note=
+Cheat0=810B3244 8000  //Game Fix From Hang (Gent)
+Cheat1=D1095ED0 27BD,81095ED0 0802,D1095ED2 FFE8,81095ED2 5CF9,D1095ED4 00A0,81095ED4 0000,D1095ED6 402D,81095ED6 0000 // Game Save Fix (Neko)
+     
+[4D270209-EE8D8D0E-C:57]
+Game Name=The Legend of Zelda Ocarina of Time (TWN) [Savefix]
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Interpreter
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Interpreter only
+Core Note=
+Plugin Note=
+         
+[49552381-CD856CE8-C:43]
+Game Name=Wave Race 64 - Shindou (iQue) [4ksavefix]
+RDRAM Size=4
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Interpreter
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Unsupported
+Core Note=does not get past boot
+Plugin Note=
+   
+[8F5AA717-E4CA0FD9-C:43]
+Game Name=Wave Race 64 (CHN) [SaveFix]
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Compatible
+Core Note=
+Plugin Note=
 
 //
 //-------------------- Aleck64 ---------------
@@ -26283,7 +26990,7 @@ Linking=Off
 Status=Unsupported
 Core Note=In a Permanant Loop
 Plugin Note=
-                              
+ 
 [4248BA87-99BE605D-C:0]
 Game Name=Kuru Kuru Fever (Aleck64)
 RDRAM Size=8
@@ -26304,7 +27011,7 @@ Linking=Off
 Status=Use GLideN64 Video
 Core Note=
 Plugin Note=
-                              
+ 
 [886CD316-BCA27879-C:4A]
 Game Name=Super Real Mahjong VS (Rev A) [Aleck 64]
 RDRAM Size=8
@@ -26375,5 +27082,132 @@ Audio Signal=No
 Delay RDP=No
 Delay RSP=No
 Emulate AI=No
-                                                                                           
-              
+
+[AD788469-B0FBA7D9-C:45]
+Game Name=Super Mario 64 - Star Road. (U) (v1.0) - (17 July 2023)
+RDRAM Size=8
+Counter Factor=1
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+
+[AE6B1E11-B7CBD69E-C:0]
+Game Name=Dragon Sword (U) (Unreleased Alpha)
+RDRAM Size=4
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Prototype
+Core Note=
+Plugin Note
+
+----------------------- Shared CIC Chip  -------------------------------
+
+[00000000-00000000-C:0]
+Game Name=Shared CIC CHip C:0
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Interpreter
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Shared CRC
+Core Note=Unknown CIC Chip (Perm Loop)
+Plugin Note=
+
+[00000000-00000000-C:4A]
+Game Name=Shared CIC CHip C:4A
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Works/No N64DD
+Core Note=Unknown CIC Chip (Perm Loop)
+Plugin Note=
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Emulate AI=No 
+
+[00000000-00000000-C:45]
+Game Name=Shared CIC CHip C:45
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Interpreter
+Self-modifying code Method=Check Memory Advance
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Unsupported
+Core Note=Unknown CIC Chip (Perm Loop)
+Plugin Note=
+
+//////////////////////////// Gent Adds for testing /////////////////////////////
+
+[D0E29F11-E029063F-C:50]
+Game Name=Aidyn Chronicles - The First Mage (E) (Prototype) (1)
+RDRAM Size=8
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Change Memory
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Off
+Status=Prototype
+Core Note=
+Plugin Note=
+                     
