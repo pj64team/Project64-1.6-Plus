@@ -39,7 +39,9 @@ void FirstDMA (void) {
 	case 5: *(DWORD *)&N64MEM[0x3F0] = RdramSize; break;
 	case 6: *(DWORD *)&N64MEM[0x318] = RdramSize; break;
 	case 9: *(DWORD *)&N64MEM[0x318] = RdramSize; break;
-	default: DisplayError("Unhandled CicChip(%d) in first DMA",GetCicChipID(ROM));
+
+		// Disabled Unhandled CicChip(%d) in first DMA Message (Gent)		
+	//default: DisplayError("Unhandled CicChip(%d) in first DMA",GetCicChipID(ROM));
 	}
 }
 
