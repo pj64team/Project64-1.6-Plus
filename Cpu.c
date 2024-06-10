@@ -251,9 +251,12 @@ int DelaySlotEffectsCompare (DWORD PC, DWORD Reg1, DWORD Reg2) {
 		case R4300i_SPECIAL_DDIVU:
 			break;
 		default:
-#ifndef EXTERNAL_RELEASE
+
+		// Disabled Does * effect Delay slot at * Message (Gent)
+
+/*#ifndef EXTERNAL_RELEASE
 			DisplayError("Does %s effect Delay slot at %X?",R4300iOpcodeName(Command.Hex,PC+4), PC);
-#endif
+#endif*/
 			return TRUE;
 		}
 		break;
