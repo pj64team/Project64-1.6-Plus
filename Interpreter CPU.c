@@ -738,6 +738,7 @@ void StartInterpreterCPU (void ) {
 	CoInitialize(NULL);
 	NextInstruction = NORMAL;
 
+	if (AiRomOpen != NULL) { AiRomOpen(); }
 	if (GfxRomOpen != NULL) { GfxRomOpen(); }
 	if (ContRomOpen != NULL) { ContRomOpen(); }
 	//Add_R4300iBPoint(0x802000C8,FALSE);

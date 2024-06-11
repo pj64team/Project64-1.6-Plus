@@ -174,8 +174,10 @@ BOOL LoadAudioDll(char * AudioDll) {
 	if (AiLenChanged == NULL) { return FALSE; }
 	AiReadLength = (DWORD (__cdecl *)(void))GetProcAddress( hAudioDll, "AiReadLength" );
 	if (AiReadLength == NULL) { return FALSE; }
-	InitiateAudio = (BOOL (__cdecl *)(AUDIO_INFO))GetProcAddress( hAudioDll, "InitiateAudio" );
+	InitiateAudio = (BOOL(__cdecl*)(AUDIO_INFO))GetProcAddress(hAudioDll, "InitiateAudio");
 	if (InitiateAudio == NULL) { return FALSE; }
+	AiRomOpen = (void(__cdecl*)(void))GetProcAddress(hAudioDll, "RomOpen");
+	//if (AiRomOpen == NULL) { return FALSE; }
 	AiRomClosed = (void (__cdecl *)(void))GetProcAddress( hAudioDll, "RomClosed" );
 	if (AiRomClosed == NULL) { return FALSE; }
 	ProcessAList = (void (__cdecl *)(void))GetProcAddress( hAudioDll, "ProcessAList" );	
