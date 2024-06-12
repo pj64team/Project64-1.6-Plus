@@ -2908,6 +2908,7 @@ void StartRecompilerCPU (void ) {
 		}
 	}
 
+	if (AiRomOpen != NULL) { AiRomOpen(); }
 	if (GfxRomOpen != NULL) { GfxRomOpen(); }
 	if (ContRomOpen != NULL) { ContRomOpen(); }
 	ResetRecompCode();
