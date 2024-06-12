@@ -2234,7 +2234,7 @@ void UninstallApplication(HWND hWnd) {
 		// Delete cache file
 		GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
 		_splitpath(path_buffer, drive, dir, fname, ext);
-		sprintf(FileName, "%s%s%s", drive, dir, CacheFileName);
+		sprintf(FileName, "%s%sConfig\\%s", drive, dir, CacheFileName);
 		if (remove(FileName) != 0) {
 			sprintf(ErrorMessage, "%s: %s", GS(MSG_DELETE_FILE_FAILED), FileName);
 			DisplayError(ErrorMessage);

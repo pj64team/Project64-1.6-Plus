@@ -1183,7 +1183,7 @@ char * GetCheatDevIniFileName(void) {
 
 	GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
 	_splitpath( path_buffer, drive, dir, fname, ext );
-	sprintf(IniFileName,"%s%s%s",drive,dir,CheatDevIniName);
+	sprintf(IniFileName,"%s%sConfig\\%s",drive,dir,CheatDevIniName);
 	return IniFileName;
 }
 
