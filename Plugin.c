@@ -342,7 +342,7 @@ BOOL LoadRSPDll(char * RspDll) {
 void ResetAudio(HWND hWnd) {
 	static DWORD AI_DUMMY = 0;
 	TerminateThread(hAudioThread,0);
-	if (AiCloseDLL != NULL) { AiCloseDLL(); }
+	//if (AiCloseDLL != NULL) { AiCloseDLL(); }
 	FreeLibrary(hAudioDll);
 	
 	if (!LoadAudioDll(AudioDLL) ) {
@@ -753,7 +753,7 @@ void ShutdownPlugins (void) {
 	TerminateThread(hAudioThread,0);
 	if (GFXCloseDLL != NULL) { GFXCloseDLL(); }
 	if (RSPCloseDLL != NULL) { RSPCloseDLL(); }
-	if (AiCloseDLL != NULL) { AiCloseDLL(); }
+	//if (AiCloseDLL != NULL) { AiCloseDLL(); }
 	if (ContCloseDLL != NULL) { ContCloseDLL(); }
 	FreeLibrary(hAudioDll);
 	FreeLibrary(hControllerDll);
