@@ -61,6 +61,8 @@ extern "C" {
 #define CheatDevIniName				"Project64.chtdev"
 #define LangFileName				"Project64.lng"
 #define CacheFileName				"Project64.cache"
+#define ChmFileName					"Project64.chm"
+#define FaqFileName					"PJgameFAQ.chm"
 #define JIniName					"Jabo.ini"
 #define Default_AdvancedBlockLink	TRUE
 #define Default_AutoStart			TRUE

@@ -1580,7 +1580,8 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
 			GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
 			_splitpath(path_buffer, drive, dir, fname, ext);
-			_makepath(HelpFileName, drive, dir, "Project64", "chm");
+			//_makepath(HelpFileName, drive, dir, "Project64", "chm");
+			sprintf(HelpFileName, "%s%sConfig\\%s", drive, dir, ChmFileName);
 
 			// The call causes a crash if 1 is there at the end, no idea why it's even there as it works fine without it.
 			if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, (DWORD)NULL) == NULL) {
@@ -1595,7 +1596,8 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
 						GetModuleFileName(NULL,path_buffer,sizeof(path_buffer));
 						_splitpath( path_buffer, drive, dir, fname, ext );
-						_makepath( HelpFileName, drive, dir, "Project64", "chm" );
+						//_makepath( HelpFileName, drive, dir, "Project64", "chm" );
+						sprintf(HelpFileName, "%s%sConfig\\%s", drive, dir, ChmFileName);
 
 						if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_INDEX, 0) == NULL) {
 							ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
@@ -1609,7 +1611,8 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
 			GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
 			_splitpath(path_buffer, drive, dir, fname, ext);
-			_makepath(HelpFileName, drive, dir, "PJgameFAQ", "chm");
+			//_makepath(HelpFileName, drive, dir, "PJgameFAQ", "chm");
+			sprintf(HelpFileName, "%s%sConfig\\%s", drive, dir, FaqFileName);
 
 			// Gent no longer indexes these files so the old value of 1 no longer points to something valid, using NULL instead
 			if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, (DWORD)NULL) == NULL) {
@@ -2234,7 +2237,7 @@ void UninstallApplication(HWND hWnd) {
 		// Delete cache file
 		GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
 		_splitpath(path_buffer, drive, dir, fname, ext);
-		sprintf(FileName, "%s%s%s", drive, dir, CacheFileName);
+		sprintf(FileName, "%s%sConfig\\%s", drive, dir, CacheFileName);
 		if (remove(FileName) != 0) {
 			sprintf(ErrorMessage, "%s: %s", GS(MSG_DELETE_FILE_FAILED), FileName);
 			DisplayError(ErrorMessage);
