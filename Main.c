@@ -2352,13 +2352,13 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszArgs,
 	);
 
 	if ( !hMainWindow ) { return FALSE; }
-	if (strlen(lpszArgs) > 0) {
+	if (__argc > 1) {
 		DWORD ThreadID;
 
 		SetupPlugins(hMainWindow);
 		SetupMenu(hMainWindow);
 		ShowWindow(hMainWindow, nWinMode);
-		strcpy(CurrentFileName,lpszArgs);
+		strcpy(CurrentFileName, __argv[1]);
 		CreateThread(NULL,0,(LPTHREAD_START_ROUTINE)OpenChosenFile,NULL,0, &ThreadID);
 	} else {
 		if (RomBrowser) {
