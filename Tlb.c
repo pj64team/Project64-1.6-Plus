@@ -98,6 +98,7 @@ void SetupTLB_Entry (int Entry) {
 
 	for ( FastIndx = Entry << 1; FastIndx <= (Entry << 1) + 1; FastIndx++) {
 		DWORD count;
+		DWORD physend = FastTlb[FastIndx].PHYSSTART + (tlb[Entry].PageMask.Mask << 12) + 0xFFF;
 
 		if (!FastTlb[FastIndx].VALID) { 
 			FastTlb[FastIndx].ValidEntry = TRUE;
@@ -112,7 +113,7 @@ void SetupTLB_Entry (int Entry) {
 		if (FastTlb[FastIndx].VSTART >= 0x80000000 && FastTlb[FastIndx].VEND <= 0xBFFFFFFF) {
 			continue;
 		}
-		if (FastTlb[FastIndx].PHYSSTART > 0x1FFFFFFF) {
+		if (FastTlb[FastIndx].PHYSSTART > 0x1FFFFFFF || physend > 0x1FFFFFFF) {
 			continue;				
 		}
 	
