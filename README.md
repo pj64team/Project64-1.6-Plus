@@ -8,7 +8,7 @@ Project64 1.6 Plus is a free and open-source emulator for the Nintendo 64 and It
 
 This is not intended for development use or is it a modernised 1.6 core, it is just a "Safety Fix" For its loyal users and some added features that they may enjoy.
 
-## Enhancements special mentions (amoungts many)
+## Enhancements special mentions (amongst many)
 
 - Arbitrary code vulnerability fix.
 
@@ -26,11 +26,17 @@ This is not intended for development use or is it a modernised 1.6 core, it is j
 
 - Save/load states (10 extra than original release)
 - Game Information in File & Rom Browser (Popup Menu)
+- Good Name replaced by Game Name in RDB & Browser Tab.
+- New Entry uses File name not Internal Name to add to Game Name in RDB
+- Rom Browser uses File name to display a game not currently in RDB with the status of unknown,
+  but once added to the RDB it will use the Game Name= instead.
 - Always remember cheats as default so user don't have to re-enable after every close
 - Max 10 Recent Roms as default
 - Max 10 Recent Rom Dir as default
 - Rom Dir Recursion as default, this allows sub-directories to be included in rom browser
+- Jabo specific pemrcheats read from the jabo.ini so they do not effect other plugins as no longer enabled in the rdb.
 - Display build date and time in About dialog title bar for easy build version recognition
+- Uninstall registry settings and delete Project64,cache from Help/Uninstall Application Settings
 
 ## Screenshot
 
