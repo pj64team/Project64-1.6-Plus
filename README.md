@@ -26,6 +26,10 @@ This is not intended for development use or is it a modernised 1.6 core, it is j
 
 - Save/load states (10 extra than original release)
 - Game Information in File & Rom Browser (Popup Menu)
+- Good Name replaced by Game Name in RDB & Browser Tab.
+- New Entry uses File name not Internal Name to add to Game Name in RDB
+- Rom Browser uses File name to display a game not currently in RDB with the status of unknown,
+  but once added to the RDB it will use the Game Name= instead.
 - Always remember cheats as default so user don't have to re-enable after every close
 - Max 10 Recent Roms as default
 - Max 10 Recent Rom Dir as default
