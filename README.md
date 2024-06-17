@@ -36,6 +36,7 @@ This is not intended for development use or is it a modernised 1.6 core, it is j
 - Rom Dir Recursion as default, this allows sub-directories to be included in rom browser
 - Jabo specific pemrcheats read from the jabo.ini so they do not effect other plugins as no longer enabled in the rdb.
 - Display build date and time in About dialog title bar for easy build version recognition
+- Uninstall registry settings and delete Project64,cache from Help/Uninstall Application Settings
 
 ## Screenshot
 
