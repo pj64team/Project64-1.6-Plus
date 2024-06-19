@@ -41,7 +41,7 @@ This is not intended for development use or is it a modernised 1.6 core, it is j
 ## Screenshot
 
 <p align="center">
-  <img src="https://www.project64-legacy.com/data/uploads/Docs/pj64plus_screen_about_06_06_2024.png" alt="screenshot" width="400" />
+  <img src="https://www.project64-legacy.com/data/uploads/Docs/pj64plus_screen_about_19_06_2024.png" alt="screenshot" width="400" />
 </p>
 
 ## Installation
