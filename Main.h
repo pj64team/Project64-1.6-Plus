@@ -86,7 +86,7 @@ extern "C" {
 #define ID_LANG_SELECT			2000
 
 /************** Core *****************/
-#define CPU_Default					0		// Set Default_CPU to Interpreter For Rom Hack/Prototyes not in RDB & so users can see what is actually default.   
+#define CPU_Default					-1
 #define CPU_Interpreter				0
 #define CPU_Recompiler				1
 #define CPU_SyncCores				2
@@ -97,7 +97,7 @@ extern "C" {
 //#define CFB_READ
 
 /******* Self modifying code *********/
-#define ModCode_Default				7		// Set ModCode_Default to Check Memory Advance for Rom Hacks & Prototypes not in RDB   
+#define ModCode_Default				-1
 #define ModCode_None				0
 #define ModCode_Cache				1
 #define ModCode_ProtectedMemory		2
