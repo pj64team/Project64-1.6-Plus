@@ -84,7 +84,6 @@ Contributors are always welcome!
 - Icepir8 - Contributor
 - Nekokabu - Contributor
 - Hacktarux - Contributor
-- parasyte - Contributor
 
 
 Also see the list of [community contributors](https://github.com/pj64team/Project64-1.6-Plus/graphs/contributors).
