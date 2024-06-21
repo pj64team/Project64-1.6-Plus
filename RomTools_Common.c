@@ -14,6 +14,7 @@ void CountryCodeToString (char string[], BYTE Country, int length) {
 	case 'G': strncpy(string, "Gateway (NTSC)", length); break;
 	case 'I': strncpy(string, "Italy", length); break;
 	case 'J': strncpy(string, "Japan", length); break;
+	case 'K': strncpy(string, "Korea", length); break;
 	case 'L': strncpy(string, "Lodgenet (PAL)", length); break;
 	case 'P': strncpy(string, "Europe", length); break;
 	case 'S': strncpy(string, "Spain", length); break;
@@ -41,6 +42,7 @@ void CountryCodeToShortString(char string[], BYTE Country, int length) {
 	case 'F': strncpy(string, "(F)", length); break;
 	case 'I': strncpy(string, "(I)", length); break;
 	case 'J': strncpy(string, "(J)", length); break;
+	case 'K': strncpy(string, "(K)", length); break;
 	case 'P': strncpy(string, "(E)", length); break;
 	case 'S': strncpy(string, "(S)", length); break;
 	case 'U': strncpy(string, "(A)", length); break;
@@ -74,6 +76,7 @@ int RomRegion (BYTE Country) {
 		case 0x41:	// NTSC (Only 1080 JU?)
 		case 0x42:	// Brazil
 		case 0x43:	// China
+		case 0x4B:	// Korea
 		case 0x57:	// Taiwan
 		case 0x45:	// USA
 		case 0x47:  // Gateway (NTSC)
