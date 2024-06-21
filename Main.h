@@ -66,7 +66,7 @@ extern "C" {
 #define JIniName					"Jabo.ini"
 #define Default_AdvancedBlockLink	TRUE
 #define Default_AutoStart			TRUE
-#define Default_AutoSleep			TRUE
+#define Default_AutoSleep			FALSE		// Disbled "Pause Emulation when window not active" as default (Gent)
 #define Default_DisableRegCaching	FALSE
 #define Default_RdramSize			0x800000	// Enabled 8MB (Expansion) as default for Rom Hacks & Prototypes not in RDB  for better compatibility (Gent)
 #define Default_UseIni				TRUE
