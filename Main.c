@@ -66,6 +66,7 @@ void GameInfoByRomID();
 void GameInfoByGameInfoID(char* GameInfoID);
 void SetupMenu   ( HWND hWnd );
 void UninstallApplication(HWND hWnd);
+void UninstallJabo(HWND hWnd);
 
 LRESULT CALLBACK AboutIniBoxProc ( HWND, UINT, WPARAM, LPARAM );
 LRESULT CALLBACK Main_Proc       ( HWND, UINT, WPARAM, LPARAM );
@@ -388,8 +389,9 @@ void FixMenuLang (HMENU hMenu) {
 	MenuSetText(hSubMenu, 3, GS(MENU_DISCORD), NULL);
 	MenuSetText(hSubMenu, 4, GS(MENU_GITHUB), NULL);
 	MenuSetText(hSubMenu, 6, GS(MENU_UNINSTALL), NULL);
-	MenuSetText(hSubMenu, 8, GS(MENU_ABOUT_INI), NULL);
-	MenuSetText(hSubMenu, 9, GS(MENU_ABOUT_PJ64), NULL);
+	MenuSetText(hSubMenu, 8, GS(MENU_JABO_UNINSTALL), NULL);
+	MenuSetText(hSubMenu, 9, GS(MENU_ABOUT_INI), NULL);
+	MenuSetText(hSubMenu, 10, GS(MENU_ABOUT_PJ64), NULL);
 #endif
 
 	//Save Slot
@@ -1623,6 +1625,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 		case ID_HELP_DISCORD: ShellExecute(NULL, "open", "https://discord.gg/TnFmnW6WQE", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_GITHUB: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_UNINSTALL: UninstallApplication(hWnd); break;
+		case ID_HELP_JABO_UNINSTALL: UninstallJabo(hWnd); break;
 		case ID_HELP_ABOUT: AboutBox(); break;
 		case ID_HELP_ABOUTSETTINGFILES: AboutIniBox(); break;
 		default:
@@ -2273,6 +2276,27 @@ void ShutdownApplication ( void ) {
 	CloseHandle(hPauseMutex);
 	CoUninitialize();
 }
+
+void UninstallJabo(HWND hWnd) {
+	char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR];
+	char fname[_MAX_FNAME], ext[_MAX_EXT];
+	char FileName[_MAX_PATH];
+	char RegistryKey[300];
+	char ErrorMessage[300];
+
+	if (MessageBox(NULL, GS(MSG_CONFIRMATION_UNINSTALL), AppName, MB_OKCANCEL | MB_ICONEXCLAMATION | MB_SETFOREGROUND) == IDOK) {
+
+		// Delete registry keys recursive
+		sprintf(RegistryKey, "Software\JaboSoft\Project64 DLL\\%s", AppName);
+		if (!RegDelnode(HKEY_CURRENT_USER, RegistryKey)) {
+			DisplayError(GS(MSG_DELETE_SETTINGS_FAILED));
+		}
+
+		MessageBox(NULL, GS(MSG_JABO_REMOVE), AppName, MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
+	}
+
+}
+
 
 void StoreCurrentWinPos (  char * WinName, HWND hWnd ) {
 	long lResult;

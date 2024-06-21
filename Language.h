@@ -94,6 +94,7 @@ char * GS               ( int StringID );
 	#define MENU_DISCORD		185
 	#define MENU_GITHUB			186
 	#define MENU_UNINSTALL		187
+	#define MENU_JABO_UNINSTALL	188
 
 //Current Save Slot menu
 #define MENU_SLOT_DEFAULT		190
@@ -438,4 +439,5 @@ char * GS               ( int StringID );
 #define MSG_DELETE_SETTINGS_FAILED 2047
 #define MSG_DELETE_FILE_FAILED  2048
 #define MSG_CONFIRMATION_UNINSTALL 2049
+#define MSG_JABO_REMOVE 2050
 

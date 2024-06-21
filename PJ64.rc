@@ -896,6 +896,7 @@ BEGIN
         MENUITEM "&GitHuB",                     ID_HELP_GITHUB
         MENUITEM SEPARATOR
         MENUITEM "&Uninstal Application Settings", ID_HELP_UNINSTALL
+        MENUITEM "&Uninstal Jabo Plugin Settings", ID_HELP_JABO_UNINSTALL
         MENUITEM SEPARATOR
         MENUITEM "About &INI Files",            ID_HELP_ABOUTSETTINGFILES
         MENUITEM "&About Project 64",           ID_HELP_ABOUT

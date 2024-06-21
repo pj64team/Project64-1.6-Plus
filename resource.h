@@ -327,6 +327,7 @@
 #define ID_HELP_UNINSTALL               40167
 #define ID_FILE_GAME_INFO               40168
 #define ID_POPUPMENU_GAMEINFORMATION    40169
+#define ID_HELP_JABO_UNINSTALL          40170
 #define ID_CURRENTSAVE_10               40203
 #define ID_CURRENTSAVE_11               40204
 #define ID_CURRENTSAVE_12               40205

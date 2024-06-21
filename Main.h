@@ -48,7 +48,7 @@ extern "C" {
 //#define BETA_VERSION
 #define AppVer   "Project64 - Version 1.6 Plus"
 #ifdef BETA_VERSION
-#define AppName  "Project64 Version 1.6 Plus (Vunerbility Fix RC1)"
+#define AppName  "Project64 Version 1.6 Plus (Vunerbility Fix)"
 #else
 #define AppName  "Project64 Version 1.6 Plus"
 #endif
