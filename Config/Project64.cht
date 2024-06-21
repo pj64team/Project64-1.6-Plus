@@ -17,7 +17,7 @@
 // Note that Project64 1.6 Plus automatically prefixes "http://"
 
 Author=PJ64/LegacyTeam
-Date=8th June 2024 Version: 1
+Date=17th June 2024
 Homepage=github.com/pj64team/Project64-1.6-Plus
 Version=1.0
 
@@ -5864,7 +5864,7 @@ Cheat20="Enable Cheat Menu",8005A883 0001
 //----
 
 [5318786C-994249C6-C:45]
-Name=Doom 64 Complete Edition (U) (v1.0)[Full]
+Name=DOOM 64
 Cheat0="Always Have\Gun",80062D33 0001
 Cheat1="Always Have\Shotgun",80062D37 0001
 Cheat2="Always Have\Double Shotgun",80062D3B 0001
@@ -5873,7 +5873,6 @@ Cheat4="Always Have\Missile Launcher",80062D43 0001
 Cheat5="Always Have\Chainsaw",80062D2B 0001
 Cheat6="Always Have\Plasma Rifle",80062D47 0001
 Cheat7="Always Have\BFG 9000",80062D4B 0001
-Cheat8="Always Have\Have\Rocket Launcher",80062D41 0001
 Cheat9="Always Have\Laser Weapon",80062D4F FFFF
 Cheat10="Always Have\Bio Suite",80062CF3 00??
 Cheat10_O=$00 Off,$FF On
@@ -5884,6 +5883,7 @@ Cheat14="Invincible And Map Markers",80062D7B 0006
 Cheat15="Infinite\Ammo All Weapons",80062D53 00FF,80062D57 00FF,80062D5B 00FF,80062D5F 00FF
 Cheat16="Have All Keys",80062CFF 0001,80062D03 0001,80062D04 0001,80062D13 0001,80062D0F 0001,80062D08 0001
 Cheat17="Enable Cheat Menu",800A6FE3 0001
+Cheat8="Always Have\Rocket Launcher",80062D41 0001
 
 //----
 
@@ -27900,4 +27900,74 @@ Cheat12_O=$00 Wash,$01 Rest,$02 Work,$03 Use an item,$04 Do nothing
 
 //End Of File----------> Anything under here was put in by you <--------------------------------
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+[4DB0DEEE-924B4B9E-C:0]
+Name=ZELDA COSMIC GODDESS
+Cheat0="Infinite\Rupees",80120134 0001
+Cheat0_N=This cheat allows you to have the max Rupees to the Wallet you currently Hold
+Cheat1="Have\All Equipment",8111EDDC 7777
+Cheat1_N=This cheat causes the Goron Temple door not to open, but if you go to the very top of the mountain where the fairy is, next to her entrance is another one in to the fire temple.once inside put on the hover boots & infinite hover cheat to hover over to the ledge on the left hand side.From here you can carry on the game as normal
+Cheat2="Have\All Quest Status Items",8111EDE4 30FF,8111EDE6 FFFF
+Cheat2_N=This cheat causes the Goron Temple door not to open, but if you go to the very top of the mountain where the fairy is, next to her entrance is another one in to the fire temple.once inside put on the hover boots & infinite hover cheat to hover over to the ledge on the left hand side.From here you can carry on the game as normal
+Cheat3="Max\Heart Containers",8111ED6E 0140
+Cheat4="Max\Gold Skulltulas Killed",8011EE11 0064
+Cheat5="Time of Day Modifier",8111ED4C ????
+Cheat5_O=$4000 At Sunrise,$5800 Daylight Out,$7000 Very Bright Out,$C000 At Sunset,$D000 Fairly Dark
+Cheat6="Infinite\Energy",8111ED70 0140
+Cheat7="Infinite\Magic",D011ED79 0008,8011ED7A 0001,8011ED7C 0001,8011ED73 0060
+Cheat8="Tunic & Boot Options",8011EDB0 00??
+Cheat8_N=This changes what you are wearing,once you have enabled the code press Start & then start again.
+Cheat8_O=$11 Normal Tunic & Leather Boots,$12 Goron Tunic & Leather Boots,$13 Bikini Tunic & Leather Boots,$14 Eve Tunic & Leather Boots,$21 Normal Tunic & Iron Boots,$22 Goron Tunic & Iron Boots,$23 Bikini Tunic & Iron Boots,$24 Eve Tunic & Iron Boots,$31 Normal Tunic & Pegasus Boots,$32 Goron Tunic & Pegasus Boots,$33 Bikini Tunic & Pegasus Boots,$34 Eve Tunic & Pegasus Boots
+Cheat9="Infinite\Deku Sticks",8011EDCC 0063
+Cheat10="Infinite\Deku Nuts",8011EDCD 0063
+Cheat11="Infinite\Bombs",8011EDCE 0063
+Cheat12="Infinite\Shotgun Ammo",8011EDCF 0063
+Cheat13="Infinite\Beretta Ammo",8011EDD2 0063
+Cheat14="Infinite\Bombchu's",8011EDD4 0063
+Cheat15="Infinite\Magic Beans",8011EDDA 0063
+Cheat16="Infinite\Big Key,Small Keys,Compass,& Map",50000B01 0000,8011EDE8 0007,50000501 0000,8011EDFF 0009,50000202 0000,8011EDA7 0009,8011EDAC 0009
+Cheat17="Have\Ocarina",8011EDBB 00??
+Cheat17_O=$07 Fairy Ocarina,$08 Ocarina Of Time
+Cheat18="Have\Boomerang",8011EDC0 000E
+Cheat19="Have\Lens of Truth",8011EDC1 000F
+Cheat20="Have\Megaton Hammer",8011EDC3 0011
+Cheat21="Have\Deku Stick",8011EDB4 0000
+Cheat22="Have\Deku Nut",8011EDB5 0001
+Cheat23="Have\Bombs",8011EDB6 0002
+Cheat24="Have\Shotgun",8011EDB7 0003
+Cheat25="Have\Beretta",8011EDBA 0006
+Cheat26="Have\Bombchu",8011EDBC 0009
+Cheat27="Have\Arrows\Fire Arrow",8011EDB8 0004
+Cheat28="Have\Arrows\Ice Arrow",8011EDBE 000C
+Cheat29="Have\Arrows\Light Arrow",8011EDC4 0012
+Cheat30="Have\Hookshot",8011EDBD 00??
+Cheat30_O=$0A Hookshot,$0B Longshot
+Cheat31="Have\Magic Beans",8011EDC2 0010
+Cheat32="Have\Magic\Fairie's Wind",8011EDBF 000D
+Cheat33="Have\Magic\Nayru's Love",8011EDC5 0013
+Cheat34="Have\Magic\Din's Fire",8011EDB9 0005
+Cheat35="Bottles\Bottle 1 Modifier",8011EDC6 00??
+Cheat35_O=$14 Empty Bottle,$15 Red Potion,$16 Green Potion,$17 Blue Potion,$18 Bottled Fairy,$19 Fish,$1A Lon Lon Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Lon Lon Milk (Half),$20 Poe
+Cheat36="Bottles\Bottle 2 Modifier",8011EDC7 00??
+Cheat36_O=$14 Empty Bottle,$15 Red Potion,$16 Green Potion,$17 Blue Potion,$18 Bottled Fairy,$19 Fish,$1A Lon Lon Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Lon Lon Milk (Half),$20 Poe
+Cheat37="Bottles\Bottle 3 Modifier",8011EDC8 00??
+Cheat37_O=$14 Empty Bottle,$15 Red Potion,$16 Green Potion,$17 Blue Potion,$18 Bottled Fairy,$19 Fish,$1A Lon Lon Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Lon Lon Milk (Half),$20 Poe
+Cheat38="Bottles\Bottle 4 Modifier",8011EDC9 00??
+Cheat38_O=$14 Empty Bottle,$15 Red Potion,$16 Green Potion,$17 Blue Potion,$18 Bottled Fairy,$19 Fish,$1A Lon Lon Milk,$1B Letter,$1C Blue Fire,$1D Bug,$1E Big Poe,$1F Lon Lon Milk (Half),$20 Poe
+Cheat39="Trading\Adult Link Item",8011EDCA 00??
+Cheat39_O=$2D Pocket Egg,$2E Pocket Cucco,$2F Cojiro,$30 Odd Mushroom,$31 Odd Potion,$32 Poacher's Saw,$33 Goron's Sword (Broken),$34 Prescription,$35 Eyeball Frog,$36 Eye Drops,$37 Claim Check
+Cheat40="Trading\Young Link Item",8011EDCB 00??
+Cheat40_O=$21 Weird Egg,$22 Chicken,$23 Zelda's Letter,$24 Keaton Mask,$25 Skull Mask,$26 Spooky Mask,$27 Bunny Hood,$28 Goron Mask,$29 Zora Mask,$2A Gerudo Mask,$2B Mask of Truth,$2C SOLD OUT
+Cheat41="Equipment Modifier 1",8011EDE2 00??
+Cheat41_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
+Cheat41_O=$02 Silver Scale,$04 Golden Scale,$06 Giants Knife (Broken),$40 Bullet Bag (Holds 30),$80 Bullet Bag (Holds 40),$C0 Bullet Bag (Holds 50),$47 Kid Wallet (Holds 99),$57 Adult Wallet (Holds 200),$67 Giant Wallet (Holds 500)
+Cheat42="Equipment Modifier 2",8011EDE3 00??
+Cheat42_N=This modifies the equipment you are carrying.If you Use Black Gauntlets,They are as strong as the Golden Gauntlets. This code also gives you the Silver Scale and the Golden Scale and unlimited rupees.
+Cheat42_O=$08 Bomb Bag (Holds 20),$10 Bomb Bag (Holds 30),$18 Bomb Bag (Holds 40),$20 Goron's Bracelet,$28 Silver Gauntlets,$30 Golden Gauntlets,$35 Black Gauntlets,
+Cheat43="Press L\To Levitate Main Character",D01E2055 0020,811F4630 40CB
+Cheat43_N=Press L To Levitate & Let go to land
+Cheat44="Max\Double Defense Power",8011EE0F 0014
+Cheat44_N=This gives you White Border Hearts
+Cheat45="Press L\To Levitate 2nd Character",D01E2055 0020,811F6940 40CB
+Cheat45_N=Press L To Levitate & Let go to land
+
