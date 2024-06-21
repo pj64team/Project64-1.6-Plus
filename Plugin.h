@@ -27,9 +27,9 @@
 #define __Plugin_h 
 
 #define DefaultGFXDll				"Jabo_Direct3D8_1.6_Plus.dll"
-#define DefaultRSPDll				"RSP.dll"
-#define DefaultAudioDll				"Jabo_Dsound_1.6_Plus.dll"
-#define DefaultControllerDll		"Jabo_Input_1.6_Plus.dll"
+#define DefaultRSPDll				"RSP_1.6_Plus.dll"
+#define DefaultAudioDll				"AziAudio_Legacy.dll"
+#define DefaultControllerDll		"NRage_Legacy_Input.dll"
 
 #define PLUGIN_TYPE_RSP				1
 #define PLUGIN_TYPE_GFX				2
