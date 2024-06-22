@@ -391,11 +391,10 @@ LANG_STR DefaultString[] = {
 	{ MSG_MAX_CHEATS,         "You Have reached the Maxiumn amount of cheats for this rom"},
 	{ MSG_NO_GAME_INFORMATION,"No game information available" },
 	{ MSG_RESTART_APPLICATION,"The application settings have been deleted. The application will be closed." },
-	{ MSG_JABO_REMOVE,"The plugin settings have been deleted. Please press ok to continue." },
-	{ MSG_DELETE_SETTINGS_FAILED,"Failed to delete the application settings." },
+    { MSG_DELETE_SETTINGS_FAILED,"Failed to delete the application settings." },
 	{ MSG_DELETE_FILE_FAILED, "Failed to delete file"},
-	{ MSG_CONFIRMATION_UNINSTALL, "The application settings are about to be deleted. Click OK to continue."}
-
+	{ MSG_JABO_CONFIRM_UNINSTALL, "Jabo plugin settings are about to be deleted. Click OK to continue." },
+	{ MSG_JABO_REMOVE,"Jabo plugin settings have been deleted. Please press ok to continue." }
 };
 
 class CLanguage  {

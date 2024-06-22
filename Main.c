@@ -2273,7 +2273,7 @@ void UninstallJabo(HWND hWnd) {
 	char RegistryKey[300];
 	char ErrorMessage[300];
 
-	if (MessageBox(NULL, GS(MSG_CONFIRMATION_UNINSTALL), JaboPlugins, MB_OKCANCEL | MB_ICONEXCLAMATION | MB_SETFOREGROUND) == IDOK) {
+	if (MessageBox(NULL, GS(MSG_JABO_CONFIRM_UNINSTALL), JaboPlugins, MB_OKCANCEL | MB_ICONEXCLAMATION | MB_SETFOREGROUND) == IDOK) {
 
 		// Delete registry keys recursive
 		sprintf(RegistryKey, "Software\\JaboSoft\\%s", JaboPlugins);
