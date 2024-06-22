@@ -46,11 +46,11 @@ extern "C" {
 #define AppName  "Project64 (Build 57)"
 #else
 //#define BETA_VERSION
-#define AppVer   "Project64 - Version 1.6 Plus"
+#define AppVer   "Project64 1.6 Plus"
 #ifdef BETA_VERSION
-#define AppName  "Project64 Version 1.6 Plus (Vunerbility Fix)"
+#define AppName  "Project64 1.6 Plus (Vunerbility Fix)"
 #else
-#define AppName  "Project64 Version 1.6 Plus"
+#define AppName  "Project64 1.6 Plus"
 #endif
 #endif
 
@@ -64,6 +64,7 @@ extern "C" {
 #define ChmFileName					"Project64.chm"
 #define FaqFileName					"PJgameFAQ.chm"
 #define JIniName					"Jabo.ini"
+#define JaboPlugins					"PJ64 DLL"
 #define Default_AdvancedBlockLink	TRUE
 #define Default_AutoStart			TRUE
 #define Default_AutoSleep			FALSE		// Disbled "Pause Emulation when window not active" as default (Gent)

@@ -1576,21 +1576,15 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			break;
 #endif
 		case ID_HELP_CONTENTS:
-		{
-			char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR];
-			char fname[_MAX_FNAME], ext[_MAX_EXT], HelpFileName[_MAX_PATH];
-
-			GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
-			_splitpath(path_buffer, drive, dir, fname, ext);
-			//_makepath(HelpFileName, drive, dir, "Project64", "chm");
-			sprintf(HelpFileName, "%s%sConfig\\%s", drive, dir, ChmFileName);
+			ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus/wiki/User-Guide", NULL, NULL, SW_SHOWMAXIMIZED); // Changed chm to online version for better user experience
+			break;
 
 			// The call causes a crash if 1 is there at the end, no idea why it's even there as it works fine without it.
-			if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, (DWORD)NULL) == NULL) {
+			/*if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, (DWORD)NULL) == NULL) {
 				ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
 			}
 		}
-		break;
+		break;*/
 		/*		case ID_HELPMNU_INDEX:
 					{
 						char path_buffer[_MAX_PATH], drive[_MAX_DRIVE] ,dir[_MAX_DIR];
@@ -1607,21 +1601,16 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 					}
 					break;*/
 		case ID_HELP_GAMEFAQ:
-		{
-			char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR];
-			char fname[_MAX_FNAME], ext[_MAX_EXT], HelpFileName[_MAX_PATH];
+			ShellExecute(NULL, "open", "https://www.n64gamespedia.com/", NULL, NULL, SW_SHOWMAXIMIZED); // Changed chm to online version for better user experience
+			break;
 
-			GetModuleFileName(NULL, path_buffer, sizeof(path_buffer));
-			_splitpath(path_buffer, drive, dir, fname, ext);
-			//_makepath(HelpFileName, drive, dir, "PJgameFAQ", "chm");
-			sprintf(HelpFileName, "%s%sConfig\\%s", drive, dir, FaqFileName);
 
 			// Gent no longer indexes these files so the old value of 1 no longer points to something valid, using NULL instead
-			if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, (DWORD)NULL) == NULL) {
+			/*if (HtmlHelp(hWnd, HelpFileName, HH_DISPLAY_TOPIC, (DWORD)NULL) == NULL) {
 				ShellExecute(hWnd, "open", HelpFileName, NULL, NULL, SW_SHOW);
 			}
 		}
-		break;
+		break;*/
 		case ID_HELP_DISCORD: ShellExecute(NULL, "open", "https://discord.gg/TnFmnW6WQE", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_GITHUB: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_UNINSTALL: UninstallApplication(hWnd); break;
@@ -2284,15 +2273,15 @@ void UninstallJabo(HWND hWnd) {
 	char RegistryKey[300];
 	char ErrorMessage[300];
 
-	if (MessageBox(NULL, GS(MSG_CONFIRMATION_UNINSTALL), AppName, MB_OKCANCEL | MB_ICONEXCLAMATION | MB_SETFOREGROUND) == IDOK) {
+	if (MessageBox(NULL, GS(MSG_CONFIRMATION_UNINSTALL), JaboPlugins, MB_OKCANCEL | MB_ICONEXCLAMATION | MB_SETFOREGROUND) == IDOK) {
 
 		// Delete registry keys recursive
-		sprintf(RegistryKey, "Software\JaboSoft\Project64 DLL\\%s", AppName);
+		sprintf(RegistryKey, "Software\\JaboSoft\\%s", JaboPlugins);
 		if (!RegDelnode(HKEY_CURRENT_USER, RegistryKey)) {
 			DisplayError(GS(MSG_DELETE_SETTINGS_FAILED));
 		}
 
-		MessageBox(NULL, GS(MSG_JABO_REMOVE), AppName, MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
+		MessageBox(NULL, GS(MSG_JABO_REMOVE), JaboPlugins, MB_OK | MB_ICONINFORMATION | MB_SETFOREGROUND);
 	}
 
 }
