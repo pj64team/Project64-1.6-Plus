@@ -1,5 +1,5 @@
 // ============================================================================
-// roject64 1.6 Plus 1.0 Official RDB v1.0 by by Smiff/Gent of PJ64/LegacyTeam
+// Project64 1.6 Plus 1.0 Official RDB v1.0 by by Smiff/Gent of PJ64/LegacyTeam
 // Based On Project64 Official RDB v1.6 by Smiff/Project64 team
 // ============================================================================
 
@@ -18403,7 +18403,7 @@ Delay RSP=No
 
 [2D15DC8C-D3BBDB52-C:0]
 Game Name=Boot Emu by Jovis (PD)
-บ
+ยบ
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -19926,7 +19926,7 @@ Plugin Note=
 
 [D1C6C55D-F010EF52-C:0]
 Game Name=Nintendo WideBoy 64 by SonCrap (PD)
-ร
+ร
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
