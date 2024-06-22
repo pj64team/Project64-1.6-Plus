@@ -889,8 +889,8 @@ BEGIN
     END
     POPUP "&Help"
     BEGIN
-        MENUITEM "&User Manual...",             ID_HELP_CONTENTS
-        MENUITEM "&Game FAQ...",                ID_HELP_GAMEFAQ
+        MENUITEM "&User Guide...",             ID_HELP_CONTENTS
+        MENUITEM "&Online RDX...",                ID_HELP_GAMEFAQ
         MENUITEM SEPARATOR
         MENUITEM "&Discord",                     ID_HELP_DISCORD
         MENUITEM "&GitHuB",                     ID_HELP_GITHUB
