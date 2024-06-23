@@ -15,7 +15,7 @@
 // Note that Project64 1.6 Plus automatically prefixes "http://"
 
 Author=PJ64/LegacyTeam
-Date=22nd June 2024
+Date=23rd June 2024
 Homepage=github.com/pj64team/Project64-1.6-Plus
 Version=1.0
 
@@ -14937,9 +14937,9 @@ Emulate Clear=1
 Audio Signal=No
 
 [5354631C-03A2DEF0-C:45]
-Game Name=The Legend of Zelda - Majora's Mask (U)
+Game Name=Legend of Zelda, The - Majora's Mask (U) [!]
 RDRAM Size=8
-CPU Type=Recompiler
+CPU Type=Interpreter
 Self-modifying code Method=Change Memory
 Use TLB=No
 Linking=Off
@@ -14960,6 +14960,9 @@ Resolution Height=-1
 Culling=1
 Emulate Clear=1
 Audio Signal=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
 
 [6AECEC4F-F0924814-C:50]
 Game Name=The Legend of Zelda - Majora's Mask - Collector's Edition (E) (M4)
@@ -18403,7 +18406,7 @@ Delay RSP=No
 
 [2D15DC8C-D3BBDB52-C:0]
 Game Name=Boot Emu by Jovis (PD)
-ยบ
+บ
 RDRAM Size=4
 Counter Factor=2
 Save Type=First Save Type
@@ -19926,7 +19929,7 @@ Plugin Note=
 
 [D1C6C55D-F010EF52-C:0]
 Game Name=Nintendo WideBoy 64 by SonCrap (PD)
-ร
+ร
 RDRAM Size=4
 Counter Factor=1
 Save Type=First Save Type
@@ -27678,8 +27681,168 @@ SP Hack=No
 Core Note=
 Plugin Note=[audio] (See Gamefaq)
 
-[16082F95-9FEEA8F1-C:4A]
-Game Name=Mario Artist - Talent Studio (J) T-Eng v2b LuigiBlood
+[3EC36C75-F03048F1-C:F9]
+Game Name=Perfect Dark (U) (Debug Version)
+Status=Unsupported[57AF893E-884A377C-C:45]
+RDRAM Size=8Game Name=Wave Race 64 (USA) (Rev B) (Rumble Edition)
+Counter Factor=2RDRAM Size=4
+Save Type=16kbit EepromCounter Factor=2
+CPU Type=RecompilerSave Type=First Save Type
+Self-modifying code Method=Protected MemoryCPU Type=Recompiler
+Reg Cache=YesSelf-modifying code Method=Check Memory & cache
+Use TLB=YesUse TLB=No
+Delay SI=NoLinking=On
+Delay RDP=NoReg Cache=Yes
+Delay RSP=NoUse Large Buffer=No
+Emulate AI=No//Geometry Pipeline=Internal
+Audio Signal=NoStatus=Compatible
+SP Hack=NoDelay SI=No
+Use Large Buffer=NoSP Hack=No
+Linking=Global                                          
+Core Note=unknown country[7280E03F-497689BA-C:0]
+Plugin Note=What is the correct entry?Game Name=Virtual Pro Wrestling 2 - Oudou Keishou (J) T-Eng beta3 S.K.
+RDRAM Size=4
+[7D1FA66C-075977A2-C:AA]Counter Factor=2
+Game Name=Conker's Bad Fur Day (U) (Debug Version)Save Type=First Save Type
+RDRAM Size=4CPU Type=Recompiler
+Counter Factor=2Self-modifying code Method=Protected Memory
+Save Type=16kbit EepromUse TLB=Yes
+CPU Type=RecompilerLinking=Global
+Self-modifying code Method=Protected MemoryReg Cache=Yes
+Reg Cache=YesUse Large Buffer=No
+Use TLB=YesDelay SI=No
+Delay SI=NoSP Hack=No
+Delay RDP=No//Geometry Pipeline=Internal
+Delay RSP=NoStatus=Compatible
+Emulate AI=No
+Audio Signal=No[B39B66F9-B779BD8F-C:45]
+SP Hack=NoGame Name=Super Mario 64 (U) (v1.0) (Polish-Trans)
+Use Large Buffer=YesRDRAM Size=8
+Linking=GlobalCounter Factor=1
+Status=UnsupportedSave Type=First Save Type
+Core Note=unknown country, failed to open mempakCPU Type=Recompiler
+Plugin Note=Self-modifying code Method=Cache
+Reg Cache=Yes
+[321A53A7-FF6C1805-C:4AUse TLB=Yes
+[CRC32-391C6D14]Delay SI=No
+Game Name=B3313 (Super Mario 64 Internal Plexus) (U) (V1.0)Delay RDP=No
+RDRAM Size=8Delay RSP=No
+Counter Factor=1Emulate AI=No
+Save Type=First Save TypeAudio Signal=No
+CPU Type=RecompilerSP Hack=No
+Self-modifying code Method=CacheUse Large Buffer=No
+Reg Cache=YesLinking=Global
+Use TLB=YesStatus=Compatible
+Delay SI=NoCore Note=
+Delay RDP=NoPlugin Note=
+Delay RSP=No
+Emulate AI=No[88EC3675-59CE4583-C:45]
+Audio Signal=NoGame Name=Super Mario 64 (U) (v.3.9) (Spanish-Trans) [Rumble-Edition]
+SP Hack=NoRDRAM Size=8
+Use Large Buffer=NoCounter Factor=1
+Linking=OffSave Type=First Save Type
+Status=HackCPU Type=Recompiler
+Core Note=Self-modifying code Method=Cache
+Plugin Note=Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Compatible
+Core Note=
+Plugin Note=
+
+[C1373DC8-ED88D197-C:4B]
+Game Name=Super Mario 64 (K) (Rumble Edition) (Koren-Trans)
+RDRAM Size=8
+Counter Factor=1
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Compatible
+Core Note=
+Plugin Note=
+
+[6F72A924-EE8EA790-C:0]
+Game Name=Super Mario 64 - Shindou Pack Taiou Version (J) (T-Eng)
+RDRAM Size=8
+Counter Factor=1
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Compatible
+Core Note=
+Plugin Note=
+
+[3C82C9A4-F0EC379D-C:4A]
+Game Name=Virtual Pro Wrestling 2 - Oudou Keishou (J) T-Eng beta3 S.K. Stylez 2015-01-17
+RDRAM Size=4
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Compatible
+Core Note=
+Plugin Note=
+
+[020C3E4E-5A2763C8-C:45]
+Game Name=St Andrews Old Course (U) (English-T)
+RDRAM Size=4
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Protected Memory
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Use GlideN64 Video
+Core Note=
+Plugin Note=
+
+[00AF7C2B-5C670237-C:4A]
+Game Name=Sim City 64 (J) T-Eng VWF v0.6.38 ozidual
 RDRAM Size=Default
 Counter Factor=Default
 Save Type=First Save Type
@@ -27699,13 +27862,129 @@ Status=Unsupported
 Core Note=
 Plugin Note=
 
-[26E5A6A6-153E8670-C:4A]
-Game Name=Mario Artist - Polygon Studio (J) T+Eng v2 LuigiBlood
-RDRAM Size=Default
-Counter Factor=Default
+[7FCBF1D2-04546EB4-C:4B]
+Game Name=Puyo Puyo Sun 64 (K) (Korea-Trans)
+RDRAM Size=4
+Counter Factor=2
 Save Type=First Save Type
-CPU Type=Default
-Self-modifying code Method=Default
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Compatible
+
+[1C348AFE-5B96ECFA-C:45]
+Game Name=Puyo Puyo Sun 64 (J) T+Eng v1.1 Zoinkity
+RDRAM Size=4
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Reg Cache=Yes
+Use TLB=No
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Unsupported
+Core Note=Unhandled R4300i
+Plugin Note=       
+      
+[8D79C198-14D66F6D-C:4B]
+Game Name=Neon Genesis Evangelion (K) (Korean-Trans)
+RDRAM Size=4
+Counter Factor=2
+Save Type=16kbit Eeprom
+CPU Type=Recompiler
+Self-modifying code Method=Check Memory Advance
+Use TLB=Yes
+Linking=Global
+Reg Cache=Yes
+Use Large Buffer=No
+Status=Issues (plugin)
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Clear Frame=1
+Self Texture=0
+Primary Frame Buffer=0
+Resolution Width=-1
+Resolution Height=-1
+Culling=1
+Emulate Clear=0
+
+[51BA7A0D-6B9AC2B5-C:45]
+Game Name=Mario Kart 64 (U) (v1.0) (Polish-Trans)
+RDRAM Size=4
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Reg Cache=Yes
+Use TLB=Yes
+Use Large Buffer=No
+Linking=Global
+Status=Compatible
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Clear Frame=0
+Resolution Width=-1
+Resolution Height=-1
+Culling=1
+Self Texture=0
+Primary Frame Buffer=1
+Emulate Clear=0
+Audio Signal=No
+Cheat0=81001A3C 2409,81001A3E 0002,81001C94 240A,81001C96 0002 //Multiplayer timing fix
+
+[40CA1EC9-8CC292D4-C:45]
+Game Name=Mario Kart 64 (U) (Spanish-Trans)
+RDRAM Size=4
+Counter Factor=2
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Cache
+Reg Cache=Yes
+Use TLB=Yes
+Use Large Buffer=No
+Linking=Global
+Status=Compatible
+Plugin Note=
+Delay SI=No
+SP Hack=No
+Core Note=
+Clear Frame=0
+Resolution Width=-1
+Resolution Height=-1
+Culling=1
+Self Texture=0
+Primary Frame Buffer=1
+Emulate Clear=0
+Audio Signal=No
+Cheat0=81001A3C 2409,81001A3E 0002,81001C94 240A,81001C96 0002 //Multiplayer timing fix
+
+[B1C7794B-D93DC5F3-C:4A]
+Game Name=Sin and Punishment Spanish Dubbed (J) T-Spa v1.0b Tio Vctor
+RDRAM Size=4
+Counter Factor=1
+Save Type=First Save Type
+CPU Type=Recompiler
+Self-modifying code Method=Check Memory & cache
 Reg Cache=Yes
 Use TLB=Yes
 Delay SI=No
@@ -27716,17 +27995,17 @@ Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
 Linking=Global
-Status=Unsupported
+Status=Compatible
 Core Note=
 Plugin Note=
 
-[E2EA8C91-43582578-C:4A]
-Game Name=Mario Artist - Paint Studio (J) T+Eng v2.1 LuigiBlood
-RDRAM Size=Default
-Counter Factor=Default
+[B73AB6F6-296267DD-C:45]
+Game Name=Sin And Punishment (J) English T-Eng v1 Zoinkity
+RDRAM Size=4
+Counter Factor=1
 Save Type=First Save Type
-CPU Type=Default
-Self-modifying code Method=Default
+CPU Type=Recompiler
+Self-modifying code Method=Check Memory & cache
 Reg Cache=Yes
 Use TLB=Yes
 Delay SI=No
@@ -27737,9 +28016,10 @@ Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
 Linking=Global
-Status=Unsupported
+Status=Compatible
 Core Note=
 Plugin Note=
+
 
 
 //
@@ -28123,56 +28403,13 @@ Status=Unsupported
 Core Note=Unknown CIC Chip
 Plugin Note=
 
-[3EC36C75-F03048F1-C:F9]
-Game Name=Perfect Dark (U) (Debug Version)
-Status=Unsupported
-RDRAM Size=8
-Counter Factor=2
-Save Type=16kbit Eeprom
-CPU Type=Recompiler
-Self-modifying code Method=Protected Memory
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Core Note=unknown country
-Plugin Note=What is the correct entry?
-
-[7D1FA66C-075977A2-C:AA]
-Game Name=Conker's Bad Fur Day (U) (Debug Version)
-RDRAM Size=4
-Counter Factor=2
-Save Type=16kbit Eeprom
-CPU Type=Recompiler
-Self-modifying code Method=Protected Memory
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=Yes
-Linking=Global
-Status=Unsupported
-Core Note=unknown country, failed to open mempak
-Plugin Note=
-
-[321A53A7-FF6C1805-C:4A
-[CRC32-391C6D14]
-Game Name=B3313 (Super Mario 64 Internal Plexus) (U) (V1.0)
-RDRAM Size=8
-Counter Factor=1
+[16082F95-9FEEA8F1-C:4A]
+Game Name=Mario Artist - Talent Studio (J) T-Eng v2b LuigiBlood
+RDRAM Size=Default
+Counter Factor=Default
 Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
+CPU Type=Default
+Self-modifying code Method=Default
 Reg Cache=Yes
 Use TLB=Yes
 Delay SI=No
@@ -28182,10 +28419,53 @@ Emulate AI=No
 Audio Signal=No
 SP Hack=No
 Use Large Buffer=No
-Linking=Off
-Status=Hack
+Linking=Global
+Status=Unsupported
 Core Note=
 Plugin Note=
+
+[26E5A6A6-153E8670-C:4A]
+Game Name=Mario Artist - Polygon Studio (J) T+Eng v2 LuigiBlood
+RDRAM Size=Default
+Counter Factor=Default
+Save Type=First Save Type
+CPU Type=Default
+Self-modifying code Method=Default
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Unsupported
+Core Note=
+Plugin Note=
+
+[E2EA8C91-43582578-C:4A]
+Game Name=Mario Artist - Paint Studio (J) T+Eng v2.1 LuigiBlood
+RDRAM Size=Default
+Counter Factor=Default
+Save Type=First Save Type
+CPU Type=Default
+Self-modifying code Method=Default
+Reg Cache=Yes
+Use TLB=Yes
+Delay SI=No
+Delay RDP=No
+Delay RSP=No
+Emulate AI=No
+Audio Signal=No
+SP Hack=No
+Use Large Buffer=No
+Linking=Global
+Status=Unsupported
+Core Note=
+Plugin Note=
+
 
 //------ Nintendo LodgeNet 64 (Gateway System) --------
 
@@ -29815,339 +30095,3 @@ Plugin Note=
 //
 //-------- Any entries below this point are for ROMs you have added yourself via the GUI [EOF] --------
 
-[57AF893E-884A377C-C:45]
-Game Name=Wave Race 64 (USA) (Rev B) (Rumble Edition)
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Check Memory & cache
-Use TLB=No
-Linking=On
-Reg Cache=Yes
-Use Large Buffer=No
-//Geometry Pipeline=Internal
-Status=Compatible
-Delay SI=No
-SP Hack=No
-                                          
-[7280E03F-497689BA-C:0]
-Game Name=Virtual Pro Wrestling 2 - Oudou Keishou (J) T-Eng beta3 S.K.
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Protected Memory
-Use TLB=Yes
-Linking=Global
-Reg Cache=Yes
-Use Large Buffer=No
-Delay SI=No
-SP Hack=No
-//Geometry Pipeline=Internal
-Status=Compatible
-
-[B39B66F9-B779BD8F-C:45]
-Game Name=Super Mario 64 (U) (v1.0) (Polish-Trans)
-RDRAM Size=8
-Counter Factor=1
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Core Note=
-Plugin Note=
-
-[88EC3675-59CE4583-C:45]
-Game Name=Super Mario 64 (U) (v.3.9) (Spanish-Trans) [Rumble-Edition]
-RDRAM Size=8
-Counter Factor=1
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Core Note=
-Plugin Note=
-
-[C1373DC8-ED88D197-C:4B]
-Game Name=Super Mario 64 (K) (Rumble Edition) (Koren-Trans)
-RDRAM Size=8
-Counter Factor=1
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Core Note=
-Plugin Note=
-
-[6F72A924-EE8EA790-C:0]
-Game Name=Super Mario 64 - Shindou Pack Taiou Version (J) (T-Eng)
-RDRAM Size=8
-Counter Factor=1
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Core Note=
-Plugin Note=
-
-[3C82C9A4-F0EC379D-C:4A]
-Game Name= 
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Protected Memory
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Core Note=
-Plugin Note=
-
-[020C3E4E-5A2763C8-C:45]
-Game Name=St Andrews Old Course (U) (English-T)
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Protected Memory
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Use GlideN64 Video
-Core Note=
-Plugin Note=
-
-[00AF7C2B-5C670237-C:4A]
-Game Name=Sim City 64 (J) T-Eng VWF v0.6.38 ozidual
-RDRAM Size=Default
-Counter Factor=Default
-Save Type=First Save Type
-CPU Type=Default
-Self-modifying code Method=Default
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Unsupported
-Core Note=
-Plugin Note=
-
-[7FCBF1D2-04546EB4-C:4B]
-Game Name=Puyo Puyo Sun 64 (K) (Korea-Trans)
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
-Reg Cache=Yes
-Use TLB=No
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-
-[1C348AFE-5B96ECFA-C:45]
-Game Name=Puyo Puyo Sun 64 (J) T+Eng v1.1 Zoinkity
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
-Reg Cache=Yes
-Use TLB=No
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Unsupported
-Core Note=Unhandled R4300i
-Plugin Note=       
-      
-[8D79C198-14D66F6D-C:4B]
-Game Name=Neon Genesis Evangelion (K) (Korean-Trans)
-RDRAM Size=4
-Counter Factor=2
-Save Type=16kbit Eeprom
-CPU Type=Recompiler
-Self-modifying code Method=Check Memory Advance
-Use TLB=Yes
-Linking=Global
-Reg Cache=Yes
-Use Large Buffer=No
-Status=Issues (plugin)
-Plugin Note=
-Delay SI=No
-SP Hack=No
-Core Note=
-Clear Frame=1
-Self Texture=0
-Primary Frame Buffer=0
-Resolution Width=-1
-Resolution Height=-1
-Culling=1
-Emulate Clear=0
-
-[51BA7A0D-6B9AC2B5-C:45]
-Game Name=Mario Kart 64 (U) (v1.0) (Polish-Trans)
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
-Reg Cache=Yes
-Use TLB=Yes
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Plugin Note=
-Delay SI=No
-SP Hack=No
-Core Note=
-Clear Frame=0
-Resolution Width=-1
-Resolution Height=-1
-Culling=1
-Self Texture=0
-Primary Frame Buffer=1
-Emulate Clear=0
-Audio Signal=No
-Cheat0=81001A3C 2409,81001A3E 0002,81001C94 240A,81001C96 0002 //Multiplayer timing fix
-
-[40CA1EC9-8CC292D4-C:45]
-Game Name=Mario Kart 64 (U) (Spanish-Trans)
-RDRAM Size=4
-Counter Factor=2
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Cache
-Reg Cache=Yes
-Use TLB=Yes
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Plugin Note=
-Delay SI=No
-SP Hack=No
-Core Note=
-Clear Frame=0
-Resolution Width=-1
-Resolution Height=-1
-Culling=1
-Self Texture=0
-Primary Frame Buffer=1
-Emulate Clear=0
-Audio Signal=No
-Cheat0=81001A3C 2409,81001A3E 0002,81001C94 240A,81001C96 0002 //Multiplayer timing fix
-
-[B1C7794B-D93DC5F3-C:4A]
-Game Name=Sin and Punishment Spanish Dubbed (J) T-Spa v1.0b Tio Vctor
-RDRAM Size=4
-Counter Factor=1
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Check Memory & cache
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Core Note=
-Plugin Note=
-
-[B73AB6F6-296267DD-C:45]
-Game Name=Sin And Punishment (J) English T-Eng v1 Zoinkity
-RDRAM Size=4
-Counter Factor=1
-Save Type=First Save Type
-CPU Type=Recompiler
-Self-modifying code Method=Check Memory & cache
-Reg Cache=Yes
-Use TLB=Yes
-Delay SI=No
-Delay RDP=No
-Delay RSP=No
-Emulate AI=No
-Audio Signal=No
-SP Hack=No
-Use Large Buffer=No
-Linking=Global
-Status=Compatible
-Core Note=
-Plugin Note=
