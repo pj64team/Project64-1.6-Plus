@@ -1576,7 +1576,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			break;
 #endif
 		case ID_HELP_CONTENTS:
-			ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus/wiki/User-Guide", NULL, NULL, SW_SHOWMAXIMIZED); // Changed chm to online version for better user experience
+			ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus/wiki/Project64-1.6-Plus-User-Guide", NULL, NULL, SW_SHOWMAXIMIZED); // Changed chm to online version for better user experience
 			break;
 
 			// The call causes a crash if 1 is there at the end, no idea why it's even there as it works fine without it.
@@ -1601,7 +1601,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 					}
 					break;*/
 		case ID_HELP_GAMEFAQ:
-			ShellExecute(NULL, "open", "https://www.n64gamespedia.com/", NULL, NULL, SW_SHOWMAXIMIZED); // Changed chm to online version for better user experience
+			ShellExecute(NULL, "open", "https://www.project64-legacy.com/online-rdx", NULL, NULL, SW_SHOWMAXIMIZED); // Changed chm to online version for better user experience
 			break;
 
 
