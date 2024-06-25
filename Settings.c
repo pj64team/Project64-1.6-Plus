@@ -261,7 +261,7 @@ BOOL CALLBACK DefaultOptionsProc (HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lP
 				RegSetValueEx(hKeyResults,"Start Emulation when rom is opened",0,REG_DWORD,(BYTE *)&AutoStart,sizeof(DWORD));
 
 				UseIni = SendMessage(GetDlgItem(hDlg,IDC_USEINI),BM_GETSTATE, 0,0) == BST_CHECKED?TRUE:FALSE;
-				RegSetValueEx(hKeyResults,"Always overwrite default settings with ones from ini?",0,REG_DWORD,(BYTE *)&UseIni,sizeof(DWORD));
+				RegSetValueEx(hKeyResults,"Overwrite default settings with ones from RDB?",0,REG_DWORD,(BYTE *)&UseIni,sizeof(DWORD));
 
 				AutoZip = SendMessage(GetDlgItem(hDlg,IDC_ZIP),BM_GETSTATE, 0,0) == BST_CHECKED?TRUE:FALSE;
 				RegSetValueEx(hKeyResults,"Automatically compress instant saves",0,REG_DWORD,(BYTE *)&AutoZip,sizeof(DWORD));

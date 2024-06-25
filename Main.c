@@ -633,7 +633,7 @@ void LoadSettings (void) {
 			lResult = RegQueryValueEx(hKeyResults,"Use Recursion",0,&Type,(BYTE *)(&Rercursion),&Bytes);
 			if (Type != REG_DWORD || lResult != ERROR_SUCCESS) { Rercursion = Default_Rercursion; }
 
-			lResult = RegQueryValueEx(hKeyResults,"Always overwrite default settings with ones from ini?",0,&Type,(BYTE *)(&UseIni),&Bytes);
+			lResult = RegQueryValueEx(hKeyResults,"Overwrite default settings with ones from RDB?",0,&Type,(BYTE *)(&UseIni),&Bytes);
 			if (Type != REG_DWORD || lResult != ERROR_SUCCESS) { UseIni = Default_UseIni; }
 
 			lResult = RegQueryValueEx(hKeyResults,"Automatically compress instant saves",0,&Type,(BYTE *)(&AutoZip),&Bytes);

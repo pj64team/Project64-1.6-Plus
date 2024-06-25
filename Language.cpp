@@ -60,7 +60,7 @@ LANG_STR DefaultString[] = {
 		{ MENU_RESET,       "&Reset"                 },
 		{ MENU_PAUSE,       "&Pause"                 },
 		{ MENU_RESUME,      "R&esume"                },
-		{ MENU_BITMAP,      "Generate Bitmap"        },
+		{ MENU_BITMAP,      "Screenshot Capture"        },
 		{ MENU_LIMIT_FPS,   "Limit FPS"              },
 		{ MENU_SAVE,        "&Save"                  },
 		{ MENU_SAVE_AS,     "Save As..."             },
@@ -219,7 +219,7 @@ LANG_STR DefaultString[] = {
 	{ ADVANCE_MEM_SIZE,    "Default Memory Size:"},
 	{ ADVANCE_ABL,         "Advanced Block Linking:"},
 	{ ADVANCE_AUTO_START,  "Start Emulation when rom is opened?"},
-	{ ADVANCE_OVERWRITE,   "Always overwrite default settings with ones from ini?"},
+	{ ADVANCE_OVERWRITE,   "Overwrite default settings with ones from RDB?"},
 	{ ADVANCE_COMPRESS,    "Automatically compress instant saves"},
 
 //Rom Options
@@ -390,6 +390,7 @@ LANG_STR DefaultString[] = {
 	{ MSG_CHEAT_NAME_IN_USE,  "Cheat Name is already in use"},
 	{ MSG_MAX_CHEATS,         "You Have reached the Maxiumn amount of cheats for this rom"},
 	{ MSG_NO_GAME_INFORMATION,"No game information available" },
+	{ MSG_CONFIRMATION_UNINSTALL, "The application settings are about to be deleted. Click OK to continue." } ,
 	{ MSG_RESTART_APPLICATION,"The application settings have been deleted. The application will be closed." },
     { MSG_DELETE_SETTINGS_FAILED,"Failed to delete the application settings." },
 	{ MSG_DELETE_FILE_FAILED, "Failed to delete file"},

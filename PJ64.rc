@@ -293,7 +293,7 @@ FONT 8, "MS Sans Serif"
 BEGIN
     CTEXT           "Most of these changes will not take effect till a new rom is opened or current rom is reset.",IDC_INFO,4,10,223,22
     GROUPBOX        "",IDC_STATIC,2,119,227,63
-    CONTROL         "Always overwrite default settings with ones from ini?",IDC_USEINI,
+    CONTROL         "Overwrite default settings with ones from RDB?",IDC_USEINI,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,145,218,11
     CONTROL         "Automatically compress instant saves",IDC_ZIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,161,218,11
     GROUPBOX        "Core Defaults",IDC_CORE_DEFAULTS,4,37,223,78
@@ -790,7 +790,7 @@ BEGIN
     BEGIN
         MENUITEM "&Reset\tF1",                  ID_CPU_RESET, GRAYED
         MENUITEM "&Pause\tF2",                  ID_CPU_PAUSE, GRAYED
-        MENUITEM "Generate Bitmap\tF3",         ID_SYSTEM_GENERATEBITMAP, GRAYED
+        MENUITEM "Screenshot Capture\tF3",         ID_SYSTEM_GENERATEBITMAP, GRAYED
         MENUITEM SEPARATOR
         MENUITEM "Limit FPS\tF4",               ID_SYSTEM_LIMITFPS
         MENUITEM SEPARATOR
