@@ -13,7 +13,11 @@ This is not intended for development use or is it a modernised 1.6 core, it is j
 - Arbitrary code vulnerability fix.
 
     tlb miss in write opcodes are now generating exceptions as expected. This solves a vulnerability that can allow roms
-    to run arbitrary code in previous releases.  
+    to run arbitrary code in previous releases.
+  
+- TLB: extra checks for overflow buffer mapping for user TLB entries
+
+	  Adds an extra check for user mapping TLB further than allowed buffer size.  
 
 - Retain 1.6 original ROM Hack compatibility
 
