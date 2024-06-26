@@ -308,10 +308,10 @@
 #define ID_FILE_ROMDIRECTORY            40137
 #define ID_FILE_REFRESHROMLIST          40138
 #define ID_SYSTEM_LIMITFPS              40141
-#define ID_HELP_CONTENTS                40142
+#define ID_HELP_GUIDE                   40142
 #define ID_HELP_ABOUTSETTINGFILES       40146
 #define ID_SYSTEM_GSBUTTON              40148
-#define ID_HELP_GAMEFAQ                 40149
+#define ID_HELP_GAMERDX                 40149
 #define ID_OPTIONS_ALWAYSONTOP          40150
 #define ID_PLAYGAME                     40152
 #define ID_EDITSETTINGS                 40153

@@ -87,8 +87,8 @@ char * GS               ( int StringID );
 #define MENU_LANGUAGE			175
 
 #define MENU_HELP				180
-	#define MENU_USER_MAN		181
-	#define MENU_GAME_FAQ		182
+	#define MENU_USER_GUIDE		181
+	#define MENU_GAME_RDX		182
 	#define MENU_ABOUT_INI		183
 	#define MENU_ABOUT_PJ64		184
 	#define MENU_DISCORD		185
@@ -153,8 +153,8 @@ char * GS               ( int StringID );
 #define MENUDES_CONFG_RSP		272
 #define MENUDES_SHOW_CPU		273
 #define MENUDES_SETTINGS		274
-#define MENUDES_USER_MAN		275
-#define MENUDES_GAME_FAQ		276
+#define MENUDES_USER_GUIDE		275
+#define MENUDES_GAME_RDX		276
 #define MENUDES_ABOUT_INI		277
 #define MENUDES_ABOUT_PJ64		278
 #define MENUDES_RECENT_ROM		279
@@ -165,6 +165,10 @@ char * GS               ( int StringID );
 #define MENUDES_GAME_INFO		284
 #define MENUDES_GAME_SETTINGS	285
 #define MENUDES_GAME_CHEATS		286
+#define MENUDES_UNINSTALLAPP    287
+#define MENUDES_UNINSTALLJABO	288
+#define MENUDES_GITHUB	        289
+#define MENUDES_DISCORD			290
 
 /*********************************************************************************
 * Rom Browser                                                                    *

@@ -384,10 +384,10 @@ void FixMenuLang (HMENU hMenu) {
 	MenuSetText(hSubMenu, 5, GS(MENU_ABOUT_INI), NULL);
 	MenuSetText(hSubMenu, 6, GS(MENU_ABOUT_PJ64), NULL);
 #else
-	MenuSetText(hSubMenu, 0, GS(MENU_USER_MAN), NULL);
-	MenuSetText(hSubMenu, 1, GS(MENU_GAME_FAQ), NULL);
-	MenuSetText(hSubMenu, 3, GS(MENU_DISCORD), NULL);
-	MenuSetText(hSubMenu, 4, GS(MENU_GITHUB), NULL);
+	MenuSetText(hSubMenu, 0, GS(MENU_USER_GUIDE), NULL);
+	MenuSetText(hSubMenu, 1, GS(MENU_GAME_RDX), NULL);
+	MenuSetText(hSubMenu, 3, GS(MENU_GITHUB), NULL);
+	MenuSetText(hSubMenu, 4, GS(MENU_DISCORD), NULL);
 	MenuSetText(hSubMenu, 6, GS(MENU_UNINSTALL), NULL);
 	MenuSetText(hSubMenu, 8, GS(MENU_JABO_UNINSTALL), NULL);
 	MenuSetText(hSubMenu, 9, GS(MENU_ABOUT_INI), NULL);
@@ -900,10 +900,14 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 		case ID_OPTIONS_CONFIG_RSP: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_CONFG_RSP)); break;
 		case ID_OPTIONS_SHOWCPUUSAGE: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_SHOW_CPU)); break;
 		case ID_OPTIONS_SETTINGS: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_SETTINGS)); break;
-		case ID_HELP_CONTENTS: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_USER_MAN)); break;
-		case ID_HELP_GAMEFAQ: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_FAQ)); break;
+		case ID_HELP_GUIDE: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_USER_GUIDE)); break;
+		case ID_HELP_GAMERDX: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_GAME_RDX)); break;
 		case ID_HELP_ABOUTSETTINGFILES: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_ABOUT_INI)); break;
 		case ID_HELP_ABOUT: SendMessage(hStatusWnd,SB_SETTEXT,0,(LPARAM)GS(MENUDES_ABOUT_PJ64)); break;
+		case ID_HELP_GITHUB: SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GITHUB)); break;
+		case ID_HELP_DISCORD: SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_DISCORD)); break;
+		case ID_HELP_UNINSTALL: SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_UNINSTALLAPP)); break;
+		case ID_HELP_JABO_UNINSTALL: SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_UNINSTALLJABO)); break;
 		
 		case ID_CURRENTSAVE_DEFAULT:
 			SendMessage(hStatusWnd, SB_SETTEXT, 0, (LPARAM)GS(MENUDES_GAME_SLOT));
@@ -1575,7 +1579,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			}
 			break;
 #endif
-		case ID_HELP_CONTENTS:
+		case ID_HELP_GUIDE:
 			ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus/wiki/Project64-1.6-Plus-User-Guide", NULL, NULL, SW_SHOWMAXIMIZED); // Changed chm to online version for better user experience
 			break;
 
@@ -1600,7 +1604,7 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 						}
 					}
 					break;*/
-		case ID_HELP_GAMEFAQ:
+		case ID_HELP_GAMERDX:
 			ShellExecute(NULL, "open", "https://www.project64-legacy.com/online-rdx", NULL, NULL, SW_SHOWMAXIMIZED); // Changed chm to online version for better user experience
 			break;
 
@@ -1611,8 +1615,8 @@ LRESULT CALLBACK Main_Proc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 			}
 		}
 		break;*/
-		case ID_HELP_DISCORD: ShellExecute(NULL, "open", "https://discord.gg/TnFmnW6WQE", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_GITHUB: ShellExecute(NULL, "open", "https://github.com/pj64team/Project64-1.6-Plus", NULL, NULL, SW_SHOWMAXIMIZED); break;
+		case ID_HELP_DISCORD: ShellExecute(NULL, "open", "https://discord.gg/TnFmnW6WQE", NULL, NULL, SW_SHOWMAXIMIZED); break;
 		case ID_HELP_UNINSTALL: UninstallApplication(hWnd); break;
 		case ID_HELP_JABO_UNINSTALL: UninstallJabo(hWnd); break;
 		case ID_HELP_ABOUT: AboutBox(); break;
