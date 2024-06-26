@@ -260,8 +260,8 @@ char * GS               ( int StringID );
 #define ADVANCE_INFO			500
 #define ADVANCE_DEFAULTS		501
 #define ADVANCE_CPU_STYLE		502
-#define ADVANCE_MEM_SIZE		503
-#define ADVANCE_SMCM			504
+#define ADVANCE_SMCM			503
+#define ADVANCE_MEM_SIZE		504
 #define ADVANCE_ABL				505
 #define ADVANCE_AUTO_START		506
 #define ADVANCE_OVERWRITE		507
@@ -269,8 +269,8 @@ char * GS               ( int StringID );
 
 //Rom Options
 #define ROM_CPU_STYLE			520
-#define ROM_MEM_SIZE			521
-#define ROM_SMCM				522
+#define ROM_SMCM				521
+#define ROM_MEM_SIZE			522
 #define ROM_ABL					523
 #define ROM_SAVE_TYPE			524
 #define ROM_COUNTER_FACTOR		525
