@@ -12,12 +12,12 @@ This is not intended for development use or is it a modernised 1.6 core, it is j
 
 - Arbitrary code vulnerability fix.
 
-    tlb miss in write opcodes are now generating exceptions as expected. This solves a vulnerability that can allow roms
-    to run arbitrary code in previous releases.
-  
+    TLB miss in write opcodes are now generating exceptions as expected. This solves a vulnerability that can allow roms
+    to run arbitrary code in previous releases.  
+	
 - TLB: extra checks for overflow buffer mapping for user TLB entries
 
-	  Adds an extra check for user mapping TLB further than allowed buffer size.  
+	Adds an extra check for user mapping TLB further than allowed buffer size.
 
 - Retain 1.6 original ROM Hack compatibility
 
@@ -40,7 +40,10 @@ This is not intended for development use or is it a modernised 1.6 core, it is j
 - Rom Dir Recursion as default, this allows sub-directories to be included in rom browser
 - Jabo specific pemrcheats read from the jabo.ini so they do not effect other plugins as no longer enabled in the rdb.
 - Display build date and time in About dialog title bar for easy build version recognition
-- Uninstall registry settings and delete Project64,cache from Help/Uninstall Application Settings
+- Help/Uninstall Application Settings
+  - Uninstall application registry settings from windows registry and deletes Project64.cache 
+- Help/Uninstall Jabo plugin Settings
+  - Uninstall Jabo plugin settings from windows registry 
 
 ## Screenshot
 
