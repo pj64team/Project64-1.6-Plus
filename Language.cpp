@@ -104,7 +104,7 @@ LANG_STR DefaultString[] = {
 		{ MENU_USER_MAN,    "&User Guide..."    },
 		{ MENU_GAME_FAQ,    "&Online RDX..."       },
 		{ MENU_ABOUT_INI,   "About &INI Files"   },
-		{ MENU_ABOUT_PJ64,  "&About Project 64"  },
+		{ MENU_ABOUT_PJ64,  "&About Project64"  },
 		{ MENU_DISCORD,       "&Discord"  },
 		{ MENU_GITHUB,    "&GitHub"  },
 		{ MENU_UNINSTALL,   "&Uninstall Application Settings"  },
