@@ -902,7 +902,7 @@ BEGIN
         MENUITEM "&Uninstal Jabo Plugin Settings", ID_HELP_JABO_UNINSTALL
         MENUITEM SEPARATOR
         MENUITEM "About &INI Files",            ID_HELP_ABOUTSETTINGFILES
-        MENUITEM "&About Project 64",           ID_HELP_ABOUT
+        MENUITEM "&About Project64",           ID_HELP_ABOUT
     END
 END
 
