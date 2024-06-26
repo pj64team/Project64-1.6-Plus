@@ -28,6 +28,7 @@ IDB_BITMAP1             BITMAP                  "tri-state.bmp"
 
 IDB_BITMAP2             BITMAP                  "About.bmp"
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Icon
@@ -36,8 +37,11 @@ IDB_BITMAP2             BITMAP                  "About.bmp"
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDI_RIGHT               ICON                    "right.ico"
+
 IDI_LEFT                ICON                    "left.ico"
+
 ICON                    ICON                    "pj64.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -287,9 +291,9 @@ BEGIN
     PUSHBUTTON      "...",IDC_SELECT_SNAP_DIR,203,182,14,12
 END
 
-IDD_Settings_Options DIALOG 0, 0, 231, 206
+IDD_Settings_Options DIALOGEX 0, 0, 231, 206
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
-FONT 8, "MS Sans Serif"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     CTEXT           "Most of these changes will not take effect till a new rom is opened or current rom is reset.",IDC_INFO,4,10,223,22
     GROUPBOX        "",IDC_STATIC,2,119,227,63
@@ -299,14 +303,14 @@ BEGIN
     GROUPBOX        "Core Defaults",IDC_CORE_DEFAULTS,4,37,223,78
     LTEXT           "CPU core style:",IDC_TEXT2,9,49,108,12
     COMBOBOX        IDC_CPU_TYPE,118,48,105,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Self-mod code method:",IDC_TEXT3,9,65,108,12
-    COMBOBOX        IDC_SELFMOD,118,64,105,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Default Memory Size:",IDC_TEXT4,9,82,108,12
-    COMBOBOX        IDC_RDRAM_SIZE,118,80,105,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
     LTEXT           "Advanced Block Linking:",IDC_TEXT5,9,98,108,12
     COMBOBOX        IDC_ABL,118,96,105,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
     CONTROL         "Start Emulation when rom is opened?",IDC_START_ON_ROM_OPEN,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,129,218,11
+    LTEXT           "Self-mod code method:",IDC_TEXT3,9,81,108,12
+    COMBOBOX        IDC_SELFMOD,118,80,105,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default Memory Size:",IDC_TEXT4,9,66,108,12
+    COMBOBOX        IDC_RDRAM_SIZE,118,64,105,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
 END
 
 IDD_MANAGECHEATS DIALOGEX 0, 0, 412, 226
@@ -403,31 +407,31 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMEN
 CAPTION "About INI Files"
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
-GROUPBOX        "ROM Database (.RDB)", IDC_RDB, 5, 44, 175, 59
-LTEXT           "Author:", IDC_RDB_AUTHOR, 14, 55, 166, 8
-LTEXT           "Version:", IDC_RDB_VERSION, 14, 65, 166, 8
-LTEXT           "Date:", IDC_RDB_DATE, 14, 74, 166, 8
-PUSHBUTTON      "visit home page", IDC_RDB_HOME, 12, 85, 163, 13
-GROUPBOX        "Cheat Code file (.CHT)", IDC_CHT, 6, 105, 174, 59
-LTEXT           "Author:", IDC_CHT_AUTHOR, 13, 116, 166, 8
-LTEXT           "Version:", IDC_CHT_VERSION, 13, 126, 166, 8
-LTEXT           "Date:", IDC_CHT_DATE, 14, 135, 166, 8
-PUSHBUTTON      "visit home page", IDC_CHT_HOME, 13, 146, 163, 13
-LTEXT           "Author:", IDC_LAN_AUTHOR, 13, 11, 166, 8
-LTEXT           "Version:", IDC_LAN_VERSION, 13, 21, 166, 8
-LTEXT           "Date:", IDC_LAN_DATE, 13, 31, 166, 8
-PUSHBUTTON      "OK", IDOK, 308, 165, 47, 13
-GROUPBOX        "Extended Rom Info (.RDX)", IDC_RDX, 179, 105, 175, 59
-LTEXT           "Version:", IDC_RDX_VERSION, 186, 125, 166, 8
-PUSHBUTTON      "visit home page", IDC_RDX_HOME, 186, 147, 163, 13
-LTEXT           "Date:", IDC_RDX_DATE, 186, 135, 166, 8
-LTEXT           "Author:", IDC_RDX_AUTHOR, 186, 115, 166, 8
-GROUPBOX        "Jabo Ini Information (.INI)", IDC_JINI, 180, 44, 175, 59
-LTEXT           "Version:", IDC_JINI_VERSION, 188, 64, 166, 8
-PUSHBUTTON      "visit home page", IDC_JINI_HOME, 188, 85, 163, 13
-LTEXT           "Date:", IDC_JINI_DATE, 188, 74, 166, 8
-LTEXT           "Author:", IDC_JINI_AUTHOR, 188, 53, 166, 8
-GROUPBOX        " Current Language ", IDC_LAN, 7, 0, 348, 42
+    GROUPBOX        "ROM Database (.RDB)",IDC_RDB,5,44,175,59
+    LTEXT           "Author:",IDC_RDB_AUTHOR,14,55,166,8
+    LTEXT           "Version:",IDC_RDB_VERSION,14,65,166,8
+    LTEXT           "Date:",IDC_RDB_DATE,14,74,166,8
+    PUSHBUTTON      "visit home page",IDC_RDB_HOME,12,85,163,13
+    GROUPBOX        "Cheat Code file (.CHT)",IDC_CHT,6,105,174,59
+    LTEXT           "Author:",IDC_CHT_AUTHOR,13,116,166,8
+    LTEXT           "Version:",IDC_CHT_VERSION,13,126,166,8
+    LTEXT           "Date:",IDC_CHT_DATE,14,135,166,8
+    PUSHBUTTON      "visit home page",IDC_CHT_HOME,13,146,163,13
+    LTEXT           "Author:",IDC_LAN_AUTHOR,13,11,166,8
+    LTEXT           "Version:",IDC_LAN_VERSION,13,21,166,8
+    LTEXT           "Date:",IDC_LAN_DATE,13,31,166,8
+    PUSHBUTTON      "OK",IDOK,308,165,47,13
+    GROUPBOX        "Extended Rom Info (.RDX)",IDC_RDX,179,105,175,59
+    LTEXT           "Version:",IDC_RDX_VERSION,186,125,166,8
+    PUSHBUTTON      "visit home page",IDC_RDX_HOME,186,147,163,13
+    LTEXT           "Date:",IDC_RDX_DATE,186,135,166,8
+    LTEXT           "Author:",IDC_RDX_AUTHOR,186,115,166,8
+    GROUPBOX        "Jabo Ini Information (.INI)",IDC_JINI,180,44,175,59
+    LTEXT           "Version:",IDC_JINI_VERSION,188,64,166,8
+    PUSHBUTTON      "visit home page",IDC_JINI_HOME,188,85,163,13
+    LTEXT           "Date:",IDC_JINI_DATE,188,74,166,8
+    LTEXT           "Author:",IDC_JINI_AUTHOR,188,53,166,8
+    GROUPBOX        " Current Language ",IDC_LAN,7,0,348,42
 END
 
 IDD_Settings_General DIALOG 0, 0, 231, 206
@@ -511,13 +515,11 @@ BEGIN
     GROUPBOX        "",IDC_STATIC,4,20,224,180
     LTEXT           "CPU core style:",IDC_CPU_TYPE_TEXT,11,33,111,10
     COMBOBOX        IDC_CPU_TYPE,124,31,99,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Self-modifying code Method:",IDC_SELFMOD_TEXT,11,49,111,10
-    COMBOBOX        IDC_SELFMOD,124,48,99,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Memory Size:",IDC_MEMORY_SIZE_TEXT,11,66,111,10
-    COMBOBOX        IDC_RDRAM_SIZE,124,65,99,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Memory Size:",IDC_MEMORY_SIZE_TEXT,11,49,111,10
+    COMBOBOX        IDC_RDRAM_SIZE, 124, 48, 99, 49, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "Advanced Block Linking:",IDC_BLOCK_LINKING_TEXT,11,83,111,10
     COMBOBOX        IDC_BLOCK_LINKING,124,82,99,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Default Save type:",IDC_SAVE_TYPE_TEXT,11,100,111,10
+    LTEXT           "Game Save type:",IDC_SAVE_TYPE_TEXT,11,100,111,10
     COMBOBOX        IDC_SAVE_TYPE,124,99,99,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "Counter Factor:",IDC_COUNTFACT_TEXT,11,119,111,10
     COMBOBOX        IDC_COUNTFACT,124,116,99,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
@@ -530,6 +532,8 @@ BEGIN
     CONTROL         "Delay RDP Interrupt",IDC_DELAY_RDP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,171,111,11
     CONTROL         "Delay RSP Interrupt",IDC_DELAY_RSP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,171,99,11
     CONTROL         "Emulate AI",IDC_EMULATE_AI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,184,111,11
+    LTEXT           "Self-modifying code Method:",IDC_SELFMOD_TEXT,11,66,111,10
+    COMBOBOX        IDC_SELFMOD,124,65,99,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 END
 
 IDD_LangSelect DIALOGEX 0, 0, 269, 147
@@ -695,7 +699,6 @@ BEGIN
         LEFTMARGIN, 7
         RIGHTMARGIN, 178
         TOPMARGIN, 7
-        BOTTOMMARGIN, 243
     END
 
     IDD_Settings_General, DIALOG
@@ -758,6 +761,8 @@ BEGIN
 END
 #endif    // APSTUDIO_INVOKED
 
+
+/////////////////////////////////////////////////////////////////////////////
 //
 // Menu
 //
@@ -790,7 +795,7 @@ BEGIN
     BEGIN
         MENUITEM "&Reset\tF1",                  ID_CPU_RESET, GRAYED
         MENUITEM "&Pause\tF2",                  ID_CPU_PAUSE, GRAYED
-        MENUITEM "Screenshot Capture\tF3",         ID_SYSTEM_GENERATEBITMAP, GRAYED
+        MENUITEM "Screenshot Capture\tF3",      ID_SYSTEM_GENERATEBITMAP, GRAYED
         MENUITEM SEPARATOR
         MENUITEM "Limit FPS\tF4",               ID_SYSTEM_LIMITFPS
         MENUITEM SEPARATOR
@@ -825,8 +830,6 @@ BEGIN
         END
         MENUITEM SEPARATOR
         MENUITEM "Cheats...\tCtrl+C",           ID_OPTIONS_CHEATS, GRAYED
-       //Cheat search crashes on first scan so disabling for now (Gent)
-        //MENUITEM "Cheat Search",                ID_SYSTEM_CHEATSEARCH, GRAYED
         MENUITEM "GS Button\tF9",               ID_SYSTEM_GSBUTTON, GRAYED
     END
     POPUP "&Options"
@@ -889,10 +892,10 @@ BEGIN
     END
     POPUP "&Help"
     BEGIN
-        MENUITEM "&User Guide...",             ID_HELP_CONTENTS
-        MENUITEM "&Online RDX...",                ID_HELP_GAMEFAQ
+        MENUITEM "&User Guide...",              ID_HELP_CONTENTS
+        MENUITEM "&Online RDX...",              ID_HELP_GAMEFAQ
         MENUITEM SEPARATOR
-        MENUITEM "&Discord",                     ID_HELP_DISCORD
+        MENUITEM "&Discord",                    ID_HELP_DISCORD
         MENUITEM "&GitHuB",                     ID_HELP_GITHUB
         MENUITEM SEPARATOR
         MENUITEM "&Uninstal Application Settings", ID_HELP_UNINSTALL
@@ -1024,6 +1027,16 @@ END
 //
 
 IDD_About AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Settings_Rom AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Settings_Options AFX_DIALOG_LAYOUT
 BEGIN
     0
 END

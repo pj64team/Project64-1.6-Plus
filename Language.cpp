@@ -215,8 +215,8 @@ LANG_STR DefaultString[] = {
 	{ ADVANCE_INFO,        "Most of these changes will not take effect till a new rom is opened or current rom is reset."},
 	{ ADVANCE_DEFAULTS,    "Core Defaults"},
 	{ ADVANCE_CPU_STYLE,   "CPU core style:"},
+	{ ADVANCE_MEM_SIZE,    "Default Memory Size:" },
 	{ ADVANCE_SMCM,        "Self-mod code method:"},
-	{ ADVANCE_MEM_SIZE,    "Default Memory Size:"},
 	{ ADVANCE_ABL,         "Advanced Block Linking:"},
 	{ ADVANCE_AUTO_START,  "Start Emulation when rom is opened?"},
 	{ ADVANCE_OVERWRITE,   "Overwrite default settings with ones from RDB?"},
@@ -224,10 +224,10 @@ LANG_STR DefaultString[] = {
 
 //Rom Options
 	{ ROM_CPU_STYLE,       "CPU core style:"},
+	{ ROM_MEM_SIZE,        "Memory Size:" },
 	{ ROM_SMCM,            "Self-modifying code Method:"},
-	{ ROM_MEM_SIZE,        "Memory Size:"},
 	{ ROM_ABL,             "Advanced Block Linking:"},
-	{ ROM_SAVE_TYPE,       "Default Save type:"},
+	{ ROM_SAVE_TYPE,       "Game Save type:"},
 	{ ROM_COUNTER_FACTOR,  "Counter Factor:"},
 	{ ROM_LARGE_BUFFER,    "Larger Compile Buffer"},
 	{ ROM_USE_TLB,         "Use TLB"},
@@ -245,6 +245,10 @@ LANG_STR DefaultString[] = {
 	{ CORE_RECOMPILER,     "Recompiler"},
 	{ CORE_SYNC,           "Synchronise Cores"},
 
+//RDRAM Size
+	{ RDRAM_4MB,           "4 MB" },
+	{ RDRAM_8MB,           "8 MB" },
+
 //Self Mod Methods
 	{ SMCM_NONE,           "None"},
 	{ SMCM_CACHE,          "Cache"},
@@ -252,10 +256,6 @@ LANG_STR DefaultString[] = {
 	{ SMCM_CHECK_MEM,      "Check Memory & Cache"},
 	{ SMCM_CHANGE_MEM,     "Change Memory & Cache"},
 	{ SMCM_CHECK_ADV,      "Check Memory Advance"},
-
-//RDRAM Size
-	{ RDRAM_4MB,           "4 MB"},
-	{ RDRAM_8MB,           "8 MB"},
 
 //Advanced Block Linking
 	{ ABL_ON,              "On"},
