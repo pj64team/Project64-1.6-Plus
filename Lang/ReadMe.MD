@@ -1,6 +1,6 @@
 # Project64 1.6 Plus Language Files
 
-The English.pj.Lang & English_alternative.pj.Lang have been updated for Project64 1.6 Plus,
+The English, English_alternative and Swedish .pj.Lang files have been updated for Project64 1.6 Plus,
 the others are a wee bit outdated, so if you would like to update any language please feel free to do so.
 Just use the new updated English.pj.Lang as your template to add any new items added since 1.6.
 
