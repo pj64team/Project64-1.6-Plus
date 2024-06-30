@@ -120,7 +120,7 @@
 #255#  "Refresh browser window to reflect changes to ROM folder"
 #256#  "Exit Project64"
 #257#  "Reboot the running ROM and let any settings changes take effect"
-#258#  "Pause/resume emulatiom of the running ROM"
+#258#  "Pause/resume emulation of the running ROM"
 #259#  "Generate a bitmap via the video plugin"
 #260#  "Limit VI/s to the correct speed for the ROM's region"
 #261#  "Save Project64 state to current slot"
@@ -135,8 +135,8 @@
 #270#  "Configure selected audio (sound) plugin"
 #271#  "Configure selected input (controller) plugin"
 #272#  "Configure RSP plugin"
-#273#  "Show/hide display of system CPU use divided amoung emulator components"
-#274#  "Project64 main application settings (plugin selection etc.)"
+#273#  "Show/hide display of system CPU use divided among emulator components"
+#274#  "Project64 main application settings"
 #275#  "Open the User Guide for Project64 1.6 Plus"
 #276#  "Open the Online Game ROM Database eXtra"
 #278#  "About the application and authors"
@@ -182,7 +182,7 @@
 #320#  "Set ROM folder for ROM Browser"
 
 //Messages
-#340#  "Bad ROM? Use GoodN64, check for new RDB"
+#340#  "Bad ROM? Use GoodN64, check for new RDB."
 
 /*********************************************************************************
 * Options                                                                        *
@@ -244,16 +244,16 @@
 #500#  "These settings are used when RDB has not specified a value,
 no RDB is present, or 'overwrite' option below is unchecked"
 #501#  "Core &Defaults"
-#502#  "R4300i &core"
+#502#  "VR4300 &core"
 #503#  "&Self-mod. code method:"
 #504#  "RDRA&M size:"
 #505#  "&Advanced Block Linking:"
 #506#  "S&tart emulation after ROMs are loaded"
 #507#  "&Overwrite these default settings with ones from RDB"
-#508#  "&Zip compress all state saves"
+#508#  "&Zip compress all save states"
 
 //Rom Options
-#520#  "R4300i &core:"
+#520#  "VR4300 &core:"
 #521#  "&Self-mod. code method:"
 #522#  "RDRA&M size:"
 #523#  "&Advanced Block Linking:"
@@ -270,7 +270,7 @@ no RDB is present, or 'overwrite' option below is unchecked"
 //Core Styles
 #540#  "Interpreter"
 #541#  "Recompiler"
-#542#  "Synchronise Cores"
+#542#  "Synchronize Cores"
 
 //Self Mod Methods
 #560#  "None"
@@ -282,7 +282,7 @@ no RDB is present, or 'overwrite' option below is unchecked"
 
 //RDRAM Size
 #580#  "4 MB"
-#581#  "8 MB (Expansion PAK)"
+#581#  "8 MB (Expansion Pak)"
 
 //Advanced Block Linking
 #600#  "On"
@@ -397,7 +397,7 @@ Verify ROM and ROM Settings."
 #2010#  "Failed to open state save file"
 #2011#  "Failed to open EEPROM"
 #2012#  "Failed to open FlashRAM"
-#2013#  "Failed to open MemPak"
+#2013#  "Failed to open Memory Pak"
 #2014#  "Attempt to open zip file failed.
 Missing or corrupt zip file - check path and file.
 
@@ -410,16 +410,16 @@ Verify your ROMs with GoodN64."
 #2018#  "Unknown Country"
 #2019#  "Unknown CIC Chip"
 #2020#  "Unknown file format"
-#2021#  "Unknown memory action
+#2021#  "Unknown memory action.
 
-Emulation stop"
-#2022#  "Unhandled R4300i OpCode at"
+Emulation stopped."
+#2022#  "Unhandled VR4300 OpCode at"
 #2023#  "Executing from non-mapped space.
 
 Verify ROM and ROM Settings."
-#2024#  "State save does not appear to match the running ROM.
+#2024#  "Save state does not appear to match the running ROM.
 
-State saves must be saved & loaded between 100% identical ROMs,
+Save states must be saved & loaded between 100% identical ROMs,
 in particular the REGION and VERSION need to be the same.
 Loading this state is likely to cause the game and/or emulator to crash.
 
@@ -428,7 +428,7 @@ Are you sure you want to continue loading?"
 #2026#  "Copyright sequence not found in LUT.  Game will no longer function."
 #2027#  "Copy Protection Failure"
 #2028#  "Changing a plugin requires Project64 to reset a running ROM.
-If you don't want to lose your place, answer No and make a state save first.
+If you don't want to lose your place, answer No and make a save state first.
 
 Change plugins and restart game now?"
 #2029#  "Change Plugins"
