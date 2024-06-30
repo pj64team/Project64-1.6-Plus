@@ -31,6 +31,7 @@ This is not intended for development use or is it a modernised 1.6 core, it is j
 - Save/load states (10 extra than original release)
 - Game Information in File & Rom Browser (Popup Menu)
 - Good Name replaced by Game Name in RDB & Browser Tab.
+- Internal Name replaced by File Name in Title Bar when emulating.
 - New Entry uses File name not Internal Name to add to Game Name in RDB
 - Rom Browser uses File name to display a game not currently in RDB with the status of unknown,
   but once added to the RDB it will use the Game Name= instead.
