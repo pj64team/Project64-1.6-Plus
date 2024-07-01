@@ -4,7 +4,7 @@
 
 # Project64 1.6 Plus
 
-Project64 1.6 Plus is a free and open-source emulator for the Nintendo 64 and It is written in C/C++ currently only for Windows. The project is a feature & vulnerability update fix of the original Project 64 1.6 source. It is targeted at the communities that still desire to use 1.6's ability to play Rom Hacks and a-like because of an incorect core that lets a lot of things slide when it comes to compatibility. 
+Project64 1.6 Plus is a free and source-available emulator for the Nintendo 64 and It is written in C/C++ currently only for Windows. The project is a feature & vulnerability update fix of the original Project 64 1.6 source. It is targeted at the communities that still desire to use 1.6's ability to play Rom Hacks and a-like because of an incorect core that lets a lot of things slide when it comes to compatibility. 
 
 This is not intended for development use or is it a modernised 1.6 core, it is just a "Safety Fix" For its loyal users and some added features that they may enjoy.
 
