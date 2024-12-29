@@ -6,7 +6,7 @@
 
 Project64 1.6 Plus is a free and source-available emulator for the Nintendo 64 and It is written in C/C++ currently only for Windows. What does source-available mean? It means if anyone would like to contribute to the project they are welcome to but need to create a PR showing all changes without any releases before the PR is viewed and agreed on! What does it not allow? It does not allow forking of the project and changing without asking permission beforehand (Create a PR and wait for a response) It does not allow forking of the project, downloading and changing offline and creating releases without express permnission before handf via a PR that shows all changes) This project is a feature & vulnerability update fix of the original Project 64 1.6 source and is not an open source project what so ever!. It is targeted at the communities that still desire to use 1.6's ability to play Rom Hacks and a-like because of an incorect core that lets a lot of things slide when it comes to compatibility. 
 
-This Source is derived from changes the PJ64Team worked on years after Project64 1.6 and was a very early Project64 Legeacy 1.6.1 with 1.6 core compatibility still intact. (It is not the state as the Original 1.6 from a starting point)
+This Source is derived from changes the PJ64Team worked on years after Project64 1.6 and was a very early Project64 Legacy 1.6.1 with 1.6 core compatibility still intact. (It is not the state as the Original 1.6 from a starting point)
 
 This is not intended for development use or is it a modernised 1.6 core, it is just a "Safety Fix" For its loyal users and some added features that they may enjoy.
 
